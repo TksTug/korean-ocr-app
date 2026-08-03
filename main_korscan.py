@@ -12,6 +12,7 @@ import asyncio
 
 try:
     from PyQt6.QtCore import QUrl
+    from PyQt6.QtGui import QIcon
     from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget
     from PyQt6.QtWebEngineWidgets import QWebEngineView
     from PyQt6.QtWebEngineCore import QWebEngineSettings, QWebEngineProfile, QWebEnginePage

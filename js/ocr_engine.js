@@ -175,7 +175,7 @@ Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không
   }
 ]`;
 
-        const models = ["gemini-flash-latest", "gemini-2.0-flash", "gemini-1.5-pro", "gemini-1.5-flash"];
+        const models = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-2.0-flash-lite", "gemini-1.5-pro"];
         let lastErrorText = "";
 
         for (let i = 0; i < models.length; i++) {
@@ -225,6 +225,9 @@ Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không
                             console.warn(`[Gemini OCR ${model}]: Không trích xuất được từ vựng từ JSON trả về.`);
                             lastErrorText = `AI đã nhận diện xong nhưng không tìm thấy danh sách từ vựng trong ảnh.`;
                         }
+                    } else if (resp.status === 404) {
+                        console.warn(`[Gemini OCR ${model} 404 Not Found]: Model not supported on this endpoint. Skipping to next model.`);
+                        break; // Silently skip to next model in fallback loop
                     } else if (resp.status === 429) {
                         const errData = await resp.text();
                         console.warn(`[Gemini OCR ${model} 429 Rate/Quota Limit]:`, errData);
