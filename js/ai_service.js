@@ -36,8 +36,8 @@ class AIService {
      */
     async askAITutor(userMessage, vocabularyList) {
         let cleanKey = (window.ocrEngine?.getApiKey() || "").trim().replace(/[\s\r\n\t\\'"]/g, '');
-        if (!cleanKey) {
-            cleanKey = atob("QVEuQWI4Uk42SUtERVNqNGxhQVhLdk0yS2RZZ0NqZGNBV19ZTlZBZWFuU21FZmswdl9mWlE=");
+        if (!cleanKey || cleanKey.startsWith("AQ.Ab")) {
+            cleanKey = atob("QUl6YVN5Q2pOUGdHazVjYnZsVjhQWThsaDF2N1FPX3VualdJcTY0");
         }
 
         // Add user message to history

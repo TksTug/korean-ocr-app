@@ -3,12 +3,12 @@
  * Supports Part of Speech (POS), Batch Scanning & Dynamic Topic Classification
  */
 
-const BUNDLED_DEFAULT_KEY = atob("QVEuQWI4Uk42SUtERVNqNGxhQVhLdk0yS2RZZ0NqZGNBV19ZTlZBZWFuU21FZmswdl9mWlE=");
+const BUNDLED_DEFAULT_KEY = atob("QUl6YVN5Q2pOUGdHazVjYnZsVjhQWThsaDF2N1FPX3VualdJcTY0");
 
 class OCREngine {
     constructor() {
         let savedKey = (localStorage.getItem("KORSCAN_GEMINI_API_KEY") || "").trim();
-        if (!savedKey || savedKey.length < 15 || savedKey.includes("48gSIPR2yAlMwONY")) {
+        if (!savedKey || savedKey.length < 15 || savedKey.startsWith("AQ.Ab") || savedKey.includes("48gSIPR2yAlMwONY")) {
             savedKey = BUNDLED_DEFAULT_KEY;
             localStorage.setItem("KORSCAN_GEMINI_API_KEY", BUNDLED_DEFAULT_KEY);
         }
