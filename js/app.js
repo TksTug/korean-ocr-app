@@ -952,22 +952,37 @@ class KorScanApp {
             return;
         }
 
+        // Nếu đang thu âm trên cùng nút, bấm lại sẽ HỦY / DỪNG THU ÂM
+        if (btnElem.classList.contains('recording') && this.activePronunciationRec) {
+            try {
+                this.activePronunciationRec.stop();
+            } catch (e) {}
+            this.activePronunciationRec = null;
+            btnElem.classList.remove('recording');
+            btnElem.innerHTML = btnElem.getAttribute('data-orig-content') || '🎤';
+            btnElem.title = 'Thu âm chấm điểm phát âm AI';
+            return;
+        }
+
         // Tìm romaja của từ để hiển thị
         const wordData = this.vocabularyList.find(w => w.korean === targetKorean) || {};
         const targetRomaja = wordData.romaja || '';
 
         const recognition = new SpeechRecognition();
+        this.activePronunciationRec = recognition;
         recognition.lang = 'ko-KR';
         recognition.interimResults = false;
         recognition.maxAlternatives = 5;
 
         // --- UI: Trạng thái đang ghi âm ---
         const originalContent = btnElem.innerHTML;
+        btnElem.setAttribute('data-orig-content', originalContent);
         btnElem.classList.add('recording');
         btnElem.innerHTML = '🔴';
-        btnElem.title = 'Đang nghe...';
+        btnElem.title = 'Đang nghe... (Bấm lại để hủy)';
 
         recognition.onresult = async (event) => {
+            this.activePronunciationRec = null;
             btnElem.classList.remove('recording');
             btnElem.innerHTML = originalContent;
             btnElem.title = 'Thu âm chấm điểm phát âm AI';
@@ -1013,19 +1028,29 @@ class KorScanApp {
         };
 
         recognition.onerror = (err) => {
+            this.activePronunciationRec = null;
             btnElem.classList.remove('recording');
             btnElem.innerHTML = originalContent;
-            if (err.error !== 'aborted') {
+            btnElem.title = 'Thu âm chấm điểm phát âm AI';
+            if (err.error !== 'aborted' && err.error !== 'no-speech') {
                 window.showCustomAlert('Lỗi Micro', `Không nhận diện được giọng nói: ${err.error || 'Vui lòng cho phép truy cập Micro!'}`);
             }
         };
 
         recognition.onend = () => {
+            this.activePronunciationRec = null;
             btnElem.classList.remove('recording');
             btnElem.innerHTML = originalContent;
+            btnElem.title = 'Thu âm chấm điểm phát âm AI';
         };
 
-        recognition.start();
+        try {
+            recognition.start();
+        } catch (err) {
+            this.activePronunciationRec = null;
+            btnElem.classList.remove('recording');
+            btnElem.innerHTML = originalContent;
+        }
     }
 
     _showPronunciationLoading(targetKorean, targetRomaja, spokenText) {
@@ -1927,19 +1952,38 @@ Lưu ý chấm điểm:
                 alert('⚠️ Trình duyệt của bạn không hỗ trợ tính năng nhận diện giọng nói SpeechRecognition!');
                 return;
             }
+
+            // Nếu đang thu âm, bấm lần nữa sẽ DỪNG THU ÂM (Hủy)
+            if (this.activeCreatorRec) {
+                try {
+                    this.activeCreatorRec.stop();
+                } catch (e) {}
+                this.activeCreatorRec = null;
+                if (this.btnCreateWordAI) {
+                    this.btnCreateWordAI.disabled = false;
+                    this.btnCreateWordAI.innerText = '⚡ AI Tạo Từ';
+                }
+                return;
+            }
+
             const recognition = new SpeechRecognition();
+            this.activeCreatorRec = recognition;
             recognition.lang = 'ko-KR';
             recognition.interimResults = false;
 
             if (this.btnCreateWordAI) {
-                this.btnCreateWordAI.disabled = true;
-                this.btnCreateWordAI.innerText = '🔴 Đang nghe...';
+                this.btnCreateWordAI.disabled = false; // Để người dùng có thể bấm lại để hủy
+                this.btnCreateWordAI.innerText = '🔴 Đang nghe... (Bấm để hủy)';
             }
 
             recognition.onresult = async (event) => {
+                this.activeCreatorRec = null;
                 const spokenText = event.results[0][0].transcript.trim();
                 if (this.creatorInput) this.creatorInput.value = spokenText;
-                if (this.btnCreateWordAI) this.btnCreateWordAI.innerText = '⚡ AI Đang Phân Tích...';
+                if (this.btnCreateWordAI) {
+                    this.btnCreateWordAI.disabled = true;
+                    this.btnCreateWordAI.innerText = '⚡ AI Đang Phân Tích...';
+                }
                 
                 try {
                     const data = await window.aiService.generateSingleWordData(spokenText, 'korean', existingTopics);
@@ -1955,14 +1999,33 @@ Lưu ý chấm điểm:
             };
 
             recognition.onerror = (err) => {
+                this.activeCreatorRec = null;
                 if (this.btnCreateWordAI) {
                     this.btnCreateWordAI.disabled = false;
                     this.btnCreateWordAI.innerText = '⚡ AI Tạo Từ';
                 }
-                alert('Lỗi nhận diện giọng nói: ' + (err.error || 'Vui lòng kiểm tra Micro!'));
+                if (err.error !== 'aborted' && err.error !== 'no-speech') {
+                    alert('Lỗi nhận diện giọng nói: ' + (err.error || 'Vui lòng kiểm tra Micro!'));
+                }
             };
 
-            recognition.start();
+            recognition.onend = () => {
+                this.activeCreatorRec = null;
+                if (this.btnCreateWordAI && this.btnCreateWordAI.innerText.includes('Đang nghe')) {
+                    this.btnCreateWordAI.disabled = false;
+                    this.btnCreateWordAI.innerText = '⚡ AI Tạo Từ';
+                }
+            };
+
+            try {
+                recognition.start();
+            } catch (err) {
+                this.activeCreatorRec = null;
+                if (this.btnCreateWordAI) {
+                    this.btnCreateWordAI.disabled = false;
+                    this.btnCreateWordAI.innerText = '⚡ AI Tạo Từ';
+                }
+            }
             return;
         }
 

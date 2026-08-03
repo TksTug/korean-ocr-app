@@ -2,6 +2,7 @@ import os
 import sys
 import json
 import urllib.request
+import urllib.parse
 import urllib.error
 import http.server
 import socketserver
@@ -33,6 +34,69 @@ class KorScanHTTPHandler(http.server.SimpleHTTPRequestHandler):
             self.send_json_response(200, {"success": True, "words": []})
             return
 
+        # ─── TTS Proxy: /api/tts?voice=female&text=... ───
+        if req_path == '/api/tts':
+            params = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
+            voice = params.get('voice', ['female'])[0]
+            text = params.get('text', [''])[0]
+            if not text:
+                self.send_response(400)
+                self.end_headers()
+                return
+
+            # Microsoft Neural TTS via edge-tts (Nữ: ko-KR-SunHiNeural | Nam: ko-KR-InJoonNeural)
+            edge_voice = 'ko-KR-SunHiNeural' if voice == 'female' else 'ko-KR-InJoonNeural'
+
+            try:
+                import asyncio, io
+
+                async def synthesize():
+                    import edge_tts
+                    communicate = edge_tts.Communicate(text, edge_voice)
+                    buf = io.BytesIO()
+                    async for chunk in communicate.stream():
+                        if chunk['type'] == 'audio':
+                            buf.write(chunk['data'])
+                    return buf.getvalue()
+
+                audio_data = asyncio.run(synthesize())
+
+                if audio_data and len(audio_data) > 100:
+                    self.send_response(200)
+                    self.send_header('Content-Type', 'audio/mpeg')
+                    self.send_header('Content-Length', str(len(audio_data)))
+                    self.send_header('Access-Control-Allow-Origin', '*')
+                    self.end_headers()
+                    self.wfile.write(audio_data)
+                    return
+            except Exception as e_edge:
+                print(f'[TTS] edge-tts error, falling back to Google: {e_edge}')
+
+            # Fallback: Google TTS (female only)
+            encoded = urllib.parse.quote(text)
+            fallback_url = f'https://translate.google.com/translate_tts?ie=UTF-8&q={encoded}&tl=ko&client=tw-ob'
+            try:
+                req = urllib.request.Request(fallback_url, headers={
+                    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36',
+                    'Referer': 'https://translate.google.com/',
+                })
+                with urllib.request.urlopen(req, timeout=8) as resp:
+                    data = resp.read()
+                    if len(data) > 100:
+                        self.send_response(200)
+                        self.send_header('Content-Type', 'audio/mpeg')
+                        self.send_header('Content-Length', str(len(data)))
+                        self.send_header('Access-Control-Allow-Origin', '*')
+                        self.end_headers()
+                        self.wfile.write(data)
+                        return
+            except Exception:
+                pass
+
+            self.send_response(404)
+            self.end_headers()
+            return
+
         if req_path in ["/", "/index.html", ""]:
             index_path = os.path.join(SCRIPT_DIR, "index.html")
             if os.path.exists(index_path):
@@ -45,7 +109,7 @@ class KorScanHTTPHandler(http.server.SimpleHTTPRequestHandler):
                         with open(VOCAB_FILE, "r", encoding="utf-8") as vf:
                             initial_vocab_json = vf.read().strip() or "[]"
 
-                    injected_script = f"<script>window.INITIAL_VOCAB_LIST = {initial_vocab_json};</script>\n</head>"
+                    injected_script = f"<script>window.INITIAL_VOCAB_LIST = {initial_vocab_json}; window.KORSCAN_TTS_PROXY = '/api/tts';</script>\n</head>"
                     html_content = html_content.replace("</head>", injected_script, 1)
 
                     self.send_response(200)
