@@ -175,7 +175,7 @@ Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không
   }
 ]`;
 
-        const models = ["gemini-2.0-flash", "gemini-1.5-pro", "gemini-1.5-flash", "gemini-2.0-flash-lite"];
+        const models = ["gemini-flash-latest", "gemini-2.0-flash", "gemini-1.5-pro", "gemini-1.5-flash"];
         let lastErrorText = "";
 
         for (let i = 0; i < models.length; i++) {
