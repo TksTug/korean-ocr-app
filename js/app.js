@@ -2127,6 +2127,212 @@ Lưu ý chấm điểm:
             alert('🎉 Đã xác nhận và thêm từ vựng mới vào bảng thành công!');
         }
     }
+
+    // ─── Reference Vocabulary Library Manager (Thư Viện Từ Vựng Sách) ───
+    switchMainTab(tabName) {
+        this.currentMainTab = tabName || 'main';
+
+        const mainWorkspace = document.getElementById('mainWorkspaceView');
+        const libraryView = document.getElementById('libraryView');
+        const tabNavMain = document.getElementById('tabNavMainApp');
+        const tabNavLib = document.getElementById('tabNavLibrary');
+
+        if (tabName === 'library') {
+            if (mainWorkspace) mainWorkspace.style.display = 'none';
+            if (libraryView) libraryView.style.display = 'grid';
+
+            if (tabNavMain) tabNavMain.classList.remove('active');
+            if (tabNavLib) tabNavLib.classList.add('active');
+
+            this.initLibraryView();
+        } else {
+            if (mainWorkspace) mainWorkspace.style.display = 'grid';
+            if (libraryView) libraryView.style.display = 'none';
+
+            if (tabNavMain) tabNavMain.classList.add('active');
+            if (tabNavLib) tabNavLib.classList.remove('active');
+        }
+    }
+
+    initLibraryView() {
+        if (!this.libraryInitialized) {
+            this.libraryInitialized = true;
+            this.libraryLevelFilter = 'all';
+            this.libraryTopicFilter = 'all';
+        }
+        this.renderLibraryTopicChips();
+        this.renderLibraryVocabList();
+    }
+
+    setLibraryLevelFilter(level) {
+        this.libraryLevelFilter = level || 'all';
+        const pills = document.querySelectorAll('#libraryLevelPills .chip');
+        pills.forEach(pill => {
+            if (pill.getAttribute('data-level') === level) {
+                pill.classList.add('active');
+            } else {
+                pill.classList.remove('active');
+            }
+        });
+        this.renderLibraryVocabList();
+    }
+
+    setLibraryTopicFilter(topic) {
+        this.libraryTopicFilter = topic || 'all';
+        const chips = document.querySelectorAll('#libraryTopicChips .chip');
+        chips.forEach(chip => {
+            if (chip.getAttribute('data-topic') === topic) {
+                chip.classList.add('active');
+            } else {
+                chip.classList.remove('active');
+            }
+        });
+        this.renderLibraryVocabList();
+    }
+
+    renderLibraryTopicChips() {
+        const container = document.getElementById('libraryTopicChips');
+        if (!container) return;
+
+        const db = window.KORSCAN_BOOK_VOCAB_DB || [];
+        const topicMap = new Map();
+        topicMap.set('all', 'Tất Cả Chủ Đề');
+
+        db.forEach(w => {
+            if (w.topic && !topicMap.has(w.topic)) {
+                const label = window.sheetExporter ? window.sheetExporter.getTopicLabel(w.topic) : w.topic;
+                topicMap.set(w.topic, label);
+            }
+        });
+
+        let html = '';
+        topicMap.forEach((label, topicKey) => {
+            const activeClass = (this.libraryTopicFilter === topicKey) ? 'active' : '';
+            html += `<button class="chip ${activeClass}" data-topic="${topicKey}" onclick="if(window.app) window.app.setLibraryTopicFilter('${topicKey}');">${label}</button>`;
+        });
+        container.innerHTML = html;
+    }
+
+    renderLibraryVocabList() {
+        const grid = document.getElementById('libraryCardsGrid');
+        const badge = document.getElementById('libraryWordCountBadge');
+        if (!grid) return;
+
+        const db = window.KORSCAN_BOOK_VOCAB_DB || [];
+        const searchInput = document.getElementById('librarySearchInput');
+        const search = searchInput ? searchInput.value.trim().toLowerCase() : '';
+
+        const existingSet = new Set((this.vocabularyList || []).map(w => w.korean ? w.korean.trim() : ''));
+
+        const filtered = db.filter(item => {
+            // Filter by level
+            if (this.libraryLevelFilter !== 'all' && item.level !== this.libraryLevelFilter) {
+                return false;
+            }
+            // Filter by topic
+            if (this.libraryTopicFilter !== 'all' && item.topic !== this.libraryTopicFilter) {
+                return false;
+            }
+            // Filter by search query
+            if (search) {
+                const k = (item.korean || '').toLowerCase();
+                const r = (item.romaja || '').toLowerCase();
+                const v = (item.vietnamese || '').toLowerCase();
+                if (!k.includes(search) && !r.includes(search) && !v.includes(search)) {
+                    return false;
+                }
+            }
+            return true;
+        });
+
+        if (badge) badge.innerText = `${filtered.length} từ mẫu`;
+
+        if (filtered.length === 0) {
+            grid.innerHTML = `<div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--text-dim); font-size: 14px;">
+                🔍 Không tìm thấy từ vựng nào phù hợp với bộ lọc.
+            </div>`;
+            return;
+        }
+
+        let cardsHtml = '';
+        filtered.forEach(item => {
+            const isAdded = existingSet.has(item.korean.trim());
+            const posClass = item.pos === 'Động từ' ? 'pos-verb' : item.pos === 'Tính từ' ? 'pos-adj' : item.pos === 'Phó từ' ? 'pos-adv' : 'pos-noun';
+            const topicLabel = window.sheetExporter ? window.sheetExporter.getTopicLabel(item.topic) : item.topic;
+            const levelColor = item.level === 'TOPIK 1' ? 'rgba(2, 132, 199, 0.15)' : 'rgba(217, 119, 6, 0.15)';
+            const levelTextColor = item.level === 'TOPIK 1' ? 'var(--primary-blue)' : 'var(--accent-gold)';
+
+            cardsHtml += `
+            <div class="lib-vocab-card">
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+                    <div>
+                        <span class="pos-badge ${posClass}" style="font-size: 11px;">${item.pos || 'Từ vựng'}</span>
+                        <span style="font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; background: ${levelColor}; color: ${levelTextColor}; margin-left: 6px;">${item.level || 'TOPIK'}</span>
+                    </div>
+                    <button class="lib-add-btn ${isAdded ? 'added' : ''}" onclick="if(window.app) window.app.addLibraryWordToPersonalNotebook('${item.korean.replace(/'/g, "\\'")}');" ${isAdded ? 'disabled' : ''}>
+                        ${isAdded ? '✅ Đã trong Sổ Từ' : '➕ Thêm vào Sổ Từ'}
+                    </button>
+                </div>
+
+                <div style="margin-top: 4px;">
+                    <div style="font-size: 24px; font-weight: 700; color: var(--text-main); font-family: 'Outfit', sans-serif;">${item.korean}</div>
+                    <div style="font-size: 13px; color: var(--accent-teal); font-weight: 500; margin-top: 2px;">[${item.romaja}]</div>
+                    <div style="font-size: 14.5px; font-weight: 700; color: var(--primary-light); margin-top: 6px;">🇻🇳 ${item.vietnamese}</div>
+                </div>
+
+                ${item.example ? `
+                <div style="font-size: 12px; color: var(--text-dim); background: rgba(15, 23, 42, 0.3); border-radius: 8px; padding: 8px 10px; margin-top: 4px; border-left: 3px solid var(--primary-soft);">
+                    💡 <b>Ví dụ:</b> ${item.example}
+                </div>` : ''}
+
+                <div style="display: flex; gap: 8px; justify-content: space-between; align-items: center; margin-top: 8px; border-top: 1px dashed var(--border-color); padding-top: 10px;">
+                    <span style="font-size: 11.5px; color: var(--text-dim); font-weight: 600;">🏷️ ${topicLabel}</span>
+                    <div style="display: flex; gap: 6px;">
+                        <button class="btn btn-soft" style="padding: 4px 10px; font-size: 12px;" onclick="if(window.app) window.app.speakKorean('${item.korean.replace(/'/g, "\\'")}');" title="Nghe phát âm AI">🔊 Nghe</button>
+                        <button class="btn btn-soft" style="padding: 4px 10px; font-size: 12px;" onclick="if(window.app) window.app.testPronunciation('${item.korean.replace(/'/g, "\\'")}', this);" title="Chấm điểm phát âm">🎤 Luyện Nói</button>
+                    </div>
+                </div>
+            </div>`;
+        });
+
+        grid.innerHTML = cardsHtml;
+    }
+
+    addLibraryWordToPersonalNotebook(koreanWord) {
+        const db = window.KORSCAN_BOOK_VOCAB_DB || [];
+        const item = db.find(w => w.korean === koreanWord);
+        if (!item) return;
+
+        const existing = this.vocabularyList.find(w => w.korean && w.korean.trim() === koreanWord.trim());
+        if (existing) {
+            window.showCustomAlert(`Từ [${koreanWord}] đã có sẵn trong Sổ Từ Scan Của Tôi rồi!`);
+            return;
+        }
+
+        const newWord = {
+            id: 'lib_' + Math.random().toString(36).substr(2, 9),
+            korean: item.korean,
+            romaja: item.romaja,
+            vietnamese: item.vietnamese,
+            pos: item.pos || 'Danh từ',
+            topic: item.topic || 'daily',
+            example: item.example || `${item.korean} - ${item.vietnamese}`,
+            starred: false,
+            date: new Date().toLocaleDateString('vi-VN')
+        };
+
+        this.vocabularyList.unshift(newWord);
+        this.saveVocabToStorage();
+        this.autoClassifySpecialCategories();
+        this.renderCategoryChips();
+        this.renderVocabularyGrid();
+        this.updateStreakData();
+        this.renderLibraryVocabList();
+
+        if (window.showCustomAlert) {
+            window.showCustomAlert(`🎉 Đã thêm từ [${item.korean} - ${item.vietnamese}] vào Sổ Từ Scan Của Tôi!`);
+        }
+    }
 }
 
 window.showCustomConfirm = function(title, message, onConfirmCallback) {

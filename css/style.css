@@ -1080,3 +1080,88 @@ header {
     box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
 }
 
+/* ─── Main Navigation Tab Switcher ─── */
+.main-nav-bar {
+    max-width: 1350px;
+    margin: 0 auto 16px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.main-nav-tab {
+    padding: 10px 20px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+    background: var(--bg-card);
+    color: var(--text-dim);
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.main-nav-tab:hover {
+    background: var(--bg-card-hover);
+    color: var(--primary-blue);
+    border-color: var(--primary-light);
+    transform: translateY(-1px);
+}
+
+.main-nav-tab.active {
+    background: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
+    color: #ffffff;
+    border-color: #38bdf8;
+    box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+/* ─── Library Card & Add Button ─── */
+.lib-vocab-card {
+    position: relative;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lib-vocab-card:hover {
+    transform: translateY(-3px);
+    border-color: var(--primary-soft);
+    box-shadow: 0 8px 20px rgba(56, 189, 248, 0.2);
+}
+
+.lib-add-btn {
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    border: 1px solid var(--primary-light);
+    background: rgba(56, 189, 248, 0.12);
+    color: var(--primary-blue);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lib-add-btn:hover {
+    background: var(--primary-blue);
+    color: #ffffff;
+    transform: scale(1.03);
+}
+
+.lib-add-btn.added {
+    background: var(--accent-green);
+    color: #ffffff;
+    border-color: var(--accent-green);
+}
+

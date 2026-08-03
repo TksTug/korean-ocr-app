@@ -65,8 +65,18 @@
         <div class="streak-item" id="starredWordsLabel">⭐ Từ yêu thích: <b>0 từ</b></div>
     </div>
 
-    <!-- Main Content Grid -->
-    <main class="app-container">
+    <!-- Main Navigation View Switcher Tabs -->
+    <div class="main-nav-bar">
+        <button class="main-nav-tab active" id="tabNavMainApp" onclick="if(window.app) window.app.switchMainTab('main');">
+            📸 Quét OCR & Sổ Từ Của Tôi
+        </button>
+        <button class="main-nav-tab" id="tabNavLibrary" onclick="if(window.app) window.app.switchMainTab('library');">
+            📚 Thư Viện Từ Vựng Sách (Chuẩn TOPIK)
+        </button>
+    </div>
+
+    <!-- Main Content Grid (Workspace) -->
+    <main class="app-container" id="mainWorkspaceView">
         
         <!-- Left Panel: OCR Scanner & Image Controls -->
         <section class="panel">
@@ -141,11 +151,6 @@
 
                 <!-- Voice Input Helper text -->
                 <div id="voiceStatusText" style="display: none; margin-top: 8px; font-size: 12.5px; color: var(--accent-gold); text-align: center;">
-                    🔴 Bấm nút bên trên và nói từ Tiếng Hàn vào Micro...
-                </div>
-            </div>
-        </section>
-
         <!-- Right Panel: Vocabulary Table & Topic Categorization -->
         <section class="panel">
             <div class="panel-header">
@@ -652,6 +657,7 @@
     <!-- JavaScript Engines -->
     <script src="js/initial_vocab.js?v=1.3.1"></script>
     <script src="js/cat_avatar_base64.js?v=1.3.1"></script>
+    <script src="js/book_vocab_db.js?v=1.3.1"></script>
     <script src="js/ocr_engine.js?v=1.3.1"></script>
     <script src="js/ai_service.js?v=1.3.1"></script>
     <script src="js/sheet_exporter.js?v=1.3.1"></script>
