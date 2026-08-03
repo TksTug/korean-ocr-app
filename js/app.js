@@ -2159,6 +2159,8 @@ Lưu ý chấm điểm:
             this.libraryInitialized = true;
             this.libraryLevelFilter = 'all';
             this.libraryTopicFilter = 'all';
+            this.libraryPage = 1;
+            this.libraryPageSize = 40;
         }
         this.renderLibraryTopicChips();
         this.renderLibraryVocabList();
@@ -2166,6 +2168,7 @@ Lưu ý chấm điểm:
 
     setLibraryLevelFilter(level) {
         this.libraryLevelFilter = level || 'all';
+        this.libraryPage = 1;
         const pills = document.querySelectorAll('#libraryLevelPills .chip');
         pills.forEach(pill => {
             if (pill.getAttribute('data-level') === level) {
@@ -2179,6 +2182,7 @@ Lưu ý chấm điểm:
 
     setLibraryTopicFilter(topic) {
         this.libraryTopicFilter = topic || 'all';
+        this.libraryPage = 1;
         const chips = document.querySelectorAll('#libraryTopicChips .chip');
         chips.forEach(chip => {
             if (chip.getAttribute('data-topic') === topic) {
@@ -2188,6 +2192,19 @@ Lưu ý chấm điểm:
             }
         });
         this.renderLibraryVocabList();
+    }
+
+    setLibraryPage(page) {
+        this.libraryPage = Math.max(1, page);
+        this.renderLibraryVocabList();
+    }
+
+    debouncedLibrarySearch() {
+        if (this._searchTimer) clearTimeout(this._searchTimer);
+        this._searchTimer = setTimeout(() => {
+            this.libraryPage = 1;
+            this.renderLibraryVocabList();
+        }, 150);
     }
 
     renderLibraryTopicChips() {
@@ -2270,12 +2287,34 @@ Lưu ý chấm điểm:
             return;
         }
 
+        // ─── Pagination Calculations ───
+        const pageSize = this.libraryPageSize || 40;
+        const totalPages = Math.ceil(filtered.length / pageSize) || 1;
+        if (!this.libraryPage || this.libraryPage < 1) this.libraryPage = 1;
+        if (this.libraryPage > totalPages) this.libraryPage = totalPages;
+
+        const startIndex = (this.libraryPage - 1) * pageSize;
+        const pagedItems = filtered.slice(startIndex, startIndex + pageSize);
+
+        const renderPaginationBar = () => `
+        <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 10px; padding: 12px 14px; background: rgba(15, 23, 42, 0.4); border: 1px solid var(--border-color); border-radius: 10px; margin: 12px 0; font-size: 13px; color: var(--text-dim);">
+            <div>Hiển thị <b>${startIndex + 1} - ${Math.min(startIndex + pageSize, filtered.length)}</b> trong tổng số <b>${filtered.length}</b> từ</div>
+            <div style="display: flex; gap: 6px; align-items: center;">
+                <button class="btn btn-soft" style="padding: 4px 10px; font-size: 12px;" onclick="if(window.app) window.app.setLibraryPage(1);" ${this.libraryPage === 1 ? 'disabled' : ''}>⏮️ Đầu</button>
+                <button class="btn btn-soft" style="padding: 4px 10px; font-size: 12px;" onclick="if(window.app) window.app.setLibraryPage(${this.libraryPage - 1});" ${this.libraryPage === 1 ? 'disabled' : ''}>◀️ Trước</button>
+                <span style="font-weight: 700; color: var(--primary-light); margin: 0 8px;">Trang ${this.libraryPage} / ${totalPages}</span>
+                <button class="btn btn-soft" style="padding: 4px 10px; font-size: 12px;" onclick="if(window.app) window.app.setLibraryPage(${this.libraryPage + 1});" ${this.libraryPage >= totalPages ? 'disabled' : ''}>▶️ Sau</button>
+                <button class="btn btn-soft" style="padding: 4px 10px; font-size: 12px;" onclick="if(window.app) window.app.setLibraryPage(${totalPages});" ${this.libraryPage >= totalPages ? 'disabled' : ''}>⏭️ Cuối</button>
+            </div>
+        </div>`;
+
         const mode = this.libraryDisplayMode || 'table';
 
         if (mode === 'table') {
             // ─── Render Compact Data Table View ───
             let tableRows = '';
-            filtered.forEach((item, index) => {
+            pagedItems.forEach((item, index) => {
+                const globalIndex = startIndex + index + 1;
                 const isAdded = existingSet.has(item.korean.trim());
                 const posClass = item.pos === 'Động từ' ? 'pos-verb' : item.pos === 'Tính từ' ? 'pos-adj' : item.pos === 'Phó từ' ? 'pos-adv' : 'pos-noun';
                 const topicLabel = window.sheetExporter ? window.sheetExporter.getTopicLabel(item.topic) : item.topic;
@@ -2284,9 +2323,9 @@ Lưu ý chấm điểm:
 
                 tableRows += `
                 <tr>
-                    <td style="text-align: center; font-weight: 600; color: var(--text-dim); font-size: 12px;">${index + 1}</td>
+                    <td style="text-align: center; font-weight: 600; color: var(--text-dim); font-size: 12px;">${globalIndex}</td>
                     <td>
-                        <div style="font-size: 17px; font-weight: 700; color: var(--text-main); font-family: 'Outfit', sans-serif;">${item.korean}</div>
+                        <div style="font-size: 16px; font-weight: 700; color: var(--text-main); font-family: 'Outfit', sans-serif;">${item.korean}</div>
                     </td>
                     <td>
                         <span style="font-size: 12.5px; color: var(--accent-teal); font-weight: 500;">[${item.romaja}]</span>
@@ -2317,6 +2356,7 @@ Lưu ý chấm điểm:
             });
 
             container.innerHTML = `
+            ${renderPaginationBar()}
             <table class="lib-vocab-table">
                 <thead>
                     <tr>
@@ -2333,12 +2373,13 @@ Lưu ý chấm điểm:
                 <tbody>
                     ${tableRows}
                 </tbody>
-            </table>`;
+            </table>
+            ${renderPaginationBar()}`;
 
         } else {
             // ─── Render Compact Cards Grid View ───
             let cardsHtml = '';
-            filtered.forEach(item => {
+            pagedItems.forEach(item => {
                 const isAdded = existingSet.has(item.korean.trim());
                 const posClass = item.pos === 'Động từ' ? 'pos-verb' : item.pos === 'Tính từ' ? 'pos-adj' : item.pos === 'Phó từ' ? 'pos-adv' : 'pos-noun';
                 const topicLabel = window.sheetExporter ? window.sheetExporter.getTopicLabel(item.topic) : item.topic;
@@ -2378,7 +2419,10 @@ Lưu ý chấm điểm:
                 </div>`;
             });
 
-            container.innerHTML = `<div class="vocab-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">${cardsHtml}</div>`;
+            container.innerHTML = `
+            ${renderPaginationBar()}
+            <div class="vocab-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">${cardsHtml}</div>
+            ${renderPaginationBar()}`;
         }
     }
 

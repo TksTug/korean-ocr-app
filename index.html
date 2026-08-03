@@ -222,7 +222,7 @@
                         <button class="btn" id="btnLibViewGrid" style="padding: 6px 14px; font-size: 12px; border-radius: 8px; font-weight: 700; background: transparent; color: var(--text-dim); border: none;" onclick="if(window.app) window.app.setLibraryDisplayMode('grid');">🎴 Dạng Thẻ</button>
                     </div>
                     <div class="search-box" style="width: 260px;">
-                        <input type="text" id="librarySearchInput" class="search-input" placeholder="🔍 Tìm theo từ Hàn, Romaja, Tiếng Việt..." oninput="if(window.app) window.app.renderLibraryVocabList();">
+                        <input type="text" id="librarySearchInput" class="search-input" placeholder="🔍 Tìm theo từ Hàn, Romaja, Tiếng Việt..." oninput="if(window.app) window.app.debouncedLibrarySearch();">
                     </div>
                 </div>
             </div>
