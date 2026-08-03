@@ -69,32 +69,41 @@ Quy tắc trả lời:
             ...this.chatHistory.slice(-12) // Keep last 12 messages for smooth multi-turn memory
         ];
 
-        try {
-            const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent?key=${cleanKey}`;
-            const resp = await fetch(url, {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ contents })
-            });
+        const models = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-2.0-flash-lite", "gemini-1.5-pro"];
+        let lastErrText = "";
 
-            if (resp.ok) {
-                const data = await resp.json();
-                const aiReply = data.candidates?.[0]?.content?.parts?.[0]?.text;
-                if (aiReply) {
-                    this.chatHistory.push({ role: "model", parts: [{ text: aiReply }] });
-                    return aiReply;
+        for (const model of models) {
+            try {
+                const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${cleanKey}`;
+                const resp = await fetch(url, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ contents })
+                });
+
+                if (resp.ok) {
+                    const data = await resp.json();
+                    const aiReply = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                    if (aiReply) {
+                        this.chatHistory.push({ role: "model", parts: [{ text: aiReply }] });
+                        return aiReply;
+                    }
+                } else if (resp.status === 429 || resp.status === 404) {
+                    lastErrText = await resp.text();
+                    console.warn(`[Gemini AI Chat ${model} ${resp.status}]:`, lastErrText);
+                    continue; // Skip to next model in fallback loop
+                } else {
+                    lastErrText = await resp.text();
+                    console.warn(`[Gemini AI Chat ${model} Error]:`, lastErrText);
                 }
-            } else {
-                const errTxt = await resp.text();
-                console.warn("Lỗi AI Chat API:", errTxt);
-                this.chatHistory.pop(); // Remove failed user message
-                return `❌ AI trả về lỗi (${resp.status}): Hãy kiểm tra lại API Key trong phần '⚙️ Cấu Hình API AI' nhé con vợ.`;
+            } catch (err) {
+                console.error(`Lỗi kết nối Gemini Chat (${model}):`, err);
+                lastErrText = err.message;
             }
-        } catch (err) {
-            console.error("Lỗi kết nối Gemini Chat:", err);
-            this.chatHistory.pop();
-            return `❌ Lỗi kết nối tới AI: ${err.message}`;
         }
+
+        this.chatHistory.pop(); // Remove failed user message
+        return `❌ AI đang bận hoặc quá tải. Con vợ bấm thử gửi lại hoặc mở '⚙️ Cấu Hình API AI' dán Key mới nhé!`;
     }
 
     /**

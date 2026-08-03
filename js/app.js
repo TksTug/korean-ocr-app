@@ -541,7 +541,17 @@ class KorScanApp {
         }
         if (this.btnCloseModal) this.btnCloseModal.addEventListener('click', () => this.flashcardModal && (this.flashcardModal.style.display = 'none'));
 
-        if (this.btnToggleAIChat) this.btnToggleAIChat.addEventListener('click', () => this.aiDrawer && (this.aiDrawer.style.display = 'flex'));
+        if (this.btnToggleAIChat) {
+            this.btnToggleAIChat.addEventListener('click', () => {
+                if (this.aiDrawer) {
+                    this.aiDrawer.style.display = 'flex';
+                    setTimeout(() => {
+                        if (this.aiChatMessages) this.aiChatMessages.scrollTop = this.aiChatMessages.scrollHeight;
+                        if (this.aiChatInput) this.aiChatInput.focus();
+                    }, 50);
+                }
+            });
+        }
         if (this.btnCloseAIDrawer) this.btnCloseAIDrawer.addEventListener('click', () => this.aiDrawer && (this.aiDrawer.style.display = 'none'));
         if (this.btnSendAIChat) this.btnSendAIChat.addEventListener('click', () => this.handleAISubmit());
         if (this.aiChatInput) {
@@ -1882,6 +1892,10 @@ Lưu ý chấm điểm:
                 : `<span style="font-size: 18px; flex-shrink: 0;">🤖</span>`;
             loadingElem.innerHTML = `${imgHtml}<div>${this.formatMarkdown(aiResponse)}</div>`;
         }
+
+        if (this.aiChatMessages) {
+            this.aiChatMessages.scrollTop = this.aiChatMessages.scrollHeight;
+        }
     }
 
     appendChatMessage(sender, text) {
@@ -1895,19 +1909,22 @@ Lưu ý chấm điểm:
         div.style.lineHeight = '1.5';
 
         if (sender === 'user') {
-            div.style.background = 'rgba(56, 189, 248, 0.2)';
-            div.style.color = '#F9FAFB';
+            div.style.background = 'linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%)';
+            div.style.color = '#ffffff';
+            div.style.fontWeight = '600';
             div.style.alignSelf = 'flex-end';
             div.style.marginLeft = '30px';
+            div.style.boxShadow = '0 4px 12px rgba(2, 132, 199, 0.25)';
             div.innerHTML = this.formatMarkdown(text);
         } else {
-            div.style.background = 'rgba(30, 41, 59, 0.8)';
-            div.style.color = '#E2E8F0';
-            div.style.border = '1px solid rgba(255, 255, 255, 0.08)';
+            div.style.background = 'var(--bg-card)';
+            div.style.color = 'var(--text-main)';
+            div.style.border = '1px solid var(--border-color)';
             div.style.marginRight = '30px';
             div.style.display = 'flex';
             div.style.gap = '10px';
             div.style.alignItems = 'flex-start';
+            div.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.08)';
 
             const savedAvatar = localStorage.getItem('KORSCAN_CUSTOM_AVATAR');
             const imgHtml = savedAvatar 
@@ -1917,8 +1934,10 @@ Lưu ý chấm điểm:
             div.innerHTML = `${imgHtml}<div>${this.formatMarkdown(text)}</div>`;
         }
 
-        this.aiChatMessages.appendChild(div);
-        this.aiChatMessages.scrollTop = this.aiChatMessages.scrollHeight;
+        if (this.aiChatMessages) {
+            this.aiChatMessages.appendChild(div);
+            this.aiChatMessages.scrollTop = this.aiChatMessages.scrollHeight;
+        }
 
         return msgId;
     }
