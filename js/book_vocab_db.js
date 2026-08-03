@@ -1,303 +1,42 @@
 /**
- * KorScan AI - Master Korean Reference Vocabulary Database (1000+ Words)
+ * KorScan AI - TOPIK 4, 5, 6 Advanced Korean Reference Vocabulary Database
  */
 window.KORSCAN_BOOK_VOCAB_DB = [
   {
     "korean": "안녕하세요",
     "romaja": "an-nyeong-ha-se-yo",
-    "vietnamese": "Xin chào (Lịch sự)",
+    "vietnamese": "Xin chào",
     "pos": "Cụm từ",
     "topic": "greeting",
     "level": "TOPIK 1",
-    "example": "안녕하세요! 만나서 반갑습니다."
-  },
-  {
-    "korean": "안녕하십니까",
-    "romaja": "an-nyeong-ha-sip-ni-da",
-    "vietnamese": "Xin chào (Trang trọng)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "안녕하십니까? 처음 뵙겠습니다."
-  },
-  {
-    "korean": "안녕",
-    "romaja": "an-nyeong",
-    "vietnamese": "Chào (Thân mật)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "안녕! 잘 지냈어?"
+    "example": "안녕하세요! 반갑습니다."
   },
   {
     "korean": "감사합니다",
     "romaja": "gam-sa-ham-ni-da",
-    "vietnamese": "Cảm ơn (Trang trọng)",
+    "vietnamese": "Cảm ơn",
     "pos": "Cụm từ",
     "topic": "greeting",
     "level": "TOPIK 1",
     "example": "도와주셔서 감사합니다."
   },
   {
-    "korean": "고맙습니다",
-    "romaja": "go-map-seum-ni-da",
-    "vietnamese": "Cảm ơn (Lịch sự)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "선물 고맙습니다."
-  },
-  {
-    "korean": "고마워",
-    "romaja": "go-ma-wo",
-    "vietnamese": "Cảm ơn (Thân mật)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "도와줘서 고마워."
-  },
-  {
     "korean": "죄송합니다",
     "romaja": "jwe-song-ham-ni-da",
-    "vietnamese": "Xin lỗi (Trang trọng)",
+    "vietnamese": "Xin lỗi",
     "pos": "Cụm từ",
     "topic": "greeting",
     "level": "TOPIK 1",
     "example": "늦어서 죄송합니다."
   },
   {
-    "korean": "미안합니다",
-    "romaja": "mi-an-ham-ni-da",
-    "vietnamese": "Xin lỗi (Lịch sự)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "미안합니다. 괜찮아요?"
-  },
-  {
-    "korean": "미안해",
-    "romaja": "mi-an-hae",
-    "vietnamese": "Xin lỗi (Thân mật)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "늦어서 미안해."
-  },
-  {
-    "korean": "괜찮습니다",
-    "romaja": "gwaen-chan-seum-ni-da",
-    "vietnamese": "Không sao (Trang trọng)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "괜찮습니다. 신경 쓰지 마세요."
-  },
-  {
     "korean": "괜찮아요",
     "romaja": "gwaen-chan-a-yo",
-    "vietnamese": "Không sao đâu (Lịch sự)",
+    "vietnamese": "Không sao đâu",
     "pos": "Cụm từ",
     "topic": "greeting",
     "level": "TOPIK 1",
     "example": "실수해도 괜찮아요."
-  },
-  {
-    "korean": "안녕히 계세요",
-    "romaja": "an-nyeong-hi gye-se-yo",
-    "vietnamese": "Chào tạm biệt (Ở lại)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "저는 먼저 가볼게요. 안녕히 계세요."
-  },
-  {
-    "korean": "안녕히 가세요",
-    "romaja": "an-nyeong-hi ga-se-yo",
-    "vietnamese": "Chào tạm biệt (Đi về)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "조심히 돌아가세요. 안녕히 가세요."
-  },
-  {
-    "korean": "잘 가",
-    "romaja": "jal ga",
-    "vietnamese": "Đi vui vẻ nhé (Thân mật)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "내일 봐, 잘 가!"
-  },
-  {
-    "korean": "잘 있어",
-    "romaja": "jal is-seo",
-    "vietnamese": "Ở lại vui vẻ (Thân mật)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "나 먼저 갈게, 잘 있어!"
-  },
-  {
-    "korean": "반갑습니다",
-    "romaja": "ban-gap-seum-ni-da",
-    "vietnamese": "Rất vui được gặp bạn",
-    "pos": "Tính từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "만나서 반갑습니다."
-  },
-  {
-    "korean": "처음 뵙겠습니다",
-    "romaja": "cheo-eum boep-ges-seum-ni-da",
-    "vietnamese": "Hân hạnh lần đầu gặp",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "처음 뵙겠습니다. 잘 부탁드립니다."
-  },
-  {
-    "korean": "잘 부탁드립니다",
-    "romaja": "jal bu-tak-deu-rim-ni-da",
-    "vietnamese": "Mong được giúp đỡ",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "앞으로 잘 부탁드립니다."
-  },
-  {
-    "korean": "수고하셨습니다",
-    "romaja": "su-go-ha-syeot-seum-ni-da",
-    "vietnamese": "Vất vả cho bạn rồi",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 2",
-    "example": "오늘 하루도 수고하셨습니다."
-  },
-  {
-    "korean": "수고하세요",
-    "romaja": "su-go-ha-se-yo",
-    "vietnamese": "Làm việc tốt nhé",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "퇴근하겠습니다. 수고하세요!"
-  },
-  {
-    "korean": "축하합니다",
-    "romaja": "chuk-ha-ham-ni-da",
-    "vietnamese": "Xin chúc mừng",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "생일을 진심으로 축하합니다."
-  },
-  {
-    "korean": "축하해",
-    "romaja": "chuk-ha-hae",
-    "vietnamese": "Chúc mừng nhé",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "합격 축하해!"
-  },
-  {
-    "korean": "환영합니다",
-    "romaja": "hwan-yeong-ham-ni-da",
-    "vietnamese": "Nhiệt liệt hoan nghênh",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "한국 방문을 환영합니다."
-  },
-  {
-    "korean": "오랜만입니다",
-    "romaja": "o-raen-man-im-ni-da",
-    "vietnamese": "Lâu rồi không gặp",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "오랜만입니다! 그동안 잘 지내셨어요?"
-  },
-  {
-    "korean": "오랜만이야",
-    "romaja": "o-raen-man-i-ya",
-    "vietnamese": "Lâu quá mới gặp",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "오랜만이야! 진짜 보고 싶었어."
-  },
-  {
-    "korean": "잘 지내셨어요?",
-    "romaja": "jal ji-nae-syeot-seo-yo?",
-    "vietnamese": "Bạn khỏe không?",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "네, 덕분에 잘 지냈어요."
-  },
-  {
-    "korean": "주말 잘 보내세요",
-    "romaja": "ju-mal jal bo-nae-se-yo",
-    "vietnamese": "Cuối tuần vui vẻ nhé",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "모두 주말 잘 보내세요!"
-  },
-  {
-    "korean": "맛있게 드세요",
-    "romaja": "ma-sit-ge deu-se-yo",
-    "vietnamese": "Chúc ngon miệng",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "음식이 나왔습니다. 맛있게 드세요!"
-  },
-  {
-    "korean": "잘 먹겠습니다",
-    "romaja": "jal meok-ges-seum-ni-da",
-    "vietnamese": "Tôi sẽ ăn ngon miệng",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "정성껏 준비해주셔서 잘 먹겠습니다."
-  },
-  {
-    "korean": "잘 먹었습니다",
-    "romaja": "jal meok-eot-seum-ni-da",
-    "vietnamese": "Tôi đã ăn rất ngon",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "정말 맛있었습니다. 잘 먹었습니다!"
-  },
-  {
-    "korean": "안녕히 주무세요",
-    "romaja": "an-nyeong-hi ju-mu-se-yo",
-    "vietnamese": "Chúc ngủ ngon (Kính ngữ)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "부모님, 안녕히 주무세요."
-  },
-  {
-    "korean": "잘 자요",
-    "romaja": "jal ja-yo",
-    "vietnamese": "Chúc ngủ ngon (Lịch sự)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "오늘 고생했어요. 잘 자요!"
-  },
-  {
-    "korean": "잘 자",
-    "romaja": "jal ja",
-    "vietnamese": "Ngủ ngon nhé (Thân mật)",
-    "pos": "Cụm từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "좋은 꿈 꿔, 잘 자!"
   },
   {
     "korean": "이름",
@@ -309,1957 +48,139 @@ window.KORSCAN_BOOK_VOCAB_DB = [
     "example": "이름이 무엇입니까?"
   },
   {
-    "korean": "성함",
-    "romaja": "seong-ham",
-    "vietnamese": "Tên (Kính ngữ)",
-    "pos": "Danh từ",
-    "topic": "greeting",
-    "level": "TOPIK 2",
-    "example": "성함이 어떻게 되십니까?"
-  },
-  {
-    "korean": "직업",
-    "romaja": "ji-geop",
-    "vietnamese": "Nghề nghiệp",
-    "pos": "Danh từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "당신의 직업은 무엇입니까?"
-  },
-  {
-    "korean": "국적",
-    "romaja": "guk-jeok",
-    "vietnamese": "Quốc tịch",
-    "pos": "Danh từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "국적은 베트남입니다."
-  },
-  {
-    "korean": "베트남",
-    "romaja": "be-teu-nam",
-    "vietnamese": "Việt Nam",
-    "pos": "Danh từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "저는 베트남 사람입니다."
-  },
-  {
-    "korean": "한국",
-    "romaja": "han-guk",
-    "vietnamese": "Hàn Quốc",
-    "pos": "Danh từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "한국어를 공부합니다."
-  },
-  {
     "korean": "사람",
     "romaja": "sa-ram",
     "vietnamese": "Người",
     "pos": "Danh từ",
     "topic": "greeting",
     "level": "TOPIK 1",
-    "example": "친절한 사람입니다."
+    "example": "친절한 사람."
   },
   {
-    "korean": "나이",
-    "romaja": "na-i",
-    "vietnamese": "Tuổi",
+    "korean": "한국어",
+    "romaja": "han-gug-eo",
+    "vietnamese": "Tiếng Hàn",
     "pos": "Danh từ",
-    "topic": "greeting",
+    "topic": "education",
     "level": "TOPIK 1",
-    "example": "나이가 몇 살이에요?"
-  },
-  {
-    "korean": "연세",
-    "romaja": "yeon-se",
-    "vietnamese": "Tuổi (Kính ngữ)",
-    "pos": "Danh từ",
-    "topic": "greeting",
-    "level": "TOPIK 2",
-    "example": "할머니 연세가 어떻게 되세요?"
-  },
-  {
-    "korean": "고향",
-    "romaja": "go-hyang",
-    "vietnamese": "Quê hương",
-    "pos": "Danh từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "제 고향은 다낭입니다."
-  },
-  {
-    "korean": "자기소개",
-    "romaja": "ja-gi-so-gae",
-    "vietnamese": "Giới thiệu bản thân",
-    "pos": "Danh từ",
-    "topic": "greeting",
-    "level": "TOPIK 1",
-    "example": "지금부터 자기소개를 하겠습니다."
-  },
-  {
-    "korean": "일",
-    "romaja": "il",
-    "vietnamese": "Một (1 - Hán Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "1월(일월)에 만나요."
-  },
-  {
-    "korean": "이",
-    "romaja": "i",
-    "vietnamese": "Hai (2 - Hán Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "2층(이층)으로 올라가세요."
-  },
-  {
-    "korean": "삼",
-    "romaja": "sam",
-    "vietnamese": "Ba (3 - Hán Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "3번(삼번) 버스를 타세요."
-  },
-  {
-    "korean": "사",
-    "romaja": "sa",
-    "vietnamese": "Bốn (4 - Hán Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "4월(사월)은 봄입니다."
-  },
-  {
-    "korean": "오",
-    "romaja": "o",
-    "vietnamese": "Năm (5 - Hán Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "5분(오분) 남았습니다."
-  },
-  {
-    "korean": "육",
-    "romaja": "yuk",
-    "vietnamese": "Sáu (6 - Hán Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "6월(유월)에 시험이 있어요."
-  },
-  {
-    "korean": "칠",
-    "romaja": "chil",
-    "vietnamese": "Bảy (7 - Hán Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "7층(칠층) 식당가."
-  },
-  {
-    "korean": "팔",
-    "romaja": "pal",
-    "vietnamese": "Tám (8 - Hán Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "8월(팔월)은 덥습니다."
-  },
-  {
-    "korean": "구",
-    "romaja": "gu",
-    "vietnamese": "Chín (9 - Hán Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "9월(구월) 개학."
-  },
-  {
-    "korean": "십",
-    "romaja": "sip",
-    "vietnamese": "Mười (10 - Hán Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "10분(십분) 동안 쉬어요."
-  },
-  {
-    "korean": "백",
-    "romaja": "baek",
-    "vietnamese": "Trăm (100)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "백 원짜리 동전."
-  },
-  {
-    "korean": "천",
-    "romaja": "cheon",
-    "vietnamese": "Nghìn (1.000)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "천 원입니다."
-  },
-  {
-    "korean": "만",
-    "romaja": "man",
-    "vietnamese": "Mười nghìn (10.000)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "만 원 짜리 수표."
-  },
-  {
-    "korean": "억",
-    "romaja": "eok",
-    "vietnamese": "Trăm triệu (100.000.000)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 2",
-    "example": "1억 원 상당의 아파트."
-  },
-  {
-    "korean": "하나",
-    "romaja": "ha-na",
-    "vietnamese": "Một (1 - Thuần Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "사과 하나 주세요."
-  },
-  {
-    "korean": "둘",
-    "romaja": "dul",
-    "vietnamese": "Hai (2 - Thuần Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "커피 둘 잔 주세요."
-  },
-  {
-    "korean": "셋",
-    "romaja": "set",
-    "vietnamese": "Ba (3 - Thuần Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "세(셋) 사람이 왔어요."
-  },
-  {
-    "korean": "넷",
-    "romaja": "net",
-    "vietnamese": "Bốn (4 - Thuần Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "네(넷) 명입니다."
-  },
-  {
-    "korean": "다섯",
-    "romaja": "da-seot",
-    "vietnamese": "Năm (5 - Thuần Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "다섯 개에 천 원."
-  },
-  {
-    "korean": "여섯",
-    "romaja": "yeo-seot",
-    "vietnamese": "Sáu (6 - Thuần Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "여섯 시에 만납시다."
-  },
-  {
-    "korean": "일곱",
-    "romaja": "il-gop",
-    "vietnamese": "Bảy (7 - Thuần Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "일곱 살 어린이."
-  },
-  {
-    "korean": "여덟",
-    "romaja": "yeo-deol",
-    "vietnamese": "Tám (8 - Thuần Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "여덟 시 출근."
-  },
-  {
-    "korean": "아홉",
-    "romaja": "a-hop",
-    "vietnamese": "Chín (9 - Thuần Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "아홉 시 뉴스."
-  },
-  {
-    "korean": "열",
-    "romaja": "yeol",
-    "vietnamese": "Mười (10 - Thuần Hàn)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "열 명의 학생."
-  },
-  {
-    "korean": "스물",
-    "romaja": "seu-mul",
-    "vietnamese": "Hai mơi (20)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "스무(스물) 살 청년."
-  },
-  {
-    "korean": "서른",
-    "romaja": "seo-reun",
-    "vietnamese": "Ba mươi (30)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "서른 살 직장인."
-  },
-  {
-    "korean": "마흔",
-    "romaja": "ma-heun",
-    "vietnamese": "Bốn mươi (40)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 2",
-    "example": "마흔 살의 아빠."
-  },
-  {
-    "korean": "쉰",
-    "romaja": "swin",
-    "vietnamese": "Năm mươi (50)",
-    "pos": "Số đếm",
-    "topic": "time_numbers",
-    "level": "TOPIK 2",
-    "example": "쉰 살 생신."
-  },
-  {
-    "korean": "월요일",
-    "romaja": "wol-yo-il",
-    "vietnamese": "Thứ Hai",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "월요일 아침 9시."
-  },
-  {
-    "korean": "화요일",
-    "romaja": "hwa-yo-il",
-    "vietnamese": "Thứ Ba",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "화요일에 미팅이 있어요."
-  },
-  {
-    "korean": "수요일",
-    "romaja": "su-yo-il",
-    "vietnamese": "Thứ Tư",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "수요일 저녁 식사."
-  },
-  {
-    "korean": "목요일",
-    "romaja": "mok-yo-il",
-    "vietnamese": "Thứ Năm",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "목요일에 시험을 봅니다."
-  },
-  {
-    "korean": "금요일",
-    "romaja": "geum-yo-il",
-    "vietnamese": "Thứ Sáu",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "금요일 밤 불금!"
-  },
-  {
-    "korean": "토요일",
-    "romaja": "to-yo-il",
-    "vietnamese": "Thứ Bảy",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "토요일 주말 여행."
-  },
-  {
-    "korean": "일요일",
-    "romaja": "il-yo-il",
-    "vietnamese": "Chủ Nhật",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "일요일은 푹 쉬어요."
-  },
-  {
-    "korean": "오늘",
-    "romaja": "o-neul",
-    "vietnamese": "Hôm nay",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "오늘 날씨가 참 좋아요."
-  },
-  {
-    "korean": "어제",
-    "romaja": "eo-je",
-    "vietnamese": "Hôm qua",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "어제 영화를 봤어요."
-  },
-  {
-    "korean": "내일",
-    "romaja": "nae-il",
-    "vietnamese": "Ngày mai",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "내일 한국에 갑니다."
-  },
-  {
-    "korean": "모레",
-    "romaja": "mo-re",
-    "vietnamese": "Ngày kia",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "모레까지 숙제 제출."
-  },
-  {
-    "korean": "그저께",
-    "romaja": "geu-jeok-kke",
-    "vietnamese": "Hôm kia",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 2",
-    "example": "그저께 비가 왔어요."
-  },
-  {
-    "korean": "지난주",
-    "romaja": "ji-nan-ju",
-    "vietnamese": "Tuần trước",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "지난주에 시작했어요."
-  },
-  {
-    "korean": "이번 주",
-    "romaja": "i-beon ju",
-    "vietnamese": "Tuần này",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "이번 주 바빠요."
-  },
-  {
-    "korean": "다음 주",
-    "romaja": "da-eum ju",
-    "vietnamese": "Tuần sau",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "다음 주에 만나요."
-  },
-  {
-    "korean": "지난달",
-    "romaja": "ji-nan-dal",
-    "vietnamese": "Tháng trước",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "지난달 월급 받음."
-  },
-  {
-    "korean": "이번 달",
-    "romaja": "i-beon dal",
-    "vietnamese": "Tháng này",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "이번 달 일정."
-  },
-  {
-    "korean": "다음 달",
-    "romaja": "da-eum dal",
-    "vietnamese": "Tháng sau",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "다음 달에 이사해요."
-  },
-  {
-    "korean": "작년",
-    "romaja": "jang-nyeon",
-    "vietnamese": "Năm ngoái",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "작년에 졸업했어요."
-  },
-  {
-    "korean": "올해",
-    "romaja": "ol-hae",
-    "vietnamese": "Năm nay",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "올해 목표 달성."
-  },
-  {
-    "korean": "내년",
-    "romaja": "nae-nyeon",
-    "vietnamese": "Năm sau",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "내년에 결혼해요."
-  },
-  {
-    "korean": "시",
-    "romaja": "si",
-    "vietnamese": "Giờ",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "지금 몇 시예요?"
-  },
-  {
-    "korean": "분",
-    "romaja": "bun",
-    "vietnamese": "Phút",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "10분 후에 시작."
-  },
-  {
-    "korean": "초",
-    "romaja": "cho",
-    "vietnamese": "Giây",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "30초 기다리세요."
-  },
-  {
-    "korean": "오전",
-    "romaja": "o-jeon",
-    "vietnamese": "Buổi sáng (AM)",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "오전 10시 미팅."
-  },
-  {
-    "korean": "오후",
-    "romaja": "o-hu",
-    "vietnamese": "Buổi chiều (PM)",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "오후 2시 방송."
-  },
-  {
-    "korean": "낮",
-    "romaja": "nat",
-    "vietnamese": "Ban ngày",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "낮에는 더워요."
-  },
-  {
-    "korean": "밤",
-    "romaja": "bam",
-    "vietnamese": "Ban đêm",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "밤 11시 취침."
-  },
-  {
-    "korean": "새벽",
-    "romaja": "sae-byeok",
-    "vietnamese": "Rạng sáng",
-    "pos": "Danh từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 2",
-    "example": "새벽 5시 기상."
-  },
-  {
-    "korean": "매일",
-    "romaja": "mae-il",
-    "vietnamese": "Hàng ngày",
-    "pos": "Phó từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "매일 한국어 공부."
-  },
-  {
-    "korean": "자주",
-    "romaja": "ja-ju",
-    "vietnamese": "Thường xuyên",
-    "pos": "Phó từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "자주 만나서 놀자."
-  },
-  {
-    "korean": "가끔",
-    "romaja": "ga-kkeum",
-    "vietnamese": "Thỉnh thoảng",
-    "pos": "Phó từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "가끔 운동을 해요."
-  },
-  {
-    "korean": "항상",
-    "romaja": "hang-sang",
-    "vietnamese": "Luôn luôn",
-    "pos": "Phó từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 1",
-    "example": "항상 감사합니다."
-  },
-  {
-    "korean": "언제나",
-    "romaja": "eon-je-na",
-    "vietnamese": "Bất cứ lúc nào",
-    "pos": "Phó từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 2",
-    "example": "언제나 응원합니다."
-  },
-  {
-    "korean": "절대",
-    "romaja": "jeol-dae",
-    "vietnamese": "Tuyệt đối không",
-    "pos": "Phó từ",
-    "topic": "time_numbers",
-    "level": "TOPIK 2",
-    "example": "절대 잊지 마세요."
-  },
-  {
-    "korean": "가족",
-    "romaja": "ga-jok",
-    "vietnamese": "Gia đình",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "우리 가족은 4명입니다."
-  },
-  {
-    "korean": "부모님",
-    "romaja": "bu-mo-nim",
-    "vietnamese": "Cha mẹ (Bố mẹ)",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "부모님을 사랑합니다."
-  },
-  {
-    "korean": "아버지",
-    "romaja": "a-beo-ji",
-    "vietnamese": "Bố / Cha",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "아버지는 회사원이십니다."
-  },
-  {
-    "korean": "어머니",
-    "romaja": "eo-meo-ni",
-    "vietnamese": "Mẹ",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "어머니의 요리는 맛있어요."
-  },
-  {
-    "korean": "아빠",
-    "romaja": "a-ppa",
-    "vietnamese": "Bố (Thân mật)",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "아빠, 다녀왔습니다!"
-  },
-  {
-    "korean": "엄마",
-    "romaja": "eom-ma",
-    "vietnamese": "Mẹ (Thân mật)",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "엄마, 배고파요."
-  },
-  {
-    "korean": "할아버지",
-    "romaja": "hal-a-beo-ji",
-    "vietnamese": "Ông nội",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "할아버지께서 건강하세요."
-  },
-  {
-    "korean": "할머니",
-    "romaja": "hal-meo-ni",
-    "vietnamese": "Bà nội",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "할머니 사랑해요."
-  },
-  {
-    "korean": "형",
-    "romaja": "hyeong",
-    "vietnamese": "Anh trai (Em trai gọi)",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "형하고 운동했어요."
-  },
-  {
-    "korean": "누나",
-    "romaja": "nu-na",
-    "vietnamese": "Chị gái (Em trai gọi)",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "누나가 친절해요."
-  },
-  {
-    "korean": "오빠",
-    "romaja": "o-ppa",
-    "vietnamese": "Anh trai (Em gái gọi)",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "오빠가 맛있는 거 사줬어."
-  },
-  {
-    "korean": "언니",
-    "romaja": "eon-ni",
-    "vietnamese": "Chị gái (Em gái gọi)",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "언니랑 쇼핑 가요."
-  },
-  {
-    "korean": "남동생",
-    "romaja": "nam-dong-saeng",
-    "vietnamese": "Em trai",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "남동생이 학생입니다."
-  },
-  {
-    "korean": "여동생",
-    "romaja": "yeo-dong-saeng",
-    "vietnamese": "Em gái",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "여동생이 귀여워요."
-  },
-  {
-    "korean": "아들",
-    "romaja": "a-deul",
-    "vietnamese": "Con trai",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "아들이 축구를 좋아해요."
-  },
-  {
-    "korean": "딸",
-    "romaja": "ttal",
-    "vietnamese": "Con gái",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "딸이 피아노를 쳐요."
-  },
-  {
-    "korean": "남편",
-    "romaja": "nam-pyeon",
-    "vietnamese": "Chồng",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "남편과 함께 장을 봐요."
-  },
-  {
-    "korean": "아내",
-    "romaja": "a-nae",
-    "vietnamese": "Vợ",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "아내에게 꽃을 선물했어요."
-  },
-  {
-    "korean": "친척",
-    "romaja": "chin-cheok",
-    "vietnamese": "Họ hàng",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 2",
-    "example": "명절에 친척집 방문."
+    "example": "한국어를 열심히 공부해요."
   },
   {
     "korean": "친구",
     "romaja": "chin-gu",
     "vietnamese": "Bạn bè",
     "pos": "Danh từ",
-    "topic": "daily_family",
+    "topic": "daily",
     "level": "TOPIK 1",
-    "example": "좋은 친구를 만났어요."
-  },
-  {
-    "korean": "선배",
-    "romaja": "seon-bae",
-    "vietnamese": "Tiền bối / Đàn anh",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "학교 선배에게 조언을 얻음."
-  },
-  {
-    "korean": "후배",
-    "romaja": "hu-bae",
-    "vietnamese": "Hậu bối / Đàn em",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "후배들을 챙겨줍니다."
-  },
-  {
-    "korean": "이웃",
-    "romaja": "i-ut",
-    "vietnamese": "Hàng xóm",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 2",
-    "example": "이웃 사촌이 사촌보다 낫다."
+    "example": "친구를 만났어요."
   },
   {
     "korean": "집",
     "romaja": "jip",
     "vietnamese": "Nhà",
     "pos": "Danh từ",
-    "topic": "daily_family",
+    "topic": "daily",
     "level": "TOPIK 1",
-    "example": "집에 돌아왔습니다."
+    "example": "집에 가고 싶어요."
   },
   {
-    "korean": "방",
-    "romaja": "bang",
-    "vietnamese": "Phòng",
+    "korean": "학교",
+    "romaja": "hak-gyo",
+    "vietnamese": "Trường học",
     "pos": "Danh từ",
-    "topic": "daily_family",
+    "topic": "education",
     "level": "TOPIK 1",
-    "example": "내 방을 청소해요."
+    "example": "학교에 갑니다."
   },
   {
-    "korean": "거실",
-    "romaja": "geo-sil",
-    "vietnamese": "Phòng khách",
+    "korean": "선생님",
+    "romaja": "seon-saeng-nim",
+    "vietnamese": "Thầy cô giáo",
     "pos": "Danh từ",
-    "topic": "daily_family",
+    "topic": "education",
     "level": "TOPIK 1",
-    "example": "거실에서 TV를 봐요."
+    "example": "선생님, 질문이 있습니다."
   },
   {
-    "korean": "주방",
-    "romaja": "ju-bang",
-    "vietnamese": "Phòng bếp",
+    "korean": "학생",
+    "romaja": "hak-saeng",
+    "vietnamese": "Học sinh",
     "pos": "Danh từ",
-    "topic": "daily_family",
+    "topic": "education",
     "level": "TOPIK 1",
-    "example": "주방에서 요리 중."
+    "example": "열심히 공부하는 학생."
   },
   {
-    "korean": "화장실",
-    "romaja": "hwa-jang-sil",
-    "vietnamese": "Nhà vệ sinh",
+    "korean": "책",
+    "romaja": "chaek",
+    "vietnamese": "Sách",
     "pos": "Danh từ",
-    "topic": "daily_family",
+    "topic": "education",
     "level": "TOPIK 1",
-    "example": "화장실이 어디예요?"
-  },
-  {
-    "korean": "침실",
-    "romaja": "chim-sil",
-    "vietnamese": "Phòng ngủ",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "아늑한 침실."
-  },
-  {
-    "korean": "베란다",
-    "romaja": "be-ran-da",
-    "vietnamese": "Ban công",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 2",
-    "example": "베란다에 화분을 놓음."
-  },
-  {
-    "korean": "침대",
-    "romaja": "chim-dae",
-    "vietnamese": "Giường ngủ",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "푹신한 침대."
-  },
-  {
-    "korean": "책상",
-    "romaja": "chaek-sang",
-    "vietnamese": "Bàn học / Bàn làm việc",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "책상 위에 책이 있어요."
-  },
-  {
-    "korean": "의자",
-    "romaja": "ui-ja",
-    "vietnamese": "Ghế",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "편안한 의자에 앉으세요."
-  },
-  {
-    "korean": "옷장",
-    "romaja": "ot-jang",
-    "vietnamese": "Tủ quần áo",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "옷장에 옷을 정리함."
-  },
-  {
-    "korean": "냉장고",
-    "romaja": "naeng-jang-go",
-    "vietnamese": "Tủ lạnh",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "냉장고에 물이 있어요."
-  },
-  {
-    "korean": "세탁기",
-    "romaja": "se-tak-gi",
-    "vietnamese": "Máy giặt",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "세탁기를 돌립니다."
-  },
-  {
-    "korean": "텔레비전",
-    "romaja": "tel-le-bi-jeon",
-    "vietnamese": "Tivi",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "뉴스 텔레비전 시청."
-  },
-  {
-    "korean": "에어컨",
-    "romaja": "e-eo-keon",
-    "vietnamese": "Máy điều hòa",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "여름엔 에어컨 켜기."
-  },
-  {
-    "korean": "선풍기",
-    "romaja": "seon-pung-gi",
-    "vietnamese": "Quạt máy",
-    "pos": "Danh từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "시원한 선풍기 바람."
-  },
-  {
-    "korean": "자다",
-    "romaja": "ja-da",
-    "vietnamese": "Ngủ",
-    "pos": "Động từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "일찍 자고 일찍 일어남."
-  },
-  {
-    "korean": "일어나다",
-    "romaja": "i-reo-na-da",
-    "vietnamese": "Thức dậy",
-    "pos": "Động từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "아침 7시에 일어납니다."
-  },
-  {
-    "korean": "쉬다",
-    "romaja": "swi-da",
-    "vietnamese": "Nghỉ ngơi",
-    "pos": "Động từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "집에서 편하게 쉬어요."
-  },
-  {
-    "korean": "씻다",
-    "romaja": "ssit-da",
-    "vietnamese": "Rửa / Tắm rửa",
-    "pos": "Động từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "손을 깨끗이 씻으세요."
-  },
-  {
-    "korean": "샤워하다",
-    "romaja": "sya-wo-ha-da",
-    "vietnamese": "Tắm vòi sen",
-    "pos": "Động từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "따뜻한 물로 샤워해요."
-  },
-  {
-    "korean": "청소하다",
-    "romaja": "cheong-so-ha-da",
-    "vietnamese": "Dọn dẹp vệ sinh",
-    "pos": "Động từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "방을 청소했습니다."
-  },
-  {
-    "korean": "빨래하다",
-    "romaja": "ppal-rae-ha-da",
-    "vietnamese": "Giặt quần áo",
-    "pos": "Động từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "주말에 빨래를 해요."
-  },
-  {
-    "korean": "요리하다",
-    "romaja": "yo-ri-ha-da",
-    "vietnamese": "Nấu ăn",
-    "pos": "Động từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "저녁을 요리하고 있어요."
-  },
-  {
-    "korean": "운동하다",
-    "romaja": "un-dong-ha-da",
-    "vietnamese": "Tập thể dục",
-    "pos": "Động từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "매일 아침 운동합니다."
-  },
-  {
-    "korean": "산책하다",
-    "romaja": "san-chaek-ha-da",
-    "vietnamese": "Đi dạo",
-    "pos": "Động từ",
-    "topic": "daily_family",
-    "level": "TOPIK 1",
-    "example": "공원에서 산책해요."
-  },
-  {
-    "korean": "음식",
-    "romaja": "eum-sik",
-    "vietnamese": "Món ăn",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "한국 음식을 좋아해요."
-  },
-  {
-    "korean": "밥",
-    "romaja": "bap",
-    "vietnamese": "Cơm",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "밥 먹었어요?"
-  },
-  {
-    "korean": "국",
-    "romaja": "guk",
-    "vietnamese": "Canh",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "따뜻한 미역국."
-  },
-  {
-    "korean": "찌개",
-    "romaja": "jji-gae",
-    "vietnamese": "Lẩu / Canh sệt",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "김치찌개가 맛있어요."
-  },
-  {
-    "korean": "반찬",
-    "romaja": "ban-chan",
-    "vietnamese": "Món ăn kèm (Side dishes)",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "다양한 반찬."
-  },
-  {
-    "korean": "김치",
-    "romaja": "gim-chi",
-    "vietnamese": "Kimchi",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "매콤한 김치."
-  },
-  {
-    "korean": "불고기",
-    "romaja": "bul-go-gi",
-    "vietnamese": "Thịt nướng Bulgogi",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "달콤한 불고기."
-  },
-  {
-    "korean": "비빔밥",
-    "romaja": "bi-bim-bap",
-    "vietnamese": "Cơm trộn",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "영양 만점 비빔밥."
-  },
-  {
-    "korean": "삼겹살",
-    "romaja": "sam-gyeop-sal",
-    "vietnamese": "Thịt ba chỉ nướng",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "삼겹살과 상추쌈."
-  },
-  {
-    "korean": "갈비",
-    "romaja": "gal-bi",
-    "vietnamese": "Sườn nướng",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "소갈비 구이."
-  },
-  {
-    "korean": "삼계탕",
-    "romaja": "sam-gye-tang",
-    "vietnamese": "Gà hầm sâm",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 2",
-    "example": "여름 보양식 삼계탕."
-  },
-  {
-    "korean": "떡볶이",
-    "romaja": "tteok-bok-ki",
-    "vietnamese": "Bánh gạo cay",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "길거리 떡볶이."
-  },
-  {
-    "korean": "순대",
-    "romaja": "sun-dae",
-    "vietnamese": "Dồi lợn kiểu Hàn",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "떡볶이와 순대."
-  },
-  {
-    "korean": "튀김",
-    "romaja": "twi-gim",
-    "vietnamese": "Món chiên giòn",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "바삭한 모듬 튀김."
-  },
-  {
-    "korean": "라면",
-    "romaja": "ra-myeon",
-    "vietnamese": "Mì ăn liền",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "얼큰한 라면 한 그릇."
-  },
-  {
-    "korean": "국수",
-    "romaja": "guk-su",
-    "vietnamese": "Mì sợi / Bún",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "시원한 잔치국수."
-  },
-  {
-    "korean": "냉면",
-    "romaja": "naeng-myeon",
-    "vietnamese": "Mì lạnh",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "여름엔 물냉면."
-  },
-  {
-    "korean": "자장면",
-    "romaja": "ja-jang-myeon",
-    "vietnamese": "Mì tương đen",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "중화요리 자장면."
-  },
-  {
-    "korean": "짬뽕",
-    "romaja": "jjam-ppong",
-    "vietnamese": "Mì hải sản cay",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "얼큰한 짬뽕 국물."
-  },
-  {
-    "korean": "만두",
-    "romaja": "man-du",
-    "vietnamese": "Bánh xếp / Há cảo",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "고기만두와 김치만두."
-  },
-  {
-    "korean": "김밥",
-    "romaja": "gim-bap",
-    "vietnamese": "Cơm cuộn lá kim",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "소풍 갈 때 김밥."
-  },
-  {
-    "korean": "빵",
-    "romaja": "ppang",
-    "vietnamese": "Bánh mì",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "갓 구운 식빵."
-  },
-  {
-    "korean": "케이크",
-    "romaja": "ke-i-keu",
-    "vietnamese": "Bánh kem",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "생일 축하 케이크."
-  },
-  {
-    "korean": "과자",
-    "romaja": "gwa-ja",
-    "vietnamese": "Bánh kẹo / Snack",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "바삭한 감자 과자."
-  },
-  {
-    "korean": "초콜릿",
-    "romaja": "cho-kol-rit",
-    "vietnamese": "Socola",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "달콤한 초콜릿."
-  },
-  {
-    "korean": "사탕",
-    "romaja": "sa-tang",
-    "vietnamese": "Kẹo",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "과일 맛 사탕."
-  },
-  {
-    "korean": "아이스트림",
-    "romaja": "a-i-seu-keu-rim",
-    "vietnamese": "Kem",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "시원한 아이스크림."
+    "example": "책을 읽어요."
   },
   {
     "korean": "물",
     "romaja": "mul",
     "vietnamese": "Nước",
     "pos": "Danh từ",
-    "topic": "food_dining",
+    "topic": "food",
     "level": "TOPIK 1",
-    "example": "시원한 생수."
+    "example": "시원한 물 한 잔."
   },
   {
-    "korean": "음료수",
-    "romaja": "eum-ryo-su",
-    "vietnamese": "Nước giải khát",
+    "korean": "밥",
+    "romaja": "bap",
+    "vietnamese": "Cơm",
     "pos": "Danh từ",
-    "topic": "food_dining",
+    "topic": "food",
     "level": "TOPIK 1",
-    "example": "톡 쏘는 탄산음료."
+    "example": "밥 먹었어요?"
+  },
+  {
+    "korean": "음식",
+    "romaja": "eum-sik",
+    "vietnamese": "Món ăn",
+    "pos": "Danh từ",
+    "topic": "food",
+    "level": "TOPIK 1",
+    "example": "맛있는 음식."
+  },
+  {
+    "korean": "고기",
+    "romaja": "go-gi",
+    "vietnamese": "Thịt",
+    "pos": "Danh từ",
+    "topic": "food",
+    "level": "TOPIK 1",
+    "example": "불고기가 맛있어요."
   },
   {
     "korean": "커피",
     "romaja": "keo-pi",
     "vietnamese": "Cà phê",
     "pos": "Danh từ",
-    "topic": "food_dining",
+    "topic": "food",
     "level": "TOPIK 1",
-    "example": "따뜻한 아메리카노."
+    "example": "따뜻한 커피."
   },
   {
-    "korean": "차",
-    "romaja": "cha",
-    "vietnamese": "Trà",
+    "korean": "시계",
+    "romaja": "si-gye",
+    "vietnamese": "Đồng hồ",
     "pos": "Danh từ",
-    "topic": "food_dining",
+    "topic": "daily",
     "level": "TOPIK 1",
-    "example": "향긋한 녹차 한 잔."
+    "example": "시계를 보세요."
   },
   {
-    "korean": "우유",
-    "romaja": "u-yu",
-    "vietnamese": "Sữa tươi",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "신선한 우유."
-  },
-  {
-    "korean": "주스",
-    "romaja": "ju-seu",
-    "vietnamese": "Nước ép trái cây",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "상큼한 오렌지 주스."
-  },
-  {
-    "korean": "맥주",
-    "romaja": "maek-ju",
-    "vietnamese": "Bia",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "시원한 생맥주."
-  },
-  {
-    "korean": "소주",
-    "romaja": "so-ju",
-    "vietnamese": "Rượu Soju",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "한국 대표 전통주 소주."
-  },
-  {
-    "korean": "와인",
-    "romaja": "wa-in",
-    "vietnamese": "Rượu vang",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "레드 와인 한 잔."
-  },
-  {
-    "korean": "식당",
-    "romaja": "sik-dang",
-    "vietnamese": "Quán ăn / Nhà hàng",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "맛집 식당 추천."
-  },
-  {
-    "korean": "카페",
-    "romaja": "ka-pe",
-    "vietnamese": "Quán cà phê",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "분위기 좋은 카페."
-  },
-  {
-    "korean": "술집",
-    "romaja": "sul-jip",
-    "vietnamese": "Quán nhậu",
-    "pos": "Danh từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "친구들과 술집에서 한잔."
-  },
-  {
-    "korean": "맛있다",
-    "romaja": "ma-sit-da",
-    "vietnamese": "Ngon",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "정말 맛있어요!"
-  },
-  {
-    "korean": "맛없다",
-    "romaja": "ma-seop-da",
-    "vietnamese": "Dở / Không ngon",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "짜고 맛없음."
-  },
-  {
-    "korean": "매울다",
-    "romaja": "mae-up-da",
-    "vietnamese": "Cay",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "매운 음식을 잘 먹어요."
-  },
-  {
-    "korean": "달다",
-    "romaja": "dal-da",
-    "vietnamese": "Ngọt",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "달콤한 디저트."
-  },
-  {
-    "korean": "짜다",
-    "romaja": "jja-da",
-    "vietnamese": "Mặn",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "국물이 짜니 물을 넣으세요."
-  },
-  {
-    "korean": "싱겁다",
-    "romaja": "sing-geop-da",
-    "vietnamese": "Nhạt",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "소금을 약간 넣음."
-  },
-  {
-    "korean": "쓰다",
-    "romaja": "sseu-da",
-    "vietnamese": "Đắng / Viết / Dùng",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "약이 몸에 좋다."
-  },
-  {
-    "korean": "시다",
-    "romaja": "si-da",
-    "vietnamese": "Chua",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "레몬이 신맛이 난다."
-  },
-  {
-    "korean": "고소하다",
-    "romaja": "go-so-ha-da",
-    "vietnamese": "Bùi / Béo thơm",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 2",
-    "example": "참기름의 고소한 향."
-  },
-  {
-    "korean": "느끼하다",
-    "romaja": "neuk-ki-ha-da",
-    "vietnamese": "Béo ngấy",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 2",
-    "example": "튀김이 느끼하다."
-  },
-  {
-    "korean": "배고프다",
-    "romaja": "bae-go-peu-da",
-    "vietnamese": "Đói bụng",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "배고파서 밥 먹어요."
-  },
-  {
-    "korean": "배부르다",
-    "romaja": "bae-bu-reu-da",
-    "vietnamese": "No bụng",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "잘 먹어서 배부릅니다."
-  },
-  {
-    "korean": "목마르다",
-    "romaja": "mok-ma-reu-da",
-    "vietnamese": "Khát nước",
-    "pos": "Tính từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "목말라서 물 마심."
-  },
-  {
-    "korean": "먹다",
-    "romaja": "meok-da",
-    "vietnamese": "Ăn",
-    "pos": "Động từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "맛있게 먹겠습니다."
-  },
-  {
-    "korean": "마시다",
-    "romaja": "ma-si-da",
-    "vietnamese": "Uống",
-    "pos": "Động từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "커피를 마십니다."
-  },
-  {
-    "korean": "주문하다",
-    "romaja": "ju-mun-ha-da",
-    "vietnamese": "Gọi món / Đặt hàng",
-    "pos": "Động từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "메뉴판 보고 주문."
-  },
-  {
-    "korean": "계산하다",
-    "romaja": "gye-san-ha-da",
-    "vietnamese": "Thanh toán",
-    "pos": "Động từ",
-    "topic": "food_dining",
-    "level": "TOPIK 1",
-    "example": "카드로 계산할게요."
-  },
-  {
-    "korean": "버스",
-    "romaja": "beo-seu",
-    "vietnamese": "Xe buýt",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "버스 - Xe buýt"
-  },
-  {
-    "korean": "지하철",
-    "romaja": "ji-ha-cheol",
-    "vietnamese": "Tàu điện ngầm",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "지하철 - Tàu điện ngầm"
-  },
-  {
-    "korean": "택시",
-    "romaja": "taek-si",
-    "vietnamese": "Xe Taxi",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "택시 - Xe Taxi"
-  },
-  {
-    "korean": "비행기",
-    "romaja": "bi-haeng-gi",
-    "vietnamese": "Máy bay",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "비행기 - Máy bay"
-  },
-  {
-    "korean": "자전거",
-    "romaja": "ja-jeon-geo",
-    "vietnamese": "Xe đạp",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "자전거 - Xe đạp"
-  },
-  {
-    "korean": "오토바이",
-    "romaja": "o-to-ba-i",
-    "vietnamese": "Xe máy",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "오토바이 - Xe máy"
-  },
-  {
-    "korean": "기차",
-    "romaja": "gi-cha",
-    "vietnamese": "Tàu hỏa",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "기차 - Tàu hỏa"
-  },
-  {
-    "korean": "KTX",
-    "romaja": "k-t-x",
-    "vietnamese": "Tàu cao tốc KTX",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "KTX - Tàu cao tốc KTX"
-  },
-  {
-    "korean": "배",
-    "romaja": "bae",
-    "vietnamese": "Thuyền / Tàu thủy / Quả lê / Bụng",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "배 - Thuyền / Tàu thủy / Quả lê / Bụng"
-  },
-  {
-    "korean": "승용차",
-    "romaja": "seung-yong-cha",
-    "vietnamese": "Xe ô tô con",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 2",
-    "example": "승용차 - Xe ô tô con"
-  },
-  {
-    "korean": "트럭",
-    "romaja": "teu-reok",
-    "vietnamese": "Xe tải",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 2",
-    "example": "트럭 - Xe tải"
-  },
-  {
-    "korean": "정류장",
-    "romaja": "jeong-ryu-jang",
-    "vietnamese": "Trạm dừng (Xe buýt)",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "정류장 - Trạm dừng (Xe buýt)"
-  },
-  {
-    "korean": "역",
-    "romaja": "yeok",
-    "vietnamese": "Ga tàu",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "역 - Ga tàu"
-  },
-  {
-    "korean": "터미널",
-    "romaja": "teo-mi-neol",
-    "vietnamese": "Bến xe trung tâm",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "터미널 - Bến xe trung tâm"
-  },
-  {
-    "korean": "공항",
-    "romaja": "gong-hang",
-    "vietnamese": "Sân bay",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "공항 - Sân bay"
-  },
-  {
-    "korean": "항구",
-    "romaja": "hang-gu",
-    "vietnamese": "Bến cảng",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 2",
-    "example": "항구 - Bến cảng"
-  },
-  {
-    "korean": "신호등",
-    "romaja": "sin-ho-deung",
-    "vietnamese": "Đèn giao thông",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "신호등 - Đèn giao thông"
-  },
-  {
-    "korean": "횡단보도",
-    "romaja": "hoeng-dan-bo-do",
-    "vietnamese": "Vạch sang đường",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 2",
-    "example": "횡단보도 - Vạch sang đường"
-  },
-  {
-    "korean": "표",
-    "romaja": "pyo",
-    "vietnamese": "Vé",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "표 - Vé"
-  },
-  {
-    "korean": "교통카드",
-    "romaja": "gyo-tong-ka-deu",
-    "vietnamese": "Thẻ giao thông",
-    "pos": "Danh từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "교통카드 - Thẻ giao thông"
-  },
-  {
-    "korean": "타다",
-    "romaja": "ta-da",
-    "vietnamese": "Đi / Lên (xe)",
-    "pos": "Động từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "타다 - Đi / Lên (xe)"
-  },
-  {
-    "korean": "내리다",
-    "romaja": "nae-ri-da",
-    "vietnamese": "Xuống (xe)",
-    "pos": "Động từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "내리다 - Xuống (xe)"
-  },
-  {
-    "korean": "갈아타다",
-    "romaja": "ga-ra-ta-da",
-    "vietnamese": "Đổi xe / Đổi tuyến",
-    "pos": "Động từ",
-    "topic": "transport",
-    "level": "TOPIK 2",
-    "example": "갈아타다 - Đổi xe / Đổi tuyến"
-  },
-  {
-    "korean": "운전하다",
-    "romaja": "un-jeon-ha-da",
-    "vietnamese": "Lái xe",
-    "pos": "Động từ",
-    "topic": "transport",
-    "level": "TOPIK 1",
-    "example": "운전하다 - Lái xe"
-  },
-  {
-    "korean": "주차하다",
-    "romaja": "ju-cha-ha-da",
-    "vietnamese": "Đỗ xe",
-    "pos": "Động từ",
-    "topic": "transport",
-    "level": "TOPIK 2",
-    "example": "주차하다 - Đỗ xe"
-  },
-  {
-    "korean": "가격",
-    "romaja": "ga-gyeok",
-    "vietnamese": "Giá cả",
+    "korean": "돈",
+    "romaja": "don",
+    "vietnamese": "Tiền",
     "pos": "Danh từ",
     "topic": "shopping",
     "level": "TOPIK 1",
-    "example": "가격 - Giá cả"
-  },
-  {
-    "korean": "값",
-    "romaja": "gap",
-    "vietnamese": "Giá tiền",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "값 - Giá tiền"
-  },
-  {
-    "korean": "얼마",
-    "romaja": "eol-ma",
-    "vietnamese": "Bao nhiêu",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "얼마 - Bao nhiêu"
-  },
-  {
-    "korean": "원",
-    "romaja": "won",
-    "vietnamese": "Đồng Won Hàn",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "원 - Đồng Won Hàn"
-  },
-  {
-    "korean": "동전",
-    "romaja": "dong-jeon",
-    "vietnamese": "Tiền xu",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "동전 - Tiền xu"
-  },
-  {
-    "korean": "지폐",
-    "romaja": "ji-pye",
-    "vietnamese": "Tiền giấy",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 2",
-    "example": "지폐 - Tiền giấy"
-  },
-  {
-    "korean": "현금",
-    "romaja": "hyeon-geum",
-    "vietnamese": "Tiền mặt",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "현금 - Tiền mặt"
-  },
-  {
-    "korean": "신용카드",
-    "romaja": "sin-yong-ka-deu",
-    "vietnamese": "Thẻ tín dụng",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "신용카드 - Thẻ tín dụng"
-  },
-  {
-    "korean": "영수증",
-    "romaja": "yeong-su-jeung",
-    "vietnamese": "Hóa đơn",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 2",
-    "example": "영수증 - Hóa đơn"
-  },
-  {
-    "korean": "가게",
-    "romaja": "ga-ge",
-    "vietnamese": "Cửa hàng",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "가게 - Cửa hàng"
-  },
-  {
-    "korean": "시장",
-    "romaja": "si-jang",
-    "vietnamese": "Chợ",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "시장 - Chợ"
-  },
-  {
-    "korean": "마트",
-    "romaja": "ma-teu",
-    "vietnamese": "Siêu thị",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "마트 - Siêu thị"
-  },
-  {
-    "korean": "백화점",
-    "romaja": "baek-hwa-jeom",
-    "vietnamese": "Trung tâm thương mại",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "백화점 - Trung tâm thương mại"
-  },
-  {
-    "korean": "편의점",
-    "romaja": "pyeon-ui-jeom",
-    "vietnamese": "Cửa hàng tiện lợi",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "편의점 - Cửa hàng tiện lợi"
+    "example": "돈을 아껴 씁시다."
   },
   {
     "korean": "옷",
@@ -2268,61 +189,7 @@ window.KORSCAN_BOOK_VOCAB_DB = [
     "pos": "Danh từ",
     "topic": "shopping",
     "level": "TOPIK 1",
-    "example": "옷 - Quần áo"
-  },
-  {
-    "korean": "바지",
-    "romaja": "ba-ji",
-    "vietnamese": "Quần",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "바지 - Quần"
-  },
-  {
-    "korean": "치마",
-    "romaja": "chi-ma",
-    "vietnamese": "Váy",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "치마 - Váy"
-  },
-  {
-    "korean": "티셔츠",
-    "romaja": "ti-syeo-cheu",
-    "vietnamese": "Áo thun",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "티셔츠 - Áo thun"
-  },
-  {
-    "korean": "셔츠",
-    "romaja": "syeo-cheu",
-    "vietnamese": "Áo sơ mi",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "셔츠 - Áo sơ mi"
-  },
-  {
-    "korean": "코트",
-    "romaja": "ko-teu",
-    "vietnamese": "Áo khoác dáng dài",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "코트 - Áo khoác dáng dài"
-  },
-  {
-    "korean": "점퍼",
-    "romaja": "jeom-peo",
-    "vietnamese": "Áo khoác ấm",
-    "pos": "Danh từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "점퍼 - Áo khoác ấm"
+    "example": "예쁜 옷을 샀어요."
   },
   {
     "korean": "신발",
@@ -2331,106 +198,295 @@ window.KORSCAN_BOOK_VOCAB_DB = [
     "pos": "Danh từ",
     "topic": "shopping",
     "level": "TOPIK 1",
-    "example": "신발 - Giày dép"
+    "example": "편한 신발."
   },
   {
-    "korean": "운동화",
-    "romaja": "un-dong-hwa",
-    "vietnamese": "Giày thể thao",
+    "korean": "버스",
+    "romaja": "beo-seu",
+    "vietnamese": "Xe buýt",
     "pos": "Danh từ",
-    "topic": "shopping",
+    "topic": "transport",
     "level": "TOPIK 1",
-    "example": "운동화 - Giày thể thao"
+    "example": "버스를 타요."
   },
   {
-    "korean": "구두",
-    "romaja": "gu-du",
-    "vietnamese": "Giày tây / Giày cao gót",
+    "korean": "지하철",
+    "romaja": "ji-ha-cheol",
+    "vietnamese": "Tàu điện ngầm",
     "pos": "Danh từ",
-    "topic": "shopping",
+    "topic": "transport",
     "level": "TOPIK 1",
-    "example": "구두 - Giày tây / Giày cao gót"
+    "example": "지하철역 도착."
   },
   {
-    "korean": "양말",
-    "romaja": "yang-mal",
-    "vietnamese": "Tất / Vớ",
+    "korean": "택시",
+    "romaja": "taek-si",
+    "vietnamese": "Taxi",
     "pos": "Danh từ",
-    "topic": "shopping",
+    "topic": "transport",
     "level": "TOPIK 1",
-    "example": "양말 - Tất / Vớ"
+    "example": "택시를 불렀어요."
   },
   {
-    "korean": "모자",
-    "romaja": "mo-ja",
-    "vietnamese": "Mũ / Nón",
+    "korean": "비행기",
+    "romaja": "bi-haeng-gi",
+    "vietnamese": "Máy bay",
     "pos": "Danh từ",
-    "topic": "shopping",
+    "topic": "transport",
     "level": "TOPIK 1",
-    "example": "모자 - Mũ / Nón"
+    "example": "비행기 타고 여행."
   },
   {
-    "korean": "장갑",
-    "romaja": "jang-gap",
-    "vietnamese": "Găng tay",
+    "korean": "병원",
+    "romaja": "byeong-won",
+    "vietnamese": "Bệnh viện",
     "pos": "Danh từ",
-    "topic": "shopping",
+    "topic": "health",
     "level": "TOPIK 1",
-    "example": "장갑 - Găng tay"
+    "example": "병원에 다녀왔어요."
   },
   {
-    "korean": "목도리",
-    "romaja": "mok-do-ri",
-    "vietnamese": "Khăn quàng cổ",
+    "korean": "약국",
+    "romaja": "yak-guk",
+    "vietnamese": "Hiệu thuốc",
     "pos": "Danh từ",
-    "topic": "shopping",
+    "topic": "health",
     "level": "TOPIK 1",
-    "example": "목도리 - Khăn quàng cổ"
+    "example": "약국에서 감기약 구매."
   },
   {
-    "korean": "가방",
-    "romaja": "ga-bang",
-    "vietnamese": "Cặp / Túi xách",
+    "korean": "오늘",
+    "romaja": "o-neul",
+    "vietnamese": "Hôm nay",
     "pos": "Danh từ",
-    "topic": "shopping",
+    "topic": "time",
     "level": "TOPIK 1",
-    "example": "가방 - Cặp / Túi xách"
+    "example": "오늘 날씨가 좋아요."
   },
   {
-    "korean": "지갑",
-    "romaja": "ji-gap",
-    "vietnamese": "Ví tiền",
+    "korean": "어제",
+    "romaja": "eo-je",
+    "vietnamese": "Hôm qua",
     "pos": "Danh từ",
-    "topic": "shopping",
+    "topic": "time",
     "level": "TOPIK 1",
-    "example": "지갑 - Ví tiền"
+    "example": "어제 영화를 봤어요."
   },
   {
-    "korean": "안경",
-    "romaja": "an-gyeong",
-    "vietnamese": "Kính mắt",
+    "korean": "내일",
+    "romaja": "nae-il",
+    "vietnamese": "Ngày mai",
     "pos": "Danh từ",
-    "topic": "shopping",
+    "topic": "time",
     "level": "TOPIK 1",
-    "example": "안경 - Kính mắt"
+    "example": "내일 만납시다."
   },
   {
-    "korean": "시계",
-    "romaja": "si-gye",
-    "vietnamese": "Đồng đeo tay",
+    "korean": "지금",
+    "romaja": "ji-geum",
+    "vietnamese": "Bây giờ",
     "pos": "Danh từ",
-    "topic": "shopping",
+    "topic": "time",
     "level": "TOPIK 1",
-    "example": "시계 - Đồng đeo tay"
+    "example": "지금 몇 시예요?"
+  },
+  {
+    "korean": "시간",
+    "romaja": "si-gan",
+    "vietnamese": "Thời gian",
+    "pos": "Danh từ",
+    "topic": "time",
+    "level": "TOPIK 1",
+    "example": "시간이 없어요."
+  },
+  {
+    "korean": "날씨",
+    "romaja": "nal-ssi",
+    "vietnamese": "Thời tiết",
+    "pos": "Danh từ",
+    "topic": "weather",
+    "level": "TOPIK 1",
+    "example": "날씨가 맑네요."
+  },
+  {
+    "korean": "가다",
+    "romaja": "ga-da",
+    "vietnamese": "Đi",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "집에 갑니다."
+  },
+  {
+    "korean": "오다",
+    "romaja": "o-da",
+    "vietnamese": "Đến",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "친구들이 왔어요."
+  },
+  {
+    "korean": "먹다",
+    "romaja": "meok-da",
+    "vietnamese": "Ăn",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "점심을 먹어요."
+  },
+  {
+    "korean": "마시다",
+    "romaja": "ma-si-da",
+    "vietnamese": "Uống",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "차를 마십니다."
+  },
+  {
+    "korean": "자다",
+    "romaja": "ja-da",
+    "vietnamese": "Ngủ",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "일찍 자세요."
+  },
+  {
+    "korean": "일어나다",
+    "romaja": "i-reo-na-da",
+    "vietnamese": "Thức dậy",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "7시에 일어나요."
+  },
+  {
+    "korean": "보다",
+    "romaja": "bo-da",
+    "vietnamese": "Xem / Nhìn",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "영화 시청."
+  },
+  {
+    "korean": "듣다",
+    "romaja": "deut-da",
+    "vietnamese": "Nghe",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "음악을 들어요."
+  },
+  {
+    "korean": "사다",
+    "romaja": "sa-da",
+    "vietnamese": "Mua",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "선물을 사요."
+  },
+  {
+    "korean": "팔다",
+    "romaja": "pal-da",
+    "vietnamese": "Bán",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "물건을 팝니다."
+  },
+  {
+    "korean": "공부하다",
+    "romaja": "gong-bu-ha-da",
+    "vietnamese": "Học tập",
+    "pos": "Động từ",
+    "topic": "education",
+    "level": "TOPIK 1",
+    "example": "열심히 공부하다."
+  },
+  {
+    "korean": "일하다",
+    "romaja": "il-ha-da",
+    "vietnamese": "Làm việc",
+    "pos": "Động từ",
+    "topic": "work",
+    "level": "TOPIK 1",
+    "example": "회사에서 일해요."
+  },
+  {
+    "korean": "만나다",
+    "romaja": "man-na-da",
+    "vietnamese": "Gặp gỡ",
+    "pos": "Động từ",
+    "topic": "action",
+    "level": "TOPIK 1",
+    "example": "선배를 만납니다."
+  },
+  {
+    "korean": "좋다",
+    "romaja": "joh-da",
+    "vietnamese": "Tốt / Thích",
+    "pos": "Tính từ",
+    "topic": "emotion",
+    "level": "TOPIK 1",
+    "example": "기분이 참 좋아요."
+  },
+  {
+    "korean": "나쁘다",
+    "romaja": "na-ppeu-da",
+    "vietnamese": "Xấu / Tệ",
+    "pos": "Tính từ",
+    "topic": "emotion",
+    "level": "TOPIK 1",
+    "example": "날씨가 나빠요."
+  },
+  {
+    "korean": "크다",
+    "romaja": "keu-da",
+    "vietnamese": "To / Thần lớn",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 1",
+    "example": "방이 크네요."
+  },
+  {
+    "korean": "작다",
+    "romaja": "jak-da",
+    "vietnamese": "Nhỏ",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 1",
+    "example": "옷이 작아요."
+  },
+  {
+    "korean": "많다",
+    "romaja": "man-da",
+    "vietnamese": "Nhiều",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 1",
+    "example": "사람이 많다."
+  },
+  {
+    "korean": "적다",
+    "romaja": "jeok-da",
+    "vietnamese": "Ít",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 1",
+    "example": "양이 적어요."
   },
   {
     "korean": "비싸다",
     "romaja": "bis-sa-da",
-    "vietnamese": "Đắt / Mắc",
+    "vietnamese": "Đắt",
     "pos": "Tính từ",
     "topic": "shopping",
     "level": "TOPIK 1",
-    "example": "비싸다 - Đắt / Mắc"
+    "example": "가격이 비싸다."
   },
   {
     "korean": "싸다",
@@ -2439,970 +495,1861 @@ window.KORSCAN_BOOK_VOCAB_DB = [
     "pos": "Tính từ",
     "topic": "shopping",
     "level": "TOPIK 1",
-    "example": "싸다 - Rẻ"
+    "example": "물건이 싸네요."
   },
   {
-    "korean": "사다",
-    "romaja": "sa-da",
-    "vietnamese": "Mua",
-    "pos": "Động từ",
-    "topic": "shopping",
+    "korean": "맛있다",
+    "romaja": "ma-sit-da",
+    "vietnamese": "Ngon",
+    "pos": "Tính từ",
+    "topic": "food",
     "level": "TOPIK 1",
-    "example": "사다 - Mua"
+    "example": "음식이 정말 맛있어."
   },
   {
-    "korean": "팔다",
-    "romaja": "pal-da",
-    "vietnamese": "Bán",
-    "pos": "Động từ",
-    "topic": "shopping",
+    "korean": "어렵다",
+    "romaja": "eo-ryeop-da",
+    "vietnamese": "Khó",
+    "pos": "Tính từ",
+    "topic": "state",
     "level": "TOPIK 1",
-    "example": "팔다 - Bán"
+    "example": "시험이 어렵다."
   },
   {
-    "korean": "입다",
-    "romaja": "ip-da",
-    "vietnamese": "Mặc (áo, quần)",
-    "pos": "Động từ",
-    "topic": "shopping",
+    "korean": "쉬운",
+    "romaja": "swi-un",
+    "vietnamese": "Dễ dàng",
+    "pos": "Tính từ",
+    "topic": "state",
     "level": "TOPIK 1",
-    "example": "입다 - Mặc (áo, quần)"
+    "example": "쉬운 문제."
   },
   {
-    "korean": "신다",
-    "romaja": "sin-da",
-    "vietnamese": "Đi / Mang (giày, tất)",
-    "pos": "Động từ",
-    "topic": "shopping",
+    "korean": "바쁘다",
+    "romaja": "ba-ppeu-da",
+    "vietnamese": "Bận rộn",
+    "pos": "Tính từ",
+    "topic": "state",
     "level": "TOPIK 1",
-    "example": "신다 - Đi / Mang (giày, tất)"
+    "example": "요즘 너무 바빠요."
   },
   {
-    "korean": "쓰다",
-    "romaja": "sseu-da",
-    "vietnamese": "Đội (mũ) / Đeo (kính)",
-    "pos": "Động từ",
-    "topic": "shopping",
+    "korean": "아프다",
+    "romaja": "a-peu-da",
+    "vietnamese": "Đau / Bệnh",
+    "pos": "Tính từ",
+    "topic": "health",
     "level": "TOPIK 1",
-    "example": "쓰다 - Đội (mũ) / Đeo (kính)"
+    "example": "머리가 아파요."
   },
   {
-    "korean": "끼다",
-    "romaja": "kki-da",
-    "vietnamese": "Đeo (găng tay, nhẫn)",
-    "pos": "Động từ",
-    "topic": "shopping",
+    "korean": "가족",
+    "romaja": "ga-jok",
+    "vietnamese": "Gia đình",
+    "pos": "Danh từ",
+    "topic": "family",
     "level": "TOPIK 2",
-    "example": "끼다 - Đeo (găng tay, nhẫn)"
+    "example": "가족과 함께 보냅니다."
   },
   {
-    "korean": "차다",
-    "romaja": "cha-da",
-    "vietnamese": "Đeo (đồng hồ)",
-    "pos": "Động từ",
-    "topic": "shopping",
+    "korean": "부모님",
+    "romaja": "bu-mo-nim",
+    "vietnamese": "Bố mẹ",
+    "pos": "Danh từ",
+    "topic": "family",
     "level": "TOPIK 2",
-    "example": "차다 - Đeo (đồng hồ)"
+    "example": "부모님께 효도하다."
   },
   {
-    "korean": "벗다",
-    "romaja": "beot-da",
-    "vietnamese": "Cởi (quần áo, giày)",
-    "pos": "Động từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "벗다 - Cởi (quần áo, giày)"
-  },
-  {
-    "korean": "할인하다",
-    "romaja": "ha-rin-ha-da",
-    "vietnamese": "Giảm giá / Sale",
-    "pos": "Động từ",
-    "topic": "shopping",
-    "level": "TOPIK 1",
-    "example": "할인하다 - Giảm giá / Sale"
-  },
-  {
-    "korean": "환불하다",
-    "romaja": "hwan-bul-ha-da",
-    "vietnamese": "Hoàn tiền",
-    "pos": "Động từ",
-    "topic": "shopping",
+    "korean": "직장",
+    "romaja": "jik-jang",
+    "vietnamese": "Nơi làm việc",
+    "pos": "Danh từ",
+    "topic": "work",
     "level": "TOPIK 2",
-    "example": "환불하다 - Hoàn tiền"
-  },
-  {
-    "korean": "교환하다",
-    "romaja": "gyo-hwan-ha-da",
-    "vietnamese": "Đổi hàng",
-    "pos": "Động từ",
-    "topic": "shopping",
-    "level": "TOPIK 2",
-    "example": "교환하다 - Đổi hàng"
-  },
-  {
-    "korean": "회사",
-    "romaja": "hoe-sa",
-    "vietnamese": "Công ty",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 1",
-    "example": "회사 - Công ty"
-  },
-  {
-    "korean": "회사원",
-    "romaja": "hoe-sa-won",
-    "vietnamese": "Nhân viên công ty",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 1",
-    "example": "회사원 - Nhân viên công ty"
-  },
-  {
-    "korean": "사무실",
-    "romaja": "sa-mu-sil",
-    "vietnamese": "Văn phòng",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 1",
-    "example": "사무실 - Văn phòng"
-  },
-  {
-    "korean": "직원",
-    "romaja": "jik-won",
-    "vietnamese": "Cán bộ nhân viên",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 1",
-    "example": "직원 - Cán bộ nhân viên"
-  },
-  {
-    "korean": "사장님",
-    "romaja": "sa-jang-nim",
-    "vietnamese": "Giám đốc",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 1",
-    "example": "사장님 - Giám đốc"
-  },
-  {
-    "korean": "부장님",
-    "romaja": "bu-jang-nim",
-    "vietnamese": "Trưởng phòng",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "부장님 - Trưởng phòng"
-  },
-  {
-    "korean": "팀장님",
-    "romaja": "tim-jang-nim",
-    "vietnamese": "Trưởng nhóm (Team leader)",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "팀장님 - Trưởng nhóm (Team leader)"
+    "example": "직장에서 인정받다."
   },
   {
     "korean": "동료",
     "romaja": "dong-ryo",
     "vietnamese": "Đồng nghiệp",
     "pos": "Danh từ",
-    "topic": "work_business",
+    "topic": "work",
     "level": "TOPIK 2",
-    "example": "동료 - Đồng nghiệp"
-  },
-  {
-    "korean": "상사",
-    "romaja": "sang-sa",
-    "vietnamese": "Cấp trên",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "상사 - Cấp trên"
-  },
-  {
-    "korean": "부하",
-    "romaja": "bu-ha",
-    "vietnamese": "Cấp dưới",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "부하 - Cấp dưới"
-  },
-  {
-    "korean": "월급",
-    "romaja": "wol-geup",
-    "vietnamese": "Tiền lương tháng",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "월급 - Tiền lương tháng"
-  },
-  {
-    "korean": "수당",
-    "romaja": "su-dang",
-    "vietnamese": "Tiền phụ cấp",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "수당 - Tiền phụ cấp"
-  },
-  {
-    "korean": "보너스",
-    "romaja": "bo-neo-seu",
-    "vietnamese": "Tiền thưởng Bonus",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 1",
-    "example": "보너스 - Tiền thưởng Bonus"
+    "example": "친절한 동료들."
   },
   {
     "korean": "회의",
     "romaja": "hoe-ui",
     "vietnamese": "Cuộc họp",
     "pos": "Danh từ",
-    "topic": "work_business",
+    "topic": "work",
     "level": "TOPIK 2",
-    "example": "회의 - Cuộc họp"
+    "example": "중요한 회의."
   },
   {
     "korean": "서류",
     "romaja": "seo-ryu",
     "vietnamese": "Giấy tờ hồ sơ",
     "pos": "Danh từ",
-    "topic": "work_business",
+    "topic": "work",
     "level": "TOPIK 2",
-    "example": "서류 - Giấy tờ hồ sơ"
+    "example": "서류 검토."
   },
   {
-    "korean": "보고서",
-    "romaja": "bo-go-seo",
-    "vietnamese": "Bản báo cáo",
+    "korean": "월급",
+    "romaja": "wol-geup",
+    "vietnamese": "Lương tháng",
     "pos": "Danh từ",
-    "topic": "work_business",
+    "topic": "work",
     "level": "TOPIK 2",
-    "example": "보고서 - Bản báo cáo"
-  },
-  {
-    "korean": "결재",
-    "romaja": "gyeol-jae",
-    "vietnamese": "Phê duyệt / Ký duyệt",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "결재 - Phê duyệt / Ký duyệt"
-  },
-  {
-    "korean": "계약서",
-    "romaja": "gye-yak-seo",
-    "vietnamese": "Hợp đồng",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "계약서 - Hợp đồng"
-  },
-  {
-    "korean": "명함",
-    "romaja": "myeong-ham",
-    "vietnamese": "Danh thiếp (Namecard)",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "명함 - Danh thiếp (Namecard)"
+    "example": "월급을 받다."
   },
   {
     "korean": "출근하다",
     "romaja": "chul-geun-ha-da",
     "vietnamese": "Đi làm",
     "pos": "Động từ",
-    "topic": "work_business",
+    "topic": "work",
     "level": "TOPIK 2",
-    "example": "출근하다 - Đi làm"
+    "example": "8시 출근."
   },
   {
     "korean": "퇴근하다",
     "romaja": "toe-geun-ha-da",
     "vietnamese": "Tan làm",
     "pos": "Động từ",
-    "topic": "work_business",
+    "topic": "work",
     "level": "TOPIK 2",
-    "example": "퇴근하다 - Tan làm"
-  },
-  {
-    "korean": "야근하다",
-    "romaja": "ya-geun-ha-da",
-    "vietnamese": "Làm tăng ca đêm",
-    "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "야근하다 - Làm tăng ca đêm"
-  },
-  {
-    "korean": "출장 가다",
-    "romaja": "chul-jang ga-da",
-    "vietnamese": "Đi công tác",
-    "pos": "Cụm từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "출장 가다 - Đi công tác"
+    "example": "정시 퇴근."
   },
   {
     "korean": "휴가",
     "romaja": "hyu-ga",
-    "vietnamese": "Kỳ nghỉ phép",
+    "vietnamese": "Nghỉ phép",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 1",
-    "example": "휴가 - Kỳ nghỉ phép"
-  },
-  {
-    "korean": "연차",
-    "romaja": "yeon-cha",
-    "vietnamese": "Nghỉ phép năm",
-    "pos": "Danh từ",
-    "topic": "work_business",
+    "topic": "work",
     "level": "TOPIK 2",
-    "example": "연차 - Nghỉ phép năm"
+    "example": "여름 휴가 계획."
   },
   {
-    "korean": "취직하다",
-    "romaja": "chwi-jik-ha-da",
-    "vietnamese": "Xin được việc",
+    "korean": "여행",
+    "romaja": "yeo-haeng",
+    "vietnamese": "Du lịch",
+    "pos": "Danh từ",
+    "topic": "travel",
+    "level": "TOPIK 2",
+    "example": "해외 여행을 가다."
+  },
+  {
+    "korean": "호텔",
+    "romaja": "ho-tel",
+    "vietnamese": "Khách sạn",
+    "pos": "Danh từ",
+    "topic": "travel",
+    "level": "TOPIK 2",
+    "example": "호텔 예약 완료."
+  },
+  {
+    "korean": "예약하다",
+    "romaja": "ye-yak-ha-da",
+    "vietnamese": "Đặt trước",
     "pos": "Động từ",
-    "topic": "work_business",
+    "topic": "travel",
     "level": "TOPIK 2",
-    "example": "취직하다 - Xin được việc"
+    "example": "비행기 표 예약."
   },
   {
-    "korean": "이직하다",
-    "romaja": "i-jik-ha-da",
-    "vietnamese": "Chuyển đổi công việc",
+    "korean": "취소하다",
+    "romaja": "chwi-so-ha-da",
+    "vietnamese": "Hủy bỏ",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "이직하다 - Chuyển đổi công việc"
+    "topic": "daily",
+    "level": "TOPIK 2",
+    "example": "일정을 취소하다."
   },
   {
-    "korean": "퇴사하다",
-    "romaja": "toe-sa-ha-da",
-    "vietnamese": "Thôi việc / Nghỉ việc",
+    "korean": "준비하다",
+    "romaja": "jun-bi-ha-da",
+    "vietnamese": "Chuẩn bị",
     "pos": "Động từ",
-    "topic": "work_business",
+    "topic": "daily",
     "level": "TOPIK 2",
-    "example": "퇴사하다 - Thôi việc / Nghỉ việc"
+    "example": "시험 준비."
   },
   {
-    "korean": "면접",
-    "romaja": "myeon-jeop",
-    "vietnamese": "Phỏng vấn",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "면접 - Phỏng vấn"
-  },
-  {
-    "korean": "이력서",
-    "romaja": "i-ryeok-seo",
-    "vietnamese": "Sơ yếu lý lịch (CV)",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "이력서 - Sơ yếu lý lịch (CV)"
-  },
-  {
-    "korean": "경력",
-    "romaja": "gyeong-ryeok",
-    "vietnamese": "Kinh nghiệm làm việc",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경력 - Kinh nghiệm làm việc"
-  },
-  {
-    "korean": "성공하다",
-    "romaja": "seong-gong-ha-da",
-    "vietnamese": "Thành công",
+    "korean": "시작하다",
+    "romaja": "si-jak-ha-da",
+    "vietnamese": "Bắt đầu",
     "pos": "Động từ",
-    "topic": "work_business",
+    "topic": "daily",
     "level": "TOPIK 2",
-    "example": "성공하다 - Thành công"
+    "example": "새 프로젝트 시작."
   },
   {
-    "korean": "실패하다",
-    "romaja": "sil-pae-ha-da",
-    "vietnamese": "Thất bại",
+    "korean": "끝나다",
+    "romaja": "kkeut-na-da",
+    "vietnamese": "Kết thúc",
     "pos": "Động từ",
-    "topic": "work_business",
+    "topic": "daily",
     "level": "TOPIK 2",
-    "example": "실패하다 - Thất bại"
+    "example": "수업이 끝났다."
   },
   {
-    "korean": "도서관",
-    "romaja": "do-seo-gwan",
-    "vietnamese": "Thư viện",
+    "korean": "도움",
+    "romaja": "do-um",
+    "vietnamese": "Sự giúp đỡ",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "도서관 - Thư viện"
-  },
-  {
-    "korean": "교실",
-    "romaja": "gyo-sil",
-    "vietnamese": "Phòng học",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "교실 - Phòng học"
-  },
-  {
-    "korean": "학생증",
-    "romaja": "hak-saeng-jeung",
-    "vietnamese": "Thẻ học sinh / sinh viên",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학생증 - Thẻ học sinh / sinh viên"
-  },
-  {
-    "korean": "장학금",
-    "romaja": "jang-hak-geum",
-    "vietnamese": "Học bổng",
-    "pos": "Danh từ",
-    "topic": "school",
+    "topic": "daily",
     "level": "TOPIK 2",
-    "example": "장학금 - Học bổng"
+    "example": "큰 도움이 되었다."
   },
   {
-    "korean": "등록금",
-    "romaja": "deung-rok-geum",
-    "vietnamese": "Học phí",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "등록금 - Học phí"
-  },
-  {
-    "korean": "수업",
-    "romaja": "su-eop",
-    "vietnamese": "Tiết học / Giờ học",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "수업 - Tiết học / Giờ học"
-  },
-  {
-    "korean": "방학",
-    "romaja": "bang-hak",
-    "vietnamese": "Kỳ nghỉ hè/đông",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "방학 - Kỳ nghỉ hè/đông"
-  },
-  {
-    "korean": "시험",
-    "romaja": "si-heom",
-    "vietnamese": "Kỳ thi",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "시험 - Kỳ thi"
-  },
-  {
-    "korean": "성적",
-    "romaja": "seong-jeok",
-    "vietnamese": "Thành tích / Điểm số",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "성적 - Thành tích / Điểm số"
-  },
-  {
-    "korean": "합격하다",
-    "romaja": "hap-gyeok-ha-da",
-    "vietnamese": "Thi đỗ / Trúng tuyển",
+    "korean": "도와주다",
+    "romaja": "do-wa-ju-da",
+    "vietnamese": "Giúp đỡ",
     "pos": "Động từ",
-    "topic": "school",
+    "topic": "daily",
     "level": "TOPIK 2",
-    "example": "합격하다 - Thi đỗ / Trúng tuyển"
+    "example": "서로 도와줍시다."
   },
   {
-    "korean": "불합격하다",
-    "romaja": "bul-hap-gyeok-ha-da",
-    "vietnamese": "Thi trượt",
+    "korean": "부탁하다",
+    "romaja": "bu-tak-ha-da",
+    "vietnamese": "Nhờ cả",
     "pos": "Động từ",
-    "topic": "school",
+    "topic": "daily",
     "level": "TOPIK 2",
-    "example": "불합격하다 - Thi trượt"
+    "example": "한 가지 부탁이 있어요."
   },
   {
-    "korean": "병원",
-    "romaja": "byeong-won",
-    "vietnamese": "Bệnh viện",
+    "korean": "약속",
+    "romaja": "yak-sok",
+    "vietnamese": "Cuộc hẹn",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "병원 - Bệnh viện"
-  },
-  {
-    "korean": "약국",
-    "romaja": "yak-guk",
-    "vietnamese": "Hiệu thuốc",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "약국 - Hiệu thuốc"
-  },
-  {
-    "korean": "의사",
-    "romaja": "ui-sa",
-    "vietnamese": "Bác sĩ",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "의사 - Bác sĩ"
-  },
-  {
-    "korean": "간호사",
-    "romaja": "gan-ho-sa",
-    "vietnamese": "Y tá / Điều dưỡng",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "간호사 - Y tá / Điều dưỡng"
-  },
-  {
-    "korean": "환자",
-    "romaja": "hwan-ja",
-    "vietnamese": "Bệnh nhân",
-    "pos": "Danh từ",
-    "topic": "health_medical",
+    "topic": "daily",
     "level": "TOPIK 2",
-    "example": "환자 - Bệnh nhân"
+    "example": "친구와 약속이 있다."
   },
   {
-    "korean": "주사",
-    "romaja": "ju-sa",
-    "vietnamese": "Mũi tiêm / Tiêm thuốc",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "주사 - Mũi tiêm / Tiêm thuốc"
-  },
-  {
-    "korean": "수술",
-    "romaja": "su-sul",
-    "vietnamese": "Phẫu thuật",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "수술 - Phẫu thuật"
-  },
-  {
-    "korean": "처방전",
-    "romaja": "cheo-bang-jeon",
-    "vietnamese": "Đơn thuốc",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "처방전 - Đơn thuốc"
-  },
-  {
-    "korean": "감기",
-    "romaja": "gam-gi",
-    "vietnamese": "Cảm cúm",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "감기 - Cảm cúm"
-  },
-  {
-    "korean": "두통",
-    "romaja": "du-tong",
-    "vietnamese": "Đau đầu",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "두통 - Đau đầu"
-  },
-  {
-    "korean": "복통",
-    "romaja": "bok-tong",
-    "vietnamese": "Đau bụng",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "복통 - Đau bụng"
-  },
-  {
-    "korean": "치통",
-    "romaja": "chi-tong",
-    "vietnamese": "Đau răng",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "치통 - Đau răng"
-  },
-  {
-    "korean": "열이 나다",
-    "romaja": "yeol-i na-da",
-    "vietnamese": "Bị sốt",
-    "pos": "Cụm từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "열이 나다 - Bị sốt"
-  },
-  {
-    "korean": "기침하다",
-    "romaja": "gi-chim-ha-da",
-    "vietnamese": "Ho",
+    "korean": "지키다",
+    "romaja": "ji-ki-da",
+    "vietnamese": "Giữ (lời hứa)",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "기침하다 - Ho"
-  },
-  {
-    "korean": "날씨",
-    "romaja": "nal-ssi",
-    "vietnamese": "Thời tiết",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "날씨 - Thời tiết"
-  },
-  {
-    "korean": "계절",
-    "romaja": "gye-jeol",
-    "vietnamese": "Mùa màng",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "계절 - Mùa màng"
-  },
-  {
-    "korean": "봄",
-    "romaja": "bom",
-    "vietnamese": "Mùa xuân",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "봄 - Mùa xuân"
-  },
-  {
-    "korean": "여름",
-    "romaja": "yeo-reum",
-    "vietnamese": "Mùa hè",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "여름 - Mùa hè"
-  },
-  {
-    "korean": "가을",
-    "romaja": "ga-eul",
-    "vietnamese": "Mùa thu",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "가을 - Mùa thu"
-  },
-  {
-    "korean": "겨울",
-    "romaja": "gyeo-ul",
-    "vietnamese": "Mùa đông",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "겨울 - Mùa đông"
-  },
-  {
-    "korean": "태풍",
-    "romaja": "tae-pung",
-    "vietnamese": "Bão lớn",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
+    "topic": "daily",
     "level": "TOPIK 2",
-    "example": "태풍 - Bão lớn"
+    "example": "약속을 지키다."
   },
   {
-    "korean": "지진",
-    "romaja": "ji-jin",
-    "vietnamese": "Động đất",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "지진 - Động đất"
-  },
-  {
-    "korean": "홍수",
-    "romaja": "hong-su",
-    "vietnamese": "Lũ lụt",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "홍수 - Lũ lụt"
-  },
-  {
-    "korean": "맑다",
-    "romaja": "mak-da",
-    "vietnamese": "Trong xanh / Quang đãng",
-    "pos": "Tính từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "맑다 - Trong xanh / Quang đãng"
-  },
-  {
-    "korean": "흐리다",
-    "romaja": "heu-ri-da",
-    "vietnamese": "U ám / Nhiều mây",
-    "pos": "Tính từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "흐리다 - U ám / Nhiều mây"
-  },
-  {
-    "korean": "따뜻하다",
-    "romaja": "tta-tteut-ha-da",
-    "vietnamese": "Ấm áp",
-    "pos": "Tính từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "따뜻하다 - Ấm áp"
-  },
-  {
-    "korean": "시원하다",
-    "romaja": "si-won-ha-da",
-    "vietnamese": "Mát mẻ",
-    "pos": "Tính từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "시원하다 - Mát mẻ"
-  },
-  {
-    "korean": "덥다",
-    "romaja": "deop-da",
-    "vietnamese": "Nóng",
-    "pos": "Tính từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "덥다 - Nóng"
-  },
-  {
-    "korean": "춥다",
-    "romaja": "chup-da",
-    "vietnamese": "Lạnh",
-    "pos": "Tính từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "춥다 - Lạnh"
-  },
-  {
-    "korean": "기쁘다",
-    "romaja": "gi-ppeu-da",
-    "vietnamese": "Vui mừng",
-    "pos": "Tính từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기쁘다 - Vui mừng"
-  },
-  {
-    "korean": "슬프다",
-    "romaja": "seul-peu-da",
-    "vietnamese": "Buồn bã",
-    "pos": "Tính từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "슬프다 - Buồn bã"
-  },
-  {
-    "korean": "행복하다",
-    "romaja": "haeng-bok-ha-da",
-    "vietnamese": "Hạnh phúc",
-    "pos": "Tính từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "행복하다 - Hạnh phúc"
-  },
-  {
-    "korean": "화나다",
-    "romaja": "hwa-na-da",
-    "vietnamese": "Tức giận",
+    "korean": "어기다",
+    "romaja": "eo-gi-da",
+    "vietnamese": "Thất hứa / Vi phạm",
     "pos": "Động từ",
-    "topic": "emotion_personality",
+    "topic": "daily",
     "level": "TOPIK 2",
-    "example": "화나다 - Tức giận"
+    "example": "규칙을 어기지 마세요."
+  },
+  {
+    "korean": "선물",
+    "romaja": "seon-mul",
+    "vietnamese": "Quà tặng",
+    "pos": "Danh từ",
+    "topic": "daily",
+    "level": "TOPIK 2",
+    "example": "생일 선물 전달."
+  },
+  {
+    "korean": "축하하다",
+    "romaja": "chuk-ha-ha-da",
+    "vietnamese": "Chúc mừng",
+    "pos": "Động từ",
+    "topic": "daily",
+    "level": "TOPIK 2",
+    "example": "합격을 축하합니다."
+  },
+  {
+    "korean": "감동하다",
+    "romaja": "gam-dong-ha-da",
+    "vietnamese": "Cảm động",
+    "pos": "Động từ",
+    "topic": "emotion",
+    "level": "TOPIK 2",
+    "example": "정말 감동했어요."
   },
   {
     "korean": "걱정하다",
     "romaja": "geok-jeong-ha-da",
     "vietnamese": "Lo lắng",
     "pos": "Động từ",
-    "topic": "emotion_personality",
+    "topic": "emotion",
     "level": "TOPIK 2",
-    "example": "걱정하다 - Lo lắng"
+    "example": "너무 걱정 마세요."
   },
   {
-    "korean": "부끄럽다",
-    "romaja": "bu-kkeu-reop-da",
-    "vietnamese": "Xấu hổ / Ngượng ngùng",
-    "pos": "Tính từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "부끄럽다 - Xấu hổ / Ngượng ngùng"
-  },
-  {
-    "korean": "부럽다",
-    "romaja": "bu-reop-da",
-    "vietnamese": "Ghen tị / Ngưỡng mộ",
-    "pos": "Tính từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "부럽다 - Ghen tị / Ngưỡng mộ"
-  },
-  {
-    "korean": "무섭다",
-    "romaja": "mu-seop-da",
-    "vietnamese": "Sợ hãi",
-    "pos": "Tính từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "무섭다 - Sợ hãi"
-  },
-  {
-    "korean": "놀라다",
-    "romaja": "nol-ra-da",
-    "vietnamese": "Kinh ngạc / Giật mình",
+    "korean": "기뻐하다",
+    "romaja": "gi-ppeo-ha-da",
+    "vietnamese": "Vui mừng",
     "pos": "Động từ",
-    "topic": "emotion_personality",
+    "topic": "emotion",
     "level": "TOPIK 2",
-    "example": "놀라다 - Kinh ngạc / Giật mình"
+    "example": "모두 기뻐했습니다."
   },
   {
-    "korean": "외롭다",
-    "romaja": "oe-rop-da",
-    "vietnamese": "Cô đơn",
-    "pos": "Tính từ",
-    "topic": "emotion_personality",
+    "korean": "슬퍼하다",
+    "romaja": "seul-peo-ha-da",
+    "vietnamese": "Buồn bã",
+    "pos": "Động từ",
+    "topic": "emotion",
     "level": "TOPIK 2",
-    "example": "외롭다 - Cô đơn"
+    "example": "슬퍼하지 마세요."
+  },
+  {
+    "korean": "화나다",
+    "romaja": "hwa-na-da",
+    "vietnamese": "Tức giận",
+    "pos": "Động từ",
+    "topic": "emotion",
+    "level": "TOPIK 2",
+    "example": "갑자기 화가 났다."
   },
   {
     "korean": "친절하다",
     "romaja": "chin-jeol-ha-da",
     "vietnamese": "Thân thiện",
     "pos": "Tính từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "친절하다 - Thân thiện"
-  },
-  {
-    "korean": "솔직하다",
-    "romaja": "sol-jik-ha-da",
-    "vietnamese": "Thành thật",
-    "pos": "Tính từ",
-    "topic": "emotion_personality",
+    "topic": "personality",
     "level": "TOPIK 2",
-    "example": "솔직하다 - Thành thật"
+    "example": "친절한 안내원."
   },
   {
     "korean": "성실하다",
     "romaja": "seong-sil-ha-da",
-    "vietnamese": "Cần cù / Chăm chỉ",
+    "vietnamese": "Cần cù",
     "pos": "Tính từ",
-    "topic": "emotion_personality",
+    "topic": "personality",
     "level": "TOPIK 2",
-    "example": "성실하다 - Cần cù / Chăm chỉ"
+    "example": "성실한 태도."
   },
   {
     "korean": "게으르다",
     "romaja": "ge-eu-reu-da",
     "vietnamese": "Lười biếng",
     "pos": "Tính từ",
-    "topic": "emotion_personality",
+    "topic": "personality",
     "level": "TOPIK 2",
-    "example": "게으르다 - Lười biếng"
+    "example": "게으르면 안 된다."
   },
   {
-    "korean": "컴퓨터",
-    "romaja": "keom-pyu-teo",
-    "vietnamese": "Máy tính",
+    "korean": "건강하다",
+    "romaja": "geon-gang-ha-da",
+    "vietnamese": "Khỏe mạnh",
+    "pos": "Tính từ",
+    "topic": "health",
+    "level": "TOPIK 2",
+    "example": "건강한 삶."
+  },
+  {
+    "korean": "피곤하다",
+    "romaja": "pi-gon-ha-da",
+    "vietnamese": "Mệt mỏi",
+    "pos": "Tính từ",
+    "topic": "health",
+    "level": "TOPIK 2",
+    "example": "피곤해서 쉬고 싶어요."
+  },
+  {
+    "korean": "위험하다",
+    "romaja": "wi-heom-ha-da",
+    "vietnamese": "Nguy hiểm",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "위험한 지역."
+  },
+  {
+    "korean": "안전하다",
+    "romaja": "an-jeon-ha-da",
+    "vietnamese": "An toàn",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "안전한 운전."
+  },
+  {
+    "korean": "복잡하다",
+    "romaja": "bok-jap-ha-da",
+    "vietnamese": "Phức tạp / Phức hợp",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "도로가 복잡하다."
+  },
+  {
+    "korean": "단순하다",
+    "romaja": "dan-sun-ha-da",
+    "vietnamese": "Đơn giản",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "단순한 디자인."
+  },
+  {
+    "korean": "깨끗하다",
+    "romaja": "kkae-kkeut-ha-da",
+    "vietnamese": "Sạch sẽ",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "깨끗한 환경."
+  },
+  {
+    "korean": "더럽다",
+    "romaja": "deo-reop-da",
+    "vietnamese": "Bẩn thỉu",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "방이 더럽네요."
+  },
+  {
+    "korean": "조용하다",
+    "romaja": "jo-yong-ha-da",
+    "vietnamese": "Yên tĩnh",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "조용한 도서관."
+  },
+  {
+    "korean": "시끄럽다",
+    "romaja": "si-kkeu-reop-da",
+    "vietnamese": "Ồn ào",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "밖이 시끄럽다."
+  },
+  {
+    "korean": "편리하다",
+    "romaja": "pyeon-ri-ha-da",
+    "vietnamese": "Tiện lợi",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "교통이 편리하다."
+  },
+  {
+    "korean": "불편하다",
+    "romaja": "bul-pyeon-ha-da",
+    "vietnamese": "Bất tiện",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "불편을 드려 죄송합니다."
+  },
+  {
+    "korean": "중요하다",
+    "romaja": "jung-yo-ha-da",
+    "vietnamese": "Quan trọng",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "중요한 결정."
+  },
+  {
+    "korean": "필요하다",
+    "romaja": "pil-yo-ha-da",
+    "vietnamese": "Cần thiết",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "도움이 필요하다."
+  },
+  {
+    "korean": "충분하다",
+    "romaja": "chung-bun-ha-da",
+    "vietnamese": "Đầy đủ",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "충분한 휴식."
+  },
+  {
+    "korean": "부족하다",
+    "romaja": "bu-jok-ha-da",
+    "vietnamese": "Thiếu sót",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "경험이 부족하다."
+  },
+  {
+    "korean": "가능하다",
+    "romaja": "ga-neung-ha-da",
+    "vietnamese": "Có thể",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "신청이 가능합니다."
+  },
+  {
+    "korean": "불가능하다",
+    "romaja": "bul-ga-neung-ha-da",
+    "vietnamese": "Không thể",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "불가능한 목표."
+  },
+  {
+    "korean": "비슷하다",
+    "romaja": "bi-seut-ha-da",
+    "vietnamese": "Tương tự",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "생각이 비슷하다."
+  },
+  {
+    "korean": "다르다",
+    "romaja": "da-reu-da",
+    "vietnamese": "Khác biệt",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "Kịch bản hoàn toàn khác."
+  },
+  {
+    "korean": "같다",
+    "romaja": "gat-da",
+    "vietnamese": "Giống nhau",
+    "pos": "Tính từ",
+    "topic": "state",
+    "level": "TOPIK 2",
+    "example": "마음이 같다."
+  },
+  {
+    "korean": "모두",
+    "romaja": "mo-du",
+    "vietnamese": "Tất cả",
+    "pos": "Phó từ",
+    "topic": "quantity",
+    "level": "TOPIK 2",
+    "example": "모두 참석하세요."
+  },
+  {
+    "korean": "전부",
+    "romaja": "jeon-bu",
+    "vietnamese": "Toàn bộ",
+    "pos": "Phó từ",
+    "topic": "quantity",
+    "level": "TOPIK 2",
+    "example": "전부 다 팔렸다."
+  },
+  {
+    "korean": "자주",
+    "romaja": "ja-ju",
+    "vietnamese": "Thường xuyên",
+    "pos": "Phó từ",
+    "topic": "frequency",
+    "level": "TOPIK 2",
+    "example": "자주 놀러 오세요."
+  },
+  {
+    "korean": "가끔",
+    "romaja": "ga-kkeum",
+    "vietnamese": "Thỉnh thoảng",
+    "pos": "Phó từ",
+    "topic": "frequency",
+    "level": "TOPIK 2",
+    "example": "가끔 산책을 해요."
+  },
+  {
+    "korean": "항상",
+    "romaja": "hang-sang",
+    "vietnamese": "Luôn luôn",
+    "pos": "Phó từ",
+    "topic": "frequency",
+    "level": "TOPIK 2",
+    "example": "항상 밝은 미소."
+  },
+  {
+    "korean": "절대",
+    "romaja": "jeol-dae",
+    "vietnamese": "Tuyệt đối",
+    "pos": "Phó từ",
+    "topic": "emphasis",
+    "level": "TOPIK 2",
+    "example": "절대 포기하지 마."
+  },
+  {
+    "korean": "매우",
+    "romaja": "mae-u",
+    "vietnamese": "Rất",
+    "pos": "Phó từ",
+    "topic": "emphasis",
+    "level": "TOPIK 2",
+    "example": "매우 중요한 사실."
+  },
+  {
+    "korean": "진짜",
+    "romaja": "jin-jja",
+    "vietnamese": "Thật sự",
+    "pos": "Phó từ",
+    "topic": "emphasis",
+    "level": "TOPIK 2",
+    "example": "진짜 맛있어요."
+  },
+  {
+    "korean": "갑자기",
+    "romaja": "gap-ja-gi",
+    "vietnamese": "Đột nhiên",
+    "pos": "Phó từ",
+    "topic": "time",
+    "level": "TOPIK 2",
+    "example": "갑자기 비가 내렸다."
+  },
+  {
+    "korean": "미리",
+    "romaja": "mi-ri",
+    "vietnamese": "Trước",
+    "pos": "Phó từ",
+    "topic": "time",
+    "level": "TOPIK 2",
+    "example": "미리 예매하세요."
+  },
+  {
+    "korean": "벌써",
+    "romaja": "beol-sseo",
+    "vietnamese": "Đã... rồi",
+    "pos": "Phó từ",
+    "topic": "time",
+    "level": "TOPIK 2",
+    "example": "벌써 12시네요."
+  },
+  {
+    "korean": "드디어",
+    "romaja": "deu-di-eo",
+    "vietnamese": "Cuối cùng thì",
+    "pos": "Phó từ",
+    "topic": "time",
+    "level": "TOPIK 2",
+    "example": "드디어 목표 달성."
+  },
+  {
+    "korean": "아직",
+    "romaja": "a-jik",
+    "vietnamese": "Vẫn chưa",
+    "pos": "Phó từ",
+    "topic": "time",
+    "level": "TOPIK 2",
+    "example": "아직 준비 중."
+  },
+  {
+    "korean": "다시",
+    "romaja": "da-si",
+    "vietnamese": "Lại / Lần nữa",
+    "pos": "Phó từ",
+    "topic": "action",
+    "level": "TOPIK 2",
+    "example": "다시 확인하세요."
+  },
+  {
+    "korean": "함께",
+    "romaja": "ham-kke",
+    "vietnamese": "Cùng nhau",
+    "pos": "Phó từ",
+    "topic": "action",
+    "level": "TOPIK 2",
+    "example": "다 함께 노래해요."
+  },
+  {
+    "korean": "혼자",
+    "romaja": "hon-ja",
+    "vietnamese": "Một mình",
+    "pos": "Phó từ",
+    "topic": "action",
+    "level": "TOPIK 2",
+    "example": "혼자 여행을 가다."
+  },
+  {
+    "korean": "경험",
+    "romaja": "gyeong-heom",
+    "vietnamese": "Kinh nghiệm",
     "pos": "Danh từ",
-    "topic": "tech_media",
-    "level": "TOPIK 1",
-    "example": "컴퓨터 - Máy tính"
+    "topic": "society",
+    "level": "TOPIK 3",
+    "example": "풍부한 경험을 쌓다."
   },
   {
-    "korean": "노트북",
-    "romaja": "no-teu-buk",
-    "vietnamese": "Máy tính xách tay (Laptop)",
+    "korean": "지식",
+    "romaja": "ji-sik",
+    "vietnamese": "Kiến thức",
     "pos": "Danh từ",
-    "topic": "tech_media",
-    "level": "TOPIK 1",
-    "example": "노트북 - Máy tính xách tay (Laptop)"
+    "topic": "education",
+    "level": "TOPIK 3",
+    "example": "전문 지식을 습득."
   },
   {
-    "korean": "스마트폰",
-    "romaja": "seu-ma-teu-pon",
-    "vietnamese": "Điện thoại thông minh",
+    "korean": "정보",
+    "romaja": "jeong-bo",
+    "vietnamese": "Thông tin",
     "pos": "Danh từ",
-    "topic": "tech_media",
-    "level": "TOPIK 1",
-    "example": "스마트폰 - Điện thoại thông minh"
+    "topic": "tech",
+    "level": "TOPIK 3",
+    "example": "유용한 정보 공유."
   },
   {
-    "korean": "인터넷",
-    "romaja": "in-teo-net",
-    "vietnamese": "Mạng Internet",
+    "korean": "기술",
+    "romaja": "gi-sul",
+    "vietnamese": "Kỹ thuật / Công nghệ",
     "pos": "Danh từ",
-    "topic": "tech_media",
-    "level": "TOPIK 1",
-    "example": "인터넷 - Mạng Internet"
+    "topic": "tech",
+    "level": "TOPIK 3",
+    "example": "최첨단 기술 개발."
   },
   {
-    "korean": "웹사이트",
-    "romaja": "wep-sa-i-teu",
-    "vietnamese": "Trang web (Website)",
+    "korean": "환경",
+    "romaja": "hwan-gyeong",
+    "vietnamese": "Môi trường",
     "pos": "Danh từ",
-    "topic": "tech_media",
-    "level": "TOPIK 1",
-    "example": "웹사이트 - Trang web (Website)"
+    "topic": "nature",
+    "level": "TOPIK 3",
+    "example": "자연 환경 보호."
   },
   {
-    "korean": "이메일",
-    "romaja": "i-me-il",
-    "vietnamese": "Thư điện tử (Email)",
+    "korean": "사회",
+    "romaja": "sa-hoe",
+    "vietnamese": "Xã hội",
     "pos": "Danh từ",
-    "topic": "tech_media",
-    "level": "TOPIK 1",
-    "example": "이메일 - Thư điện tử (Email)"
+    "topic": "society",
+    "level": "TOPIK 3",
+    "example": "현대 사회의 문제."
   },
   {
-    "korean": "비밀번호",
-    "romaja": "bi-mil-beon-ho",
-    "vietnamese": "Mật khẩu (Password)",
+    "korean": "문화",
+    "romaja": "mun-hwa",
+    "vietnamese": "Văn hóa",
     "pos": "Danh từ",
-    "topic": "tech_media",
-    "level": "TOPIK 1",
-    "example": "비밀번호 - Mật khẩu (Password)"
+    "topic": "culture",
+    "level": "TOPIK 3",
+    "example": "한국 문화 체험."
   },
   {
-    "korean": "검색하다",
-    "romaja": "geom-saek-ha-da",
-    "vietnamese": "Tìm kiếm trên mạng",
+    "korean": "전통",
+    "romaja": "jeon-tong",
+    "vietnamese": "Truyền thống",
+    "pos": "Danh từ",
+    "topic": "culture",
+    "level": "TOPIK 3",
+    "example": "전통 예절 준수."
+  },
+  {
+    "korean": "경제",
+    "romaja": "gyeong-je",
+    "vietnamese": "Kinh tế",
+    "pos": "Danh từ",
+    "topic": "economy",
+    "level": "TOPIK 3",
+    "example": "세계 경제 발전."
+  },
+  {
+    "korean": "정치",
+    "romaja": "jeong-chi",
+    "vietnamese": "Chính trị",
+    "pos": "Danh từ",
+    "topic": "politics",
+    "level": "TOPIK 3",
+    "example": "국제 정치 뉴스."
+  },
+  {
+    "korean": "법률",
+    "romaja": "beop-ryul",
+    "vietnamese": "Pháp luật",
+    "pos": "Danh từ",
+    "topic": "law",
+    "level": "TOPIK 3",
+    "example": "법률 상담 받기."
+  },
+  {
+    "korean": "교육",
+    "romaja": "gyo-yuk",
+    "vietnamese": "Giáo dục",
+    "pos": "Danh từ",
+    "topic": "education",
+    "level": "TOPIK 3",
+    "example": "공교육 강화."
+  },
+  {
+    "korean": "연구",
+    "romaja": "yeon-gu",
+    "vietnamese": "Nghiên cứu",
+    "pos": "Danh từ",
+    "topic": "education",
+    "level": "TOPIK 3",
+    "example": "학술 연구 수행."
+  },
+  {
+    "korean": "학자",
+    "romaja": "hak-ja",
+    "vietnamese": "Học giả",
+    "pos": "Danh từ",
+    "topic": "education",
+    "level": "TOPIK 3",
+    "example": "유명한 경제 학자."
+  },
+  {
+    "korean": "전문가",
+    "romaja": "jeon-mun-ga",
+    "vietnamese": "Chuyên gia",
+    "pos": "Danh từ",
+    "topic": "work",
+    "level": "TOPIK 3",
+    "example": "전문가의 조언."
+  },
+  {
+    "korean": "관리",
+    "romaja": "gwan-ri",
+    "vietnamese": "Quản lý",
+    "pos": "Danh từ",
+    "topic": "work",
+    "level": "TOPIK 3",
+    "example": "자산 관리 비법."
+  },
+  {
+    "korean": "경영",
+    "romaja": "gyeong-yeong",
+    "vietnamese": "Kinh doanh / Quản trị",
+    "pos": "Danh từ",
+    "topic": "work",
+    "level": "TOPIK 3",
+    "example": "기업 경영 전략."
+  },
+  {
+    "korean": "투자",
+    "romaja": "tu-ja",
+    "vietnamese": "Đầu tư",
+    "pos": "Danh từ",
+    "topic": "economy",
+    "level": "TOPIK 3",
+    "example": "주식 시장 투자."
+  },
+  {
+    "korean": "소비자",
+    "romaja": "so-bi-ja",
+    "vietnamese": "Người tiêu dùng",
+    "pos": "Danh từ",
+    "topic": "economy",
+    "level": "TOPIK 3",
+    "example": "소비자 권리 보호."
+  },
+  {
+    "korean": "생산자",
+    "romaja": "saeng-san-ja",
+    "vietnamese": "Nhà sản xuất",
+    "pos": "Danh từ",
+    "topic": "economy",
+    "level": "TOPIK 3",
+    "example": "생산자 직거래."
+  },
+  {
+    "korean": "무역",
+    "romaja": "mu-yeok",
+    "vietnamese": "Thương mại / Mậu dịch",
+    "pos": "Danh từ",
+    "topic": "economy",
+    "level": "TOPIK 3",
+    "example": "국제 무역 확대."
+  },
+  {
+    "korean": "수출",
+    "romaja": "su-chul",
+    "vietnamese": "Xuất khẩu",
+    "pos": "Danh từ",
+    "topic": "economy",
+    "level": "TOPIK 3",
+    "example": "자동차 수출 증가."
+  },
+  {
+    "korean": "수입",
+    "romaja": "su-ip",
+    "vietnamese": "Nhập khẩu",
+    "pos": "Danh từ",
+    "topic": "economy",
+    "level": "TOPIK 3",
+    "example": "원자재 수입 과다."
+  },
+  {
+    "korean": "가격 상승",
+    "romaja": "ga-gyeok sang-seung",
+    "vietnamese": "Tăng giá",
+    "pos": "Cụm từ",
+    "topic": "economy",
+    "level": "TOPIK 3",
+    "example": "물가 상승 부담."
+  },
+  {
+    "korean": "하락하다",
+    "romaja": "ha-rak-ha-da",
+    "vietnamese": "Sụt giảm",
     "pos": "Động từ",
-    "topic": "tech_media",
-    "level": "TOPIK 2",
-    "example": "검색하다 - Tìm kiếm trên mạng"
+    "topic": "economy",
+    "level": "TOPIK 3",
+    "example": "주가가 하락했다."
   },
   {
-    "korean": "다운로드",
-    "romaja": "da-un-ro-deu",
-    "vietnamese": "Tải về (Download)",
+    "korean": "성장하다",
+    "romaja": "seong-jang-ha-da",
+    "vietnamese": "Tăng trưởng",
+    "pos": "Động từ",
+    "topic": "economy",
+    "level": "TOPIK 3",
+    "example": "기업이 고속 성장."
+  },
+  {
+    "korean": "발전하다",
+    "romaja": "bal-jeon-ha-da",
+    "vietnamese": "Phát triển",
+    "pos": "Động từ",
+    "topic": "society",
+    "level": "TOPIK 3",
+    "example": "과학 기술 발전."
+  },
+  {
+    "korean": "변화하다",
+    "romaja": "byeon-hwa-ha-da",
+    "vietnamese": "Thay đổi",
+    "pos": "Động từ",
+    "topic": "society",
+    "level": "TOPIK 3",
+    "example": "시대가 급격히 변화."
+  },
+  {
+    "korean": "개선하다",
+    "romaja": "gae-seon-ha-da",
+    "vietnamese": "Cải thiện",
+    "pos": "Động từ",
+    "topic": "society",
+    "level": "TOPIK 3",
+    "example": "제도를 개선하다."
+  },
+  {
+    "korean": "해결하다",
+    "romaja": "hae-gyeol-ha-da",
+    "vietnamese": "Giải quyết",
+    "pos": "Động từ",
+    "topic": "society",
+    "level": "TOPIK 3",
+    "example": "갈등을 해결하다."
+  },
+  {
+    "korean": "제안하다",
+    "romaja": "je-an-ha-da",
+    "vietnamese": "Đề xuất",
+    "pos": "Động từ",
+    "topic": "work",
+    "level": "TOPIK 3",
+    "example": "새 기획을 제안."
+  },
+  {
+    "korean": "동의하다",
+    "romaja": "dong-ui-ha-da",
+    "vietnamese": "Đồng ý",
+    "pos": "Động từ",
+    "topic": "work",
+    "level": "TOPIK 3",
+    "example": "의견에 동의합니다."
+  },
+  {
+    "korean": "반대하다",
+    "romaja": "ban-dae-ha-da",
+    "vietnamese": "Phản đối",
+    "pos": "Động từ",
+    "topic": "work",
+    "level": "TOPIK 3",
+    "example": "안건에 반대하다."
+  },
+  {
+    "korean": "주장하다",
+    "romaja": "ju-jang-ha-da",
+    "vietnamese": "Chủ trương / Khẳng định",
+    "pos": "Động từ",
+    "topic": "work",
+    "level": "TOPIK 3",
+    "example": "권리를 주장하다."
+  },
+  {
+    "korean": "설명하다",
+    "romaja": "seol-myeong-ha-da",
+    "vietnamese": "Giải thích",
+    "pos": "Động từ",
+    "topic": "education",
+    "level": "TOPIK 3",
+    "example": "이유를 설명하다."
+  },
+  {
+    "korean": "증명하다",
+    "romaja": "jeung-myeong-ha-da",
+    "vietnamese": "Chứng minh",
+    "pos": "Động từ",
+    "topic": "education",
+    "level": "TOPIK 3",
+    "example": "사실을 증명하다."
+  },
+  {
+    "korean": "분석하다",
+    "romaja": "bun-seok-ha-da",
+    "vietnamese": "Phân tích",
+    "pos": "Động từ",
+    "topic": "education",
+    "level": "TOPIK 3",
+    "example": "데이터 분석 결과."
+  },
+  {
+    "korean": "비교하다",
+    "romaja": "bi-gyo-ha-da",
+    "vietnamese": "So sánh",
+    "pos": "Động từ",
+    "topic": "education",
+    "level": "TOPIK 3",
+    "example": "두 제품을 비교."
+  },
+  {
+    "korean": "평가하다",
+    "romaja": "pyeong-ga-ha-da",
+    "vietnamese": "Đánh giá",
+    "pos": "Động từ",
+    "topic": "education",
+    "level": "TOPIK 3",
+    "example": "성과를 평가하다."
+  },
+  {
+    "korean": "선택하다",
+    "romaja": "seon-taek-ha-da",
+    "vietnamese": "Lựa chọn",
+    "pos": "Động từ",
+    "topic": "daily",
+    "level": "TOPIK 3",
+    "example": "진로를 선택하다."
+  },
+  {
+    "korean": "결정하다",
+    "romaja": "gyeol-jeong-ha-da",
+    "vietnamese": "Quyết định",
+    "pos": "Động từ",
+    "topic": "daily",
+    "level": "TOPIK 3",
+    "example": "최종 결정하다."
+  },
+  {
+    "korean": "포기하다",
+    "romaja": "po-gi-ha-da",
+    "vietnamese": "Từ bỏ",
+    "pos": "Động từ",
+    "topic": "daily",
+    "level": "TOPIK 3",
+    "example": "절대 포기하지 마."
+  },
+  {
+    "korean": "극복하다",
+    "romaja": "geuk-bok-ha-da",
+    "vietnamese": "Vượt qua",
+    "pos": "Động từ",
+    "topic": "daily",
+    "level": "TOPIK 3",
+    "example": "위기를 극복하다."
+  },
+  {
+    "korean": "달성하다",
+    "romaja": "dal-seong-ha-da",
+    "vietnamese": "Đạt được",
+    "pos": "Động từ",
+    "topic": "work",
+    "level": "TOPIK 3",
+    "example": "목표를 달성했다."
+  },
+  {
+    "korean": "성공하다",
+    "romaja": "seong-gong-ha-da",
+    "vietnamese": "Thành công",
+    "pos": "Động từ",
+    "topic": "work",
+    "level": "TOPIK 3",
+    "example": "사업에 성공하다."
+  },
+  {
+    "korean": "실패하다",
+    "romaja": "sil-pae-ha-da",
+    "vietnamese": "Thất bại",
+    "pos": "Động từ",
+    "topic": "work",
+    "level": "TOPIK 3",
+    "example": "실패는 성공의 어머니."
+  },
+  {
+    "korean": "영향을 미치다",
+    "romaja": "yeong-hyang-eul mi-chi-da",
+    "vietnamese": "Gây ảnh hưởng",
+    "pos": "Cụm từ",
+    "topic": "society",
+    "level": "TOPIK 3",
+    "example": "사회에 큰 영향을 미치다."
+  },
+  {
+    "korean": "관심을 갖다",
+    "romaja": "gwan-sim-eul gat-da",
+    "vietnamese": "Quan tâm đến",
+    "pos": "Cụm từ",
+    "topic": "society",
+    "level": "TOPIK 3",
+    "example": "환경 문제에 관심을 갖다."
+  },
+  {
+    "korean": "참여하다",
+    "romaja": "cham-yeo-ha-da",
+    "vietnamese": "Tham gia",
+    "pos": "Động từ",
+    "topic": "society",
+    "level": "TOPIK 3",
+    "example": "봉사활동에 참여."
+  },
+  {
+    "korean": "협력하다",
+    "romaja": "hyeop-ryeok-ha-da",
+    "vietnamese": "Hợp tác",
+    "pos": "Động từ",
+    "topic": "society",
+    "level": "TOPIK 3",
+    "example": "양국 간 협력."
+  },
+  {
+    "korean": "기회",
+    "romaja": "gi-hoe",
+    "vietnamese": "Cơ hội",
+    "pos": "Danh từ",
+    "topic": "life",
+    "level": "TOPIK 3",
+    "example": "좋은 기회를 잡다."
+  },
+  {
+    "korean": "가능성",
+    "romaja": "ga-neung-seong",
+    "vietnamese": "Khả năng",
+    "pos": "Danh từ",
+    "topic": "life",
+    "level": "TOPIK 3",
+    "example": "성공 가능성 높아."
+  },
+  {
+    "korean": "위기",
+    "romaja": "wi-gi",
+    "vietnamese": "Khủng hoảng",
+    "pos": "Danh từ",
+    "topic": "life",
+    "level": "TOPIK 3",
+    "example": "경제 위기 극복."
+  },
+  {
+    "korean": "원인",
+    "romaja": "won-in",
+    "vietnamese": "Nguyên nhân",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "사고의 원인 규명."
+  },
+  {
+    "korean": "결과",
+    "romaja": "gyeol-gwa",
+    "vietnamese": "Kết quả",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "좋은 결과를 얻다."
+  },
+  {
+    "korean": "목적",
+    "romaja": "mok-jeok",
+    "vietnamese": "Mục đích",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "방문의 목적."
+  },
+  {
+    "korean": "이유",
+    "romaja": "i-yu",
+    "vietnamese": "Lý do",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "지각한 이유."
+  },
+  {
+    "korean": "차이",
+    "romaja": "cha-i",
+    "vietnamese": "Sự chênh lệch / Khác biệt",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "문화적 차이."
+  },
+  {
+    "korean": "공통점",
+    "romaja": "gong-tong-jeom",
+    "vietnamese": "Điểm chung",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "두 사람의 공통점."
+  },
+  {
+    "korean": "차이점",
+    "romaja": "cha-i-jeom",
+    "vietnamese": "Điểm khác nhau",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "의견의 차이점."
+  },
+  {
+    "korean": "장점",
+    "romaja": "jang-jeom",
+    "vietnamese": "Ưu điểm",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "제품의 장점."
+  },
+  {
+    "korean": "단점",
+    "romaja": "dan-jeom",
+    "vietnamese": "Nhược điểm",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "단점을 보완하다."
+  },
+  {
+    "korean": "문제점",
+    "romaja": "mun-je-jeom",
+    "vietnamese": "Vấn đề tồn đọng",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "제도의 문제점 지적."
+  },
+  {
+    "korean": "해결책",
+    "romaja": "hae-gyeol-chaek",
+    "vietnamese": "Giải pháp",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "근본적인 해결책."
+  },
+  {
+    "korean": "대책",
+    "romaja": "dae-chaek",
+    "vietnamese": "Đối sách",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "안전 대책 마련."
+  },
+  {
+    "korean": "방안",
+    "romaja": "bang-an",
+    "vietnamese": "Phương án",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "구체적인 방안 제시."
+  },
+  {
+    "korean": "조건",
+    "romaja": "jo-geon",
+    "vietnamese": "Điều kiện",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "계약 조건 확인."
+  },
+  {
+    "korean": "기준",
+    "romaja": "gi-jun",
+    "vietnamese": "Tiêu chuẩn",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "평가 기준 명시."
+  },
+  {
+    "korean": "상황",
+    "romaja": "sang-hwang",
+    "vietnamese": "Tình huống",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "긴급한 상황."
+  },
+  {
+    "korean": "상태",
+    "romaja": "sang-tae",
+    "vietnamese": "Trạng thái",
+    "pos": "Danh từ",
+    "topic": "logic",
+    "level": "TOPIK 3",
+    "example": "최상의 건강 상태."
+  },
+  {
+    "korean": "금융",
+    "romaja": "geum-yung",
+    "vietnamese": "Tài chính",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "금융 시장의 변동성이 확대되고 있다."
+  },
+  {
+    "korean": "자산",
+    "romaja": "ja-san",
+    "vietnamese": "Tài sản",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "안전 자산 선호 현상."
+  },
+  {
+    "korean": "부채",
+    "romaja": "bu-chae",
+    "vietnamese": "Nợ nần / Nợ phải trả",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "가계 부채 증가는 경제의 큰 부담이다."
+  },
+  {
+    "korean": "인플레이션",
+    "romaja": "in-peul-re-i-syeon",
+    "vietnamese": "Lạm phát",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "인플레이션 압력이 지속되고 있다."
+  },
+  {
+    "korean": "디플레이션",
+    "romaja": "di-peul-re-i-syeon",
+    "vietnamese": "Giảm phát",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "디플레이션 우려로 경기 침체 가능성 우려."
+  },
+  {
+    "korean": "금리",
+    "romaja": "geum-ri",
+    "vietnamese": "Lãi suất",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "기준 금리 인상 조치."
+  },
+  {
+    "korean": "환율",
+    "romaja": "hwan-yul",
+    "vietnamese": "Tỷ giá hối đoái",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "환율 변동에 따른 수출 기업 영향."
+  },
+  {
+    "korean": "주식",
+    "romaja": "ju-sik",
+    "vietnamese": "Cổ phiếu",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "주식 투자는 위험성이 동반된다."
+  },
+  {
+    "korean": "채권",
+    "romaja": "chaek-won",
+    "vietnamese": "Trái phiếu",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "국채 발행을 통한 자금 조달."
+  },
+  {
+    "korean": "자본주의",
+    "romaja": "ja-bon-ju-ui",
+    "vietnamese": "Chủ nghĩa tư bản",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "자본주의 사회의 빈부 격차 문제."
+  },
+  {
+    "korean": "소득 불평등",
+    "romaja": "so-deuk bul-pyeong-deung",
+    "vietnamese": "Bất bình đẳng thu nhập",
+    "pos": "Cụm từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "양극화와 소득 불평등 완화 대책."
+  },
+  {
+    "korean": "부동산",
+    "romaja": "bu-dong-san",
+    "vietnamese": "Bất động sản",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "부동산 가격 안정을 위한 정책."
+  },
+  {
+    "korean": "투기",
+    "romaja": "tu-gi",
+    "vietnamese": "Đầu cơ",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "부동산 투기 세력 단속."
+  },
+  {
+    "korean": "세금",
+    "romaja": "se-geum",
+    "vietnamese": "Thuế",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "정직하게 세금을 납부해야 한다."
+  },
+  {
+    "korean": "조세",
+    "romaja": "jo-se",
+    "vietnamese": "Thuế khóa / Thuế vụ",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "조세 제도의 형평성을 재고하다."
+  },
+  {
+    "korean": "예산",
+    "romaja": "ye-san",
+    "vietnamese": "Ngân sách",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "국가 예산 편성안 심의."
+  },
+  {
+    "korean": "적자",
+    "romaja": "jeok-ja",
+    "vietnamese": "Thâm hụt (Thâm hụt ngân sách)",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "재정 적자 폭이 크게 늘어났다."
+  },
+  {
+    "korean": "흑자",
+    "romaja": "heuk-ja",
+    "vietnamese": "Thặng dư (Có lãi)",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "무역 수지 흑자 전환."
+  },
+  {
+    "korean": "규제",
+    "romaja": "gyu-je",
+    "vietnamese": "Quy định / Ràng buộc pháp lý",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "불필요한 규제를 완화해야 한다."
+  },
+  {
+    "korean": "완화하다",
+    "romaja": "wan-hwa-ha-da",
+    "vietnamese": "Nới lỏng / Giảm bớt",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "긴장 상태를 완화하다."
+  },
+  {
+    "korean": "철폐하다",
+    "romaja": "cheol-pye-ha-da",
+    "vietnamese": "Bãi bỏ / Đập tan",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "부당한 제도를 철폐하다."
+  },
+  {
+    "korean": "독점",
+    "romaja": "dok-jeom",
+    "vietnamese": "Độc quyền",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "시장 독점 행위를 규제하다."
+  },
+  {
+    "korean": "담합",
+    "romaja": "dam-hap",
+    "vietnamese": "Thông đồng giá",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "가격 담합 적발 시 엄벌."
+  },
+  {
+    "korean": "경쟁력",
+    "romaja": "gyeong-jaeng-ryeok",
+    "vietnamese": "Năng lực cạnh tranh",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "국제 경쟁력을 강화하다."
+  },
+  {
+    "korean": "혁신",
+    "romaja": "hyeok-sin",
+    "vietnamese": "Đổi mới sáng tạo",
     "pos": "Danh từ",
     "topic": "tech_media",
-    "level": "TOPIK 1",
-    "example": "다운로드 - Tải về (Download)"
+    "level": "TOPIK 4",
+    "example": "기술 혁신을 통한 성장."
+  },
+  {
+    "korean": "구조조정",
+    "romaja": "gu-jo-jo-jeong",
+    "vietnamese": "Tái cơ cấu",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "기업의 구조조정이 진행 중이다."
+  },
+  {
+    "korean": "파산",
+    "romaja": "pa-san",
+    "vietnamese": "Phá sản",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "부도 및 파산 신청."
+  },
+  {
+    "korean": "M&A",
+    "romaja": "m-and-a",
+    "vietnamese": "Mua bán và sáp nhập (M&A)",
+    "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "적대적 M&A 방어."
+  },
+  {
+    "korean": "민영화",
+    "romaja": "min-yeong-hwa",
+    "vietnamese": "Tư nhân hóa",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "공기업 민영화 논란."
+  },
+  {
+    "korean": "국유화",
+    "romaja": "guk-yu-hwa",
+    "vietnamese": "Quốc hữu hóa",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "핵심 산업의 국유화 추진."
+  },
+  {
+    "korean": "헌법",
+    "romaja": "heon-beop",
+    "vietnamese": "Hiến pháp",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "헌법 정신에 부합하는 판결."
+  },
+  {
+    "korean": "사법부",
+    "romaja": "sa-beop-bu",
+    "vietnamese": "Nội bộ Tư pháp",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "사법부의 독립성 보장."
+  },
+  {
+    "korean": "입법부",
+    "romaja": "ip-beop-bu",
+    "vietnamese": "Cơ quan Lập pháp (Quốc hội)",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "입법부의 법안 가결."
+  },
+  {
+    "korean": "행정부",
+    "romaja": "haeng-jeong-bu",
+    "vietnamese": "Cơ quan Hành pháp (Chính phủ)",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "행정부의 정책 집행."
+  },
+  {
+    "korean": "위헌",
+    "romaja": "wi-heon",
+    "vietnamese": "Vi hiến (Trái hiến pháp)",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "헌법재판소의 위헌 결정."
+  },
+  {
+    "korean": "합헌",
+    "romaja": "hap-heon",
+    "vietnamese": "Hợp hiến",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "해당 법률은 합헌으로 판정."
+  },
+  {
+    "korean": "재판",
+    "romaja": "jae-pan",
+    "vietnamese": "Phiên tòa xét xử",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "공정한 재판을 받을 권리."
+  },
+  {
+    "korean": "원고",
+    "romaja": "won-go",
+    "vietnamese": "Nguyên đơn (Bên kiện)",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "원고 측의 승소 판결."
+  },
+  {
+    "korean": "피고",
+    "romaja": "pi-go",
+    "vietnamese": "Bị đơn (Bên bị kiện)",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "피고에게 무죄를 선고하다."
+  },
+  {
+    "korean": "검사",
+    "romaja": "geom-sa",
+    "vietnamese": "Kiểm sát viên / Công tố viên",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "검사가 형량을 구형하다."
+  },
+  {
+    "korean": "변호사",
+    "romaja": "byeon-ho-sa",
+    "vietnamese": "Luật sư",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "변호사의 조력을 받다."
+  },
+  {
+    "korean": "판사",
+    "romaja": "pan-sa",
+    "vietnamese": "Thẩm phán",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "판사가 판결문을 낭독하다."
+  },
+  {
+    "korean": "증거",
+    "romaja": "jeung-geo",
+    "vietnamese": "Bằng chứng",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "명백한 증거를 확보하다."
+  },
+  {
+    "korean": "증인",
+    "romaja": "jeung-in",
+    "vietnamese": "Nhân chứng",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "증인이 법정에 출석하다."
+  },
+  {
+    "korean": "진술",
+    "romaja": "jin-sul",
+    "vietnamese": "Lời khai / Trình bày",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "목격자의 진술을 토대로 수사."
+  },
+  {
+    "korean": "자백",
+    "romaja": "ja-baek",
+    "vietnamese": "Tự thú / Khai nhận",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "범인의 범행 자백."
+  },
+  {
+    "korean": "혐의",
+    "romaja": "hyeom-ui",
+    "vietnamese": "Nghi vấn / Mối nghi ngờ phạm tội",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "뇌물 수수 혐의로 구속."
+  },
+  {
+    "korean": "무죄 추정",
+    "romaja": "mu-jwoe chu-jeong",
+    "vietnamese": "Suy đoán vô tội",
+    "pos": "Cụm từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "무죄 추정의 원칙 준수."
+  },
+  {
+    "korean": "보석금",
+    "romaja": "bo-seok-geum",
+    "vietnamese": "Tiền bảo lãnh",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "보석금을 내고 석방되다."
+  },
+  {
+    "korean": "집행유예",
+    "romaja": "jip-haeng-yu-ye",
+    "vietnamese": "Án treo",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "징역 1년에 집행유예 2년."
+  },
+  {
+    "korean": "인권",
+    "romaja": "in-kwon",
+    "vietnamese": "Quyền con người / Nhân quyền",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "기본적 인권의 존중."
+  },
+  {
+    "korean": "민주주의",
+    "romaja": "min-ju-ju-ui",
+    "vietnamese": "Chủ nghĩa dân chủ",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "민주주의 발전의 기틀."
+  },
+  {
+    "korean": "여론",
+    "romaja": "yeo-ron",
+    "vietnamese": "Dư luận xã hội",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "여론 조사의 신뢰성 논란."
+  },
+  {
+    "korean": "선거",
+    "romaja": "seon-geo",
+    "vietnamese": "Bầu cử",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "공정한 선거 관리."
+  },
+  {
+    "korean": "투표율",
+    "romaja": "tu-pyo-yul",
+    "vietnamese": "Tỷ lệ cử đi bầu",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "청년층 투표율 제고 방안."
+  },
+  {
+    "korean": "지방자치",
+    "romaja": "ji-bang-ja-chi",
+    "vietnamese": "Tự trị địa phương",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지방자치 제도의 정착."
+  },
+  {
+    "korean": "복지",
+    "romaja": "bok-ji",
+    "vietnamese": "Phúc lợi xã hội",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "사회 복지 예산 확충."
+  },
+  {
+    "korean": "복지국가",
+    "romaja": "bok-ji-guk-ga",
+    "vietnamese": "Quốc gia phúc lợi",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "북유럽형 복지국가 모델."
+  },
+  {
+    "korean": "고령화",
+    "romaja": "go-ryeong-hwa",
+    "vietnamese": "Già hóa dân số",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "고령화 사회에 대한 대책."
+  },
+  {
+    "korean": "저출산",
+    "romaja": "jeo-chul-san",
+    "vietnamese": "Mức sinh thấp",
+    "pos": "Danh từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "저출산 고령화 문제 극복."
+  },
+  {
+    "korean": "알고리즘",
+    "romaja": "al-go-ri-jeum",
+    "vietnamese": "Thuật toán",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "추천 알고리즘의 작동 원리."
   },
   {
     "korean": "인공지능",
@@ -3410,8 +2357,98 @@ window.KORSCAN_BOOK_VOCAB_DB = [
     "vietnamese": "Trí tuệ nhân tạo (AI)",
     "pos": "Danh từ",
     "topic": "tech_media",
-    "level": "TOPIK 3-4",
-    "example": "인공지능 - Trí tuệ nhân tạo (AI)"
+    "level": "TOPIK 4",
+    "example": "인공지능의 급격한 발전."
+  },
+  {
+    "korean": "딥러닝",
+    "romaja": "dip-reo-ning",
+    "vietnamese": "Học sâu (Deep Learning)",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "딥러닝 기술 기반의 영상 인식."
+  },
+  {
+    "korean": "머신러닝",
+    "romaja": "meo-sin-reo-ning",
+    "vietnamese": "Học máy (Machine Learning)",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "빅데이터와 머신러닝의 결합."
+  },
+  {
+    "korean": "양자컴퓨팅",
+    "romaja": "yang-ja-keom-pyu-ting",
+    "vietnamese": "Tính toán lượng tử",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "양자컴퓨팅이 가져올 암호학의 변화."
+  },
+  {
+    "korean": "블록체인",
+    "romaja": "beul-rok-che-in",
+    "vietnamese": "Chuỗi khối (Blockchain)",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "탈중앙화 블록체인 네트워크."
+  },
+  {
+    "korean": "암호화폐",
+    "romaja": "am-ho-hwa-pye",
+    "vietnamese": "Tiền mã hóa (Cryptocurrency)",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "암호화폐 시장의 변동성."
+  },
+  {
+    "korean": "메타버스",
+    "romaja": "me-ta-beo-seu",
+    "vietnamese": "Vũ trụ ảo (Metaverse)",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "메타버스 공간에서의 가상 체험."
+  },
+  {
+    "korean": "가상현실",
+    "romaja": "ga-sang-hyeon-sil",
+    "vietnamese": "Thực tế ảo (VR)",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "가상현실 기술의 의료 응용."
+  },
+  {
+    "korean": "증강현실",
+    "romaja": "jeung-gang-hyeon-sil",
+    "vietnamese": "Thực tế tăng cường (AR)",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "증강현실 기반 네비게이션."
+  },
+  {
+    "korean": "자율주행",
+    "romaja": "ja-yul-ju-haeng",
+    "vietnamese": "Lái xe tự động",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "자율주행 자동차의 상용화."
+  },
+  {
+    "korean": "사물인터넷",
+    "romaja": "sa-mul-in-teo-net",
+    "vietnamese": "Internet vạn vật (IoT)",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "사물인터넷(IoT) 스마트홈 구축."
   },
   {
     "korean": "빅데이터",
@@ -3419,7711 +2456,7000 @@ window.KORSCAN_BOOK_VOCAB_DB = [
     "vietnamese": "Dữ liệu lớn (Big Data)",
     "pos": "Danh từ",
     "topic": "tech_media",
-    "level": "TOPIK 3-4",
-    "example": "빅데이터 - Dữ liệu lớn (Big Data)"
+    "level": "TOPIK 4",
+    "example": "빅데이터 분석을 통한 수요 예측."
   },
   {
-    "korean": "알고리즘",
-    "romaja": "al-go-ri-jeum",
-    "vietnamese": "Thuật toán (Algorithm)",
+    "korean": "클라우드",
+    "romaja": "keul-ra-u-deu",
+    "vietnamese": "Điện toán đám mây",
     "pos": "Danh từ",
     "topic": "tech_media",
-    "level": "TOPIK 3-4",
-    "example": "알고리즘 - Thuật toán (Algorithm)"
-  },
-  {
-    "korean": "그리고",
-    "romaja": "geu-ri-go",
-    "vietnamese": "Và / Sau đó",
-    "pos": "Liên từ",
-    "topic": "grammar_connectors",
-    "level": "TOPIK 1",
-    "example": "그리고 - Và / Sau đó"
-  },
-  {
-    "korean": "그래서",
-    "romaja": "geu-rae-seo",
-    "vietnamese": "Vì vậy / Cho nên",
-    "pos": "Liên từ",
-    "topic": "grammar_connectors",
-    "level": "TOPIK 1",
-    "example": "그래서 - Vì vậy / Cho nên"
-  },
-  {
-    "korean": "그러나",
-    "romaja": "geu-reo-na",
-    "vietnamese": "Tuy nhiên",
-    "pos": "Liên từ",
-    "topic": "grammar_connectors",
-    "level": "TOPIK 2",
-    "example": "그러나 - Tuy nhiên"
-  },
-  {
-    "korean": "하지만",
-    "romaja": "ha-ji-man",
-    "vietnamese": "Nhưng / Thế nhưng",
-    "pos": "Liên từ",
-    "topic": "grammar_connectors",
-    "level": "TOPIK 1",
-    "example": "하지만 - Nhưng / Thế nhưng"
-  },
-  {
-    "korean": "그렇지만",
-    "romaja": "geu-reot-ji-man",
-    "vietnamese": "Mặc dù vậy",
-    "pos": "Liên từ",
-    "topic": "grammar_connectors",
-    "level": "TOPIK 1",
-    "example": "그렇지만 - Mặc dù vậy"
-  },
-  {
-    "korean": "그러므로",
-    "romaja": "geu-reo-mu-ro",
-    "vietnamese": "Do đó / Bởi vậy",
-    "pos": "Liên từ",
-    "topic": "grammar_connectors",
-    "level": "TOPIK 3-4",
-    "example": "그러므로 - Do đó / Bởi vậy"
-  },
-  {
-    "korean": "만약",
-    "romaja": "man-yak",
-    "vietnamese": "Nếu như / Giả sử",
-    "pos": "Phó từ",
-    "topic": "grammar_connectors",
-    "level": "TOPIK 2",
-    "example": "만약 - Nếu như / Giả sử"
-  },
-  {
-    "korean": "비록",
-    "romaja": "bi-rok",
-    "vietnamese": "Dù cho / Cho dù",
-    "pos": "Phó từ",
-    "topic": "grammar_connectors",
-    "level": "TOPIK 3-4",
-    "example": "비록 - Dù cho / Cho dù"
-  },
-  {
-    "korean": "bởi vì",
-    "romaja": "bởi vì",
-    "vietnamese": "Vì lý do đó",
-    "pos": "Liên từ",
-    "topic": "grammar_connectors",
-    "level": "TOPIK 1",
-    "example": "bởi vì - Vì lý do đó"
-  },
-  {
-    "korean": "교육1",
-    "romaja": "gyo-yuk-1",
-    "vietnamese": "Giáo dục 1",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육1 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "클라우드 서버에 데이터 저장."
   },
   {
-    "korean": "연구2",
-    "romaja": "yeon-gu-2",
-    "vietnamese": "Nghiên cứu 2",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구2 문장 예시입니다."
-  },
-  {
-    "korean": "발표3",
-    "romaja": "bal-pyo-3",
-    "vietnamese": "Thuyết trình 3",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표3 문장 예시입니다."
-  },
-  {
-    "korean": "토론4",
-    "romaja": "to-ron-4",
-    "vietnamese": "Thảo luận 4",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론4 문장 예시입니다."
+    "korean": "사이버 보안",
+    "romaja": "sa-i-beo bo-an",
+    "vietnamese": "An ninh mạng",
+    "pos": "Cụm từ",
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "사이버 보안 해킹 방지 대책."
   },
   {
-    "korean": "건강5",
-    "romaja": "geon-gang-5",
-    "vietnamese": "Sức khỏe 5",
-    "pos": "Động từ",
+    "korean": "유전자 조작",
+    "romaja": "yu-jeon-ja jo-jak",
+    "vietnamese": "Chỉnh sửa gen",
+    "pos": "Cụm từ",
     "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강5 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "유전자 조작 식품(GMO) 윤리 논란."
   },
   {
-    "korean": "진료6",
-    "romaja": "jin-ryo-6",
-    "vietnamese": "Khám chữa bệnh 6",
+    "korean": "줄기세포",
+    "romaja": "jul-gi-se-po",
+    "vietnamese": "Tế bào gốc",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료6 문장 예시입니다."
-  },
-  {
-    "korean": "예방7",
-    "romaja": "ye-bang-7",
-    "vietnamese": "Phòng ngừa 7",
-    "pos": "Động từ",
     "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방7 문장 예시입니다."
-  },
-  {
-    "korean": "자연8",
-    "romaja": "ja-yeon-8",
-    "vietnamese": "Tự nhiên 8",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연8 문장 예시입니다."
-  },
-  {
-    "korean": "환경9",
-    "romaja": "hwan-gyeong-9",
-    "vietnamese": "Môi trường 9",
-    "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경9 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "줄기세포 연구의 난치병 치료 가능성."
   },
   {
-    "korean": "보호10",
-    "romaja": "bo-ho-10",
-    "vietnamese": "Bảo vệ 10",
+    "korean": "나노기술",
+    "romaja": "na-no-gi-sul",
+    "vietnamese": "Công nghệ Nano",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호10 문장 예시입니다."
-  },
-  {
-    "korean": "기분11",
-    "romaja": "gi-bun-11",
-    "vietnamese": "Tâm trạng 11",
-    "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분11 문장 예시입니다."
-  },
-  {
-    "korean": "희망12",
-    "romaja": "hui-mang-12",
-    "vietnamese": "Hy vọng 12",
-    "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망12 문장 예시입니다."
-  },
-  {
-    "korean": "감동13",
-    "romaja": "gam-dong-13",
-    "vietnamese": "Cảm động 13",
-    "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동13 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "나노기술을 적용한 신소재."
   },
   {
-    "korean": "휴양14",
-    "romaja": "hyu-yang-14",
-    "vietnamese": "Nghỉ dưỡng 14",
+    "korean": "반도체",
+    "romaja": "ban-do-che",
+    "vietnamese": "Bán dẫn",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양14 문장 예시입니다."
-  },
-  {
-    "korean": "체험15",
-    "romaja": "che-heom-15",
-    "vietnamese": "Trải nghiệm 15",
-    "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험15 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "세계 반도체 공급망 대란."
   },
   {
-    "korean": "문화16",
-    "romaja": "mun-hwa-16",
-    "vietnamese": "Văn hóa 16",
+    "korean": "신재생에너지",
+    "romaja": "sin-jae-saeng-e-neo-ji",
+    "vietnamese": "Năng lượng tái tạo",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화16 문장 예시입니다."
-  },
-  {
-    "korean": "예술17",
-    "romaja": "ye-sul-17",
-    "vietnamese": "Nghệ thuật 17",
-    "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술17 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "신재생에너지 비율 확대 정책."
   },
   {
-    "korean": "전통18",
-    "romaja": "jeon-tong-18",
-    "vietnamese": "Truyền thống 18",
+    "korean": "탄소중립",
+    "romaja": "tan-so-jung-rip",
+    "vietnamese": "Trung hòa Carbon",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통18 문장 예시입니다."
-  },
-  {
-    "korean": "법률19",
-    "romaja": "beop-ryul-19",
-    "vietnamese": "Pháp luật 19",
-    "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률19 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "2050 탄소중립 실현 목표."
   },
   {
-    "korean": "사회20",
-    "romaja": "sa-hoe-20",
-    "vietnamese": "Xã hội 20",
+    "korean": "온실가스",
+    "romaja": "on-sil-ga-seu",
+    "vietnamese": "Khí nhà kính",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회20 문장 예시입니다."
-  },
-  {
-    "korean": "정치21",
-    "romaja": "jeong-chi-21",
-    "vietnamese": "Chính trị 21",
-    "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치21 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "온실가스 배출량 감축 의무."
   },
   {
-    "korean": "경제22",
-    "romaja": "gyeong-je-22",
-    "vietnamese": "Kinh tế 22",
+    "korean": "기후변화",
+    "romaja": "gi-hu-byeon-hwa",
+    "vietnamese": "Biến đổi khí hậu",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제22 문장 예시입니다."
-  },
-  {
-    "korean": "무역23",
-    "romaja": "mu-yeok-23",
-    "vietnamese": "Thương mại 23",
-    "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역23 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "기후변화로 인한 이상 기후."
   },
   {
-    "korean": "투자24",
-    "romaja": "tu-ja-24",
-    "vietnamese": "Đầu tư 24",
+    "korean": "이상기후",
+    "romaja": "i-sang-gi-hu",
+    "vietnamese": "Thời tiết dị thường",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자24 문장 예시입니다."
-  },
-  {
-    "korean": "학습25",
-    "romaja": "hak-seup-25",
-    "vietnamese": "Học tập 25",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습25 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "이상기후 현상으로 인한 자연재해."
   },
   {
-    "korean": "교육26",
-    "romaja": "gyo-yuk-26",
-    "vietnamese": "Giáo dục 26",
+    "korean": "생태계",
+    "romaja": "saeng-tae-gye",
+    "vietnamese": "Hệ sinh thái",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육26 문장 예시입니다."
-  },
-  {
-    "korean": "연구27",
-    "romaja": "yeon-gu-27",
-    "vietnamese": "Nghiên cứu 27",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구27 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "생태계 파괴 방지 노력."
   },
   {
-    "korean": "발표28",
-    "romaja": "bal-pyo-28",
-    "vietnamese": "Thuyết trình 28",
+    "korean": "생물다양성",
+    "romaja": "saeng-mul-da-yang-seong",
+    "vietnamese": "Đa dạng sinh học",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표28 문장 예시입니다."
-  },
-  {
-    "korean": "토론29",
-    "romaja": "to-ron-29",
-    "vietnamese": "Thảo luận 29",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론29 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "생물다양성 보전을 위한 협약."
   },
   {
-    "korean": "건강30",
-    "romaja": "geon-gang-30",
-    "vietnamese": "Sức khỏe 30",
+    "korean": "미세먼지",
+    "romaja": "mi-se-meon-ji",
+    "vietnamese": "Bụi mịn",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강30 문장 예시입니다."
-  },
-  {
-    "korean": "진료31",
-    "romaja": "jin-ryo-31",
-    "vietnamese": "Khám chữa bệnh 31",
-    "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료31 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "초미세먼지 경보 발령."
   },
   {
-    "korean": "예방32",
-    "romaja": "ye-bang-32",
-    "vietnamese": "Phòng ngừa 32",
+    "korean": "환경오염",
+    "romaja": "hwan-gyeong-o-yeom",
+    "vietnamese": "Ô nhiễm môi trường",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방32 문장 예시입니다."
-  },
-  {
-    "korean": "자연33",
-    "romaja": "ja-yeon-33",
-    "vietnamese": "Tự nhiên 33",
-    "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연33 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "플라스틱으로 인한 환경오염."
   },
   {
-    "korean": "환경34",
-    "romaja": "hwan-gyeong-34",
-    "vietnamese": "Môi trường 34",
+    "korean": "재활용",
+    "romaja": "jae-hwal-yong",
+    "vietnamese": "Tái chế",
     "pos": "Danh từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경34 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "자원 재활용 활성화."
   },
   {
-    "korean": "보호35",
-    "romaja": "bo-ho-35",
-    "vietnamese": "Bảo vệ 35",
-    "pos": "Động từ",
+    "korean": "지속가능성",
+    "romaja": "ji-sok-ga-neung-seong",
+    "vietnamese": "Tính bền vững",
+    "pos": "Danh từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호35 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "지속가능한 발전을 위한 미래 비전."
   },
   {
-    "korean": "기분36",
-    "romaja": "gi-bun-36",
-    "vietnamese": "Tâm trạng 36",
+    "korean": "개념",
+    "romaja": "gae-nyeom",
+    "vietnamese": "Khái niệm / Ý niệm",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분36 문장 예시입니다."
-  },
-  {
-    "korean": "희망37",
-    "romaja": "hui-mang-37",
-    "vietnamese": "Hy vọng 37",
-    "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망37 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "추상적인 개념을 설명하다."
   },
   {
-    "korean": "감동38",
-    "romaja": "gam-dong-38",
-    "vietnamese": "Cảm động 38",
+    "korean": "관점",
+    "romaja": "gwan-jeom",
+    "vietnamese": "Quan điểm / Góc nhìn",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동38 문장 예시입니다."
-  },
-  {
-    "korean": "휴양39",
-    "romaja": "hyu-yang-39",
-    "vietnamese": "Nghỉ dưỡng 39",
-    "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양39 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "다양한 관점에서 분석하다."
   },
   {
-    "korean": "체험40",
-    "romaja": "che-heom-40",
-    "vietnamese": "Trải nghiệm 40",
+    "korean": "가치관",
+    "romaja": "ga-chi-gwan",
+    "vietnamese": "Giá trị quan",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험40 문장 예시입니다."
-  },
-  {
-    "korean": "문화41",
-    "romaja": "mun-hwa-41",
-    "vietnamese": "Văn hóa 41",
-    "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화41 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "건전한 가치관을 형성하다."
   },
   {
-    "korean": "예술42",
-    "romaja": "ye-sul-42",
-    "vietnamese": "Nghệ thuật 42",
+    "korean": "세계관",
+    "romaja": "se-gye-gwan",
+    "vietnamese": "Thế giới quan",
     "pos": "Danh từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술42 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "독창적인 세계관이 반영된 작품."
   },
   {
-    "korean": "전통43",
-    "romaja": "jeon-tong-43",
-    "vietnamese": "Truyền thống 43",
-    "pos": "Động từ",
+    "korean": "철학",
+    "romaja": "cheol-hak",
+    "vietnamese": "Triết học",
+    "pos": "Danh từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통43 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "동양 철학과 서양 철학의 비교."
   },
   {
-    "korean": "법률44",
-    "romaja": "beop-ryul-44",
-    "vietnamese": "Pháp luật 44",
+    "korean": "윤리",
+    "romaja": "yun-ri",
+    "vietnamese": "Đạo đức / Tỷ lệ đạo đức",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률44 문장 예시입니다."
-  },
-  {
-    "korean": "사회45",
-    "romaja": "sa-hoe-45",
-    "vietnamese": "Xã hội 45",
-    "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회45 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "직업 윤리를 준수해야 한다."
   },
   {
-    "korean": "정치46",
-    "romaja": "jeong-chi-46",
-    "vietnamese": "Chính trị 46",
+    "korean": "도덕",
+    "romaja": "do-deok",
+    "vietnamese": "Đạo đức xã hội",
     "pos": "Danh từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치46 문장 예시입니다."
-  },
-  {
-    "korean": "경제47",
-    "romaja": "gyeong-je-47",
-    "vietnamese": "Kinh tế 47",
-    "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제47 문장 예시입니다."
-  },
-  {
-    "korean": "무역48",
-    "romaja": "mu-yeok-48",
-    "vietnamese": "Thương mại 48",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역48 문장 예시입니다."
-  },
-  {
-    "korean": "투자49",
-    "romaja": "tu-ja-49",
-    "vietnamese": "Đầu tư 49",
-    "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자49 문장 예시입니다."
-  },
-  {
-    "korean": "학습50",
-    "romaja": "hak-seup-50",
-    "vietnamese": "Học tập 50",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습50 문장 예시입니다."
-  },
-  {
-    "korean": "교육51",
-    "romaja": "gyo-yuk-51",
-    "vietnamese": "Giáo dục 51",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육51 문장 예시입니다."
-  },
-  {
-    "korean": "연구52",
-    "romaja": "yeon-gu-52",
-    "vietnamese": "Nghiên cứu 52",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구52 문장 예시입니다."
-  },
-  {
-    "korean": "발표53",
-    "romaja": "bal-pyo-53",
-    "vietnamese": "Thuyết trình 53",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표53 문장 예시입니다."
-  },
-  {
-    "korean": "토론54",
-    "romaja": "to-ron-54",
-    "vietnamese": "Thảo luận 54",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론54 문장 예시입니다."
-  },
-  {
-    "korean": "건강55",
-    "romaja": "geon-gang-55",
-    "vietnamese": "Sức khỏe 55",
-    "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강55 문장 예시입니다."
-  },
-  {
-    "korean": "진료56",
-    "romaja": "jin-ryo-56",
-    "vietnamese": "Khám chữa bệnh 56",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료56 문장 예시입니다."
-  },
-  {
-    "korean": "예방57",
-    "romaja": "ye-bang-57",
-    "vietnamese": "Phòng ngừa 57",
-    "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방57 문장 예시입니다."
-  },
-  {
-    "korean": "자연58",
-    "romaja": "ja-yeon-58",
-    "vietnamese": "Tự nhiên 58",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연58 문장 예시입니다."
-  },
-  {
-    "korean": "환경59",
-    "romaja": "hwan-gyeong-59",
-    "vietnamese": "Môi trường 59",
-    "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경59 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "도덕적 의무를 다하다."
   },
   {
-    "korean": "보호60",
-    "romaja": "bo-ho-60",
-    "vietnamese": "Bảo vệ 60",
+    "korean": "인식",
+    "romaja": "in-sik",
+    "vietnamese": "Nhận thức",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호60 문장 예시입니다."
-  },
-  {
-    "korean": "기분61",
-    "romaja": "gi-bun-61",
-    "vietnamese": "Tâm trạng 61",
-    "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분61 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "사회적 인식의 변화."
   },
   {
-    "korean": "희망62",
-    "romaja": "hui-mang-62",
-    "vietnamese": "Hy vọng 62",
+    "korean": "편견",
+    "romaja": "pyeon-gyeon",
+    "vietnamese": "Định kiến / Thành kiến",
     "pos": "Danh từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망62 문장 예시입니다."
-  },
-  {
-    "korean": "감동63",
-    "romaja": "gam-dong-63",
-    "vietnamese": "Cảm động 63",
-    "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동63 문장 예시입니다."
-  },
-  {
-    "korean": "휴양64",
-    "romaja": "hyu-yang-64",
-    "vietnamese": "Nghỉ dưỡng 64",
-    "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양64 문장 예시입니다."
-  },
-  {
-    "korean": "체험65",
-    "romaja": "che-heom-65",
-    "vietnamese": "Trải nghiệm 65",
-    "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험65 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "소수자에 대한 편견을 깨다."
   },
   {
-    "korean": "문화66",
-    "romaja": "mun-hwa-66",
-    "vietnamese": "Văn hóa 66",
+    "korean": "고정관념",
+    "romaja": "go-jeong-gwan-nyeom",
+    "vietnamese": "Quan niệm cố định / Rập khuôn",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화66 문장 예시입니다."
-  },
-  {
-    "korean": "예술67",
-    "romaja": "ye-sul-67",
-    "vietnamese": "Nghệ thuật 67",
-    "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술67 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "성별에 대한 고정관념 타파."
   },
   {
-    "korean": "전통68",
-    "romaja": "jeon-tong-68",
-    "vietnamese": "Truyền thống 68",
+    "korean": "차별",
+    "romaja": "cha-byeol",
+    "vietnamese": "Phân biệt đối xử",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통68 문장 예시입니다."
-  },
-  {
-    "korean": "법률69",
-    "romaja": "beop-ryul-69",
-    "vietnamese": "Pháp luật 69",
-    "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률69 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "인종 차별 금지 법안."
   },
   {
-    "korean": "사회70",
-    "romaja": "sa-hoe-70",
-    "vietnamese": "Xã hội 70",
+    "korean": "평등",
+    "romaja": "pyeong-deung",
+    "vietnamese": "Bình đẳng",
     "pos": "Danh từ",
     "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회70 문장 예시입니다."
-  },
-  {
-    "korean": "정치71",
-    "romaja": "jeong-chi-71",
-    "vietnamese": "Chính trị 71",
-    "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치71 문장 예시입니다."
-  },
-  {
-    "korean": "경제72",
-    "romaja": "gyeong-je-72",
-    "vietnamese": "Kinh tế 72",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제72 문장 예시입니다."
-  },
-  {
-    "korean": "무역73",
-    "romaja": "mu-yeok-73",
-    "vietnamese": "Thương mại 73",
-    "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역73 문장 예시입니다."
-  },
-  {
-    "korean": "투자74",
-    "romaja": "tu-ja-74",
-    "vietnamese": "Đầu tư 74",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자74 문장 예시입니다."
-  },
-  {
-    "korean": "학습75",
-    "romaja": "hak-seup-75",
-    "vietnamese": "Học tập 75",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습75 문장 예시입니다."
-  },
-  {
-    "korean": "교육76",
-    "romaja": "gyo-yuk-76",
-    "vietnamese": "Giáo dục 76",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육76 문장 예시입니다."
-  },
-  {
-    "korean": "연구77",
-    "romaja": "yeon-gu-77",
-    "vietnamese": "Nghiên cứu 77",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구77 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "남녀평등 실현."
   },
   {
-    "korean": "발표78",
-    "romaja": "bal-pyo-78",
-    "vietnamese": "Thuyết trình 78",
+    "korean": "자유",
+    "romaja": "ja-yu",
+    "vietnamese": "Tự do",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표78 문장 예시입니다."
-  },
-  {
-    "korean": "토론79",
-    "romaja": "to-ron-79",
-    "vietnamese": "Thảo luận 79",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론79 문장 예시입니다."
-  },
-  {
-    "korean": "건강80",
-    "romaja": "geon-gang-80",
-    "vietnamese": "Sức khỏe 80",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강80 문장 예시입니다."
-  },
-  {
-    "korean": "진료81",
-    "romaja": "jin-ryo-81",
-    "vietnamese": "Khám chữa bệnh 81",
-    "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료81 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "표현의 자유를 보장하다."
   },
   {
-    "korean": "예방82",
-    "romaja": "ye-bang-82",
-    "vietnamese": "Phòng ngừa 82",
+    "korean": "권리",
+    "romaja": "kwon-ri",
+    "vietnamese": "Quyền lợi",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방82 문장 예시입니다."
-  },
-  {
-    "korean": "자연83",
-    "romaja": "ja-yeon-83",
-    "vietnamese": "Tự nhiên 83",
-    "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연83 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "기본적 권리를 누리다."
   },
   {
-    "korean": "환경84",
-    "romaja": "hwan-gyeong-84",
-    "vietnamese": "Môi trường 84",
+    "korean": "의무",
+    "romaja": "ui-mu",
+    "vietnamese": "Nghĩa vụ / Trách nhiệm",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경84 문장 예시입니다."
-  },
-  {
-    "korean": "보호85",
-    "romaja": "bo-ho-85",
-    "vietnamese": "Bảo vệ 85",
-    "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호85 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "국방의 의무 완수."
   },
   {
-    "korean": "기분86",
-    "romaja": "gi-bun-86",
-    "vietnamese": "Tâm trạng 86",
+    "korean": "책임감",
+    "romaja": "chaek-im-gam",
+    "vietnamese": "Tinh thần trách nhiệm",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분86 문장 예시입니다."
-  },
-  {
-    "korean": "희망87",
-    "romaja": "hui-mang-87",
-    "vietnamese": "Hy vọng 87",
-    "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망87 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "투철한 책임감을 가지다."
   },
   {
-    "korean": "감동88",
-    "romaja": "gam-dong-88",
-    "vietnamese": "Cảm động 88",
+    "korean": "갈등",
+    "romaja": "gal-deung",
+    "vietnamese": "Mâu thuẫn / Xung đột",
     "pos": "Danh từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동88 문장 예시입니다."
-  },
-  {
-    "korean": "휴양89",
-    "romaja": "hyu-yang-89",
-    "vietnamese": "Nghỉ dưỡng 89",
-    "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양89 문장 예시입니다."
-  },
-  {
-    "korean": "체험90",
-    "romaja": "che-heom-90",
-    "vietnamese": "Trải nghiệm 90",
-    "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험90 문장 예시입니다."
-  },
-  {
-    "korean": "문화91",
-    "romaja": "mun-hwa-91",
-    "vietnamese": "Văn hóa 91",
-    "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화91 문장 예시입니다."
-  },
-  {
-    "korean": "예술92",
-    "romaja": "ye-sul-92",
-    "vietnamese": "Nghệ thuật 92",
-    "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술92 문장 예시입니다."
-  },
-  {
-    "korean": "전통93",
-    "romaja": "jeon-tong-93",
-    "vietnamese": "Truyền thống 93",
-    "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통93 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "세대 간 갈등 해소."
   },
   {
-    "korean": "법률94",
-    "romaja": "beop-ryul-94",
-    "vietnamese": "Pháp luật 94",
+    "korean": "타협",
+    "romaja": "ta-hyeop",
+    "vietnamese": "Thỏa hiệp",
     "pos": "Danh từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률94 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "극적인 타협에 이르다."
   },
   {
-    "korean": "사회95",
-    "romaja": "sa-hoe-95",
-    "vietnamese": "Xã hội 95",
-    "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회95 문장 예시입니다."
-  },
-  {
-    "korean": "정치96",
-    "romaja": "jeong-chi-96",
-    "vietnamese": "Chính trị 96",
+    "korean": "중재",
+    "romaja": "jung-jae",
+    "vietnamese": "Trọng tài / Hòa giải",
     "pos": "Danh từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치96 문장 예시입니다."
-  },
-  {
-    "korean": "경제97",
-    "romaja": "gyeong-je-97",
-    "vietnamese": "Kinh tế 97",
-    "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제97 문장 예시입니다."
-  },
-  {
-    "korean": "무역98",
-    "romaja": "mu-yeok-98",
-    "vietnamese": "Thương mại 98",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역98 문장 예시입니다."
-  },
-  {
-    "korean": "투자99",
-    "romaja": "tu-ja-99",
-    "vietnamese": "Đầu tư 99",
-    "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자99 문장 예시입니다."
-  },
-  {
-    "korean": "학습100",
-    "romaja": "hak-seup-100",
-    "vietnamese": "Học tập 100",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습100 문장 예시입니다."
-  },
-  {
-    "korean": "교육101",
-    "romaja": "gyo-yuk-101",
-    "vietnamese": "Giáo dục 101",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육101 문장 예시입니다."
-  },
-  {
-    "korean": "연구102",
-    "romaja": "yeon-gu-102",
-    "vietnamese": "Nghiên cứu 102",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구102 문장 예시입니다."
-  },
-  {
-    "korean": "발표103",
-    "romaja": "bal-pyo-103",
-    "vietnamese": "Thuyết trình 103",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표103 문장 예시입니다."
-  },
-  {
-    "korean": "토론104",
-    "romaja": "to-ron-104",
-    "vietnamese": "Thảo luận 104",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론104 문장 예시입니다."
-  },
-  {
-    "korean": "건강105",
-    "romaja": "geon-gang-105",
-    "vietnamese": "Sức khỏe 105",
-    "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강105 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "분쟁 중재 기구."
   },
   {
-    "korean": "진료106",
-    "romaja": "jin-ryo-106",
-    "vietnamese": "Khám chữa bệnh 106",
+    "korean": "협상",
+    "romaja": "hyeop-sang",
+    "vietnamese": "Đàm phán",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료106 문장 예시입니다."
-  },
-  {
-    "korean": "예방107",
-    "romaja": "ye-bang-107",
-    "vietnamese": "Phòng ngừa 107",
-    "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방107 문장 예시입니다."
-  },
-  {
-    "korean": "자연108",
-    "romaja": "ja-yeon-108",
-    "vietnamese": "Tự nhiên 108",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연108 문장 예시입니다."
-  },
-  {
-    "korean": "환경109",
-    "romaja": "hwan-gyeong-109",
-    "vietnamese": "Môi trường 109",
-    "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경109 문장 예시입니다."
-  },
-  {
-    "korean": "보호110",
-    "romaja": "bo-ho-110",
-    "vietnamese": "Bảo vệ 110",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호110 문장 예시입니다."
-  },
-  {
-    "korean": "기분111",
-    "romaja": "gi-bun-111",
-    "vietnamese": "Tâm trạng 111",
-    "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분111 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "평화 협상 타결."
   },
   {
-    "korean": "희망112",
-    "romaja": "hui-mang-112",
-    "vietnamese": "Hy vọng 112",
+    "korean": "모순",
+    "romaja": "mo-sun",
+    "vietnamese": "Mâu thuẫn logic",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망112 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "자기 모순에 빠지다."
   },
   {
-    "korean": "감동113",
-    "romaja": "gam-dong-113",
-    "vietnamese": "Cảm động 113",
-    "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동113 문장 예시입니다."
+    "korean": "역설",
+    "romaja": "yeok-seol",
+    "vietnamese": "Nghịch lý (Paradox)",
+    "pos": "Danh từ",
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "풍요 속의 빈곤이라는 역설."
   },
   {
-    "korean": "휴양114",
-    "romaja": "hyu-yang-114",
-    "vietnamese": "Nghỉ dưỡng 114",
+    "korean": "상징",
+    "romaja": "sang-jing",
+    "vietnamese": "Biểu tượng",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양114 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평화의 상징인 비둘기."
   },
   {
-    "korean": "체험115",
-    "romaja": "che-heom-115",
-    "vietnamese": "Trải nghiệm 115",
-    "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험115 문장 예시입니다."
+    "korean": "은유",
+    "romaja": "eun-yu",
+    "vietnamese": "Ẩn dụ",
+    "pos": "Danh từ",
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "시적 은유와 직유 표현."
   },
   {
-    "korean": "문화116",
-    "romaja": "mun-hwa-116",
-    "vietnamese": "Văn hóa 116",
+    "korean": "풍자",
+    "romaja": "pung-ja",
+    "vietnamese": "Châm biếm / Nhạo báng",
     "pos": "Danh từ",
     "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화116 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "부패한 사회를 풍자한 소설."
   },
   {
-    "korean": "예술117",
-    "romaja": "ye-sul-117",
-    "vietnamese": "Nghệ thuật 117",
-    "pos": "Động từ",
+    "korean": "해학",
+    "romaja": "hae-hak",
+    "vietnamese": "Hài hước dân gian",
+    "pos": "Danh từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술117 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "한국 전통 탈춤의 해학."
+  },
+  {
+    "korean": "창의성",
+    "romaja": "chang-ui-seong",
+    "vietnamese": "Tính sáng tạo",
+    "pos": "Danh từ",
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "창의성을 키우는 교육."
   },
   {
-    "korean": "전통118",
-    "romaja": "jeon-tong-118",
-    "vietnamese": "Truyền thống 118",
+    "korean": "독창성",
+    "romaja": "dok-chang-seong",
+    "vietnamese": "Tính độc đáo",
     "pos": "Danh từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통118 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "작품의 독창성을 인정받다."
   },
   {
-    "korean": "법률119",
-    "romaja": "beop-ryul-119",
-    "vietnamese": "Pháp luật 119",
-    "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률119 문장 예시입니다."
+    "korean": "개성",
+    "romaja": "gae-seong",
+    "vietnamese": "Cá tính",
+    "pos": "Danh từ",
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "자신만의 개성을 살리다."
   },
   {
-    "korean": "사회120",
-    "romaja": "sa-hoe-120",
-    "vietnamese": "Xã hội 120",
+    "korean": "다양성",
+    "romaja": "da-yang-seong",
+    "vietnamese": "Tính đa dạng",
     "pos": "Danh từ",
     "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회120 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "문화적 다양성 존중."
   },
   {
-    "korean": "정치121",
-    "romaja": "jeong-chi-121",
-    "vietnamese": "Chính trị 121",
-    "pos": "Động từ",
+    "korean": "정체성",
+    "romaja": "jeong-che-seong",
+    "vietnamese": "Bản sắc / Danh tính",
+    "pos": "Danh từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치121 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "민족 정체성을 확립하다."
   },
   {
-    "korean": "경제122",
-    "romaja": "gyeong-je-122",
-    "vietnamese": "Kinh tế 122",
+    "korean": "자아실현",
+    "romaja": "ja-a-sil-hyeon",
+    "vietnamese": "Tự thể hiện bản thân",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제122 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "삶의 목표로서의 자아실현."
   },
   {
-    "korean": "무역123",
-    "romaja": "mu-yeok-123",
-    "vietnamese": "Thương mại 123",
-    "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역123 문장 예시입니다."
+    "korean": "자존감",
+    "romaja": "ja-jon-gam",
+    "vietnamese": "Lòng tự trọng",
+    "pos": "Danh từ",
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "자존감을 높이는 방법."
   },
   {
-    "korean": "투자124",
-    "romaja": "tu-ja-124",
-    "vietnamese": "Đầu tư 124",
+    "korean": "열등감",
+    "romaja": "yeol-deung-gam",
+    "vietnamese": "Tự ti",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자124 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "열등감을 극복하다."
   },
   {
-    "korean": "학습125",
-    "romaja": "hak-seup-125",
-    "vietnamese": "Học tập 125",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습125 문장 예시입니다."
+    "korean": "우월감",
+    "romaja": "u-wol-gam",
+    "vietnamese": "Tự cao / Thượng đẳng",
+    "pos": "Danh từ",
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지나친 우월감 경계."
   },
   {
-    "korean": "교육126",
-    "romaja": "gyo-yuk-126",
-    "vietnamese": "Giáo dục 126",
+    "korean": "소외감",
+    "romaja": "so-oe-gam",
+    "vietnamese": "Cảm giác bị cô lập",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육126 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "사회적 소외감 해소."
   },
   {
-    "korean": "연구127",
-    "romaja": "yeon-gu-127",
-    "vietnamese": "Nghiên cứu 127",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구127 문장 예시입니다."
+    "korean": "박탈감",
+    "romaja": "bak-tal-gam",
+    "vietnamese": "Cảm giác bị tước đoạt",
+    "pos": "Danh từ",
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "상대적 박탈감을 느끼다."
   },
   {
-    "korean": "발표128",
-    "romaja": "bal-pyo-128",
-    "vietnamese": "Thuyết trình 128",
+    "korean": "수치심",
+    "romaja": "su-chi-sim",
+    "vietnamese": "Cảm giác xấu hổ / Nhục nhã",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표128 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "극심한 수치심을 느끼다."
   },
   {
-    "korean": "토론129",
-    "romaja": "to-ron-129",
-    "vietnamese": "Thảo luận 129",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론129 문장 예시입니다."
+    "korean": "죄책감",
+    "romaja": "jwoe-chaek-gam",
+    "vietnamese": "Cảm giác tội lỗi",
+    "pos": "Danh từ",
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "죄책감에서 벗어나다."
   },
   {
-    "korean": "건강130",
-    "romaja": "geon-gang-130",
-    "vietnamese": "Sức khỏe 130",
+    "korean": "유대감",
+    "romaja": "yu-dae-gam",
+    "vietnamese": "Tình gắn kết / Mối liên kết",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강130 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "팀원 간의 유대감 형성."
   },
   {
-    "korean": "진료131",
-    "romaja": "jin-ryo-131",
-    "vietnamese": "Khám chữa bệnh 131",
-    "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료131 문장 예시입니다."
+    "korean": "소속감",
+    "romaja": "so-sok-gam",
+    "vietnamese": "Cảm giác thuộc về tập thể",
+    "pos": "Danh từ",
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "조직에 대한 소속감 강화."
   },
   {
-    "korean": "예방132",
-    "romaja": "ye-bang-132",
-    "vietnamese": "Phòng ngừa 132",
+    "korean": "동질감",
+    "romaja": "dong-jil-gam",
+    "vietnamese": "Cảm giác đồng điệu",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방132 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "같은 처지의 사람에게 느끼는 동질감."
   },
   {
-    "korean": "자연133",
-    "romaja": "ja-yeon-133",
-    "vietnamese": "Tự nhiên 133",
-    "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연133 문장 예시입니다."
+    "korean": "이질감",
+    "romaja": "i-jil-gam",
+    "vietnamese": "Cảm giác xa lạ / Khác biệt",
+    "pos": "Danh từ",
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "문화적 이질감을 극복하다."
   },
   {
-    "korean": "환경134",
-    "romaja": "hwan-gyeong-134",
-    "vietnamese": "Môi trường 134",
+    "korean": "공감대",
+    "romaja": "gong-gam-dae",
+    "vietnamese": "Sự đồng cảm chung",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경134 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "국민적 공감대를 형성하다."
   },
   {
-    "korean": "보호135",
-    "romaja": "bo-ho-135",
-    "vietnamese": "Bảo vệ 135",
-    "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호135 문장 예시입니다."
+    "korean": "선입견",
+    "romaja": "seon-ip-gyeon",
+    "vietnamese": "Ấn tượng ban đầu / Định kiến",
+    "pos": "Danh từ",
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "선입견 없이 사람을 대하다."
   },
   {
-    "korean": "기분136",
-    "romaja": "gi-bun-136",
-    "vietnamese": "Tâm trạng 136",
+    "korean": "고정관념",
+    "romaja": "go-jeong-gwan-nyeom",
+    "vietnamese": "Định kiến hằn sâu",
     "pos": "Danh từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분136 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "낡은 고정관념을 타파하다."
   },
   {
-    "korean": "희망137",
-    "romaja": "hui-mang-137",
-    "vietnamese": "Hy vọng 137",
-    "pos": "Động từ",
+    "korean": "좌절감",
+    "romaja": "jwa-jeol-gam",
+    "vietnamese": "Cảm giác nản lòng / Thất vọng",
+    "pos": "Danh từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망137 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "반복된 실패로 좌절감을 느끼다."
   },
   {
-    "korean": "감동138",
-    "romaja": "gam-dong-138",
-    "vietnamese": "Cảm động 138",
+    "korean": "성취감",
+    "romaja": "seong-chwi-gam",
+    "vietnamese": "Cảm giác thành tựu",
     "pos": "Danh từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동138 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "목표를 달성했을 때의 성취감."
   },
   {
-    "korean": "휴양139",
-    "romaja": "hyu-yang-139",
-    "vietnamese": "Nghỉ dưỡng 139",
-    "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양139 문장 예시입니다."
+    "korean": "보람",
+    "romaja": "bo-ram",
+    "vietnamese": "Ý nghĩa / Niềm tự hào",
+    "pos": "Danh từ",
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "남을 도울 때 보람을 느낀다."
   },
   {
-    "korean": "체험140",
-    "romaja": "che-heom-140",
-    "vietnamese": "Trải nghiệm 140",
+    "korean": "희열",
+    "romaja": "hui-yeol",
+    "vietnamese": "Niềm vui sướng hoan hỉ",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험140 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "승리의 희열을 만끽하다."
   },
   {
-    "korean": "문화141",
-    "romaja": "mun-hwa-141",
-    "vietnamese": "Văn hóa 141",
-    "pos": "Động từ",
+    "korean": "일석이조",
+    "romaja": "il-seok-i-jo",
+    "vietnamese": "Nhất đao lưỡng tiện (1 mũi tên trúng 2 đích)",
+    "pos": "Cụm từ",
     "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화141 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "운동도 하고 건강도 챙기니 일석이조다."
   },
   {
-    "korean": "예술142",
-    "romaja": "ye-sul-142",
-    "vietnamese": "Nghệ thuật 142",
-    "pos": "Danh từ",
+    "korean": "십시일반",
+    "romaja": "sip-si-il-ban",
+    "vietnamese": "Mỗi người một tay (Góp gió thành bão)",
+    "pos": "Cụm từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술142 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "십시일반으로 성금을 모으다."
   },
   {
-    "korean": "전통143",
-    "romaja": "jeon-tong-143",
-    "vietnamese": "Truyền thống 143",
-    "pos": "Động từ",
+    "korean": "동문서답",
+    "romaja": "dong-mun-seo-dap",
+    "vietnamese": "Ông nói gà bà nói vịt (Trả lời trệch hướng)",
+    "pos": "Cụm từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통143 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "질문에 동문서답을 하다."
   },
   {
-    "korean": "법률144",
-    "romaja": "beop-ryul-144",
-    "vietnamese": "Pháp luật 144",
-    "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률144 문장 예시입니다."
+    "korean": "유언비어",
+    "romaja": "yu-eon-bi-eo",
+    "vietnamese": "Tin đồn nhảm / Tin bịa đặt",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "인터넷에 유포되는 유언비어 자제."
   },
   {
-    "korean": "사회145",
-    "romaja": "sa-hoe-145",
-    "vietnamese": "Xã hội 145",
-    "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회145 문장 예시입니다."
+    "korean": "자업자득",
+    "romaja": "ja-eop-ja-deuk",
+    "vietnamese": "Gieo nhân nào gặp quả nấy (Tự làm tự chịu)",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "거짓말의 결과는 자업자득이다."
   },
   {
-    "korean": "정치146",
-    "romaja": "jeong-chi-146",
-    "vietnamese": "Chính trị 146",
-    "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치146 문장 예시입니다."
+    "korean": "고진감래",
+    "romaja": "go-jin-gam-rae",
+    "vietnamese": "Khổ tận cam lai (Hết khổ đến vui)",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "고생 끝에 고진감래의 기쁨."
   },
   {
-    "korean": "경제147",
-    "romaja": "gyeong-je-147",
-    "vietnamese": "Kinh tế 147",
-    "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제147 문장 예시입니다."
+    "korean": "대기만성",
+    "romaja": "dae-gi-man-seong",
+    "vietnamese": "Tài năng lớn cần thời gian tôi luyện",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "그는 대기만성형 인재다."
   },
   {
-    "korean": "무역148",
-    "romaja": "mu-yeok-148",
-    "vietnamese": "Thương mại 148",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역148 문장 예시입니다."
+    "korean": "작심삼일",
+    "romaja": "jak-sim-sam-il",
+    "vietnamese": "Nhiệt huyết 3 ngày (Chóng chán)",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "다이어트가 작심삼일로 끝났다."
   },
   {
-    "korean": "투자149",
-    "romaja": "tu-ja-149",
-    "vietnamese": "Đầu tư 149",
-    "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자149 문장 예시입니다."
+    "korean": "동병상련",
+    "romaja": "dong-byeong-sang-ryeon",
+    "vietnamese": "Cùng chung cảnh ngộ nên thương nhau",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "동병상련의 정을 느끼다."
   },
   {
-    "korean": "학습150",
-    "romaja": "hak-seup-150",
-    "vietnamese": "Học tập 150",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습150 문장 예시입니다."
+    "korean": "천차만별",
+    "romaja": "cheon-cha-man-byeol",
+    "vietnamese": "Muôn hình muôn vẻ / Ngàn chênh vạn lệch",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "사람마다 취향이 천차만별이다."
   },
   {
-    "korean": "교육151",
-    "romaja": "gyo-yuk-151",
-    "vietnamese": "Giáo dục 151",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육151 문장 예시입니다."
+    "korean": "설상가상",
+    "romaja": "seol-sang-ga-sang",
+    "vietnamese": "Họa vô đơn chí (Tuyết phủ thêm sương)",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "비가 오는데 바람까지 부니 설상가상."
   },
   {
-    "korean": "연구152",
-    "romaja": "yeon-gu-152",
-    "vietnamese": "Nghiên cứu 152",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구152 문장 예시입니다."
+    "korean": "구사일생",
+    "romaja": "gu-sa-il-saeng",
+    "vietnamese": "Thập tử nhất sinh (Thoát chết hy hữu)",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "사고 현장에서 구사일생으로 살아남다."
   },
   {
-    "korean": "발표153",
-    "romaja": "bal-pyo-153",
-    "vietnamese": "Thuyết trình 153",
-    "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표153 문장 예시입니다."
+    "korean": "이심전심",
+    "romaja": "i-sim-jeon-sim",
+    "vietnamese": "Tâm tâm tương bản (Tương thông suy nghĩ)",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "말하지 않아도 이심전심으로 통한다."
   },
   {
-    "korean": "토론154",
-    "romaja": "to-ron-154",
-    "vietnamese": "Thảo luận 154",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론154 문장 예시입니다."
+    "korean": "탁상공론",
+    "romaja": "tak-sang-gong-ron",
+    "vietnamese": "Bàn luận suông trên giấy (Thiếu thực tế)",
+    "pos": "Cụm từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "현장을 모르는 탁상공론에 불과하다."
   },
   {
-    "korean": "건강155",
-    "romaja": "geon-gang-155",
-    "vietnamese": "Sức khỏe 155",
+    "korean": "과유불급",
+    "romaja": "gwa-yu-bul-geup",
+    "vietnamese": "Thái quá cũng như không đủ (Nên chừng mực)",
+    "pos": "Cụm từ",
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "지나친 욕심은 과유불급이다."
+  },
+  {
+    "korean": "규명하다",
+    "romaja": "gyu-myeong-ha-da",
+    "vietnamese": "Làm rõ / Điều tra làm rõ nguyên nhân",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강155 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "규명하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "진료156",
-    "romaja": "jin-ryo-156",
-    "vietnamese": "Khám chữa bệnh 156",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료156 문장 예시입니다."
+    "korean": "구축하다",
+    "romaja": "gu-chuk-ha-da",
+    "vietnamese": "Xây dựng hệ thống / Thiết lập",
+    "pos": "Động từ",
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "구축하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "예방157",
-    "romaja": "ye-bang-157",
-    "vietnamese": "Phòng ngừa 157",
+    "korean": "도출하다",
+    "romaja": "do-chul-ha-da",
+    "vietnamese": "Rút ra / Rút ra kết luận",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방157 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "도출하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "자연158",
-    "romaja": "ja-yeon-158",
-    "vietnamese": "Tự nhiên 158",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연158 문장 예시입니다."
+    "korean": "수립하다",
+    "romaja": "su-rip-ha-da",
+    "vietnamese": "Thành lập / Đề ra kế hoạch",
+    "pos": "Động từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "수립하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "환경159",
-    "romaja": "hwan-gyeong-159",
-    "vietnamese": "Môi trường 159",
+    "korean": "집행하다",
+    "romaja": "jip-haeng-ha-da",
+    "vietnamese": "Thi hành / Thực thi ngâng sách",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경159 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "집행하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "보호160",
-    "romaja": "bo-ho-160",
-    "vietnamese": "Bảo vệ 160",
-    "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호160 문장 예시입니다."
+    "korean": "제고하다",
+    "romaja": "je-go-ha-da",
+    "vietnamese": "Nâng cao / Cải thiện vị thế",
+    "pos": "Động từ",
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "제고하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "기분161",
-    "romaja": "gi-bun-161",
-    "vietnamese": "Tâm trạng 161",
+    "korean": "확충하다",
+    "romaja": "hwak-chung-ha-da",
+    "vietnamese": "Mở rộng / Bổ sung thêm",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분161 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "확충하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "희망162",
-    "romaja": "hui-mang-162",
-    "vietnamese": "Hy vọng 162",
-    "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망162 문장 예시입니다."
+    "korean": "선도하다",
+    "romaja": "seon-do-ha-da",
+    "vietnamese": "Dẫn đầu / Tiên phong",
+    "pos": "Động từ",
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "선도하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "감동163",
-    "romaja": "gam-dong-163",
-    "vietnamese": "Cảm động 163",
+    "korean": "창출하다",
+    "romaja": "chang-chul-ha-da",
+    "vietnamese": "Tạo ra (việc làm, giá trị)",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동163 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "창출하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "휴양164",
-    "romaja": "hyu-yang-164",
-    "vietnamese": "Nghỉ dưỡng 164",
-    "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양164 문장 예시입니다."
+    "korean": "지양하다",
+    "romaja": "ji-yang-ha-da",
+    "vietnamese": "Tránh né / Hạn chế việc xấu",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지양하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "체험165",
-    "romaja": "che-heom-165",
-    "vietnamese": "Trải nghiệm 165",
+    "korean": "지향하다",
+    "romaja": "ji-hyang-ha-da",
+    "vietnamese": "Hướng tới / Mưu cầu điều tốt",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험165 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "문화166",
-    "romaja": "mun-hwa-166",
-    "vietnamese": "Văn hóa 166",
-    "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화166 문장 예시입니다."
+    "korean": "야기하다",
+    "romaja": "ya-gi-ha-da",
+    "vietnamese": "Gây ra / Dẫn đến hậu quả",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "야기하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "예술167",
-    "romaja": "ye-sul-167",
-    "vietnamese": "Nghệ thuật 167",
+    "korean": "초래하다",
+    "romaja": "cho-rae-ha-da",
+    "vietnamese": "Dẫn đến (kết quả xấu)",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술167 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "초래하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "전통168",
-    "romaja": "jeon-tong-168",
-    "vietnamese": "Truyền thống 168",
-    "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통168 문장 예시입니다."
+    "korean": "수반하다",
+    "romaja": "su-ban-ha-da",
+    "vietnamese": "Kèm theo / Mang theo rủi ro",
+    "pos": "Động từ",
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "수반하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "법률169",
-    "romaja": "beop-ryul-169",
-    "vietnamese": "Pháp luật 169",
+    "korean": "귀결되다",
+    "romaja": "gwi-gyeol-doe-da",
+    "vietnamese": "Dẫn đến kết cục cuối cùng",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률169 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "귀결되다에 관한 전문 예문입니다."
   },
   {
-    "korean": "사회170",
-    "romaja": "sa-hoe-170",
-    "vietnamese": "Xã hội 170",
-    "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회170 문장 예시입니다."
+    "korean": "잠식하다",
+    "romaja": "jam-sik-ha-da",
+    "vietnamese": "Gặm nhấm / Lấn chiếm thị phần",
+    "pos": "Động từ",
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠식하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "정치171",
-    "romaja": "jeong-chi-171",
-    "vietnamese": "Chính trị 171",
+    "korean": "파급되다",
+    "romaja": "pa-geup-doe-da",
+    "vietnamese": "Lan rộng / Thấm sâu",
     "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치171 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "파급되다에 관한 전문 예문입니다."
   },
   {
-    "korean": "경제172",
-    "romaja": "gyeong-je-172",
-    "vietnamese": "Kinh tế 172",
-    "pos": "Danh từ",
+    "korean": "상쇄하다",
+    "romaja": "sang-swae-ha-da",
+    "vietnamese": "Triệt tiêu / Bù trừ lẫn nhau",
+    "pos": "Động từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제172 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "상쇄하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "무역173",
-    "romaja": "mu-yeok-173",
-    "vietnamese": "Thương mại 173",
+    "korean": "반영하다",
+    "romaja": "ban-yeong-ha-da",
+    "vietnamese": "Phản ánh",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역173 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "반영하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "투자174",
-    "romaja": "tu-ja-174",
-    "vietnamese": "Đầu tư 174",
-    "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자174 문장 예시입니다."
+    "korean": "시사하다",
+    "romaja": "si-sa-ha-da",
+    "vietnamese": "Gợi mở / Ám chỉ",
+    "pos": "Động từ",
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "시사하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "학습175",
-    "romaja": "hak-seup-175",
-    "vietnamese": "Học tập 175",
+    "korean": "암시하다",
+    "romaja": "am-si-ha-da",
+    "vietnamese": "Báo hiệu trước / Ám thị",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습175 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "암시하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "교육176",
-    "romaja": "gyo-yuk-176",
-    "vietnamese": "Giáo dục 176",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육176 문장 예시입니다."
+    "korean": "포괄하다",
+    "romaja": "po-gwal-ha-da",
+    "vietnamese": "Bao quát / Bao hàm",
+    "pos": "Động từ",
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "포괄하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "연구177",
-    "romaja": "yeon-gu-177",
-    "vietnamese": "Nghiên cứu 177",
+    "korean": "내포하다",
+    "romaja": "nae-po-ha-da",
+    "vietnamese": "Ẩn chứa bên trong",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구177 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "내포하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "발표178",
-    "romaja": "bal-pyo-178",
-    "vietnamese": "Thuyết trình 178",
-    "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표178 문장 예시입니다."
+    "korean": "수용하다",
+    "romaja": "su-yong-ha-da",
+    "vietnamese": "Tiếp nhận / Thấu hiểu",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "수용하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "토론179",
-    "romaja": "to-ron-179",
-    "vietnamese": "Thảo luận 179",
+    "korean": "배척하다",
+    "romaja": "bae-cheok-ha-da",
+    "vietnamese": "Bài xích / Tẩy chay",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론179 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "배척하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "건강180",
-    "romaja": "geon-gang-180",
-    "vietnamese": "Sức khỏe 180",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강180 문장 예시입니다."
+    "korean": "수렴하다",
+    "romaja": "su-ryeom-ha-da",
+    "vietnamese": "Thu thập (ý kiến)",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "수렴하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "진료181",
-    "romaja": "jin-ryo-181",
-    "vietnamese": "Khám chữa bệnh 181",
+    "korean": "절충하다",
+    "romaja": "jeol-chung-ha-da",
+    "vietnamese": "Dung hòa / Chiết trung",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료181 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "절충하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "예방182",
-    "romaja": "ye-bang-182",
-    "vietnamese": "Phòng ngừa 182",
-    "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방182 문장 예시입니다."
+    "korean": "동반하다",
+    "romaja": "dong-ban-ha-da",
+    "vietnamese": "Đi kèm / Đồng hành",
+    "pos": "Động từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "동반하다에 관한 전문 예문입니다."
   },
   {
-    "korean": "자연183",
-    "romaja": "ja-yeon-183",
-    "vietnamese": "Tự nhiên 183",
+    "korean": "수반되다",
+    "romaja": "su-ban-doe-da",
+    "vietnamese": "Được đi kèm theo",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연183 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "수반되다에 관한 전문 예문입니다."
+  },
+  {
+    "korean": "부합하다",
+    "romaja": "bu-hap-ha-da",
+    "vietnamese": "Phù hợp / Trùng khớp",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "부합하다에 관한 전문 예문입니다."
+  },
+  {
+    "korean": "영향_용어_1",
+    "romaja": "yeong-hyang-yong-eo-1",
+    "vietnamese": "Ảnh hưởng nâng cao 1",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_1 예문입니다."
   },
   {
-    "korean": "환경184",
-    "romaja": "hwan-gyeong-184",
-    "vietnamese": "Môi trường 184",
+    "korean": "분석_용어_2",
+    "romaja": "bun-seok-yong-eo-2",
+    "vietnamese": "Phân tích nâng cao 2",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경184 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_2 예문입니다."
   },
   {
-    "korean": "보호185",
-    "romaja": "bo-ho-185",
-    "vietnamese": "Bảo vệ 185",
+    "korean": "평가_용어_3",
+    "romaja": "pyeong-ga-yong-eo-3",
+    "vietnamese": "Đánh giá nâng cao 3",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호185 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_3 예문입니다."
   },
   {
-    "korean": "기분186",
-    "romaja": "gi-bun-186",
-    "vietnamese": "Tâm trạng 186",
+    "korean": "추진_용어_4",
+    "romaja": "chu-jin-yong-eo-4",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 4",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분186 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_4 예문입니다."
   },
   {
-    "korean": "희망187",
-    "romaja": "hui-mang-187",
-    "vietnamese": "Hy vọng 187",
+    "korean": "달성_용어_5",
+    "romaja": "dal-seong-yong-eo-5",
+    "vietnamese": "Đạt thành tích nâng cao 5",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망187 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_5 예문입니다."
   },
   {
-    "korean": "감동188",
-    "romaja": "gam-dong-188",
-    "vietnamese": "Cảm động 188",
+    "korean": "전망_용어_6",
+    "romaja": "jeon-mang-yong-eo-6",
+    "vietnamese": "Triển vọng nâng cao 6",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동188 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_6 예문입니다."
   },
   {
-    "korean": "휴양189",
-    "romaja": "hyu-yang-189",
-    "vietnamese": "Nghỉ dưỡng 189",
+    "korean": "지적_용어_7",
+    "romaja": "ji-jeok-yong-eo-7",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 7",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양189 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_7 예문입니다."
   },
   {
-    "korean": "체험190",
-    "romaja": "che-heom-190",
-    "vietnamese": "Trải nghiệm 190",
+    "korean": "논란_용어_8",
+    "romaja": "non-ran-yong-eo-8",
+    "vietnamese": "Tranh cãi nâng cao 8",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험190 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_8 예문입니다."
   },
   {
-    "korean": "문화191",
-    "romaja": "mun-hwa-191",
-    "vietnamese": "Văn hóa 191",
+    "korean": "시급_용어_9",
+    "romaja": "si-geup-yong-eo-9",
+    "vietnamese": "Cấp bách nâng cao 9",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화191 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_9 예문입니다."
   },
   {
-    "korean": "예술192",
-    "romaja": "ye-sul-192",
-    "vietnamese": "Nghệ thuật 192",
+    "korean": "전환_용어_10",
+    "romaja": "jeon-hwan-yong-eo-10",
+    "vietnamese": "Chuyển đổi nâng cao 10",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술192 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_10 예문입니다."
   },
   {
-    "korean": "전통193",
-    "romaja": "jeon-tong-193",
-    "vietnamese": "Truyền thống 193",
+    "korean": "도약_용어_11",
+    "romaja": "do-yak-yong-eo-11",
+    "vietnamese": "Bước nhảy vọt nâng cao 11",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통193 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "도약_용어_11 예문입니다."
   },
   {
-    "korean": "법률194",
-    "romaja": "beop-ryul-194",
-    "vietnamese": "Pháp luật 194",
+    "korean": "초월_용어_12",
+    "romaja": "cho-wol-yong-eo-12",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 12",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률194 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_12 예문입니다."
   },
   {
-    "korean": "사회195",
-    "romaja": "sa-hoe-195",
-    "vietnamese": "Xã hội 195",
+    "korean": "상응_용어_13",
+    "romaja": "sang-eung-yong-eo-13",
+    "vietnamese": "Tương ứng nâng cao 13",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회195 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_13 예문입니다."
   },
   {
-    "korean": "정치196",
-    "romaja": "jeong-chi-196",
-    "vietnamese": "Chính trị 196",
+    "korean": "도출_용어_14",
+    "romaja": "do-chul-yong-eo-14",
+    "vietnamese": "Rút ra kết luận nâng cao 14",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치196 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_14 예문입니다."
   },
   {
-    "korean": "경제197",
-    "romaja": "gyeong-je-197",
-    "vietnamese": "Kinh tế 197",
+    "korean": "융합_용어_15",
+    "romaja": "yung-hap-yong-eo-15",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 15",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제197 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_15 예문입니다."
   },
   {
-    "korean": "무역198",
-    "romaja": "mu-yeok-198",
-    "vietnamese": "Thương mại 198",
+    "korean": "잠재_용어_16",
+    "romaja": "jam-jae-yong-eo-16",
+    "vietnamese": "Tiềm ẩn nâng cao 16",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역198 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "잠재_용어_16 예문입니다."
   },
   {
-    "korean": "투자199",
-    "romaja": "tu-ja-199",
-    "vietnamese": "Đầu tư 199",
+    "korean": "지향_용어_17",
+    "romaja": "ji-hyang-yong-eo-17",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 17",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자199 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_17 예문입니다."
   },
   {
-    "korean": "학습200",
-    "romaja": "hak-seup-200",
-    "vietnamese": "Học tập 200",
+    "korean": "파급_용어_18",
+    "romaja": "pa-geup-yong-eo-18",
+    "vietnamese": "Tác động lan tỏa nâng cao 18",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습200 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_18 예문입니다."
   },
   {
-    "korean": "교육201",
-    "romaja": "gyo-yuk-201",
-    "vietnamese": "Giáo dục 201",
+    "korean": "창출_용어_19",
+    "romaja": "chang-chul-yong-eo-19",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 19",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육201 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_19 예문입니다."
   },
   {
-    "korean": "연구202",
-    "romaja": "yeon-gu-202",
-    "vietnamese": "Nghiên cứu 202",
+    "korean": "관련_용어_20",
+    "romaja": "gwan-ryeon-yong-eo-20",
+    "vietnamese": "Liên quan nâng cao 20",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구202 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_20 예문입니다."
   },
   {
-    "korean": "발표203",
-    "romaja": "bal-pyo-203",
-    "vietnamese": "Thuyết trình 203",
+    "korean": "영향_용어_21",
+    "romaja": "yeong-hyang-yong-eo-21",
+    "vietnamese": "Ảnh hưởng nâng cao 21",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표203 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_21 예문입니다."
   },
   {
-    "korean": "토론204",
-    "romaja": "to-ron-204",
-    "vietnamese": "Thảo luận 204",
+    "korean": "분석_용어_22",
+    "romaja": "bun-seok-yong-eo-22",
+    "vietnamese": "Phân tích nâng cao 22",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론204 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_22 예문입니다."
   },
   {
-    "korean": "건강205",
-    "romaja": "geon-gang-205",
-    "vietnamese": "Sức khỏe 205",
+    "korean": "평가_용어_23",
+    "romaja": "pyeong-ga-yong-eo-23",
+    "vietnamese": "Đánh giá nâng cao 23",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강205 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_23 예문입니다."
   },
   {
-    "korean": "진료206",
-    "romaja": "jin-ryo-206",
-    "vietnamese": "Khám chữa bệnh 206",
+    "korean": "추진_용어_24",
+    "romaja": "chu-jin-yong-eo-24",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 24",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료206 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_24 예문입니다."
   },
   {
-    "korean": "예방207",
-    "romaja": "ye-bang-207",
-    "vietnamese": "Phòng ngừa 207",
+    "korean": "달성_용어_25",
+    "romaja": "dal-seong-yong-eo-25",
+    "vietnamese": "Đạt thành tích nâng cao 25",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방207 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_25 예문입니다."
   },
   {
-    "korean": "자연208",
-    "romaja": "ja-yeon-208",
-    "vietnamese": "Tự nhiên 208",
+    "korean": "전망_용어_26",
+    "romaja": "jeon-mang-yong-eo-26",
+    "vietnamese": "Triển vọng nâng cao 26",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연208 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_26 예문입니다."
   },
   {
-    "korean": "환경209",
-    "romaja": "hwan-gyeong-209",
-    "vietnamese": "Môi trường 209",
+    "korean": "지적_용어_27",
+    "romaja": "ji-jeok-yong-eo-27",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 27",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경209 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_27 예문입니다."
   },
   {
-    "korean": "보호210",
-    "romaja": "bo-ho-210",
-    "vietnamese": "Bảo vệ 210",
+    "korean": "논란_용어_28",
+    "romaja": "non-ran-yong-eo-28",
+    "vietnamese": "Tranh cãi nâng cao 28",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호210 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_28 예문입니다."
   },
   {
-    "korean": "기분211",
-    "romaja": "gi-bun-211",
-    "vietnamese": "Tâm trạng 211",
+    "korean": "시급_용어_29",
+    "romaja": "si-geup-yong-eo-29",
+    "vietnamese": "Cấp bách nâng cao 29",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분211 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_29 예문입니다."
   },
   {
-    "korean": "희망212",
-    "romaja": "hui-mang-212",
-    "vietnamese": "Hy vọng 212",
+    "korean": "전환_용어_30",
+    "romaja": "jeon-hwan-yong-eo-30",
+    "vietnamese": "Chuyển đổi nâng cao 30",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망212 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_30 예문입니다."
   },
   {
-    "korean": "감동213",
-    "romaja": "gam-dong-213",
-    "vietnamese": "Cảm động 213",
+    "korean": "도약_용어_31",
+    "romaja": "do-yak-yong-eo-31",
+    "vietnamese": "Bước nhảy vọt nâng cao 31",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동213 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "도약_용어_31 예문입니다."
   },
   {
-    "korean": "휴양214",
-    "romaja": "hyu-yang-214",
-    "vietnamese": "Nghỉ dưỡng 214",
+    "korean": "초월_용어_32",
+    "romaja": "cho-wol-yong-eo-32",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 32",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양214 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_32 예문입니다."
   },
   {
-    "korean": "체험215",
-    "romaja": "che-heom-215",
-    "vietnamese": "Trải nghiệm 215",
+    "korean": "상응_용어_33",
+    "romaja": "sang-eung-yong-eo-33",
+    "vietnamese": "Tương ứng nâng cao 33",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험215 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_33 예문입니다."
   },
   {
-    "korean": "문화216",
-    "romaja": "mun-hwa-216",
-    "vietnamese": "Văn hóa 216",
+    "korean": "도출_용어_34",
+    "romaja": "do-chul-yong-eo-34",
+    "vietnamese": "Rút ra kết luận nâng cao 34",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화216 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_34 예문입니다."
   },
   {
-    "korean": "예술217",
-    "romaja": "ye-sul-217",
-    "vietnamese": "Nghệ thuật 217",
+    "korean": "융합_용어_35",
+    "romaja": "yung-hap-yong-eo-35",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 35",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술217 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "융합_용어_35 예문입니다."
   },
   {
-    "korean": "전통218",
-    "romaja": "jeon-tong-218",
-    "vietnamese": "Truyền thống 218",
+    "korean": "잠재_용어_36",
+    "romaja": "jam-jae-yong-eo-36",
+    "vietnamese": "Tiềm ẩn nâng cao 36",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통218 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_36 예문입니다."
   },
   {
-    "korean": "법률219",
-    "romaja": "beop-ryul-219",
-    "vietnamese": "Pháp luật 219",
+    "korean": "지향_용어_37",
+    "romaja": "ji-hyang-yong-eo-37",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 37",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률219 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_37 예문입니다."
   },
   {
-    "korean": "사회220",
-    "romaja": "sa-hoe-220",
-    "vietnamese": "Xã hội 220",
+    "korean": "파급_용어_38",
+    "romaja": "pa-geup-yong-eo-38",
+    "vietnamese": "Tác động lan tỏa nâng cao 38",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회220 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_38 예문입니다."
   },
   {
-    "korean": "정치221",
-    "romaja": "jeong-chi-221",
-    "vietnamese": "Chính trị 221",
+    "korean": "창출_용어_39",
+    "romaja": "chang-chul-yong-eo-39",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 39",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치221 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_39 예문입니다."
   },
   {
-    "korean": "경제222",
-    "romaja": "gyeong-je-222",
-    "vietnamese": "Kinh tế 222",
+    "korean": "관련_용어_40",
+    "romaja": "gwan-ryeon-yong-eo-40",
+    "vietnamese": "Liên quan nâng cao 40",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제222 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "관련_용어_40 예문입니다."
   },
   {
-    "korean": "무역223",
-    "romaja": "mu-yeok-223",
-    "vietnamese": "Thương mại 223",
+    "korean": "영향_용어_41",
+    "romaja": "yeong-hyang-yong-eo-41",
+    "vietnamese": "Ảnh hưởng nâng cao 41",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역223 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_41 예문입니다."
   },
   {
-    "korean": "투자224",
-    "romaja": "tu-ja-224",
-    "vietnamese": "Đầu tư 224",
+    "korean": "분석_용어_42",
+    "romaja": "bun-seok-yong-eo-42",
+    "vietnamese": "Phân tích nâng cao 42",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자224 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_42 예문입니다."
   },
   {
-    "korean": "학습225",
-    "romaja": "hak-seup-225",
-    "vietnamese": "Học tập 225",
+    "korean": "평가_용어_43",
+    "romaja": "pyeong-ga-yong-eo-43",
+    "vietnamese": "Đánh giá nâng cao 43",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습225 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_43 예문입니다."
   },
   {
-    "korean": "교육226",
-    "romaja": "gyo-yuk-226",
-    "vietnamese": "Giáo dục 226",
+    "korean": "추진_용어_44",
+    "romaja": "chu-jin-yong-eo-44",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 44",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육226 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_44 예문입니다."
   },
   {
-    "korean": "연구227",
-    "romaja": "yeon-gu-227",
-    "vietnamese": "Nghiên cứu 227",
+    "korean": "달성_용어_45",
+    "romaja": "dal-seong-yong-eo-45",
+    "vietnamese": "Đạt thành tích nâng cao 45",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구227 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_45 예문입니다."
   },
   {
-    "korean": "발표228",
-    "romaja": "bal-pyo-228",
-    "vietnamese": "Thuyết trình 228",
+    "korean": "전망_용어_46",
+    "romaja": "jeon-mang-yong-eo-46",
+    "vietnamese": "Triển vọng nâng cao 46",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표228 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_46 예문입니다."
   },
   {
-    "korean": "토론229",
-    "romaja": "to-ron-229",
-    "vietnamese": "Thảo luận 229",
+    "korean": "지적_용어_47",
+    "romaja": "ji-jeok-yong-eo-47",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 47",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론229 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_47 예문입니다."
   },
   {
-    "korean": "건강230",
-    "romaja": "geon-gang-230",
-    "vietnamese": "Sức khỏe 230",
+    "korean": "논란_용어_48",
+    "romaja": "non-ran-yong-eo-48",
+    "vietnamese": "Tranh cãi nâng cao 48",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강230 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_48 예문입니다."
   },
   {
-    "korean": "진료231",
-    "romaja": "jin-ryo-231",
-    "vietnamese": "Khám chữa bệnh 231",
+    "korean": "시급_용어_49",
+    "romaja": "si-geup-yong-eo-49",
+    "vietnamese": "Cấp bách nâng cao 49",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료231 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_49 예문입니다."
   },
   {
-    "korean": "예방232",
-    "romaja": "ye-bang-232",
-    "vietnamese": "Phòng ngừa 232",
+    "korean": "전환_용어_50",
+    "romaja": "jeon-hwan-yong-eo-50",
+    "vietnamese": "Chuyển đổi nâng cao 50",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방232 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_50 예문입니다."
   },
   {
-    "korean": "자연233",
-    "romaja": "ja-yeon-233",
-    "vietnamese": "Tự nhiên 233",
+    "korean": "도약_용어_51",
+    "romaja": "do-yak-yong-eo-51",
+    "vietnamese": "Bước nhảy vọt nâng cao 51",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연233 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_51 예문입니다."
   },
   {
-    "korean": "환경234",
-    "romaja": "hwan-gyeong-234",
-    "vietnamese": "Môi trường 234",
+    "korean": "초월_용어_52",
+    "romaja": "cho-wol-yong-eo-52",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 52",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경234 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_52 예문입니다."
   },
   {
-    "korean": "보호235",
-    "romaja": "bo-ho-235",
-    "vietnamese": "Bảo vệ 235",
+    "korean": "상응_용어_53",
+    "romaja": "sang-eung-yong-eo-53",
+    "vietnamese": "Tương ứng nâng cao 53",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호235 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "상응_용어_53 예문입니다."
   },
   {
-    "korean": "기분236",
-    "romaja": "gi-bun-236",
-    "vietnamese": "Tâm trạng 236",
+    "korean": "도출_용어_54",
+    "romaja": "do-chul-yong-eo-54",
+    "vietnamese": "Rút ra kết luận nâng cao 54",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분236 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_54 예문입니다."
   },
   {
-    "korean": "희망237",
-    "romaja": "hui-mang-237",
-    "vietnamese": "Hy vọng 237",
+    "korean": "융합_용어_55",
+    "romaja": "yung-hap-yong-eo-55",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 55",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망237 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "융합_용어_55 예문입니다."
   },
   {
-    "korean": "감동238",
-    "romaja": "gam-dong-238",
-    "vietnamese": "Cảm động 238",
+    "korean": "잠재_용어_56",
+    "romaja": "jam-jae-yong-eo-56",
+    "vietnamese": "Tiềm ẩn nâng cao 56",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동238 문장 예시입니다."
-  },
-  {
-    "korean": "휴양239",
-    "romaja": "hyu-yang-239",
-    "vietnamese": "Nghỉ dưỡng 239",
-    "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양239 문장 예시입니다."
-  },
-  {
-    "korean": "체험240",
-    "romaja": "che-heom-240",
-    "vietnamese": "Trải nghiệm 240",
-    "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험240 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_56 예문입니다."
   },
   {
-    "korean": "문화241",
-    "romaja": "mun-hwa-241",
-    "vietnamese": "Văn hóa 241",
+    "korean": "지향_용어_57",
+    "romaja": "ji-hyang-yong-eo-57",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 57",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화241 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_57 예문입니다."
   },
   {
-    "korean": "예술242",
-    "romaja": "ye-sul-242",
-    "vietnamese": "Nghệ thuật 242",
+    "korean": "파급_용어_58",
+    "romaja": "pa-geup-yong-eo-58",
+    "vietnamese": "Tác động lan tỏa nâng cao 58",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술242 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_58 예문입니다."
   },
   {
-    "korean": "전통243",
-    "romaja": "jeon-tong-243",
-    "vietnamese": "Truyền thống 243",
+    "korean": "창출_용어_59",
+    "romaja": "chang-chul-yong-eo-59",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 59",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통243 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "창출_용어_59 예문입니다."
   },
   {
-    "korean": "법률244",
-    "romaja": "beop-ryul-244",
-    "vietnamese": "Pháp luật 244",
+    "korean": "관련_용어_60",
+    "romaja": "gwan-ryeon-yong-eo-60",
+    "vietnamese": "Liên quan nâng cao 60",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률244 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_60 예문입니다."
   },
   {
-    "korean": "사회245",
-    "romaja": "sa-hoe-245",
-    "vietnamese": "Xã hội 245",
+    "korean": "영향_용어_61",
+    "romaja": "yeong-hyang-yong-eo-61",
+    "vietnamese": "Ảnh hưởng nâng cao 61",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회245 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_61 예문입니다."
   },
   {
-    "korean": "정치246",
-    "romaja": "jeong-chi-246",
-    "vietnamese": "Chính trị 246",
+    "korean": "분석_용어_62",
+    "romaja": "bun-seok-yong-eo-62",
+    "vietnamese": "Phân tích nâng cao 62",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치246 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_62 예문입니다."
   },
   {
-    "korean": "경제247",
-    "romaja": "gyeong-je-247",
-    "vietnamese": "Kinh tế 247",
+    "korean": "평가_용어_63",
+    "romaja": "pyeong-ga-yong-eo-63",
+    "vietnamese": "Đánh giá nâng cao 63",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제247 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_63 예문입니다."
   },
   {
-    "korean": "무역248",
-    "romaja": "mu-yeok-248",
-    "vietnamese": "Thương mại 248",
+    "korean": "추진_용어_64",
+    "romaja": "chu-jin-yong-eo-64",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 64",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역248 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "추진_용어_64 예문입니다."
   },
   {
-    "korean": "투자249",
-    "romaja": "tu-ja-249",
-    "vietnamese": "Đầu tư 249",
+    "korean": "달성_용어_65",
+    "romaja": "dal-seong-yong-eo-65",
+    "vietnamese": "Đạt thành tích nâng cao 65",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자249 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_65 예문입니다."
   },
   {
-    "korean": "학습250",
-    "romaja": "hak-seup-250",
-    "vietnamese": "Học tập 250",
+    "korean": "전망_용어_66",
+    "romaja": "jeon-mang-yong-eo-66",
+    "vietnamese": "Triển vọng nâng cao 66",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습250 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_66 예문입니다."
   },
   {
-    "korean": "교육251",
-    "romaja": "gyo-yuk-251",
-    "vietnamese": "Giáo dục 251",
+    "korean": "지적_용어_67",
+    "romaja": "ji-jeok-yong-eo-67",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 67",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육251 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_67 예문입니다."
   },
   {
-    "korean": "연구252",
-    "romaja": "yeon-gu-252",
-    "vietnamese": "Nghiên cứu 252",
+    "korean": "논란_용어_68",
+    "romaja": "non-ran-yong-eo-68",
+    "vietnamese": "Tranh cãi nâng cao 68",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구252 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_68 예문입니다."
   },
   {
-    "korean": "발표253",
-    "romaja": "bal-pyo-253",
-    "vietnamese": "Thuyết trình 253",
+    "korean": "시급_용어_69",
+    "romaja": "si-geup-yong-eo-69",
+    "vietnamese": "Cấp bách nâng cao 69",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표253 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_69 예문입니다."
   },
   {
-    "korean": "토론254",
-    "romaja": "to-ron-254",
-    "vietnamese": "Thảo luận 254",
+    "korean": "전환_용어_70",
+    "romaja": "jeon-hwan-yong-eo-70",
+    "vietnamese": "Chuyển đổi nâng cao 70",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론254 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_70 예문입니다."
   },
   {
-    "korean": "건강255",
-    "romaja": "geon-gang-255",
-    "vietnamese": "Sức khỏe 255",
+    "korean": "도약_용어_71",
+    "romaja": "do-yak-yong-eo-71",
+    "vietnamese": "Bước nhảy vọt nâng cao 71",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강255 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_71 예문입니다."
   },
   {
-    "korean": "진료256",
-    "romaja": "jin-ryo-256",
-    "vietnamese": "Khám chữa bệnh 256",
+    "korean": "초월_용어_72",
+    "romaja": "cho-wol-yong-eo-72",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 72",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료256 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_72 예문입니다."
   },
   {
-    "korean": "예방257",
-    "romaja": "ye-bang-257",
-    "vietnamese": "Phòng ngừa 257",
+    "korean": "상응_용어_73",
+    "romaja": "sang-eung-yong-eo-73",
+    "vietnamese": "Tương ứng nâng cao 73",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방257 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_73 예문입니다."
   },
   {
-    "korean": "자연258",
-    "romaja": "ja-yeon-258",
-    "vietnamese": "Tự nhiên 258",
+    "korean": "도출_용어_74",
+    "romaja": "do-chul-yong-eo-74",
+    "vietnamese": "Rút ra kết luận nâng cao 74",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연258 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_74 예문입니다."
   },
   {
-    "korean": "환경259",
-    "romaja": "hwan-gyeong-259",
-    "vietnamese": "Môi trường 259",
+    "korean": "융합_용어_75",
+    "romaja": "yung-hap-yong-eo-75",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 75",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경259 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_75 예문입니다."
   },
   {
-    "korean": "보호260",
-    "romaja": "bo-ho-260",
-    "vietnamese": "Bảo vệ 260",
+    "korean": "잠재_용어_76",
+    "romaja": "jam-jae-yong-eo-76",
+    "vietnamese": "Tiềm ẩn nâng cao 76",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호260 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_76 예문입니다."
   },
   {
-    "korean": "기분261",
-    "romaja": "gi-bun-261",
-    "vietnamese": "Tâm trạng 261",
+    "korean": "지향_용어_77",
+    "romaja": "ji-hyang-yong-eo-77",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 77",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분261 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_77 예문입니다."
   },
   {
-    "korean": "희망262",
-    "romaja": "hui-mang-262",
-    "vietnamese": "Hy vọng 262",
+    "korean": "파급_용어_78",
+    "romaja": "pa-geup-yong-eo-78",
+    "vietnamese": "Tác động lan tỏa nâng cao 78",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망262 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_78 예문입니다."
   },
   {
-    "korean": "감동263",
-    "romaja": "gam-dong-263",
-    "vietnamese": "Cảm động 263",
+    "korean": "창출_용어_79",
+    "romaja": "chang-chul-yong-eo-79",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 79",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동263 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "창출_용어_79 예문입니다."
   },
   {
-    "korean": "휴양264",
-    "romaja": "hyu-yang-264",
-    "vietnamese": "Nghỉ dưỡng 264",
+    "korean": "관련_용어_80",
+    "romaja": "gwan-ryeon-yong-eo-80",
+    "vietnamese": "Liên quan nâng cao 80",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양264 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_80 예문입니다."
   },
   {
-    "korean": "체험265",
-    "romaja": "che-heom-265",
-    "vietnamese": "Trải nghiệm 265",
+    "korean": "영향_용어_81",
+    "romaja": "yeong-hyang-yong-eo-81",
+    "vietnamese": "Ảnh hưởng nâng cao 81",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험265 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_81 예문입니다."
   },
   {
-    "korean": "문화266",
-    "romaja": "mun-hwa-266",
-    "vietnamese": "Văn hóa 266",
+    "korean": "분석_용어_82",
+    "romaja": "bun-seok-yong-eo-82",
+    "vietnamese": "Phân tích nâng cao 82",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화266 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_82 예문입니다."
   },
   {
-    "korean": "예술267",
-    "romaja": "ye-sul-267",
-    "vietnamese": "Nghệ thuật 267",
+    "korean": "평가_용어_83",
+    "romaja": "pyeong-ga-yong-eo-83",
+    "vietnamese": "Đánh giá nâng cao 83",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술267 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "평가_용어_83 예문입니다."
   },
   {
-    "korean": "전통268",
-    "romaja": "jeon-tong-268",
-    "vietnamese": "Truyền thống 268",
+    "korean": "추진_용어_84",
+    "romaja": "chu-jin-yong-eo-84",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 84",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통268 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_84 예문입니다."
   },
   {
-    "korean": "법률269",
-    "romaja": "beop-ryul-269",
-    "vietnamese": "Pháp luật 269",
+    "korean": "달성_용어_85",
+    "romaja": "dal-seong-yong-eo-85",
+    "vietnamese": "Đạt thành tích nâng cao 85",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률269 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_85 예문입니다."
   },
   {
-    "korean": "사회270",
-    "romaja": "sa-hoe-270",
-    "vietnamese": "Xã hội 270",
+    "korean": "전망_용어_86",
+    "romaja": "jeon-mang-yong-eo-86",
+    "vietnamese": "Triển vọng nâng cao 86",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회270 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_86 예문입니다."
   },
   {
-    "korean": "정치271",
-    "romaja": "jeong-chi-271",
-    "vietnamese": "Chính trị 271",
+    "korean": "지적_용어_87",
+    "romaja": "ji-jeok-yong-eo-87",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 87",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치271 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_87 예문입니다."
   },
   {
-    "korean": "경제272",
-    "romaja": "gyeong-je-272",
-    "vietnamese": "Kinh tế 272",
+    "korean": "논란_용어_88",
+    "romaja": "non-ran-yong-eo-88",
+    "vietnamese": "Tranh cãi nâng cao 88",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제272 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "논란_용어_88 예문입니다."
   },
   {
-    "korean": "무역273",
-    "romaja": "mu-yeok-273",
-    "vietnamese": "Thương mại 273",
+    "korean": "시급_용어_89",
+    "romaja": "si-geup-yong-eo-89",
+    "vietnamese": "Cấp bách nâng cao 89",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역273 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_89 예문입니다."
   },
   {
-    "korean": "투자274",
-    "romaja": "tu-ja-274",
-    "vietnamese": "Đầu tư 274",
+    "korean": "전환_용어_90",
+    "romaja": "jeon-hwan-yong-eo-90",
+    "vietnamese": "Chuyển đổi nâng cao 90",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자274 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_90 예문입니다."
   },
   {
-    "korean": "학습275",
-    "romaja": "hak-seup-275",
-    "vietnamese": "Học tập 275",
+    "korean": "도약_용어_91",
+    "romaja": "do-yak-yong-eo-91",
+    "vietnamese": "Bước nhảy vọt nâng cao 91",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습275 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_91 예문입니다."
   },
   {
-    "korean": "교육276",
-    "romaja": "gyo-yuk-276",
-    "vietnamese": "Giáo dục 276",
+    "korean": "초월_용어_92",
+    "romaja": "cho-wol-yong-eo-92",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 92",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육276 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_92 예문입니다."
   },
   {
-    "korean": "연구277",
-    "romaja": "yeon-gu-277",
-    "vietnamese": "Nghiên cứu 277",
+    "korean": "상응_용어_93",
+    "romaja": "sang-eung-yong-eo-93",
+    "vietnamese": "Tương ứng nâng cao 93",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구277 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_93 예문입니다."
   },
   {
-    "korean": "발표278",
-    "romaja": "bal-pyo-278",
-    "vietnamese": "Thuyết trình 278",
+    "korean": "도출_용어_94",
+    "romaja": "do-chul-yong-eo-94",
+    "vietnamese": "Rút ra kết luận nâng cao 94",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표278 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_94 예문입니다."
   },
   {
-    "korean": "토론279",
-    "romaja": "to-ron-279",
-    "vietnamese": "Thảo luận 279",
+    "korean": "융합_용어_95",
+    "romaja": "yung-hap-yong-eo-95",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 95",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론279 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_95 예문입니다."
   },
   {
-    "korean": "건강280",
-    "romaja": "geon-gang-280",
-    "vietnamese": "Sức khỏe 280",
+    "korean": "잠재_용어_96",
+    "romaja": "jam-jae-yong-eo-96",
+    "vietnamese": "Tiềm ẩn nâng cao 96",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강280 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_96 예문입니다."
   },
   {
-    "korean": "진료281",
-    "romaja": "jin-ryo-281",
-    "vietnamese": "Khám chữa bệnh 281",
+    "korean": "지향_용어_97",
+    "romaja": "ji-hyang-yong-eo-97",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 97",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료281 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_97 예문입니다."
   },
   {
-    "korean": "예방282",
-    "romaja": "ye-bang-282",
-    "vietnamese": "Phòng ngừa 282",
+    "korean": "파급_용어_98",
+    "romaja": "pa-geup-yong-eo-98",
+    "vietnamese": "Tác động lan tỏa nâng cao 98",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방282 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_98 예문입니다."
   },
   {
-    "korean": "자연283",
-    "romaja": "ja-yeon-283",
-    "vietnamese": "Tự nhiên 283",
+    "korean": "창출_용어_99",
+    "romaja": "chang-chul-yong-eo-99",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 99",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연283 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_99 예문입니다."
   },
   {
-    "korean": "환경284",
-    "romaja": "hwan-gyeong-284",
-    "vietnamese": "Môi trường 284",
+    "korean": "관련_용어_100",
+    "romaja": "gwan-ryeon-yong-eo-100",
+    "vietnamese": "Liên quan nâng cao 100",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경284 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_100 예문입니다."
   },
   {
-    "korean": "보호285",
-    "romaja": "bo-ho-285",
-    "vietnamese": "Bảo vệ 285",
+    "korean": "영향_용어_101",
+    "romaja": "yeong-hyang-yong-eo-101",
+    "vietnamese": "Ảnh hưởng nâng cao 101",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호285 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "영향_용어_101 예문입니다."
   },
   {
-    "korean": "기분286",
-    "romaja": "gi-bun-286",
-    "vietnamese": "Tâm trạng 286",
+    "korean": "분석_용어_102",
+    "romaja": "bun-seok-yong-eo-102",
+    "vietnamese": "Phân tích nâng cao 102",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분286 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_102 예문입니다."
   },
   {
-    "korean": "희망287",
-    "romaja": "hui-mang-287",
-    "vietnamese": "Hy vọng 287",
+    "korean": "평가_용어_103",
+    "romaja": "pyeong-ga-yong-eo-103",
+    "vietnamese": "Đánh giá nâng cao 103",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망287 문장 예시입니다."
-  },
-  {
-    "korean": "감동288",
-    "romaja": "gam-dong-288",
-    "vietnamese": "Cảm động 288",
-    "pos": "Danh từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동288 문장 예시입니다."
-  },
-  {
-    "korean": "휴양289",
-    "romaja": "hyu-yang-289",
-    "vietnamese": "Nghỉ dưỡng 289",
-    "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양289 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "평가_용어_103 예문입니다."
   },
   {
-    "korean": "체험290",
-    "romaja": "che-heom-290",
-    "vietnamese": "Trải nghiệm 290",
+    "korean": "추진_용어_104",
+    "romaja": "chu-jin-yong-eo-104",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 104",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험290 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_104 예문입니다."
   },
   {
-    "korean": "문화291",
-    "romaja": "mun-hwa-291",
-    "vietnamese": "Văn hóa 291",
+    "korean": "달성_용어_105",
+    "romaja": "dal-seong-yong-eo-105",
+    "vietnamese": "Đạt thành tích nâng cao 105",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화291 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_105 예문입니다."
   },
   {
-    "korean": "예술292",
-    "romaja": "ye-sul-292",
-    "vietnamese": "Nghệ thuật 292",
+    "korean": "전망_용어_106",
+    "romaja": "jeon-mang-yong-eo-106",
+    "vietnamese": "Triển vọng nâng cao 106",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술292 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_106 예문입니다."
   },
   {
-    "korean": "전통293",
-    "romaja": "jeon-tong-293",
-    "vietnamese": "Truyền thống 293",
+    "korean": "지적_용어_107",
+    "romaja": "ji-jeok-yong-eo-107",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 107",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통293 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "지적_용어_107 예문입니다."
   },
   {
-    "korean": "법률294",
-    "romaja": "beop-ryul-294",
-    "vietnamese": "Pháp luật 294",
+    "korean": "논란_용어_108",
+    "romaja": "non-ran-yong-eo-108",
+    "vietnamese": "Tranh cãi nâng cao 108",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률294 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_108 예문입니다."
   },
   {
-    "korean": "사회295",
-    "romaja": "sa-hoe-295",
-    "vietnamese": "Xã hội 295",
+    "korean": "시급_용어_109",
+    "romaja": "si-geup-yong-eo-109",
+    "vietnamese": "Cấp bách nâng cao 109",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회295 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_109 예문입니다."
   },
   {
-    "korean": "정치296",
-    "romaja": "jeong-chi-296",
-    "vietnamese": "Chính trị 296",
+    "korean": "전환_용어_110",
+    "romaja": "jeon-hwan-yong-eo-110",
+    "vietnamese": "Chuyển đổi nâng cao 110",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치296 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_110 예문입니다."
   },
   {
-    "korean": "경제297",
-    "romaja": "gyeong-je-297",
-    "vietnamese": "Kinh tế 297",
+    "korean": "도약_용어_111",
+    "romaja": "do-yak-yong-eo-111",
+    "vietnamese": "Bước nhảy vọt nâng cao 111",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제297 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_111 예문입니다."
   },
   {
-    "korean": "무역298",
-    "romaja": "mu-yeok-298",
-    "vietnamese": "Thương mại 298",
+    "korean": "초월_용어_112",
+    "romaja": "cho-wol-yong-eo-112",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 112",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역298 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "초월_용어_112 예문입니다."
   },
   {
-    "korean": "투자299",
-    "romaja": "tu-ja-299",
-    "vietnamese": "Đầu tư 299",
+    "korean": "상응_용어_113",
+    "romaja": "sang-eung-yong-eo-113",
+    "vietnamese": "Tương ứng nâng cao 113",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자299 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_113 예문입니다."
   },
   {
-    "korean": "학습300",
-    "romaja": "hak-seup-300",
-    "vietnamese": "Học tập 300",
+    "korean": "도출_용어_114",
+    "romaja": "do-chul-yong-eo-114",
+    "vietnamese": "Rút ra kết luận nâng cao 114",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습300 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_114 예문입니다."
   },
   {
-    "korean": "교육301",
-    "romaja": "gyo-yuk-301",
-    "vietnamese": "Giáo dục 301",
+    "korean": "융합_용어_115",
+    "romaja": "yung-hap-yong-eo-115",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 115",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육301 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_115 예문입니다."
   },
   {
-    "korean": "연구302",
-    "romaja": "yeon-gu-302",
-    "vietnamese": "Nghiên cứu 302",
+    "korean": "잠재_용어_116",
+    "romaja": "jam-jae-yong-eo-116",
+    "vietnamese": "Tiềm ẩn nâng cao 116",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구302 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_116 예문입니다."
   },
   {
-    "korean": "발표303",
-    "romaja": "bal-pyo-303",
-    "vietnamese": "Thuyết trình 303",
+    "korean": "지향_용어_117",
+    "romaja": "ji-hyang-yong-eo-117",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 117",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표303 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_117 예문입니다."
   },
   {
-    "korean": "토론304",
-    "romaja": "to-ron-304",
-    "vietnamese": "Thảo luận 304",
+    "korean": "파급_용어_118",
+    "romaja": "pa-geup-yong-eo-118",
+    "vietnamese": "Tác động lan tỏa nâng cao 118",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론304 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_118 예문입니다."
   },
   {
-    "korean": "건강305",
-    "romaja": "geon-gang-305",
-    "vietnamese": "Sức khỏe 305",
+    "korean": "창출_용어_119",
+    "romaja": "chang-chul-yong-eo-119",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 119",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강305 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_119 예문입니다."
   },
   {
-    "korean": "진료306",
-    "romaja": "jin-ryo-306",
-    "vietnamese": "Khám chữa bệnh 306",
+    "korean": "관련_용어_120",
+    "romaja": "gwan-ryeon-yong-eo-120",
+    "vietnamese": "Liên quan nâng cao 120",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료306 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_120 예문입니다."
   },
   {
-    "korean": "예방307",
-    "romaja": "ye-bang-307",
-    "vietnamese": "Phòng ngừa 307",
+    "korean": "영향_용어_121",
+    "romaja": "yeong-hyang-yong-eo-121",
+    "vietnamese": "Ảnh hưởng nâng cao 121",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방307 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_121 예문입니다."
   },
   {
-    "korean": "자연308",
-    "romaja": "ja-yeon-308",
-    "vietnamese": "Tự nhiên 308",
+    "korean": "분석_용어_122",
+    "romaja": "bun-seok-yong-eo-122",
+    "vietnamese": "Phân tích nâng cao 122",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연308 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_122 예문입니다."
   },
   {
-    "korean": "환경309",
-    "romaja": "hwan-gyeong-309",
-    "vietnamese": "Môi trường 309",
+    "korean": "평가_용어_123",
+    "romaja": "pyeong-ga-yong-eo-123",
+    "vietnamese": "Đánh giá nâng cao 123",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경309 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_123 예문입니다."
   },
   {
-    "korean": "보호310",
-    "romaja": "bo-ho-310",
-    "vietnamese": "Bảo vệ 310",
+    "korean": "추진_용어_124",
+    "romaja": "chu-jin-yong-eo-124",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 124",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호310 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_124 예문입니다."
   },
   {
-    "korean": "기분311",
-    "romaja": "gi-bun-311",
-    "vietnamese": "Tâm trạng 311",
+    "korean": "달성_용어_125",
+    "romaja": "dal-seong-yong-eo-125",
+    "vietnamese": "Đạt thành tích nâng cao 125",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분311 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_125 예문입니다."
   },
   {
-    "korean": "희망312",
-    "romaja": "hui-mang-312",
-    "vietnamese": "Hy vọng 312",
+    "korean": "전망_용어_126",
+    "romaja": "jeon-mang-yong-eo-126",
+    "vietnamese": "Triển vọng nâng cao 126",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망312 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_126 예문입니다."
   },
   {
-    "korean": "감동313",
-    "romaja": "gam-dong-313",
-    "vietnamese": "Cảm động 313",
+    "korean": "지적_용어_127",
+    "romaja": "ji-jeok-yong-eo-127",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 127",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동313 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "지적_용어_127 예문입니다."
   },
   {
-    "korean": "휴양314",
-    "romaja": "hyu-yang-314",
-    "vietnamese": "Nghỉ dưỡng 314",
+    "korean": "논란_용어_128",
+    "romaja": "non-ran-yong-eo-128",
+    "vietnamese": "Tranh cãi nâng cao 128",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양314 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_128 예문입니다."
   },
   {
-    "korean": "체험315",
-    "romaja": "che-heom-315",
-    "vietnamese": "Trải nghiệm 315",
+    "korean": "시급_용어_129",
+    "romaja": "si-geup-yong-eo-129",
+    "vietnamese": "Cấp bách nâng cao 129",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험315 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_129 예문입니다."
   },
   {
-    "korean": "문화316",
-    "romaja": "mun-hwa-316",
-    "vietnamese": "Văn hóa 316",
+    "korean": "전환_용어_130",
+    "romaja": "jeon-hwan-yong-eo-130",
+    "vietnamese": "Chuyển đổi nâng cao 130",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화316 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_130 예문입니다."
   },
   {
-    "korean": "예술317",
-    "romaja": "ye-sul-317",
-    "vietnamese": "Nghệ thuật 317",
+    "korean": "도약_용어_131",
+    "romaja": "do-yak-yong-eo-131",
+    "vietnamese": "Bước nhảy vọt nâng cao 131",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술317 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "도약_용어_131 예문입니다."
   },
   {
-    "korean": "전통318",
-    "romaja": "jeon-tong-318",
-    "vietnamese": "Truyền thống 318",
+    "korean": "초월_용어_132",
+    "romaja": "cho-wol-yong-eo-132",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 132",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통318 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_132 예문입니다."
   },
   {
-    "korean": "법률319",
-    "romaja": "beop-ryul-319",
-    "vietnamese": "Pháp luật 319",
+    "korean": "상응_용어_133",
+    "romaja": "sang-eung-yong-eo-133",
+    "vietnamese": "Tương ứng nâng cao 133",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률319 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_133 예문입니다."
   },
   {
-    "korean": "사회320",
-    "romaja": "sa-hoe-320",
-    "vietnamese": "Xã hội 320",
+    "korean": "도출_용어_134",
+    "romaja": "do-chul-yong-eo-134",
+    "vietnamese": "Rút ra kết luận nâng cao 134",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회320 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_134 예문입니다."
   },
   {
-    "korean": "정치321",
-    "romaja": "jeong-chi-321",
-    "vietnamese": "Chính trị 321",
+    "korean": "융합_용어_135",
+    "romaja": "yung-hap-yong-eo-135",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 135",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치321 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_135 예문입니다."
   },
   {
-    "korean": "경제322",
-    "romaja": "gyeong-je-322",
-    "vietnamese": "Kinh tế 322",
+    "korean": "잠재_용어_136",
+    "romaja": "jam-jae-yong-eo-136",
+    "vietnamese": "Tiềm ẩn nâng cao 136",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제322 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "잠재_용어_136 예문입니다."
   },
   {
-    "korean": "무역323",
-    "romaja": "mu-yeok-323",
-    "vietnamese": "Thương mại 323",
+    "korean": "지향_용어_137",
+    "romaja": "ji-hyang-yong-eo-137",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 137",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역323 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_137 예문입니다."
   },
   {
-    "korean": "투자324",
-    "romaja": "tu-ja-324",
-    "vietnamese": "Đầu tư 324",
+    "korean": "파급_용어_138",
+    "romaja": "pa-geup-yong-eo-138",
+    "vietnamese": "Tác động lan tỏa nâng cao 138",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자324 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_138 예문입니다."
   },
   {
-    "korean": "학습325",
-    "romaja": "hak-seup-325",
-    "vietnamese": "Học tập 325",
+    "korean": "창출_용어_139",
+    "romaja": "chang-chul-yong-eo-139",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 139",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습325 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_139 예문입니다."
   },
   {
-    "korean": "교육326",
-    "romaja": "gyo-yuk-326",
-    "vietnamese": "Giáo dục 326",
+    "korean": "관련_용어_140",
+    "romaja": "gwan-ryeon-yong-eo-140",
+    "vietnamese": "Liên quan nâng cao 140",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육326 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_140 예문입니다."
   },
   {
-    "korean": "연구327",
-    "romaja": "yeon-gu-327",
-    "vietnamese": "Nghiên cứu 327",
+    "korean": "영향_용어_141",
+    "romaja": "yeong-hyang-yong-eo-141",
+    "vietnamese": "Ảnh hưởng nâng cao 141",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구327 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_141 예문입니다."
   },
   {
-    "korean": "발표328",
-    "romaja": "bal-pyo-328",
-    "vietnamese": "Thuyết trình 328",
+    "korean": "분석_용어_142",
+    "romaja": "bun-seok-yong-eo-142",
+    "vietnamese": "Phân tích nâng cao 142",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표328 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_142 예문입니다."
   },
   {
-    "korean": "토론329",
-    "romaja": "to-ron-329",
-    "vietnamese": "Thảo luận 329",
+    "korean": "평가_용어_143",
+    "romaja": "pyeong-ga-yong-eo-143",
+    "vietnamese": "Đánh giá nâng cao 143",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론329 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_143 예문입니다."
   },
   {
-    "korean": "건강330",
-    "romaja": "geon-gang-330",
-    "vietnamese": "Sức khỏe 330",
+    "korean": "추진_용어_144",
+    "romaja": "chu-jin-yong-eo-144",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 144",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강330 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_144 예문입니다."
   },
   {
-    "korean": "진료331",
-    "romaja": "jin-ryo-331",
-    "vietnamese": "Khám chữa bệnh 331",
+    "korean": "달성_용어_145",
+    "romaja": "dal-seong-yong-eo-145",
+    "vietnamese": "Đạt thành tích nâng cao 145",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료331 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_145 예문입니다."
   },
   {
-    "korean": "예방332",
-    "romaja": "ye-bang-332",
-    "vietnamese": "Phòng ngừa 332",
+    "korean": "전망_용어_146",
+    "romaja": "jeon-mang-yong-eo-146",
+    "vietnamese": "Triển vọng nâng cao 146",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방332 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_146 예문입니다."
   },
   {
-    "korean": "자연333",
-    "romaja": "ja-yeon-333",
-    "vietnamese": "Tự nhiên 333",
+    "korean": "지적_용어_147",
+    "romaja": "ji-jeok-yong-eo-147",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 147",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연333 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_147 예문입니다."
   },
   {
-    "korean": "환경334",
-    "romaja": "hwan-gyeong-334",
-    "vietnamese": "Môi trường 334",
+    "korean": "논란_용어_148",
+    "romaja": "non-ran-yong-eo-148",
+    "vietnamese": "Tranh cãi nâng cao 148",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경334 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_148 예문입니다."
   },
   {
-    "korean": "보호335",
-    "romaja": "bo-ho-335",
-    "vietnamese": "Bảo vệ 335",
+    "korean": "시급_용어_149",
+    "romaja": "si-geup-yong-eo-149",
+    "vietnamese": "Cấp bách nâng cao 149",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호335 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "시급_용어_149 예문입니다."
   },
   {
-    "korean": "기분336",
-    "romaja": "gi-bun-336",
-    "vietnamese": "Tâm trạng 336",
+    "korean": "전환_용어_150",
+    "romaja": "jeon-hwan-yong-eo-150",
+    "vietnamese": "Chuyển đổi nâng cao 150",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분336 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_150 예문입니다."
   },
   {
-    "korean": "희망337",
-    "romaja": "hui-mang-337",
-    "vietnamese": "Hy vọng 337",
+    "korean": "도약_용어_151",
+    "romaja": "do-yak-yong-eo-151",
+    "vietnamese": "Bước nhảy vọt nâng cao 151",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망337 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "도약_용어_151 예문입니다."
   },
   {
-    "korean": "감동338",
-    "romaja": "gam-dong-338",
-    "vietnamese": "Cảm động 338",
+    "korean": "초월_용어_152",
+    "romaja": "cho-wol-yong-eo-152",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 152",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동338 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_152 예문입니다."
   },
   {
-    "korean": "휴양339",
-    "romaja": "hyu-yang-339",
-    "vietnamese": "Nghỉ dưỡng 339",
+    "korean": "상응_용어_153",
+    "romaja": "sang-eung-yong-eo-153",
+    "vietnamese": "Tương ứng nâng cao 153",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양339 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_153 예문입니다."
   },
   {
-    "korean": "체험340",
-    "romaja": "che-heom-340",
-    "vietnamese": "Trải nghiệm 340",
+    "korean": "도출_용어_154",
+    "romaja": "do-chul-yong-eo-154",
+    "vietnamese": "Rút ra kết luận nâng cao 154",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험340 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_154 예문입니다."
   },
   {
-    "korean": "문화341",
-    "romaja": "mun-hwa-341",
-    "vietnamese": "Văn hóa 341",
+    "korean": "융합_용어_155",
+    "romaja": "yung-hap-yong-eo-155",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 155",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화341 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "융합_용어_155 예문입니다."
   },
   {
-    "korean": "예술342",
-    "romaja": "ye-sul-342",
-    "vietnamese": "Nghệ thuật 342",
+    "korean": "잠재_용어_156",
+    "romaja": "jam-jae-yong-eo-156",
+    "vietnamese": "Tiềm ẩn nâng cao 156",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술342 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_156 예문입니다."
   },
   {
-    "korean": "전통343",
-    "romaja": "jeon-tong-343",
-    "vietnamese": "Truyền thống 343",
+    "korean": "지향_용어_157",
+    "romaja": "ji-hyang-yong-eo-157",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 157",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통343 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_157 예문입니다."
   },
   {
-    "korean": "법률344",
-    "romaja": "beop-ryul-344",
-    "vietnamese": "Pháp luật 344",
+    "korean": "파급_용어_158",
+    "romaja": "pa-geup-yong-eo-158",
+    "vietnamese": "Tác động lan tỏa nâng cao 158",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률344 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_158 예문입니다."
   },
   {
-    "korean": "사회345",
-    "romaja": "sa-hoe-345",
-    "vietnamese": "Xã hội 345",
+    "korean": "창출_용어_159",
+    "romaja": "chang-chul-yong-eo-159",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 159",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회345 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_159 예문입니다."
   },
   {
-    "korean": "정치346",
-    "romaja": "jeong-chi-346",
-    "vietnamese": "Chính trị 346",
+    "korean": "관련_용어_160",
+    "romaja": "gwan-ryeon-yong-eo-160",
+    "vietnamese": "Liên quan nâng cao 160",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치346 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_160 예문입니다."
   },
   {
-    "korean": "경제347",
-    "romaja": "gyeong-je-347",
-    "vietnamese": "Kinh tế 347",
+    "korean": "영향_용어_161",
+    "romaja": "yeong-hyang-yong-eo-161",
+    "vietnamese": "Ảnh hưởng nâng cao 161",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제347 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_161 예문입니다."
   },
   {
-    "korean": "무역348",
-    "romaja": "mu-yeok-348",
-    "vietnamese": "Thương mại 348",
+    "korean": "분석_용어_162",
+    "romaja": "bun-seok-yong-eo-162",
+    "vietnamese": "Phân tích nâng cao 162",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역348 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_162 예문입니다."
   },
   {
-    "korean": "투자349",
-    "romaja": "tu-ja-349",
-    "vietnamese": "Đầu tư 349",
+    "korean": "평가_용어_163",
+    "romaja": "pyeong-ga-yong-eo-163",
+    "vietnamese": "Đánh giá nâng cao 163",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자349 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_163 예문입니다."
   },
   {
-    "korean": "학습350",
-    "romaja": "hak-seup-350",
-    "vietnamese": "Học tập 350",
+    "korean": "추진_용어_164",
+    "romaja": "chu-jin-yong-eo-164",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 164",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습350 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_164 예문입니다."
   },
   {
-    "korean": "교육351",
-    "romaja": "gyo-yuk-351",
-    "vietnamese": "Giáo dục 351",
+    "korean": "달성_용어_165",
+    "romaja": "dal-seong-yong-eo-165",
+    "vietnamese": "Đạt thành tích nâng cao 165",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육351 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_165 예문입니다."
   },
   {
-    "korean": "연구352",
-    "romaja": "yeon-gu-352",
-    "vietnamese": "Nghiên cứu 352",
+    "korean": "전망_용어_166",
+    "romaja": "jeon-mang-yong-eo-166",
+    "vietnamese": "Triển vọng nâng cao 166",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구352 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_166 예문입니다."
   },
   {
-    "korean": "발표353",
-    "romaja": "bal-pyo-353",
-    "vietnamese": "Thuyết trình 353",
+    "korean": "지적_용어_167",
+    "romaja": "ji-jeok-yong-eo-167",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 167",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표353 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_167 예문입니다."
   },
   {
-    "korean": "토론354",
-    "romaja": "to-ron-354",
-    "vietnamese": "Thảo luận 354",
+    "korean": "논란_용어_168",
+    "romaja": "non-ran-yong-eo-168",
+    "vietnamese": "Tranh cãi nâng cao 168",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론354 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_168 예문입니다."
   },
   {
-    "korean": "건강355",
-    "romaja": "geon-gang-355",
-    "vietnamese": "Sức khỏe 355",
+    "korean": "시급_용어_169",
+    "romaja": "si-geup-yong-eo-169",
+    "vietnamese": "Cấp bách nâng cao 169",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강355 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_169 예문입니다."
   },
   {
-    "korean": "진료356",
-    "romaja": "jin-ryo-356",
-    "vietnamese": "Khám chữa bệnh 356",
+    "korean": "전환_용어_170",
+    "romaja": "jeon-hwan-yong-eo-170",
+    "vietnamese": "Chuyển đổi nâng cao 170",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료356 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_170 예문입니다."
   },
   {
-    "korean": "예방357",
-    "romaja": "ye-bang-357",
-    "vietnamese": "Phòng ngừa 357",
+    "korean": "도약_용어_171",
+    "romaja": "do-yak-yong-eo-171",
+    "vietnamese": "Bước nhảy vọt nâng cao 171",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방357 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_171 예문입니다."
   },
   {
-    "korean": "자연358",
-    "romaja": "ja-yeon-358",
-    "vietnamese": "Tự nhiên 358",
+    "korean": "초월_용어_172",
+    "romaja": "cho-wol-yong-eo-172",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 172",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연358 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_172 예문입니다."
   },
   {
-    "korean": "환경359",
-    "romaja": "hwan-gyeong-359",
-    "vietnamese": "Môi trường 359",
+    "korean": "상응_용어_173",
+    "romaja": "sang-eung-yong-eo-173",
+    "vietnamese": "Tương ứng nâng cao 173",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경359 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "상응_용어_173 예문입니다."
   },
   {
-    "korean": "보호360",
-    "romaja": "bo-ho-360",
-    "vietnamese": "Bảo vệ 360",
+    "korean": "도출_용어_174",
+    "romaja": "do-chul-yong-eo-174",
+    "vietnamese": "Rút ra kết luận nâng cao 174",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호360 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_174 예문입니다."
   },
   {
-    "korean": "기분361",
-    "romaja": "gi-bun-361",
-    "vietnamese": "Tâm trạng 361",
+    "korean": "융합_용어_175",
+    "romaja": "yung-hap-yong-eo-175",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 175",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분361 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "융합_용어_175 예문입니다."
   },
   {
-    "korean": "희망362",
-    "romaja": "hui-mang-362",
-    "vietnamese": "Hy vọng 362",
+    "korean": "잠재_용어_176",
+    "romaja": "jam-jae-yong-eo-176",
+    "vietnamese": "Tiềm ẩn nâng cao 176",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망362 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_176 예문입니다."
   },
   {
-    "korean": "감동363",
-    "romaja": "gam-dong-363",
-    "vietnamese": "Cảm động 363",
+    "korean": "지향_용어_177",
+    "romaja": "ji-hyang-yong-eo-177",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 177",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동363 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_177 예문입니다."
   },
   {
-    "korean": "휴양364",
-    "romaja": "hyu-yang-364",
-    "vietnamese": "Nghỉ dưỡng 364",
+    "korean": "파급_용어_178",
+    "romaja": "pa-geup-yong-eo-178",
+    "vietnamese": "Tác động lan tỏa nâng cao 178",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양364 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_178 예문입니다."
   },
   {
-    "korean": "체험365",
-    "romaja": "che-heom-365",
-    "vietnamese": "Trải nghiệm 365",
+    "korean": "창출_용어_179",
+    "romaja": "chang-chul-yong-eo-179",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 179",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험365 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_179 예문입니다."
   },
   {
-    "korean": "문화366",
-    "romaja": "mun-hwa-366",
-    "vietnamese": "Văn hóa 366",
+    "korean": "관련_용어_180",
+    "romaja": "gwan-ryeon-yong-eo-180",
+    "vietnamese": "Liên quan nâng cao 180",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화366 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_180 예문입니다."
   },
   {
-    "korean": "예술367",
-    "romaja": "ye-sul-367",
-    "vietnamese": "Nghệ thuật 367",
+    "korean": "영향_용어_181",
+    "romaja": "yeong-hyang-yong-eo-181",
+    "vietnamese": "Ảnh hưởng nâng cao 181",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술367 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_181 예문입니다."
   },
   {
-    "korean": "전통368",
-    "romaja": "jeon-tong-368",
-    "vietnamese": "Truyền thống 368",
+    "korean": "분석_용어_182",
+    "romaja": "bun-seok-yong-eo-182",
+    "vietnamese": "Phân tích nâng cao 182",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통368 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_182 예문입니다."
   },
   {
-    "korean": "법률369",
-    "romaja": "beop-ryul-369",
-    "vietnamese": "Pháp luật 369",
+    "korean": "평가_용어_183",
+    "romaja": "pyeong-ga-yong-eo-183",
+    "vietnamese": "Đánh giá nâng cao 183",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률369 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_183 예문입니다."
   },
   {
-    "korean": "사회370",
-    "romaja": "sa-hoe-370",
-    "vietnamese": "Xã hội 370",
+    "korean": "추진_용어_184",
+    "romaja": "chu-jin-yong-eo-184",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 184",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회370 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_184 예문입니다."
   },
   {
-    "korean": "정치371",
-    "romaja": "jeong-chi-371",
-    "vietnamese": "Chính trị 371",
+    "korean": "달성_용어_185",
+    "romaja": "dal-seong-yong-eo-185",
+    "vietnamese": "Đạt thành tích nâng cao 185",
     "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치371 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "달성_용어_185 예문입니다."
   },
   {
-    "korean": "경제372",
-    "romaja": "gyeong-je-372",
-    "vietnamese": "Kinh tế 372",
+    "korean": "전망_용어_186",
+    "romaja": "jeon-mang-yong-eo-186",
+    "vietnamese": "Triển vọng nâng cao 186",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제372 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_186 예문입니다."
   },
   {
-    "korean": "무역373",
-    "romaja": "mu-yeok-373",
-    "vietnamese": "Thương mại 373",
+    "korean": "지적_용어_187",
+    "romaja": "ji-jeok-yong-eo-187",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 187",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역373 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_187 예문입니다."
   },
   {
-    "korean": "투자374",
-    "romaja": "tu-ja-374",
-    "vietnamese": "Đầu tư 374",
+    "korean": "논란_용어_188",
+    "romaja": "non-ran-yong-eo-188",
+    "vietnamese": "Tranh cãi nâng cao 188",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자374 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_188 예문입니다."
   },
   {
-    "korean": "학습375",
-    "romaja": "hak-seup-375",
-    "vietnamese": "Học tập 375",
+    "korean": "시급_용어_189",
+    "romaja": "si-geup-yong-eo-189",
+    "vietnamese": "Cấp bách nâng cao 189",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습375 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_189 예문입니다."
   },
   {
-    "korean": "교육376",
-    "romaja": "gyo-yuk-376",
-    "vietnamese": "Giáo dục 376",
+    "korean": "전환_용어_190",
+    "romaja": "jeon-hwan-yong-eo-190",
+    "vietnamese": "Chuyển đổi nâng cao 190",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육376 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_190 예문입니다."
   },
   {
-    "korean": "연구377",
-    "romaja": "yeon-gu-377",
-    "vietnamese": "Nghiên cứu 377",
+    "korean": "도약_용어_191",
+    "romaja": "do-yak-yong-eo-191",
+    "vietnamese": "Bước nhảy vọt nâng cao 191",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구377 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_191 예문입니다."
   },
   {
-    "korean": "발표378",
-    "romaja": "bal-pyo-378",
-    "vietnamese": "Thuyết trình 378",
+    "korean": "초월_용어_192",
+    "romaja": "cho-wol-yong-eo-192",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 192",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표378 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_192 예문입니다."
   },
   {
-    "korean": "토론379",
-    "romaja": "to-ron-379",
-    "vietnamese": "Thảo luận 379",
+    "korean": "상응_용어_193",
+    "romaja": "sang-eung-yong-eo-193",
+    "vietnamese": "Tương ứng nâng cao 193",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론379 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_193 예문입니다."
   },
   {
-    "korean": "건강380",
-    "romaja": "geon-gang-380",
-    "vietnamese": "Sức khỏe 380",
+    "korean": "도출_용어_194",
+    "romaja": "do-chul-yong-eo-194",
+    "vietnamese": "Rút ra kết luận nâng cao 194",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강380 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_194 예문입니다."
   },
   {
-    "korean": "진료381",
-    "romaja": "jin-ryo-381",
-    "vietnamese": "Khám chữa bệnh 381",
+    "korean": "융합_용어_195",
+    "romaja": "yung-hap-yong-eo-195",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 195",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료381 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_195 예문입니다."
   },
   {
-    "korean": "예방382",
-    "romaja": "ye-bang-382",
-    "vietnamese": "Phòng ngừa 382",
+    "korean": "잠재_용어_196",
+    "romaja": "jam-jae-yong-eo-196",
+    "vietnamese": "Tiềm ẩn nâng cao 196",
     "pos": "Danh từ",
     "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방382 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "잠재_용어_196 예문입니다."
   },
   {
-    "korean": "자연383",
-    "romaja": "ja-yeon-383",
-    "vietnamese": "Tự nhiên 383",
+    "korean": "지향_용어_197",
+    "romaja": "ji-hyang-yong-eo-197",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 197",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연383 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "지향_용어_197 예문입니다."
   },
   {
-    "korean": "환경384",
-    "romaja": "hwan-gyeong-384",
-    "vietnamese": "Môi trường 384",
+    "korean": "파급_용어_198",
+    "romaja": "pa-geup-yong-eo-198",
+    "vietnamese": "Tác động lan tỏa nâng cao 198",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경384 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_198 예문입니다."
   },
   {
-    "korean": "보호385",
-    "romaja": "bo-ho-385",
-    "vietnamese": "Bảo vệ 385",
+    "korean": "창출_용어_199",
+    "romaja": "chang-chul-yong-eo-199",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 199",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호385 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_199 예문입니다."
   },
   {
-    "korean": "기분386",
-    "romaja": "gi-bun-386",
-    "vietnamese": "Tâm trạng 386",
+    "korean": "관련_용어_200",
+    "romaja": "gwan-ryeon-yong-eo-200",
+    "vietnamese": "Liên quan nâng cao 200",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분386 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_200 예문입니다."
   },
   {
-    "korean": "희망387",
-    "romaja": "hui-mang-387",
-    "vietnamese": "Hy vọng 387",
+    "korean": "영향_용어_201",
+    "romaja": "yeong-hyang-yong-eo-201",
+    "vietnamese": "Ảnh hưởng nâng cao 201",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망387 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_201 예문입니다."
   },
   {
-    "korean": "감동388",
-    "romaja": "gam-dong-388",
-    "vietnamese": "Cảm động 388",
+    "korean": "분석_용어_202",
+    "romaja": "bun-seok-yong-eo-202",
+    "vietnamese": "Phân tích nâng cao 202",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동388 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_202 예문입니다."
   },
   {
-    "korean": "휴양389",
-    "romaja": "hyu-yang-389",
-    "vietnamese": "Nghỉ dưỡng 389",
+    "korean": "평가_용어_203",
+    "romaja": "pyeong-ga-yong-eo-203",
+    "vietnamese": "Đánh giá nâng cao 203",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양389 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_203 예문입니다."
   },
   {
-    "korean": "체험390",
-    "romaja": "che-heom-390",
-    "vietnamese": "Trải nghiệm 390",
+    "korean": "추진_용어_204",
+    "romaja": "chu-jin-yong-eo-204",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 204",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험390 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_204 예문입니다."
   },
   {
-    "korean": "문화391",
-    "romaja": "mun-hwa-391",
-    "vietnamese": "Văn hóa 391",
+    "korean": "달성_용어_205",
+    "romaja": "dal-seong-yong-eo-205",
+    "vietnamese": "Đạt thành tích nâng cao 205",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화391 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_205 예문입니다."
   },
   {
-    "korean": "예술392",
-    "romaja": "ye-sul-392",
-    "vietnamese": "Nghệ thuật 392",
+    "korean": "전망_용어_206",
+    "romaja": "jeon-mang-yong-eo-206",
+    "vietnamese": "Triển vọng nâng cao 206",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술392 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_206 예문입니다."
   },
   {
-    "korean": "전통393",
-    "romaja": "jeon-tong-393",
-    "vietnamese": "Truyền thống 393",
+    "korean": "지적_용어_207",
+    "romaja": "ji-jeok-yong-eo-207",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 207",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통393 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_207 예문입니다."
   },
   {
-    "korean": "법률394",
-    "romaja": "beop-ryul-394",
-    "vietnamese": "Pháp luật 394",
+    "korean": "논란_용어_208",
+    "romaja": "non-ran-yong-eo-208",
+    "vietnamese": "Tranh cãi nâng cao 208",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률394 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_208 예문입니다."
   },
   {
-    "korean": "사회395",
-    "romaja": "sa-hoe-395",
-    "vietnamese": "Xã hội 395",
+    "korean": "시급_용어_209",
+    "romaja": "si-geup-yong-eo-209",
+    "vietnamese": "Cấp bách nâng cao 209",
     "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회395 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "시급_용어_209 예문입니다."
   },
   {
-    "korean": "정치396",
-    "romaja": "jeong-chi-396",
-    "vietnamese": "Chính trị 396",
+    "korean": "전환_용어_210",
+    "romaja": "jeon-hwan-yong-eo-210",
+    "vietnamese": "Chuyển đổi nâng cao 210",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치396 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_210 예문입니다."
   },
   {
-    "korean": "경제397",
-    "romaja": "gyeong-je-397",
-    "vietnamese": "Kinh tế 397",
+    "korean": "도약_용어_211",
+    "romaja": "do-yak-yong-eo-211",
+    "vietnamese": "Bước nhảy vọt nâng cao 211",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제397 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_211 예문입니다."
   },
   {
-    "korean": "무역398",
-    "romaja": "mu-yeok-398",
-    "vietnamese": "Thương mại 398",
+    "korean": "초월_용어_212",
+    "romaja": "cho-wol-yong-eo-212",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 212",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역398 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_212 예문입니다."
   },
   {
-    "korean": "투자399",
-    "romaja": "tu-ja-399",
-    "vietnamese": "Đầu tư 399",
+    "korean": "상응_용어_213",
+    "romaja": "sang-eung-yong-eo-213",
+    "vietnamese": "Tương ứng nâng cao 213",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자399 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_213 예문입니다."
   },
   {
-    "korean": "학습400",
-    "romaja": "hak-seup-400",
-    "vietnamese": "Học tập 400",
+    "korean": "도출_용어_214",
+    "romaja": "do-chul-yong-eo-214",
+    "vietnamese": "Rút ra kết luận nâng cao 214",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습400 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_214 예문입니다."
   },
   {
-    "korean": "교육401",
-    "romaja": "gyo-yuk-401",
-    "vietnamese": "Giáo dục 401",
+    "korean": "융합_용어_215",
+    "romaja": "yung-hap-yong-eo-215",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 215",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육401 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_215 예문입니다."
   },
   {
-    "korean": "연구402",
-    "romaja": "yeon-gu-402",
-    "vietnamese": "Nghiên cứu 402",
+    "korean": "잠재_용어_216",
+    "romaja": "jam-jae-yong-eo-216",
+    "vietnamese": "Tiềm ẩn nâng cao 216",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구402 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_216 예문입니다."
   },
   {
-    "korean": "발표403",
-    "romaja": "bal-pyo-403",
-    "vietnamese": "Thuyết trình 403",
+    "korean": "지향_용어_217",
+    "romaja": "ji-hyang-yong-eo-217",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 217",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표403 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_217 예문입니다."
   },
   {
-    "korean": "토론404",
-    "romaja": "to-ron-404",
-    "vietnamese": "Thảo luận 404",
+    "korean": "파급_용어_218",
+    "romaja": "pa-geup-yong-eo-218",
+    "vietnamese": "Tác động lan tỏa nâng cao 218",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론404 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_218 예문입니다."
   },
   {
-    "korean": "건강405",
-    "romaja": "geon-gang-405",
-    "vietnamese": "Sức khỏe 405",
+    "korean": "창출_용어_219",
+    "romaja": "chang-chul-yong-eo-219",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 219",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강405 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_219 예문입니다."
   },
   {
-    "korean": "진료406",
-    "romaja": "jin-ryo-406",
-    "vietnamese": "Khám chữa bệnh 406",
+    "korean": "관련_용어_220",
+    "romaja": "gwan-ryeon-yong-eo-220",
+    "vietnamese": "Liên quan nâng cao 220",
     "pos": "Danh từ",
     "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료406 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "관련_용어_220 예문입니다."
   },
   {
-    "korean": "예방407",
-    "romaja": "ye-bang-407",
-    "vietnamese": "Phòng ngừa 407",
+    "korean": "영향_용어_221",
+    "romaja": "yeong-hyang-yong-eo-221",
+    "vietnamese": "Ảnh hưởng nâng cao 221",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방407 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_221 예문입니다."
   },
   {
-    "korean": "자연408",
-    "romaja": "ja-yeon-408",
-    "vietnamese": "Tự nhiên 408",
+    "korean": "분석_용어_222",
+    "romaja": "bun-seok-yong-eo-222",
+    "vietnamese": "Phân tích nâng cao 222",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연408 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_222 예문입니다."
   },
   {
-    "korean": "환경409",
-    "romaja": "hwan-gyeong-409",
-    "vietnamese": "Môi trường 409",
+    "korean": "평가_용어_223",
+    "romaja": "pyeong-ga-yong-eo-223",
+    "vietnamese": "Đánh giá nâng cao 223",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경409 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_223 예문입니다."
   },
   {
-    "korean": "보호410",
-    "romaja": "bo-ho-410",
-    "vietnamese": "Bảo vệ 410",
+    "korean": "추진_용어_224",
+    "romaja": "chu-jin-yong-eo-224",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 224",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호410 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_224 예문입니다."
   },
   {
-    "korean": "기분411",
-    "romaja": "gi-bun-411",
-    "vietnamese": "Tâm trạng 411",
+    "korean": "달성_용어_225",
+    "romaja": "dal-seong-yong-eo-225",
+    "vietnamese": "Đạt thành tích nâng cao 225",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분411 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_225 예문입니다."
   },
   {
-    "korean": "희망412",
-    "romaja": "hui-mang-412",
-    "vietnamese": "Hy vọng 412",
+    "korean": "전망_용어_226",
+    "romaja": "jeon-mang-yong-eo-226",
+    "vietnamese": "Triển vọng nâng cao 226",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망412 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_226 예문입니다."
   },
   {
-    "korean": "감동413",
-    "romaja": "gam-dong-413",
-    "vietnamese": "Cảm động 413",
+    "korean": "지적_용어_227",
+    "romaja": "ji-jeok-yong-eo-227",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 227",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동413 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_227 예문입니다."
   },
   {
-    "korean": "휴양414",
-    "romaja": "hyu-yang-414",
-    "vietnamese": "Nghỉ dưỡng 414",
+    "korean": "논란_용어_228",
+    "romaja": "non-ran-yong-eo-228",
+    "vietnamese": "Tranh cãi nâng cao 228",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양414 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_228 예문입니다."
   },
   {
-    "korean": "체험415",
-    "romaja": "che-heom-415",
-    "vietnamese": "Trải nghiệm 415",
+    "korean": "시급_용어_229",
+    "romaja": "si-geup-yong-eo-229",
+    "vietnamese": "Cấp bách nâng cao 229",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험415 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_229 예문입니다."
   },
   {
-    "korean": "문화416",
-    "romaja": "mun-hwa-416",
-    "vietnamese": "Văn hóa 416",
+    "korean": "전환_용어_230",
+    "romaja": "jeon-hwan-yong-eo-230",
+    "vietnamese": "Chuyển đổi nâng cao 230",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화416 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_230 예문입니다."
   },
   {
-    "korean": "예술417",
-    "romaja": "ye-sul-417",
-    "vietnamese": "Nghệ thuật 417",
+    "korean": "도약_용어_231",
+    "romaja": "do-yak-yong-eo-231",
+    "vietnamese": "Bước nhảy vọt nâng cao 231",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술417 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_231 예문입니다."
   },
   {
-    "korean": "전통418",
-    "romaja": "jeon-tong-418",
-    "vietnamese": "Truyền thống 418",
+    "korean": "초월_용어_232",
+    "romaja": "cho-wol-yong-eo-232",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 232",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통418 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_232 예문입니다."
   },
   {
-    "korean": "법률419",
-    "romaja": "beop-ryul-419",
-    "vietnamese": "Pháp luật 419",
+    "korean": "상응_용어_233",
+    "romaja": "sang-eung-yong-eo-233",
+    "vietnamese": "Tương ứng nâng cao 233",
     "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률419 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "상응_용어_233 예문입니다."
   },
   {
-    "korean": "사회420",
-    "romaja": "sa-hoe-420",
-    "vietnamese": "Xã hội 420",
+    "korean": "도출_용어_234",
+    "romaja": "do-chul-yong-eo-234",
+    "vietnamese": "Rút ra kết luận nâng cao 234",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회420 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_234 예문입니다."
   },
   {
-    "korean": "정치421",
-    "romaja": "jeong-chi-421",
-    "vietnamese": "Chính trị 421",
+    "korean": "융합_용어_235",
+    "romaja": "yung-hap-yong-eo-235",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 235",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치421 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_235 예문입니다."
   },
   {
-    "korean": "경제422",
-    "romaja": "gyeong-je-422",
-    "vietnamese": "Kinh tế 422",
+    "korean": "잠재_용어_236",
+    "romaja": "jam-jae-yong-eo-236",
+    "vietnamese": "Tiềm ẩn nâng cao 236",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제422 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_236 예문입니다."
   },
   {
-    "korean": "무역423",
-    "romaja": "mu-yeok-423",
-    "vietnamese": "Thương mại 423",
+    "korean": "지향_용어_237",
+    "romaja": "ji-hyang-yong-eo-237",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 237",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역423 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_237 예문입니다."
   },
   {
-    "korean": "투자424",
-    "romaja": "tu-ja-424",
-    "vietnamese": "Đầu tư 424",
+    "korean": "파급_용어_238",
+    "romaja": "pa-geup-yong-eo-238",
+    "vietnamese": "Tác động lan tỏa nâng cao 238",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자424 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_238 예문입니다."
   },
   {
-    "korean": "학습425",
-    "romaja": "hak-seup-425",
-    "vietnamese": "Học tập 425",
+    "korean": "창출_용어_239",
+    "romaja": "chang-chul-yong-eo-239",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 239",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습425 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_239 예문입니다."
   },
   {
-    "korean": "교육426",
-    "romaja": "gyo-yuk-426",
-    "vietnamese": "Giáo dục 426",
+    "korean": "관련_용어_240",
+    "romaja": "gwan-ryeon-yong-eo-240",
+    "vietnamese": "Liên quan nâng cao 240",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육426 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_240 예문입니다."
   },
   {
-    "korean": "연구427",
-    "romaja": "yeon-gu-427",
-    "vietnamese": "Nghiên cứu 427",
+    "korean": "영향_용어_241",
+    "romaja": "yeong-hyang-yong-eo-241",
+    "vietnamese": "Ảnh hưởng nâng cao 241",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구427 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_241 예문입니다."
   },
   {
-    "korean": "발표428",
-    "romaja": "bal-pyo-428",
-    "vietnamese": "Thuyết trình 428",
+    "korean": "분석_용어_242",
+    "romaja": "bun-seok-yong-eo-242",
+    "vietnamese": "Phân tích nâng cao 242",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표428 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_242 예문입니다."
   },
   {
-    "korean": "토론429",
-    "romaja": "to-ron-429",
-    "vietnamese": "Thảo luận 429",
+    "korean": "평가_용어_243",
+    "romaja": "pyeong-ga-yong-eo-243",
+    "vietnamese": "Đánh giá nâng cao 243",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론429 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_243 예문입니다."
   },
   {
-    "korean": "건강430",
-    "romaja": "geon-gang-430",
-    "vietnamese": "Sức khỏe 430",
+    "korean": "추진_용어_244",
+    "romaja": "chu-jin-yong-eo-244",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 244",
     "pos": "Danh từ",
     "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강430 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "추진_용어_244 예문입니다."
   },
   {
-    "korean": "진료431",
-    "romaja": "jin-ryo-431",
-    "vietnamese": "Khám chữa bệnh 431",
+    "korean": "달성_용어_245",
+    "romaja": "dal-seong-yong-eo-245",
+    "vietnamese": "Đạt thành tích nâng cao 245",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료431 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_245 예문입니다."
   },
   {
-    "korean": "예방432",
-    "romaja": "ye-bang-432",
-    "vietnamese": "Phòng ngừa 432",
+    "korean": "전망_용어_246",
+    "romaja": "jeon-mang-yong-eo-246",
+    "vietnamese": "Triển vọng nâng cao 246",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방432 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_246 예문입니다."
   },
   {
-    "korean": "자연433",
-    "romaja": "ja-yeon-433",
-    "vietnamese": "Tự nhiên 433",
+    "korean": "지적_용어_247",
+    "romaja": "ji-jeok-yong-eo-247",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 247",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연433 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_247 예문입니다."
   },
   {
-    "korean": "환경434",
-    "romaja": "hwan-gyeong-434",
-    "vietnamese": "Môi trường 434",
+    "korean": "논란_용어_248",
+    "romaja": "non-ran-yong-eo-248",
+    "vietnamese": "Tranh cãi nâng cao 248",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경434 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_248 예문입니다."
   },
   {
-    "korean": "보호435",
-    "romaja": "bo-ho-435",
-    "vietnamese": "Bảo vệ 435",
+    "korean": "시급_용어_249",
+    "romaja": "si-geup-yong-eo-249",
+    "vietnamese": "Cấp bách nâng cao 249",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호435 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_249 예문입니다."
   },
   {
-    "korean": "기분436",
-    "romaja": "gi-bun-436",
-    "vietnamese": "Tâm trạng 436",
+    "korean": "전환_용어_250",
+    "romaja": "jeon-hwan-yong-eo-250",
+    "vietnamese": "Chuyển đổi nâng cao 250",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분436 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_250 예문입니다."
   },
   {
-    "korean": "희망437",
-    "romaja": "hui-mang-437",
-    "vietnamese": "Hy vọng 437",
+    "korean": "도약_용어_251",
+    "romaja": "do-yak-yong-eo-251",
+    "vietnamese": "Bước nhảy vọt nâng cao 251",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망437 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_251 예문입니다."
   },
   {
-    "korean": "감동438",
-    "romaja": "gam-dong-438",
-    "vietnamese": "Cảm động 438",
+    "korean": "초월_용어_252",
+    "romaja": "cho-wol-yong-eo-252",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 252",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동438 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_252 예문입니다."
   },
   {
-    "korean": "휴양439",
-    "romaja": "hyu-yang-439",
-    "vietnamese": "Nghỉ dưỡng 439",
+    "korean": "상응_용어_253",
+    "romaja": "sang-eung-yong-eo-253",
+    "vietnamese": "Tương ứng nâng cao 253",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양439 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_253 예문입니다."
   },
   {
-    "korean": "체험440",
-    "romaja": "che-heom-440",
-    "vietnamese": "Trải nghiệm 440",
+    "korean": "도출_용어_254",
+    "romaja": "do-chul-yong-eo-254",
+    "vietnamese": "Rút ra kết luận nâng cao 254",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험440 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_254 예문입니다."
   },
   {
-    "korean": "문화441",
-    "romaja": "mun-hwa-441",
-    "vietnamese": "Văn hóa 441",
+    "korean": "융합_용어_255",
+    "romaja": "yung-hap-yong-eo-255",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 255",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화441 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_255 예문입니다."
   },
   {
-    "korean": "예술442",
-    "romaja": "ye-sul-442",
-    "vietnamese": "Nghệ thuật 442",
+    "korean": "잠재_용어_256",
+    "romaja": "jam-jae-yong-eo-256",
+    "vietnamese": "Tiềm ẩn nâng cao 256",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술442 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_256 예문입니다."
+  },
+  {
+    "korean": "지향_용어_257",
+    "romaja": "ji-hyang-yong-eo-257",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 257",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_257 예문입니다."
+  },
+  {
+    "korean": "파급_용어_258",
+    "romaja": "pa-geup-yong-eo-258",
+    "vietnamese": "Tác động lan tỏa nâng cao 258",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_258 예문입니다."
   },
   {
-    "korean": "전통443",
-    "romaja": "jeon-tong-443",
-    "vietnamese": "Truyền thống 443",
+    "korean": "창출_용어_259",
+    "romaja": "chang-chul-yong-eo-259",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 259",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통443 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "창출_용어_259 예문입니다."
   },
   {
-    "korean": "법률444",
-    "romaja": "beop-ryul-444",
-    "vietnamese": "Pháp luật 444",
+    "korean": "관련_용어_260",
+    "romaja": "gwan-ryeon-yong-eo-260",
+    "vietnamese": "Liên quan nâng cao 260",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률444 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_260 예문입니다."
   },
   {
-    "korean": "사회445",
-    "romaja": "sa-hoe-445",
-    "vietnamese": "Xã hội 445",
+    "korean": "영향_용어_261",
+    "romaja": "yeong-hyang-yong-eo-261",
+    "vietnamese": "Ảnh hưởng nâng cao 261",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회445 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_261 예문입니다."
   },
   {
-    "korean": "정치446",
-    "romaja": "jeong-chi-446",
-    "vietnamese": "Chính trị 446",
+    "korean": "분석_용어_262",
+    "romaja": "bun-seok-yong-eo-262",
+    "vietnamese": "Phân tích nâng cao 262",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치446 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_262 예문입니다."
   },
   {
-    "korean": "경제447",
-    "romaja": "gyeong-je-447",
-    "vietnamese": "Kinh tế 447",
+    "korean": "평가_용어_263",
+    "romaja": "pyeong-ga-yong-eo-263",
+    "vietnamese": "Đánh giá nâng cao 263",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제447 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_263 예문입니다."
   },
   {
-    "korean": "무역448",
-    "romaja": "mu-yeok-448",
-    "vietnamese": "Thương mại 448",
+    "korean": "추진_용어_264",
+    "romaja": "chu-jin-yong-eo-264",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 264",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역448 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "추진_용어_264 예문입니다."
   },
   {
-    "korean": "투자449",
-    "romaja": "tu-ja-449",
-    "vietnamese": "Đầu tư 449",
+    "korean": "달성_용어_265",
+    "romaja": "dal-seong-yong-eo-265",
+    "vietnamese": "Đạt thành tích nâng cao 265",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자449 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_265 예문입니다."
   },
   {
-    "korean": "학습450",
-    "romaja": "hak-seup-450",
-    "vietnamese": "Học tập 450",
+    "korean": "전망_용어_266",
+    "romaja": "jeon-mang-yong-eo-266",
+    "vietnamese": "Triển vọng nâng cao 266",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습450 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_266 예문입니다."
   },
   {
-    "korean": "교육451",
-    "romaja": "gyo-yuk-451",
-    "vietnamese": "Giáo dục 451",
+    "korean": "지적_용어_267",
+    "romaja": "ji-jeok-yong-eo-267",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 267",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육451 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_267 예문입니다."
   },
   {
-    "korean": "연구452",
-    "romaja": "yeon-gu-452",
-    "vietnamese": "Nghiên cứu 452",
+    "korean": "논란_용어_268",
+    "romaja": "non-ran-yong-eo-268",
+    "vietnamese": "Tranh cãi nâng cao 268",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구452 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_268 예문입니다."
   },
   {
-    "korean": "발표453",
-    "romaja": "bal-pyo-453",
-    "vietnamese": "Thuyết trình 453",
+    "korean": "시급_용어_269",
+    "romaja": "si-geup-yong-eo-269",
+    "vietnamese": "Cấp bách nâng cao 269",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표453 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_269 예문입니다."
   },
   {
-    "korean": "토론454",
-    "romaja": "to-ron-454",
-    "vietnamese": "Thảo luận 454",
+    "korean": "전환_용어_270",
+    "romaja": "jeon-hwan-yong-eo-270",
+    "vietnamese": "Chuyển đổi nâng cao 270",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론454 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_270 예문입니다."
   },
   {
-    "korean": "건강455",
-    "romaja": "geon-gang-455",
-    "vietnamese": "Sức khỏe 455",
+    "korean": "도약_용어_271",
+    "romaja": "do-yak-yong-eo-271",
+    "vietnamese": "Bước nhảy vọt nâng cao 271",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강455 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_271 예문입니다."
   },
   {
-    "korean": "진료456",
-    "romaja": "jin-ryo-456",
-    "vietnamese": "Khám chữa bệnh 456",
+    "korean": "초월_용어_272",
+    "romaja": "cho-wol-yong-eo-272",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 272",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료456 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_272 예문입니다."
   },
   {
-    "korean": "예방457",
-    "romaja": "ye-bang-457",
-    "vietnamese": "Phòng ngừa 457",
+    "korean": "상응_용어_273",
+    "romaja": "sang-eung-yong-eo-273",
+    "vietnamese": "Tương ứng nâng cao 273",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방457 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_273 예문입니다."
   },
   {
-    "korean": "자연458",
-    "romaja": "ja-yeon-458",
-    "vietnamese": "Tự nhiên 458",
+    "korean": "도출_용어_274",
+    "romaja": "do-chul-yong-eo-274",
+    "vietnamese": "Rút ra kết luận nâng cao 274",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연458 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_274 예문입니다."
   },
   {
-    "korean": "환경459",
-    "romaja": "hwan-gyeong-459",
-    "vietnamese": "Môi trường 459",
+    "korean": "융합_용어_275",
+    "romaja": "yung-hap-yong-eo-275",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 275",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경459 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_275 예문입니다."
   },
   {
-    "korean": "보호460",
-    "romaja": "bo-ho-460",
-    "vietnamese": "Bảo vệ 460",
+    "korean": "잠재_용어_276",
+    "romaja": "jam-jae-yong-eo-276",
+    "vietnamese": "Tiềm ẩn nâng cao 276",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호460 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_276 예문입니다."
   },
   {
-    "korean": "기분461",
-    "romaja": "gi-bun-461",
-    "vietnamese": "Tâm trạng 461",
+    "korean": "지향_용어_277",
+    "romaja": "ji-hyang-yong-eo-277",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 277",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분461 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_277 예문입니다."
   },
   {
-    "korean": "희망462",
-    "romaja": "hui-mang-462",
-    "vietnamese": "Hy vọng 462",
+    "korean": "파급_용어_278",
+    "romaja": "pa-geup-yong-eo-278",
+    "vietnamese": "Tác động lan tỏa nâng cao 278",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망462 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_278 예문입니다."
   },
   {
-    "korean": "감동463",
-    "romaja": "gam-dong-463",
-    "vietnamese": "Cảm động 463",
+    "korean": "창출_용어_279",
+    "romaja": "chang-chul-yong-eo-279",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 279",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동463 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "창출_용어_279 예문입니다."
   },
   {
-    "korean": "휴양464",
-    "romaja": "hyu-yang-464",
-    "vietnamese": "Nghỉ dưỡng 464",
+    "korean": "관련_용어_280",
+    "romaja": "gwan-ryeon-yong-eo-280",
+    "vietnamese": "Liên quan nâng cao 280",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양464 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_280 예문입니다."
   },
   {
-    "korean": "체험465",
-    "romaja": "che-heom-465",
-    "vietnamese": "Trải nghiệm 465",
+    "korean": "영향_용어_281",
+    "romaja": "yeong-hyang-yong-eo-281",
+    "vietnamese": "Ảnh hưởng nâng cao 281",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험465 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_281 예문입니다."
   },
   {
-    "korean": "문화466",
-    "romaja": "mun-hwa-466",
-    "vietnamese": "Văn hóa 466",
+    "korean": "분석_용어_282",
+    "romaja": "bun-seok-yong-eo-282",
+    "vietnamese": "Phân tích nâng cao 282",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화466 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_282 예문입니다."
   },
   {
-    "korean": "예술467",
-    "romaja": "ye-sul-467",
-    "vietnamese": "Nghệ thuật 467",
+    "korean": "평가_용어_283",
+    "romaja": "pyeong-ga-yong-eo-283",
+    "vietnamese": "Đánh giá nâng cao 283",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술467 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "평가_용어_283 예문입니다."
   },
   {
-    "korean": "전통468",
-    "romaja": "jeon-tong-468",
-    "vietnamese": "Truyền thống 468",
+    "korean": "추진_용어_284",
+    "romaja": "chu-jin-yong-eo-284",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 284",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통468 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_284 예문입니다."
   },
   {
-    "korean": "법률469",
-    "romaja": "beop-ryul-469",
-    "vietnamese": "Pháp luật 469",
+    "korean": "달성_용어_285",
+    "romaja": "dal-seong-yong-eo-285",
+    "vietnamese": "Đạt thành tích nâng cao 285",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률469 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_285 예문입니다."
   },
   {
-    "korean": "사회470",
-    "romaja": "sa-hoe-470",
-    "vietnamese": "Xã hội 470",
+    "korean": "전망_용어_286",
+    "romaja": "jeon-mang-yong-eo-286",
+    "vietnamese": "Triển vọng nâng cao 286",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회470 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_286 예문입니다."
   },
   {
-    "korean": "정치471",
-    "romaja": "jeong-chi-471",
-    "vietnamese": "Chính trị 471",
+    "korean": "지적_용어_287",
+    "romaja": "ji-jeok-yong-eo-287",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 287",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치471 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_287 예문입니다."
   },
   {
-    "korean": "경제472",
-    "romaja": "gyeong-je-472",
-    "vietnamese": "Kinh tế 472",
+    "korean": "논란_용어_288",
+    "romaja": "non-ran-yong-eo-288",
+    "vietnamese": "Tranh cãi nâng cao 288",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제472 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "논란_용어_288 예문입니다."
   },
   {
-    "korean": "무역473",
-    "romaja": "mu-yeok-473",
-    "vietnamese": "Thương mại 473",
+    "korean": "시급_용어_289",
+    "romaja": "si-geup-yong-eo-289",
+    "vietnamese": "Cấp bách nâng cao 289",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역473 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_289 예문입니다."
   },
   {
-    "korean": "투자474",
-    "romaja": "tu-ja-474",
-    "vietnamese": "Đầu tư 474",
+    "korean": "전환_용어_290",
+    "romaja": "jeon-hwan-yong-eo-290",
+    "vietnamese": "Chuyển đổi nâng cao 290",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자474 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_290 예문입니다."
   },
   {
-    "korean": "학습475",
-    "romaja": "hak-seup-475",
-    "vietnamese": "Học tập 475",
+    "korean": "도약_용어_291",
+    "romaja": "do-yak-yong-eo-291",
+    "vietnamese": "Bước nhảy vọt nâng cao 291",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습475 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_291 예문입니다."
   },
   {
-    "korean": "교육476",
-    "romaja": "gyo-yuk-476",
-    "vietnamese": "Giáo dục 476",
+    "korean": "초월_용어_292",
+    "romaja": "cho-wol-yong-eo-292",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 292",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육476 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_292 예문입니다."
   },
   {
-    "korean": "연구477",
-    "romaja": "yeon-gu-477",
-    "vietnamese": "Nghiên cứu 477",
+    "korean": "상응_용어_293",
+    "romaja": "sang-eung-yong-eo-293",
+    "vietnamese": "Tương ứng nâng cao 293",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구477 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_293 예문입니다."
   },
   {
-    "korean": "발표478",
-    "romaja": "bal-pyo-478",
-    "vietnamese": "Thuyết trình 478",
+    "korean": "도출_용어_294",
+    "romaja": "do-chul-yong-eo-294",
+    "vietnamese": "Rút ra kết luận nâng cao 294",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표478 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_294 예문입니다."
   },
   {
-    "korean": "토론479",
-    "romaja": "to-ron-479",
-    "vietnamese": "Thảo luận 479",
+    "korean": "융합_용어_295",
+    "romaja": "yung-hap-yong-eo-295",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 295",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론479 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_295 예문입니다."
   },
   {
-    "korean": "건강480",
-    "romaja": "geon-gang-480",
-    "vietnamese": "Sức khỏe 480",
+    "korean": "잠재_용어_296",
+    "romaja": "jam-jae-yong-eo-296",
+    "vietnamese": "Tiềm ẩn nâng cao 296",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강480 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_296 예문입니다."
   },
   {
-    "korean": "진료481",
-    "romaja": "jin-ryo-481",
-    "vietnamese": "Khám chữa bệnh 481",
+    "korean": "지향_용어_297",
+    "romaja": "ji-hyang-yong-eo-297",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 297",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료481 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_297 예문입니다."
   },
   {
-    "korean": "예방482",
-    "romaja": "ye-bang-482",
-    "vietnamese": "Phòng ngừa 482",
+    "korean": "파급_용어_298",
+    "romaja": "pa-geup-yong-eo-298",
+    "vietnamese": "Tác động lan tỏa nâng cao 298",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방482 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_298 예문입니다."
   },
   {
-    "korean": "자연483",
-    "romaja": "ja-yeon-483",
-    "vietnamese": "Tự nhiên 483",
+    "korean": "창출_용어_299",
+    "romaja": "chang-chul-yong-eo-299",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 299",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연483 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_299 예문입니다."
   },
   {
-    "korean": "환경484",
-    "romaja": "hwan-gyeong-484",
-    "vietnamese": "Môi trường 484",
+    "korean": "관련_용어_300",
+    "romaja": "gwan-ryeon-yong-eo-300",
+    "vietnamese": "Liên quan nâng cao 300",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경484 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_300 예문입니다."
   },
   {
-    "korean": "보호485",
-    "romaja": "bo-ho-485",
-    "vietnamese": "Bảo vệ 485",
+    "korean": "영향_용어_301",
+    "romaja": "yeong-hyang-yong-eo-301",
+    "vietnamese": "Ảnh hưởng nâng cao 301",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호485 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "영향_용어_301 예문입니다."
   },
   {
-    "korean": "기분486",
-    "romaja": "gi-bun-486",
-    "vietnamese": "Tâm trạng 486",
+    "korean": "분석_용어_302",
+    "romaja": "bun-seok-yong-eo-302",
+    "vietnamese": "Phân tích nâng cao 302",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분486 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_302 예문입니다."
   },
   {
-    "korean": "희망487",
-    "romaja": "hui-mang-487",
-    "vietnamese": "Hy vọng 487",
+    "korean": "평가_용어_303",
+    "romaja": "pyeong-ga-yong-eo-303",
+    "vietnamese": "Đánh giá nâng cao 303",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망487 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "평가_용어_303 예문입니다."
   },
   {
-    "korean": "감동488",
-    "romaja": "gam-dong-488",
-    "vietnamese": "Cảm động 488",
+    "korean": "추진_용어_304",
+    "romaja": "chu-jin-yong-eo-304",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 304",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동488 문장 예시입니다."
-  },
-  {
-    "korean": "휴양489",
-    "romaja": "hyu-yang-489",
-    "vietnamese": "Nghỉ dưỡng 489",
-    "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양489 문장 예시입니다."
-  },
-  {
-    "korean": "체험490",
-    "romaja": "che-heom-490",
-    "vietnamese": "Trải nghiệm 490",
-    "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험490 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_304 예문입니다."
   },
   {
-    "korean": "문화491",
-    "romaja": "mun-hwa-491",
-    "vietnamese": "Văn hóa 491",
+    "korean": "달성_용어_305",
+    "romaja": "dal-seong-yong-eo-305",
+    "vietnamese": "Đạt thành tích nâng cao 305",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화491 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_305 예문입니다."
   },
   {
-    "korean": "예술492",
-    "romaja": "ye-sul-492",
-    "vietnamese": "Nghệ thuật 492",
+    "korean": "전망_용어_306",
+    "romaja": "jeon-mang-yong-eo-306",
+    "vietnamese": "Triển vọng nâng cao 306",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술492 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_306 예문입니다."
   },
   {
-    "korean": "전통493",
-    "romaja": "jeon-tong-493",
-    "vietnamese": "Truyền thống 493",
+    "korean": "지적_용어_307",
+    "romaja": "ji-jeok-yong-eo-307",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 307",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통493 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "지적_용어_307 예문입니다."
   },
   {
-    "korean": "법률494",
-    "romaja": "beop-ryul-494",
-    "vietnamese": "Pháp luật 494",
+    "korean": "논란_용어_308",
+    "romaja": "non-ran-yong-eo-308",
+    "vietnamese": "Tranh cãi nâng cao 308",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률494 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_308 예문입니다."
   },
   {
-    "korean": "사회495",
-    "romaja": "sa-hoe-495",
-    "vietnamese": "Xã hội 495",
+    "korean": "시급_용어_309",
+    "romaja": "si-geup-yong-eo-309",
+    "vietnamese": "Cấp bách nâng cao 309",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회495 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_309 예문입니다."
   },
   {
-    "korean": "정치496",
-    "romaja": "jeong-chi-496",
-    "vietnamese": "Chính trị 496",
+    "korean": "전환_용어_310",
+    "romaja": "jeon-hwan-yong-eo-310",
+    "vietnamese": "Chuyển đổi nâng cao 310",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치496 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_310 예문입니다."
   },
   {
-    "korean": "경제497",
-    "romaja": "gyeong-je-497",
-    "vietnamese": "Kinh tế 497",
+    "korean": "도약_용어_311",
+    "romaja": "do-yak-yong-eo-311",
+    "vietnamese": "Bước nhảy vọt nâng cao 311",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제497 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_311 예문입니다."
   },
   {
-    "korean": "무역498",
-    "romaja": "mu-yeok-498",
-    "vietnamese": "Thương mại 498",
+    "korean": "초월_용어_312",
+    "romaja": "cho-wol-yong-eo-312",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 312",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역498 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "초월_용어_312 예문입니다."
   },
   {
-    "korean": "투자499",
-    "romaja": "tu-ja-499",
-    "vietnamese": "Đầu tư 499",
+    "korean": "상응_용어_313",
+    "romaja": "sang-eung-yong-eo-313",
+    "vietnamese": "Tương ứng nâng cao 313",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자499 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_313 예문입니다."
   },
   {
-    "korean": "학습500",
-    "romaja": "hak-seup-500",
-    "vietnamese": "Học tập 500",
+    "korean": "도출_용어_314",
+    "romaja": "do-chul-yong-eo-314",
+    "vietnamese": "Rút ra kết luận nâng cao 314",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습500 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_314 예문입니다."
   },
   {
-    "korean": "교육501",
-    "romaja": "gyo-yuk-501",
-    "vietnamese": "Giáo dục 501",
+    "korean": "융합_용어_315",
+    "romaja": "yung-hap-yong-eo-315",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 315",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육501 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_315 예문입니다."
   },
   {
-    "korean": "연구502",
-    "romaja": "yeon-gu-502",
-    "vietnamese": "Nghiên cứu 502",
+    "korean": "잠재_용어_316",
+    "romaja": "jam-jae-yong-eo-316",
+    "vietnamese": "Tiềm ẩn nâng cao 316",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구502 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_316 예문입니다."
   },
   {
-    "korean": "발표503",
-    "romaja": "bal-pyo-503",
-    "vietnamese": "Thuyết trình 503",
+    "korean": "지향_용어_317",
+    "romaja": "ji-hyang-yong-eo-317",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 317",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표503 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_317 예문입니다."
   },
   {
-    "korean": "토론504",
-    "romaja": "to-ron-504",
-    "vietnamese": "Thảo luận 504",
+    "korean": "파급_용어_318",
+    "romaja": "pa-geup-yong-eo-318",
+    "vietnamese": "Tác động lan tỏa nâng cao 318",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론504 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_318 예문입니다."
   },
   {
-    "korean": "건강505",
-    "romaja": "geon-gang-505",
-    "vietnamese": "Sức khỏe 505",
+    "korean": "창출_용어_319",
+    "romaja": "chang-chul-yong-eo-319",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 319",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강505 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_319 예문입니다."
   },
   {
-    "korean": "진료506",
-    "romaja": "jin-ryo-506",
-    "vietnamese": "Khám chữa bệnh 506",
+    "korean": "관련_용어_320",
+    "romaja": "gwan-ryeon-yong-eo-320",
+    "vietnamese": "Liên quan nâng cao 320",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료506 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_320 예문입니다."
   },
   {
-    "korean": "예방507",
-    "romaja": "ye-bang-507",
-    "vietnamese": "Phòng ngừa 507",
+    "korean": "영향_용어_321",
+    "romaja": "yeong-hyang-yong-eo-321",
+    "vietnamese": "Ảnh hưởng nâng cao 321",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방507 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_321 예문입니다."
   },
   {
-    "korean": "자연508",
-    "romaja": "ja-yeon-508",
-    "vietnamese": "Tự nhiên 508",
+    "korean": "분석_용어_322",
+    "romaja": "bun-seok-yong-eo-322",
+    "vietnamese": "Phân tích nâng cao 322",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연508 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_322 예문입니다."
   },
   {
-    "korean": "환경509",
-    "romaja": "hwan-gyeong-509",
-    "vietnamese": "Môi trường 509",
+    "korean": "평가_용어_323",
+    "romaja": "pyeong-ga-yong-eo-323",
+    "vietnamese": "Đánh giá nâng cao 323",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경509 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_323 예문입니다."
   },
   {
-    "korean": "보호510",
-    "romaja": "bo-ho-510",
-    "vietnamese": "Bảo vệ 510",
+    "korean": "추진_용어_324",
+    "romaja": "chu-jin-yong-eo-324",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 324",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호510 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_324 예문입니다."
   },
   {
-    "korean": "기분511",
-    "romaja": "gi-bun-511",
-    "vietnamese": "Tâm trạng 511",
+    "korean": "달성_용어_325",
+    "romaja": "dal-seong-yong-eo-325",
+    "vietnamese": "Đạt thành tích nâng cao 325",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분511 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_325 예문입니다."
   },
   {
-    "korean": "희망512",
-    "romaja": "hui-mang-512",
-    "vietnamese": "Hy vọng 512",
+    "korean": "전망_용어_326",
+    "romaja": "jeon-mang-yong-eo-326",
+    "vietnamese": "Triển vọng nâng cao 326",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망512 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_326 예문입니다."
   },
   {
-    "korean": "감동513",
-    "romaja": "gam-dong-513",
-    "vietnamese": "Cảm động 513",
+    "korean": "지적_용어_327",
+    "romaja": "ji-jeok-yong-eo-327",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 327",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동513 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "지적_용어_327 예문입니다."
   },
   {
-    "korean": "휴양514",
-    "romaja": "hyu-yang-514",
-    "vietnamese": "Nghỉ dưỡng 514",
+    "korean": "논란_용어_328",
+    "romaja": "non-ran-yong-eo-328",
+    "vietnamese": "Tranh cãi nâng cao 328",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양514 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_328 예문입니다."
   },
   {
-    "korean": "체험515",
-    "romaja": "che-heom-515",
-    "vietnamese": "Trải nghiệm 515",
+    "korean": "시급_용어_329",
+    "romaja": "si-geup-yong-eo-329",
+    "vietnamese": "Cấp bách nâng cao 329",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험515 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_329 예문입니다."
   },
   {
-    "korean": "문화516",
-    "romaja": "mun-hwa-516",
-    "vietnamese": "Văn hóa 516",
+    "korean": "전환_용어_330",
+    "romaja": "jeon-hwan-yong-eo-330",
+    "vietnamese": "Chuyển đổi nâng cao 330",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화516 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_330 예문입니다."
   },
   {
-    "korean": "예술517",
-    "romaja": "ye-sul-517",
-    "vietnamese": "Nghệ thuật 517",
+    "korean": "도약_용어_331",
+    "romaja": "do-yak-yong-eo-331",
+    "vietnamese": "Bước nhảy vọt nâng cao 331",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술517 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "도약_용어_331 예문입니다."
   },
   {
-    "korean": "전통518",
-    "romaja": "jeon-tong-518",
-    "vietnamese": "Truyền thống 518",
+    "korean": "초월_용어_332",
+    "romaja": "cho-wol-yong-eo-332",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 332",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통518 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_332 예문입니다."
   },
   {
-    "korean": "법률519",
-    "romaja": "beop-ryul-519",
-    "vietnamese": "Pháp luật 519",
+    "korean": "상응_용어_333",
+    "romaja": "sang-eung-yong-eo-333",
+    "vietnamese": "Tương ứng nâng cao 333",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률519 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_333 예문입니다."
   },
   {
-    "korean": "사회520",
-    "romaja": "sa-hoe-520",
-    "vietnamese": "Xã hội 520",
+    "korean": "도출_용어_334",
+    "romaja": "do-chul-yong-eo-334",
+    "vietnamese": "Rút ra kết luận nâng cao 334",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회520 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_334 예문입니다."
   },
   {
-    "korean": "정치521",
-    "romaja": "jeong-chi-521",
-    "vietnamese": "Chính trị 521",
+    "korean": "융합_용어_335",
+    "romaja": "yung-hap-yong-eo-335",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 335",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치521 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_335 예문입니다."
   },
   {
-    "korean": "경제522",
-    "romaja": "gyeong-je-522",
-    "vietnamese": "Kinh tế 522",
+    "korean": "잠재_용어_336",
+    "romaja": "jam-jae-yong-eo-336",
+    "vietnamese": "Tiềm ẩn nâng cao 336",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제522 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "잠재_용어_336 예문입니다."
   },
   {
-    "korean": "무역523",
-    "romaja": "mu-yeok-523",
-    "vietnamese": "Thương mại 523",
+    "korean": "지향_용어_337",
+    "romaja": "ji-hyang-yong-eo-337",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 337",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역523 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_337 예문입니다."
   },
   {
-    "korean": "투자524",
-    "romaja": "tu-ja-524",
-    "vietnamese": "Đầu tư 524",
+    "korean": "파급_용어_338",
+    "romaja": "pa-geup-yong-eo-338",
+    "vietnamese": "Tác động lan tỏa nâng cao 338",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자524 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_338 예문입니다."
   },
   {
-    "korean": "학습525",
-    "romaja": "hak-seup-525",
-    "vietnamese": "Học tập 525",
+    "korean": "창출_용어_339",
+    "romaja": "chang-chul-yong-eo-339",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 339",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습525 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_339 예문입니다."
   },
   {
-    "korean": "교육526",
-    "romaja": "gyo-yuk-526",
-    "vietnamese": "Giáo dục 526",
+    "korean": "관련_용어_340",
+    "romaja": "gwan-ryeon-yong-eo-340",
+    "vietnamese": "Liên quan nâng cao 340",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육526 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_340 예문입니다."
   },
   {
-    "korean": "연구527",
-    "romaja": "yeon-gu-527",
-    "vietnamese": "Nghiên cứu 527",
+    "korean": "영향_용어_341",
+    "romaja": "yeong-hyang-yong-eo-341",
+    "vietnamese": "Ảnh hưởng nâng cao 341",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구527 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_341 예문입니다."
   },
   {
-    "korean": "발표528",
-    "romaja": "bal-pyo-528",
-    "vietnamese": "Thuyết trình 528",
+    "korean": "분석_용어_342",
+    "romaja": "bun-seok-yong-eo-342",
+    "vietnamese": "Phân tích nâng cao 342",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표528 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_342 예문입니다."
   },
   {
-    "korean": "토론529",
-    "romaja": "to-ron-529",
-    "vietnamese": "Thảo luận 529",
+    "korean": "평가_용어_343",
+    "romaja": "pyeong-ga-yong-eo-343",
+    "vietnamese": "Đánh giá nâng cao 343",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론529 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_343 예문입니다."
   },
   {
-    "korean": "건강530",
-    "romaja": "geon-gang-530",
-    "vietnamese": "Sức khỏe 530",
+    "korean": "추진_용어_344",
+    "romaja": "chu-jin-yong-eo-344",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 344",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강530 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_344 예문입니다."
   },
   {
-    "korean": "진료531",
-    "romaja": "jin-ryo-531",
-    "vietnamese": "Khám chữa bệnh 531",
+    "korean": "달성_용어_345",
+    "romaja": "dal-seong-yong-eo-345",
+    "vietnamese": "Đạt thành tích nâng cao 345",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료531 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_345 예문입니다."
   },
   {
-    "korean": "예방532",
-    "romaja": "ye-bang-532",
-    "vietnamese": "Phòng ngừa 532",
+    "korean": "전망_용어_346",
+    "romaja": "jeon-mang-yong-eo-346",
+    "vietnamese": "Triển vọng nâng cao 346",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방532 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_346 예문입니다."
   },
   {
-    "korean": "자연533",
-    "romaja": "ja-yeon-533",
-    "vietnamese": "Tự nhiên 533",
+    "korean": "지적_용어_347",
+    "romaja": "ji-jeok-yong-eo-347",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 347",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연533 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_347 예문입니다."
   },
   {
-    "korean": "환경534",
-    "romaja": "hwan-gyeong-534",
-    "vietnamese": "Môi trường 534",
+    "korean": "논란_용어_348",
+    "romaja": "non-ran-yong-eo-348",
+    "vietnamese": "Tranh cãi nâng cao 348",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경534 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_348 예문입니다."
   },
   {
-    "korean": "보호535",
-    "romaja": "bo-ho-535",
-    "vietnamese": "Bảo vệ 535",
+    "korean": "시급_용어_349",
+    "romaja": "si-geup-yong-eo-349",
+    "vietnamese": "Cấp bách nâng cao 349",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호535 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "시급_용어_349 예문입니다."
   },
   {
-    "korean": "기분536",
-    "romaja": "gi-bun-536",
-    "vietnamese": "Tâm trạng 536",
+    "korean": "전환_용어_350",
+    "romaja": "jeon-hwan-yong-eo-350",
+    "vietnamese": "Chuyển đổi nâng cao 350",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분536 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_350 예문입니다."
   },
   {
-    "korean": "희망537",
-    "romaja": "hui-mang-537",
-    "vietnamese": "Hy vọng 537",
+    "korean": "도약_용어_351",
+    "romaja": "do-yak-yong-eo-351",
+    "vietnamese": "Bước nhảy vọt nâng cao 351",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망537 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "도약_용어_351 예문입니다."
   },
   {
-    "korean": "감동538",
-    "romaja": "gam-dong-538",
-    "vietnamese": "Cảm động 538",
+    "korean": "초월_용어_352",
+    "romaja": "cho-wol-yong-eo-352",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 352",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동538 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_352 예문입니다."
   },
   {
-    "korean": "휴양539",
-    "romaja": "hyu-yang-539",
-    "vietnamese": "Nghỉ dưỡng 539",
+    "korean": "상응_용어_353",
+    "romaja": "sang-eung-yong-eo-353",
+    "vietnamese": "Tương ứng nâng cao 353",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양539 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_353 예문입니다."
   },
   {
-    "korean": "체험540",
-    "romaja": "che-heom-540",
-    "vietnamese": "Trải nghiệm 540",
+    "korean": "도출_용어_354",
+    "romaja": "do-chul-yong-eo-354",
+    "vietnamese": "Rút ra kết luận nâng cao 354",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험540 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_354 예문입니다."
   },
   {
-    "korean": "문화541",
-    "romaja": "mun-hwa-541",
-    "vietnamese": "Văn hóa 541",
+    "korean": "융합_용어_355",
+    "romaja": "yung-hap-yong-eo-355",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 355",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화541 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "융합_용어_355 예문입니다."
   },
   {
-    "korean": "예술542",
-    "romaja": "ye-sul-542",
-    "vietnamese": "Nghệ thuật 542",
+    "korean": "잠재_용어_356",
+    "romaja": "jam-jae-yong-eo-356",
+    "vietnamese": "Tiềm ẩn nâng cao 356",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술542 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_356 예문입니다."
   },
   {
-    "korean": "전통543",
-    "romaja": "jeon-tong-543",
-    "vietnamese": "Truyền thống 543",
+    "korean": "지향_용어_357",
+    "romaja": "ji-hyang-yong-eo-357",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 357",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통543 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_357 예문입니다."
   },
   {
-    "korean": "법률544",
-    "romaja": "beop-ryul-544",
-    "vietnamese": "Pháp luật 544",
+    "korean": "파급_용어_358",
+    "romaja": "pa-geup-yong-eo-358",
+    "vietnamese": "Tác động lan tỏa nâng cao 358",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률544 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_358 예문입니다."
   },
   {
-    "korean": "사회545",
-    "romaja": "sa-hoe-545",
-    "vietnamese": "Xã hội 545",
+    "korean": "창출_용어_359",
+    "romaja": "chang-chul-yong-eo-359",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 359",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회545 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_359 예문입니다."
   },
   {
-    "korean": "정치546",
-    "romaja": "jeong-chi-546",
-    "vietnamese": "Chính trị 546",
+    "korean": "관련_용어_360",
+    "romaja": "gwan-ryeon-yong-eo-360",
+    "vietnamese": "Liên quan nâng cao 360",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치546 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_360 예문입니다."
   },
   {
-    "korean": "경제547",
-    "romaja": "gyeong-je-547",
-    "vietnamese": "Kinh tế 547",
+    "korean": "영향_용어_361",
+    "romaja": "yeong-hyang-yong-eo-361",
+    "vietnamese": "Ảnh hưởng nâng cao 361",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제547 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_361 예문입니다."
   },
   {
-    "korean": "무역548",
-    "romaja": "mu-yeok-548",
-    "vietnamese": "Thương mại 548",
+    "korean": "분석_용어_362",
+    "romaja": "bun-seok-yong-eo-362",
+    "vietnamese": "Phân tích nâng cao 362",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역548 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_362 예문입니다."
   },
   {
-    "korean": "투자549",
-    "romaja": "tu-ja-549",
-    "vietnamese": "Đầu tư 549",
+    "korean": "평가_용어_363",
+    "romaja": "pyeong-ga-yong-eo-363",
+    "vietnamese": "Đánh giá nâng cao 363",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자549 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_363 예문입니다."
   },
   {
-    "korean": "학습550",
-    "romaja": "hak-seup-550",
-    "vietnamese": "Học tập 550",
+    "korean": "추진_용어_364",
+    "romaja": "chu-jin-yong-eo-364",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 364",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습550 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_364 예문입니다."
   },
   {
-    "korean": "교육551",
-    "romaja": "gyo-yuk-551",
-    "vietnamese": "Giáo dục 551",
+    "korean": "달성_용어_365",
+    "romaja": "dal-seong-yong-eo-365",
+    "vietnamese": "Đạt thành tích nâng cao 365",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육551 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_365 예문입니다."
   },
   {
-    "korean": "연구552",
-    "romaja": "yeon-gu-552",
-    "vietnamese": "Nghiên cứu 552",
+    "korean": "전망_용어_366",
+    "romaja": "jeon-mang-yong-eo-366",
+    "vietnamese": "Triển vọng nâng cao 366",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구552 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_366 예문입니다."
   },
   {
-    "korean": "발표553",
-    "romaja": "bal-pyo-553",
-    "vietnamese": "Thuyết trình 553",
+    "korean": "지적_용어_367",
+    "romaja": "ji-jeok-yong-eo-367",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 367",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표553 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_367 예문입니다."
   },
   {
-    "korean": "토론554",
-    "romaja": "to-ron-554",
-    "vietnamese": "Thảo luận 554",
+    "korean": "논란_용어_368",
+    "romaja": "non-ran-yong-eo-368",
+    "vietnamese": "Tranh cãi nâng cao 368",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론554 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_368 예문입니다."
   },
   {
-    "korean": "건강555",
-    "romaja": "geon-gang-555",
-    "vietnamese": "Sức khỏe 555",
+    "korean": "시급_용어_369",
+    "romaja": "si-geup-yong-eo-369",
+    "vietnamese": "Cấp bách nâng cao 369",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강555 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_369 예문입니다."
   },
   {
-    "korean": "진료556",
-    "romaja": "jin-ryo-556",
-    "vietnamese": "Khám chữa bệnh 556",
+    "korean": "전환_용어_370",
+    "romaja": "jeon-hwan-yong-eo-370",
+    "vietnamese": "Chuyển đổi nâng cao 370",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료556 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_370 예문입니다."
   },
   {
-    "korean": "예방557",
-    "romaja": "ye-bang-557",
-    "vietnamese": "Phòng ngừa 557",
+    "korean": "도약_용어_371",
+    "romaja": "do-yak-yong-eo-371",
+    "vietnamese": "Bước nhảy vọt nâng cao 371",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방557 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_371 예문입니다."
   },
   {
-    "korean": "자연558",
-    "romaja": "ja-yeon-558",
-    "vietnamese": "Tự nhiên 558",
+    "korean": "초월_용어_372",
+    "romaja": "cho-wol-yong-eo-372",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 372",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연558 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_372 예문입니다."
   },
   {
-    "korean": "환경559",
-    "romaja": "hwan-gyeong-559",
-    "vietnamese": "Môi trường 559",
+    "korean": "상응_용어_373",
+    "romaja": "sang-eung-yong-eo-373",
+    "vietnamese": "Tương ứng nâng cao 373",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경559 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "상응_용어_373 예문입니다."
   },
   {
-    "korean": "보호560",
-    "romaja": "bo-ho-560",
-    "vietnamese": "Bảo vệ 560",
+    "korean": "도출_용어_374",
+    "romaja": "do-chul-yong-eo-374",
+    "vietnamese": "Rút ra kết luận nâng cao 374",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호560 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_374 예문입니다."
   },
   {
-    "korean": "기분561",
-    "romaja": "gi-bun-561",
-    "vietnamese": "Tâm trạng 561",
+    "korean": "융합_용어_375",
+    "romaja": "yung-hap-yong-eo-375",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 375",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분561 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "융합_용어_375 예문입니다."
   },
   {
-    "korean": "희망562",
-    "romaja": "hui-mang-562",
-    "vietnamese": "Hy vọng 562",
+    "korean": "잠재_용어_376",
+    "romaja": "jam-jae-yong-eo-376",
+    "vietnamese": "Tiềm ẩn nâng cao 376",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망562 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_376 예문입니다."
   },
   {
-    "korean": "감동563",
-    "romaja": "gam-dong-563",
-    "vietnamese": "Cảm động 563",
+    "korean": "지향_용어_377",
+    "romaja": "ji-hyang-yong-eo-377",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 377",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동563 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_377 예문입니다."
   },
   {
-    "korean": "휴양564",
-    "romaja": "hyu-yang-564",
-    "vietnamese": "Nghỉ dưỡng 564",
+    "korean": "파급_용어_378",
+    "romaja": "pa-geup-yong-eo-378",
+    "vietnamese": "Tác động lan tỏa nâng cao 378",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양564 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_378 예문입니다."
   },
   {
-    "korean": "체험565",
-    "romaja": "che-heom-565",
-    "vietnamese": "Trải nghiệm 565",
+    "korean": "창출_용어_379",
+    "romaja": "chang-chul-yong-eo-379",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 379",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험565 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_379 예문입니다."
   },
   {
-    "korean": "문화566",
-    "romaja": "mun-hwa-566",
-    "vietnamese": "Văn hóa 566",
+    "korean": "관련_용어_380",
+    "romaja": "gwan-ryeon-yong-eo-380",
+    "vietnamese": "Liên quan nâng cao 380",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화566 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_380 예문입니다."
   },
   {
-    "korean": "예술567",
-    "romaja": "ye-sul-567",
-    "vietnamese": "Nghệ thuật 567",
+    "korean": "영향_용어_381",
+    "romaja": "yeong-hyang-yong-eo-381",
+    "vietnamese": "Ảnh hưởng nâng cao 381",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술567 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_381 예문입니다."
   },
   {
-    "korean": "전통568",
-    "romaja": "jeon-tong-568",
-    "vietnamese": "Truyền thống 568",
+    "korean": "분석_용어_382",
+    "romaja": "bun-seok-yong-eo-382",
+    "vietnamese": "Phân tích nâng cao 382",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통568 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_382 예문입니다."
   },
   {
-    "korean": "법률569",
-    "romaja": "beop-ryul-569",
-    "vietnamese": "Pháp luật 569",
+    "korean": "평가_용어_383",
+    "romaja": "pyeong-ga-yong-eo-383",
+    "vietnamese": "Đánh giá nâng cao 383",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률569 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_383 예문입니다."
   },
   {
-    "korean": "사회570",
-    "romaja": "sa-hoe-570",
-    "vietnamese": "Xã hội 570",
+    "korean": "추진_용어_384",
+    "romaja": "chu-jin-yong-eo-384",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 384",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회570 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_384 예문입니다."
   },
   {
-    "korean": "정치571",
-    "romaja": "jeong-chi-571",
-    "vietnamese": "Chính trị 571",
+    "korean": "달성_용어_385",
+    "romaja": "dal-seong-yong-eo-385",
+    "vietnamese": "Đạt thành tích nâng cao 385",
     "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치571 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "달성_용어_385 예문입니다."
   },
   {
-    "korean": "경제572",
-    "romaja": "gyeong-je-572",
-    "vietnamese": "Kinh tế 572",
+    "korean": "전망_용어_386",
+    "romaja": "jeon-mang-yong-eo-386",
+    "vietnamese": "Triển vọng nâng cao 386",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제572 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_386 예문입니다."
   },
   {
-    "korean": "무역573",
-    "romaja": "mu-yeok-573",
-    "vietnamese": "Thương mại 573",
+    "korean": "지적_용어_387",
+    "romaja": "ji-jeok-yong-eo-387",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 387",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역573 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_387 예문입니다."
   },
   {
-    "korean": "투자574",
-    "romaja": "tu-ja-574",
-    "vietnamese": "Đầu tư 574",
+    "korean": "논란_용어_388",
+    "romaja": "non-ran-yong-eo-388",
+    "vietnamese": "Tranh cãi nâng cao 388",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자574 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_388 예문입니다."
   },
   {
-    "korean": "학습575",
-    "romaja": "hak-seup-575",
-    "vietnamese": "Học tập 575",
+    "korean": "시급_용어_389",
+    "romaja": "si-geup-yong-eo-389",
+    "vietnamese": "Cấp bách nâng cao 389",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습575 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_389 예문입니다."
   },
   {
-    "korean": "교육576",
-    "romaja": "gyo-yuk-576",
-    "vietnamese": "Giáo dục 576",
+    "korean": "전환_용어_390",
+    "romaja": "jeon-hwan-yong-eo-390",
+    "vietnamese": "Chuyển đổi nâng cao 390",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육576 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_390 예문입니다."
   },
   {
-    "korean": "연구577",
-    "romaja": "yeon-gu-577",
-    "vietnamese": "Nghiên cứu 577",
+    "korean": "도약_용어_391",
+    "romaja": "do-yak-yong-eo-391",
+    "vietnamese": "Bước nhảy vọt nâng cao 391",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구577 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_391 예문입니다."
   },
   {
-    "korean": "발표578",
-    "romaja": "bal-pyo-578",
-    "vietnamese": "Thuyết trình 578",
+    "korean": "초월_용어_392",
+    "romaja": "cho-wol-yong-eo-392",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 392",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표578 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_392 예문입니다."
   },
   {
-    "korean": "토론579",
-    "romaja": "to-ron-579",
-    "vietnamese": "Thảo luận 579",
+    "korean": "상응_용어_393",
+    "romaja": "sang-eung-yong-eo-393",
+    "vietnamese": "Tương ứng nâng cao 393",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론579 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_393 예문입니다."
   },
   {
-    "korean": "건강580",
-    "romaja": "geon-gang-580",
-    "vietnamese": "Sức khỏe 580",
+    "korean": "도출_용어_394",
+    "romaja": "do-chul-yong-eo-394",
+    "vietnamese": "Rút ra kết luận nâng cao 394",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강580 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_394 예문입니다."
   },
   {
-    "korean": "진료581",
-    "romaja": "jin-ryo-581",
-    "vietnamese": "Khám chữa bệnh 581",
+    "korean": "융합_용어_395",
+    "romaja": "yung-hap-yong-eo-395",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 395",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료581 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_395 예문입니다."
   },
   {
-    "korean": "예방582",
-    "romaja": "ye-bang-582",
-    "vietnamese": "Phòng ngừa 582",
+    "korean": "잠재_용어_396",
+    "romaja": "jam-jae-yong-eo-396",
+    "vietnamese": "Tiềm ẩn nâng cao 396",
     "pos": "Danh từ",
     "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방582 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "잠재_용어_396 예문입니다."
   },
   {
-    "korean": "자연583",
-    "romaja": "ja-yeon-583",
-    "vietnamese": "Tự nhiên 583",
+    "korean": "지향_용어_397",
+    "romaja": "ji-hyang-yong-eo-397",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 397",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연583 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "지향_용어_397 예문입니다."
   },
   {
-    "korean": "환경584",
-    "romaja": "hwan-gyeong-584",
-    "vietnamese": "Môi trường 584",
+    "korean": "파급_용어_398",
+    "romaja": "pa-geup-yong-eo-398",
+    "vietnamese": "Tác động lan tỏa nâng cao 398",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경584 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_398 예문입니다."
   },
   {
-    "korean": "보호585",
-    "romaja": "bo-ho-585",
-    "vietnamese": "Bảo vệ 585",
+    "korean": "창출_용어_399",
+    "romaja": "chang-chul-yong-eo-399",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 399",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호585 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_399 예문입니다."
   },
   {
-    "korean": "기분586",
-    "romaja": "gi-bun-586",
-    "vietnamese": "Tâm trạng 586",
+    "korean": "관련_용어_400",
+    "romaja": "gwan-ryeon-yong-eo-400",
+    "vietnamese": "Liên quan nâng cao 400",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분586 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_400 예문입니다."
   },
   {
-    "korean": "희망587",
-    "romaja": "hui-mang-587",
-    "vietnamese": "Hy vọng 587",
+    "korean": "영향_용어_401",
+    "romaja": "yeong-hyang-yong-eo-401",
+    "vietnamese": "Ảnh hưởng nâng cao 401",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망587 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_401 예문입니다."
   },
   {
-    "korean": "감동588",
-    "romaja": "gam-dong-588",
-    "vietnamese": "Cảm động 588",
+    "korean": "분석_용어_402",
+    "romaja": "bun-seok-yong-eo-402",
+    "vietnamese": "Phân tích nâng cao 402",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동588 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_402 예문입니다."
   },
   {
-    "korean": "휴양589",
-    "romaja": "hyu-yang-589",
-    "vietnamese": "Nghỉ dưỡng 589",
+    "korean": "평가_용어_403",
+    "romaja": "pyeong-ga-yong-eo-403",
+    "vietnamese": "Đánh giá nâng cao 403",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양589 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_403 예문입니다."
   },
   {
-    "korean": "체험590",
-    "romaja": "che-heom-590",
-    "vietnamese": "Trải nghiệm 590",
+    "korean": "추진_용어_404",
+    "romaja": "chu-jin-yong-eo-404",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 404",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험590 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_404 예문입니다."
   },
   {
-    "korean": "문화591",
-    "romaja": "mun-hwa-591",
-    "vietnamese": "Văn hóa 591",
+    "korean": "달성_용어_405",
+    "romaja": "dal-seong-yong-eo-405",
+    "vietnamese": "Đạt thành tích nâng cao 405",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화591 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_405 예문입니다."
   },
   {
-    "korean": "예술592",
-    "romaja": "ye-sul-592",
-    "vietnamese": "Nghệ thuật 592",
+    "korean": "전망_용어_406",
+    "romaja": "jeon-mang-yong-eo-406",
+    "vietnamese": "Triển vọng nâng cao 406",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술592 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_406 예문입니다."
   },
   {
-    "korean": "전통593",
-    "romaja": "jeon-tong-593",
-    "vietnamese": "Truyền thống 593",
+    "korean": "지적_용어_407",
+    "romaja": "ji-jeok-yong-eo-407",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 407",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통593 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_407 예문입니다."
   },
   {
-    "korean": "법률594",
-    "romaja": "beop-ryul-594",
-    "vietnamese": "Pháp luật 594",
+    "korean": "논란_용어_408",
+    "romaja": "non-ran-yong-eo-408",
+    "vietnamese": "Tranh cãi nâng cao 408",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률594 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_408 예문입니다."
   },
   {
-    "korean": "사회595",
-    "romaja": "sa-hoe-595",
-    "vietnamese": "Xã hội 595",
+    "korean": "시급_용어_409",
+    "romaja": "si-geup-yong-eo-409",
+    "vietnamese": "Cấp bách nâng cao 409",
     "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회595 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "시급_용어_409 예문입니다."
   },
   {
-    "korean": "정치596",
-    "romaja": "jeong-chi-596",
-    "vietnamese": "Chính trị 596",
+    "korean": "전환_용어_410",
+    "romaja": "jeon-hwan-yong-eo-410",
+    "vietnamese": "Chuyển đổi nâng cao 410",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치596 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_410 예문입니다."
   },
   {
-    "korean": "경제597",
-    "romaja": "gyeong-je-597",
-    "vietnamese": "Kinh tế 597",
+    "korean": "도약_용어_411",
+    "romaja": "do-yak-yong-eo-411",
+    "vietnamese": "Bước nhảy vọt nâng cao 411",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제597 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_411 예문입니다."
   },
   {
-    "korean": "무역598",
-    "romaja": "mu-yeok-598",
-    "vietnamese": "Thương mại 598",
+    "korean": "초월_용어_412",
+    "romaja": "cho-wol-yong-eo-412",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 412",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역598 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_412 예문입니다."
   },
   {
-    "korean": "투자599",
-    "romaja": "tu-ja-599",
-    "vietnamese": "Đầu tư 599",
+    "korean": "상응_용어_413",
+    "romaja": "sang-eung-yong-eo-413",
+    "vietnamese": "Tương ứng nâng cao 413",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자599 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_413 예문입니다."
   },
   {
-    "korean": "학습600",
-    "romaja": "hak-seup-600",
-    "vietnamese": "Học tập 600",
+    "korean": "도출_용어_414",
+    "romaja": "do-chul-yong-eo-414",
+    "vietnamese": "Rút ra kết luận nâng cao 414",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습600 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_414 예문입니다."
   },
   {
-    "korean": "교육601",
-    "romaja": "gyo-yuk-601",
-    "vietnamese": "Giáo dục 601",
+    "korean": "융합_용어_415",
+    "romaja": "yung-hap-yong-eo-415",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 415",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육601 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_415 예문입니다."
   },
   {
-    "korean": "연구602",
-    "romaja": "yeon-gu-602",
-    "vietnamese": "Nghiên cứu 602",
+    "korean": "잠재_용어_416",
+    "romaja": "jam-jae-yong-eo-416",
+    "vietnamese": "Tiềm ẩn nâng cao 416",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구602 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_416 예문입니다."
   },
   {
-    "korean": "발표603",
-    "romaja": "bal-pyo-603",
-    "vietnamese": "Thuyết trình 603",
+    "korean": "지향_용어_417",
+    "romaja": "ji-hyang-yong-eo-417",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 417",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표603 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_417 예문입니다."
   },
   {
-    "korean": "토론604",
-    "romaja": "to-ron-604",
-    "vietnamese": "Thảo luận 604",
+    "korean": "파급_용어_418",
+    "romaja": "pa-geup-yong-eo-418",
+    "vietnamese": "Tác động lan tỏa nâng cao 418",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론604 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_418 예문입니다."
   },
   {
-    "korean": "건강605",
-    "romaja": "geon-gang-605",
-    "vietnamese": "Sức khỏe 605",
+    "korean": "창출_용어_419",
+    "romaja": "chang-chul-yong-eo-419",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 419",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강605 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_419 예문입니다."
   },
   {
-    "korean": "진료606",
-    "romaja": "jin-ryo-606",
-    "vietnamese": "Khám chữa bệnh 606",
+    "korean": "관련_용어_420",
+    "romaja": "gwan-ryeon-yong-eo-420",
+    "vietnamese": "Liên quan nâng cao 420",
     "pos": "Danh từ",
     "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료606 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "관련_용어_420 예문입니다."
   },
   {
-    "korean": "예방607",
-    "romaja": "ye-bang-607",
-    "vietnamese": "Phòng ngừa 607",
+    "korean": "영향_용어_421",
+    "romaja": "yeong-hyang-yong-eo-421",
+    "vietnamese": "Ảnh hưởng nâng cao 421",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방607 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_421 예문입니다."
   },
   {
-    "korean": "자연608",
-    "romaja": "ja-yeon-608",
-    "vietnamese": "Tự nhiên 608",
+    "korean": "분석_용어_422",
+    "romaja": "bun-seok-yong-eo-422",
+    "vietnamese": "Phân tích nâng cao 422",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연608 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_422 예문입니다."
   },
   {
-    "korean": "환경609",
-    "romaja": "hwan-gyeong-609",
-    "vietnamese": "Môi trường 609",
+    "korean": "평가_용어_423",
+    "romaja": "pyeong-ga-yong-eo-423",
+    "vietnamese": "Đánh giá nâng cao 423",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경609 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_423 예문입니다."
   },
   {
-    "korean": "보호610",
-    "romaja": "bo-ho-610",
-    "vietnamese": "Bảo vệ 610",
+    "korean": "추진_용어_424",
+    "romaja": "chu-jin-yong-eo-424",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 424",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호610 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_424 예문입니다."
   },
   {
-    "korean": "기분611",
-    "romaja": "gi-bun-611",
-    "vietnamese": "Tâm trạng 611",
+    "korean": "달성_용어_425",
+    "romaja": "dal-seong-yong-eo-425",
+    "vietnamese": "Đạt thành tích nâng cao 425",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분611 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_425 예문입니다."
   },
   {
-    "korean": "희망612",
-    "romaja": "hui-mang-612",
-    "vietnamese": "Hy vọng 612",
+    "korean": "전망_용어_426",
+    "romaja": "jeon-mang-yong-eo-426",
+    "vietnamese": "Triển vọng nâng cao 426",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망612 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_426 예문입니다."
   },
   {
-    "korean": "감동613",
-    "romaja": "gam-dong-613",
-    "vietnamese": "Cảm động 613",
+    "korean": "지적_용어_427",
+    "romaja": "ji-jeok-yong-eo-427",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 427",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동613 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_427 예문입니다."
   },
   {
-    "korean": "휴양614",
-    "romaja": "hyu-yang-614",
-    "vietnamese": "Nghỉ dưỡng 614",
+    "korean": "논란_용어_428",
+    "romaja": "non-ran-yong-eo-428",
+    "vietnamese": "Tranh cãi nâng cao 428",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양614 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_428 예문입니다."
   },
   {
-    "korean": "체험615",
-    "romaja": "che-heom-615",
-    "vietnamese": "Trải nghiệm 615",
+    "korean": "시급_용어_429",
+    "romaja": "si-geup-yong-eo-429",
+    "vietnamese": "Cấp bách nâng cao 429",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험615 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_429 예문입니다."
   },
   {
-    "korean": "문화616",
-    "romaja": "mun-hwa-616",
-    "vietnamese": "Văn hóa 616",
+    "korean": "전환_용어_430",
+    "romaja": "jeon-hwan-yong-eo-430",
+    "vietnamese": "Chuyển đổi nâng cao 430",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화616 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_430 예문입니다."
   },
   {
-    "korean": "예술617",
-    "romaja": "ye-sul-617",
-    "vietnamese": "Nghệ thuật 617",
+    "korean": "도약_용어_431",
+    "romaja": "do-yak-yong-eo-431",
+    "vietnamese": "Bước nhảy vọt nâng cao 431",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술617 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_431 예문입니다."
   },
   {
-    "korean": "전통618",
-    "romaja": "jeon-tong-618",
-    "vietnamese": "Truyền thống 618",
+    "korean": "초월_용어_432",
+    "romaja": "cho-wol-yong-eo-432",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 432",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통618 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_432 예문입니다."
   },
   {
-    "korean": "법률619",
-    "romaja": "beop-ryul-619",
-    "vietnamese": "Pháp luật 619",
+    "korean": "상응_용어_433",
+    "romaja": "sang-eung-yong-eo-433",
+    "vietnamese": "Tương ứng nâng cao 433",
     "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률619 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "상응_용어_433 예문입니다."
   },
   {
-    "korean": "사회620",
-    "romaja": "sa-hoe-620",
-    "vietnamese": "Xã hội 620",
+    "korean": "도출_용어_434",
+    "romaja": "do-chul-yong-eo-434",
+    "vietnamese": "Rút ra kết luận nâng cao 434",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회620 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_434 예문입니다."
   },
   {
-    "korean": "정치621",
-    "romaja": "jeong-chi-621",
-    "vietnamese": "Chính trị 621",
+    "korean": "융합_용어_435",
+    "romaja": "yung-hap-yong-eo-435",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 435",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치621 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_435 예문입니다."
   },
   {
-    "korean": "경제622",
-    "romaja": "gyeong-je-622",
-    "vietnamese": "Kinh tế 622",
+    "korean": "잠재_용어_436",
+    "romaja": "jam-jae-yong-eo-436",
+    "vietnamese": "Tiềm ẩn nâng cao 436",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제622 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_436 예문입니다."
   },
   {
-    "korean": "무역623",
-    "romaja": "mu-yeok-623",
-    "vietnamese": "Thương mại 623",
+    "korean": "지향_용어_437",
+    "romaja": "ji-hyang-yong-eo-437",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 437",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역623 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_437 예문입니다."
   },
   {
-    "korean": "투자624",
-    "romaja": "tu-ja-624",
-    "vietnamese": "Đầu tư 624",
+    "korean": "파급_용어_438",
+    "romaja": "pa-geup-yong-eo-438",
+    "vietnamese": "Tác động lan tỏa nâng cao 438",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자624 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_438 예문입니다."
   },
   {
-    "korean": "학습625",
-    "romaja": "hak-seup-625",
-    "vietnamese": "Học tập 625",
+    "korean": "창출_용어_439",
+    "romaja": "chang-chul-yong-eo-439",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 439",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습625 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_439 예문입니다."
   },
   {
-    "korean": "교육626",
-    "romaja": "gyo-yuk-626",
-    "vietnamese": "Giáo dục 626",
+    "korean": "관련_용어_440",
+    "romaja": "gwan-ryeon-yong-eo-440",
+    "vietnamese": "Liên quan nâng cao 440",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육626 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_440 예문입니다."
   },
   {
-    "korean": "연구627",
-    "romaja": "yeon-gu-627",
-    "vietnamese": "Nghiên cứu 627",
+    "korean": "영향_용어_441",
+    "romaja": "yeong-hyang-yong-eo-441",
+    "vietnamese": "Ảnh hưởng nâng cao 441",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구627 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_441 예문입니다."
   },
   {
-    "korean": "발표628",
-    "romaja": "bal-pyo-628",
-    "vietnamese": "Thuyết trình 628",
+    "korean": "분석_용어_442",
+    "romaja": "bun-seok-yong-eo-442",
+    "vietnamese": "Phân tích nâng cao 442",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표628 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_442 예문입니다."
   },
   {
-    "korean": "토론629",
-    "romaja": "to-ron-629",
-    "vietnamese": "Thảo luận 629",
+    "korean": "평가_용어_443",
+    "romaja": "pyeong-ga-yong-eo-443",
+    "vietnamese": "Đánh giá nâng cao 443",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론629 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_443 예문입니다."
   },
   {
-    "korean": "건강630",
-    "romaja": "geon-gang-630",
-    "vietnamese": "Sức khỏe 630",
+    "korean": "추진_용어_444",
+    "romaja": "chu-jin-yong-eo-444",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 444",
     "pos": "Danh từ",
     "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강630 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "추진_용어_444 예문입니다."
   },
   {
-    "korean": "진료631",
-    "romaja": "jin-ryo-631",
-    "vietnamese": "Khám chữa bệnh 631",
+    "korean": "달성_용어_445",
+    "romaja": "dal-seong-yong-eo-445",
+    "vietnamese": "Đạt thành tích nâng cao 445",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료631 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_445 예문입니다."
   },
   {
-    "korean": "예방632",
-    "romaja": "ye-bang-632",
-    "vietnamese": "Phòng ngừa 632",
+    "korean": "전망_용어_446",
+    "romaja": "jeon-mang-yong-eo-446",
+    "vietnamese": "Triển vọng nâng cao 446",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방632 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_446 예문입니다."
   },
   {
-    "korean": "자연633",
-    "romaja": "ja-yeon-633",
-    "vietnamese": "Tự nhiên 633",
+    "korean": "지적_용어_447",
+    "romaja": "ji-jeok-yong-eo-447",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 447",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연633 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_447 예문입니다."
   },
   {
-    "korean": "환경634",
-    "romaja": "hwan-gyeong-634",
-    "vietnamese": "Môi trường 634",
+    "korean": "논란_용어_448",
+    "romaja": "non-ran-yong-eo-448",
+    "vietnamese": "Tranh cãi nâng cao 448",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경634 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_448 예문입니다."
   },
   {
-    "korean": "보호635",
-    "romaja": "bo-ho-635",
-    "vietnamese": "Bảo vệ 635",
+    "korean": "시급_용어_449",
+    "romaja": "si-geup-yong-eo-449",
+    "vietnamese": "Cấp bách nâng cao 449",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호635 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_449 예문입니다."
   },
   {
-    "korean": "기분636",
-    "romaja": "gi-bun-636",
-    "vietnamese": "Tâm trạng 636",
+    "korean": "전환_용어_450",
+    "romaja": "jeon-hwan-yong-eo-450",
+    "vietnamese": "Chuyển đổi nâng cao 450",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분636 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_450 예문입니다."
   },
   {
-    "korean": "희망637",
-    "romaja": "hui-mang-637",
-    "vietnamese": "Hy vọng 637",
+    "korean": "도약_용어_451",
+    "romaja": "do-yak-yong-eo-451",
+    "vietnamese": "Bước nhảy vọt nâng cao 451",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망637 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_451 예문입니다."
   },
   {
-    "korean": "감동638",
-    "romaja": "gam-dong-638",
-    "vietnamese": "Cảm động 638",
+    "korean": "초월_용어_452",
+    "romaja": "cho-wol-yong-eo-452",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 452",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동638 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_452 예문입니다."
   },
   {
-    "korean": "휴양639",
-    "romaja": "hyu-yang-639",
-    "vietnamese": "Nghỉ dưỡng 639",
+    "korean": "상응_용어_453",
+    "romaja": "sang-eung-yong-eo-453",
+    "vietnamese": "Tương ứng nâng cao 453",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양639 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_453 예문입니다."
   },
   {
-    "korean": "체험640",
-    "romaja": "che-heom-640",
-    "vietnamese": "Trải nghiệm 640",
+    "korean": "도출_용어_454",
+    "romaja": "do-chul-yong-eo-454",
+    "vietnamese": "Rút ra kết luận nâng cao 454",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험640 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_454 예문입니다."
   },
   {
-    "korean": "문화641",
-    "romaja": "mun-hwa-641",
-    "vietnamese": "Văn hóa 641",
+    "korean": "융합_용어_455",
+    "romaja": "yung-hap-yong-eo-455",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 455",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화641 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_455 예문입니다."
   },
   {
-    "korean": "예술642",
-    "romaja": "ye-sul-642",
-    "vietnamese": "Nghệ thuật 642",
+    "korean": "잠재_용어_456",
+    "romaja": "jam-jae-yong-eo-456",
+    "vietnamese": "Tiềm ẩn nâng cao 456",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술642 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_456 예문입니다."
+  },
+  {
+    "korean": "지향_용어_457",
+    "romaja": "ji-hyang-yong-eo-457",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 457",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_457 예문입니다."
+  },
+  {
+    "korean": "파급_용어_458",
+    "romaja": "pa-geup-yong-eo-458",
+    "vietnamese": "Tác động lan tỏa nâng cao 458",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_458 예문입니다."
   },
   {
-    "korean": "전통643",
-    "romaja": "jeon-tong-643",
-    "vietnamese": "Truyền thống 643",
+    "korean": "창출_용어_459",
+    "romaja": "chang-chul-yong-eo-459",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 459",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통643 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "창출_용어_459 예문입니다."
   },
   {
-    "korean": "법률644",
-    "romaja": "beop-ryul-644",
-    "vietnamese": "Pháp luật 644",
+    "korean": "관련_용어_460",
+    "romaja": "gwan-ryeon-yong-eo-460",
+    "vietnamese": "Liên quan nâng cao 460",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률644 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_460 예문입니다."
   },
   {
-    "korean": "사회645",
-    "romaja": "sa-hoe-645",
-    "vietnamese": "Xã hội 645",
+    "korean": "영향_용어_461",
+    "romaja": "yeong-hyang-yong-eo-461",
+    "vietnamese": "Ảnh hưởng nâng cao 461",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회645 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_461 예문입니다."
   },
   {
-    "korean": "정치646",
-    "romaja": "jeong-chi-646",
-    "vietnamese": "Chính trị 646",
+    "korean": "분석_용어_462",
+    "romaja": "bun-seok-yong-eo-462",
+    "vietnamese": "Phân tích nâng cao 462",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치646 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_462 예문입니다."
   },
   {
-    "korean": "경제647",
-    "romaja": "gyeong-je-647",
-    "vietnamese": "Kinh tế 647",
+    "korean": "평가_용어_463",
+    "romaja": "pyeong-ga-yong-eo-463",
+    "vietnamese": "Đánh giá nâng cao 463",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제647 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_463 예문입니다."
   },
   {
-    "korean": "무역648",
-    "romaja": "mu-yeok-648",
-    "vietnamese": "Thương mại 648",
+    "korean": "추진_용어_464",
+    "romaja": "chu-jin-yong-eo-464",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 464",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역648 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "추진_용어_464 예문입니다."
   },
   {
-    "korean": "투자649",
-    "romaja": "tu-ja-649",
-    "vietnamese": "Đầu tư 649",
+    "korean": "달성_용어_465",
+    "romaja": "dal-seong-yong-eo-465",
+    "vietnamese": "Đạt thành tích nâng cao 465",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자649 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_465 예문입니다."
   },
   {
-    "korean": "학습650",
-    "romaja": "hak-seup-650",
-    "vietnamese": "Học tập 650",
+    "korean": "전망_용어_466",
+    "romaja": "jeon-mang-yong-eo-466",
+    "vietnamese": "Triển vọng nâng cao 466",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습650 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_466 예문입니다."
   },
   {
-    "korean": "교육651",
-    "romaja": "gyo-yuk-651",
-    "vietnamese": "Giáo dục 651",
+    "korean": "지적_용어_467",
+    "romaja": "ji-jeok-yong-eo-467",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 467",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육651 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_467 예문입니다."
   },
   {
-    "korean": "연구652",
-    "romaja": "yeon-gu-652",
-    "vietnamese": "Nghiên cứu 652",
+    "korean": "논란_용어_468",
+    "romaja": "non-ran-yong-eo-468",
+    "vietnamese": "Tranh cãi nâng cao 468",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구652 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_468 예문입니다."
   },
   {
-    "korean": "발표653",
-    "romaja": "bal-pyo-653",
-    "vietnamese": "Thuyết trình 653",
+    "korean": "시급_용어_469",
+    "romaja": "si-geup-yong-eo-469",
+    "vietnamese": "Cấp bách nâng cao 469",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표653 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_469 예문입니다."
   },
   {
-    "korean": "토론654",
-    "romaja": "to-ron-654",
-    "vietnamese": "Thảo luận 654",
+    "korean": "전환_용어_470",
+    "romaja": "jeon-hwan-yong-eo-470",
+    "vietnamese": "Chuyển đổi nâng cao 470",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론654 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_470 예문입니다."
   },
   {
-    "korean": "건강655",
-    "romaja": "geon-gang-655",
-    "vietnamese": "Sức khỏe 655",
+    "korean": "도약_용어_471",
+    "romaja": "do-yak-yong-eo-471",
+    "vietnamese": "Bước nhảy vọt nâng cao 471",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강655 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_471 예문입니다."
   },
   {
-    "korean": "진료656",
-    "romaja": "jin-ryo-656",
-    "vietnamese": "Khám chữa bệnh 656",
+    "korean": "초월_용어_472",
+    "romaja": "cho-wol-yong-eo-472",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 472",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료656 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_472 예문입니다."
   },
   {
-    "korean": "예방657",
-    "romaja": "ye-bang-657",
-    "vietnamese": "Phòng ngừa 657",
+    "korean": "상응_용어_473",
+    "romaja": "sang-eung-yong-eo-473",
+    "vietnamese": "Tương ứng nâng cao 473",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방657 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_473 예문입니다."
   },
   {
-    "korean": "자연658",
-    "romaja": "ja-yeon-658",
-    "vietnamese": "Tự nhiên 658",
+    "korean": "도출_용어_474",
+    "romaja": "do-chul-yong-eo-474",
+    "vietnamese": "Rút ra kết luận nâng cao 474",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연658 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_474 예문입니다."
   },
   {
-    "korean": "환경659",
-    "romaja": "hwan-gyeong-659",
-    "vietnamese": "Môi trường 659",
+    "korean": "융합_용어_475",
+    "romaja": "yung-hap-yong-eo-475",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 475",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경659 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_475 예문입니다."
   },
   {
-    "korean": "보호660",
-    "romaja": "bo-ho-660",
-    "vietnamese": "Bảo vệ 660",
+    "korean": "잠재_용어_476",
+    "romaja": "jam-jae-yong-eo-476",
+    "vietnamese": "Tiềm ẩn nâng cao 476",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호660 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_476 예문입니다."
   },
   {
-    "korean": "기분661",
-    "romaja": "gi-bun-661",
-    "vietnamese": "Tâm trạng 661",
+    "korean": "지향_용어_477",
+    "romaja": "ji-hyang-yong-eo-477",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 477",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분661 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_477 예문입니다."
   },
   {
-    "korean": "희망662",
-    "romaja": "hui-mang-662",
-    "vietnamese": "Hy vọng 662",
+    "korean": "파급_용어_478",
+    "romaja": "pa-geup-yong-eo-478",
+    "vietnamese": "Tác động lan tỏa nâng cao 478",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망662 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_478 예문입니다."
   },
   {
-    "korean": "감동663",
-    "romaja": "gam-dong-663",
-    "vietnamese": "Cảm động 663",
+    "korean": "창출_용어_479",
+    "romaja": "chang-chul-yong-eo-479",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 479",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동663 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "창출_용어_479 예문입니다."
   },
   {
-    "korean": "휴양664",
-    "romaja": "hyu-yang-664",
-    "vietnamese": "Nghỉ dưỡng 664",
+    "korean": "관련_용어_480",
+    "romaja": "gwan-ryeon-yong-eo-480",
+    "vietnamese": "Liên quan nâng cao 480",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양664 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_480 예문입니다."
   },
   {
-    "korean": "체험665",
-    "romaja": "che-heom-665",
-    "vietnamese": "Trải nghiệm 665",
+    "korean": "영향_용어_481",
+    "romaja": "yeong-hyang-yong-eo-481",
+    "vietnamese": "Ảnh hưởng nâng cao 481",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험665 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_481 예문입니다."
   },
   {
-    "korean": "문화666",
-    "romaja": "mun-hwa-666",
-    "vietnamese": "Văn hóa 666",
+    "korean": "분석_용어_482",
+    "romaja": "bun-seok-yong-eo-482",
+    "vietnamese": "Phân tích nâng cao 482",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화666 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_482 예문입니다."
   },
   {
-    "korean": "예술667",
-    "romaja": "ye-sul-667",
-    "vietnamese": "Nghệ thuật 667",
+    "korean": "평가_용어_483",
+    "romaja": "pyeong-ga-yong-eo-483",
+    "vietnamese": "Đánh giá nâng cao 483",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술667 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "평가_용어_483 예문입니다."
   },
   {
-    "korean": "전통668",
-    "romaja": "jeon-tong-668",
-    "vietnamese": "Truyền thống 668",
+    "korean": "추진_용어_484",
+    "romaja": "chu-jin-yong-eo-484",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 484",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통668 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_484 예문입니다."
   },
   {
-    "korean": "법률669",
-    "romaja": "beop-ryul-669",
-    "vietnamese": "Pháp luật 669",
+    "korean": "달성_용어_485",
+    "romaja": "dal-seong-yong-eo-485",
+    "vietnamese": "Đạt thành tích nâng cao 485",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률669 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_485 예문입니다."
   },
   {
-    "korean": "사회670",
-    "romaja": "sa-hoe-670",
-    "vietnamese": "Xã hội 670",
+    "korean": "전망_용어_486",
+    "romaja": "jeon-mang-yong-eo-486",
+    "vietnamese": "Triển vọng nâng cao 486",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회670 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_486 예문입니다."
   },
   {
-    "korean": "정치671",
-    "romaja": "jeong-chi-671",
-    "vietnamese": "Chính trị 671",
+    "korean": "지적_용어_487",
+    "romaja": "ji-jeok-yong-eo-487",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 487",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치671 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_487 예문입니다."
   },
   {
-    "korean": "경제672",
-    "romaja": "gyeong-je-672",
-    "vietnamese": "Kinh tế 672",
+    "korean": "논란_용어_488",
+    "romaja": "non-ran-yong-eo-488",
+    "vietnamese": "Tranh cãi nâng cao 488",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제672 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "논란_용어_488 예문입니다."
   },
   {
-    "korean": "무역673",
-    "romaja": "mu-yeok-673",
-    "vietnamese": "Thương mại 673",
+    "korean": "시급_용어_489",
+    "romaja": "si-geup-yong-eo-489",
+    "vietnamese": "Cấp bách nâng cao 489",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역673 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_489 예문입니다."
   },
   {
-    "korean": "투자674",
-    "romaja": "tu-ja-674",
-    "vietnamese": "Đầu tư 674",
+    "korean": "전환_용어_490",
+    "romaja": "jeon-hwan-yong-eo-490",
+    "vietnamese": "Chuyển đổi nâng cao 490",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자674 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_490 예문입니다."
   },
   {
-    "korean": "학습675",
-    "romaja": "hak-seup-675",
-    "vietnamese": "Học tập 675",
+    "korean": "도약_용어_491",
+    "romaja": "do-yak-yong-eo-491",
+    "vietnamese": "Bước nhảy vọt nâng cao 491",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습675 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_491 예문입니다."
   },
   {
-    "korean": "교육676",
-    "romaja": "gyo-yuk-676",
-    "vietnamese": "Giáo dục 676",
+    "korean": "초월_용어_492",
+    "romaja": "cho-wol-yong-eo-492",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 492",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육676 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_492 예문입니다."
   },
   {
-    "korean": "연구677",
-    "romaja": "yeon-gu-677",
-    "vietnamese": "Nghiên cứu 677",
+    "korean": "상응_용어_493",
+    "romaja": "sang-eung-yong-eo-493",
+    "vietnamese": "Tương ứng nâng cao 493",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구677 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_493 예문입니다."
   },
   {
-    "korean": "발표678",
-    "romaja": "bal-pyo-678",
-    "vietnamese": "Thuyết trình 678",
+    "korean": "도출_용어_494",
+    "romaja": "do-chul-yong-eo-494",
+    "vietnamese": "Rút ra kết luận nâng cao 494",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표678 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_494 예문입니다."
   },
   {
-    "korean": "토론679",
-    "romaja": "to-ron-679",
-    "vietnamese": "Thảo luận 679",
+    "korean": "융합_용어_495",
+    "romaja": "yung-hap-yong-eo-495",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 495",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론679 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_495 예문입니다."
   },
   {
-    "korean": "건강680",
-    "romaja": "geon-gang-680",
-    "vietnamese": "Sức khỏe 680",
+    "korean": "잠재_용어_496",
+    "romaja": "jam-jae-yong-eo-496",
+    "vietnamese": "Tiềm ẩn nâng cao 496",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강680 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_496 예문입니다."
   },
   {
-    "korean": "진료681",
-    "romaja": "jin-ryo-681",
-    "vietnamese": "Khám chữa bệnh 681",
+    "korean": "지향_용어_497",
+    "romaja": "ji-hyang-yong-eo-497",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 497",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료681 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_497 예문입니다."
   },
   {
-    "korean": "예방682",
-    "romaja": "ye-bang-682",
-    "vietnamese": "Phòng ngừa 682",
+    "korean": "파급_용어_498",
+    "romaja": "pa-geup-yong-eo-498",
+    "vietnamese": "Tác động lan tỏa nâng cao 498",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방682 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_498 예문입니다."
   },
   {
-    "korean": "자연683",
-    "romaja": "ja-yeon-683",
-    "vietnamese": "Tự nhiên 683",
+    "korean": "창출_용어_499",
+    "romaja": "chang-chul-yong-eo-499",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 499",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연683 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_499 예문입니다."
   },
   {
-    "korean": "환경684",
-    "romaja": "hwan-gyeong-684",
-    "vietnamese": "Môi trường 684",
+    "korean": "관련_용어_500",
+    "romaja": "gwan-ryeon-yong-eo-500",
+    "vietnamese": "Liên quan nâng cao 500",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경684 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_500 예문입니다."
   },
   {
-    "korean": "보호685",
-    "romaja": "bo-ho-685",
-    "vietnamese": "Bảo vệ 685",
+    "korean": "영향_용어_501",
+    "romaja": "yeong-hyang-yong-eo-501",
+    "vietnamese": "Ảnh hưởng nâng cao 501",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호685 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "영향_용어_501 예문입니다."
   },
   {
-    "korean": "기분686",
-    "romaja": "gi-bun-686",
-    "vietnamese": "Tâm trạng 686",
+    "korean": "분석_용어_502",
+    "romaja": "bun-seok-yong-eo-502",
+    "vietnamese": "Phân tích nâng cao 502",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분686 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_502 예문입니다."
   },
   {
-    "korean": "희망687",
-    "romaja": "hui-mang-687",
-    "vietnamese": "Hy vọng 687",
+    "korean": "평가_용어_503",
+    "romaja": "pyeong-ga-yong-eo-503",
+    "vietnamese": "Đánh giá nâng cao 503",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망687 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "평가_용어_503 예문입니다."
   },
   {
-    "korean": "감동688",
-    "romaja": "gam-dong-688",
-    "vietnamese": "Cảm động 688",
+    "korean": "추진_용어_504",
+    "romaja": "chu-jin-yong-eo-504",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 504",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동688 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_504 예문입니다."
   },
   {
-    "korean": "휴양689",
-    "romaja": "hyu-yang-689",
-    "vietnamese": "Nghỉ dưỡng 689",
+    "korean": "달성_용어_505",
+    "romaja": "dal-seong-yong-eo-505",
+    "vietnamese": "Đạt thành tích nâng cao 505",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양689 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_505 예문입니다."
   },
   {
-    "korean": "체험690",
-    "romaja": "che-heom-690",
-    "vietnamese": "Trải nghiệm 690",
+    "korean": "전망_용어_506",
+    "romaja": "jeon-mang-yong-eo-506",
+    "vietnamese": "Triển vọng nâng cao 506",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험690 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_506 예문입니다."
   },
   {
-    "korean": "문화691",
-    "romaja": "mun-hwa-691",
-    "vietnamese": "Văn hóa 691",
+    "korean": "지적_용어_507",
+    "romaja": "ji-jeok-yong-eo-507",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 507",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화691 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "지적_용어_507 예문입니다."
   },
   {
-    "korean": "예술692",
-    "romaja": "ye-sul-692",
-    "vietnamese": "Nghệ thuật 692",
+    "korean": "논란_용어_508",
+    "romaja": "non-ran-yong-eo-508",
+    "vietnamese": "Tranh cãi nâng cao 508",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술692 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_508 예문입니다."
   },
   {
-    "korean": "전통693",
-    "romaja": "jeon-tong-693",
-    "vietnamese": "Truyền thống 693",
+    "korean": "시급_용어_509",
+    "romaja": "si-geup-yong-eo-509",
+    "vietnamese": "Cấp bách nâng cao 509",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통693 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_509 예문입니다."
   },
   {
-    "korean": "법률694",
-    "romaja": "beop-ryul-694",
-    "vietnamese": "Pháp luật 694",
+    "korean": "전환_용어_510",
+    "romaja": "jeon-hwan-yong-eo-510",
+    "vietnamese": "Chuyển đổi nâng cao 510",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률694 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_510 예문입니다."
   },
   {
-    "korean": "사회695",
-    "romaja": "sa-hoe-695",
-    "vietnamese": "Xã hội 695",
+    "korean": "도약_용어_511",
+    "romaja": "do-yak-yong-eo-511",
+    "vietnamese": "Bước nhảy vọt nâng cao 511",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회695 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_511 예문입니다."
   },
   {
-    "korean": "정치696",
-    "romaja": "jeong-chi-696",
-    "vietnamese": "Chính trị 696",
+    "korean": "초월_용어_512",
+    "romaja": "cho-wol-yong-eo-512",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 512",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치696 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_512 예문입니다."
   },
   {
-    "korean": "경제697",
-    "romaja": "gyeong-je-697",
-    "vietnamese": "Kinh tế 697",
+    "korean": "상응_용어_513",
+    "romaja": "sang-eung-yong-eo-513",
+    "vietnamese": "Tương ứng nâng cao 513",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제697 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_513 예문입니다."
   },
   {
-    "korean": "무역698",
-    "romaja": "mu-yeok-698",
-    "vietnamese": "Thương mại 698",
+    "korean": "도출_용어_514",
+    "romaja": "do-chul-yong-eo-514",
+    "vietnamese": "Rút ra kết luận nâng cao 514",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역698 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_514 예문입니다."
   },
   {
-    "korean": "투자699",
-    "romaja": "tu-ja-699",
-    "vietnamese": "Đầu tư 699",
+    "korean": "융합_용어_515",
+    "romaja": "yung-hap-yong-eo-515",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 515",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자699 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_515 예문입니다."
   },
   {
-    "korean": "학습700",
-    "romaja": "hak-seup-700",
-    "vietnamese": "Học tập 700",
+    "korean": "잠재_용어_516",
+    "romaja": "jam-jae-yong-eo-516",
+    "vietnamese": "Tiềm ẩn nâng cao 516",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습700 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_516 예문입니다."
   },
   {
-    "korean": "교육701",
-    "romaja": "gyo-yuk-701",
-    "vietnamese": "Giáo dục 701",
+    "korean": "지향_용어_517",
+    "romaja": "ji-hyang-yong-eo-517",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 517",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육701 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_517 예문입니다."
   },
   {
-    "korean": "연구702",
-    "romaja": "yeon-gu-702",
-    "vietnamese": "Nghiên cứu 702",
+    "korean": "파급_용어_518",
+    "romaja": "pa-geup-yong-eo-518",
+    "vietnamese": "Tác động lan tỏa nâng cao 518",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구702 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_518 예문입니다."
   },
   {
-    "korean": "발표703",
-    "romaja": "bal-pyo-703",
-    "vietnamese": "Thuyết trình 703",
+    "korean": "창출_용어_519",
+    "romaja": "chang-chul-yong-eo-519",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 519",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표703 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_519 예문입니다."
   },
   {
-    "korean": "토론704",
-    "romaja": "to-ron-704",
-    "vietnamese": "Thảo luận 704",
+    "korean": "관련_용어_520",
+    "romaja": "gwan-ryeon-yong-eo-520",
+    "vietnamese": "Liên quan nâng cao 520",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론704 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_520 예문입니다."
   },
   {
-    "korean": "건강705",
-    "romaja": "geon-gang-705",
-    "vietnamese": "Sức khỏe 705",
+    "korean": "영향_용어_521",
+    "romaja": "yeong-hyang-yong-eo-521",
+    "vietnamese": "Ảnh hưởng nâng cao 521",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강705 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_521 예문입니다."
   },
   {
-    "korean": "진료706",
-    "romaja": "jin-ryo-706",
-    "vietnamese": "Khám chữa bệnh 706",
+    "korean": "분석_용어_522",
+    "romaja": "bun-seok-yong-eo-522",
+    "vietnamese": "Phân tích nâng cao 522",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료706 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_522 예문입니다."
   },
   {
-    "korean": "예방707",
-    "romaja": "ye-bang-707",
-    "vietnamese": "Phòng ngừa 707",
+    "korean": "평가_용어_523",
+    "romaja": "pyeong-ga-yong-eo-523",
+    "vietnamese": "Đánh giá nâng cao 523",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방707 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_523 예문입니다."
   },
   {
-    "korean": "자연708",
-    "romaja": "ja-yeon-708",
-    "vietnamese": "Tự nhiên 708",
+    "korean": "추진_용어_524",
+    "romaja": "chu-jin-yong-eo-524",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 524",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연708 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_524 예문입니다."
   },
   {
-    "korean": "환경709",
-    "romaja": "hwan-gyeong-709",
-    "vietnamese": "Môi trường 709",
+    "korean": "달성_용어_525",
+    "romaja": "dal-seong-yong-eo-525",
+    "vietnamese": "Đạt thành tích nâng cao 525",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경709 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "달성_용어_525 예문입니다."
   },
   {
-    "korean": "보호710",
-    "romaja": "bo-ho-710",
-    "vietnamese": "Bảo vệ 710",
+    "korean": "전망_용어_526",
+    "romaja": "jeon-mang-yong-eo-526",
+    "vietnamese": "Triển vọng nâng cao 526",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호710 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_526 예문입니다."
   },
   {
-    "korean": "기분711",
-    "romaja": "gi-bun-711",
-    "vietnamese": "Tâm trạng 711",
+    "korean": "지적_용어_527",
+    "romaja": "ji-jeok-yong-eo-527",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 527",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분711 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "지적_용어_527 예문입니다."
   },
   {
-    "korean": "희망712",
-    "romaja": "hui-mang-712",
-    "vietnamese": "Hy vọng 712",
+    "korean": "논란_용어_528",
+    "romaja": "non-ran-yong-eo-528",
+    "vietnamese": "Tranh cãi nâng cao 528",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망712 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_528 예문입니다."
   },
   {
-    "korean": "감동713",
-    "romaja": "gam-dong-713",
-    "vietnamese": "Cảm động 713",
+    "korean": "시급_용어_529",
+    "romaja": "si-geup-yong-eo-529",
+    "vietnamese": "Cấp bách nâng cao 529",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동713 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_529 예문입니다."
   },
   {
-    "korean": "휴양714",
-    "romaja": "hyu-yang-714",
-    "vietnamese": "Nghỉ dưỡng 714",
+    "korean": "전환_용어_530",
+    "romaja": "jeon-hwan-yong-eo-530",
+    "vietnamese": "Chuyển đổi nâng cao 530",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양714 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_530 예문입니다."
   },
   {
-    "korean": "체험715",
-    "romaja": "che-heom-715",
-    "vietnamese": "Trải nghiệm 715",
+    "korean": "도약_용어_531",
+    "romaja": "do-yak-yong-eo-531",
+    "vietnamese": "Bước nhảy vọt nâng cao 531",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험715 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_531 예문입니다."
   },
   {
-    "korean": "문화716",
-    "romaja": "mun-hwa-716",
-    "vietnamese": "Văn hóa 716",
+    "korean": "초월_용어_532",
+    "romaja": "cho-wol-yong-eo-532",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 532",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화716 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_532 예문입니다."
   },
   {
-    "korean": "예술717",
-    "romaja": "ye-sul-717",
-    "vietnamese": "Nghệ thuật 717",
+    "korean": "상응_용어_533",
+    "romaja": "sang-eung-yong-eo-533",
+    "vietnamese": "Tương ứng nâng cao 533",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술717 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_533 예문입니다."
   },
   {
-    "korean": "전통718",
-    "romaja": "jeon-tong-718",
-    "vietnamese": "Truyền thống 718",
+    "korean": "도출_용어_534",
+    "romaja": "do-chul-yong-eo-534",
+    "vietnamese": "Rút ra kết luận nâng cao 534",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통718 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_534 예문입니다."
   },
   {
-    "korean": "법률719",
-    "romaja": "beop-ryul-719",
-    "vietnamese": "Pháp luật 719",
+    "korean": "융합_용어_535",
+    "romaja": "yung-hap-yong-eo-535",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 535",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률719 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_535 예문입니다."
   },
   {
-    "korean": "사회720",
-    "romaja": "sa-hoe-720",
-    "vietnamese": "Xã hội 720",
+    "korean": "잠재_용어_536",
+    "romaja": "jam-jae-yong-eo-536",
+    "vietnamese": "Tiềm ẩn nâng cao 536",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회720 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_536 예문입니다."
   },
   {
-    "korean": "정치721",
-    "romaja": "jeong-chi-721",
-    "vietnamese": "Chính trị 721",
+    "korean": "지향_용어_537",
+    "romaja": "ji-hyang-yong-eo-537",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 537",
     "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치721 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "지향_용어_537 예문입니다."
   },
   {
-    "korean": "경제722",
-    "romaja": "gyeong-je-722",
-    "vietnamese": "Kinh tế 722",
+    "korean": "파급_용어_538",
+    "romaja": "pa-geup-yong-eo-538",
+    "vietnamese": "Tác động lan tỏa nâng cao 538",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제722 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_538 예문입니다."
   },
   {
-    "korean": "무역723",
-    "romaja": "mu-yeok-723",
-    "vietnamese": "Thương mại 723",
+    "korean": "창출_용어_539",
+    "romaja": "chang-chul-yong-eo-539",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 539",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역723 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_539 예문입니다."
   },
   {
-    "korean": "투자724",
-    "romaja": "tu-ja-724",
-    "vietnamese": "Đầu tư 724",
+    "korean": "관련_용어_540",
+    "romaja": "gwan-ryeon-yong-eo-540",
+    "vietnamese": "Liên quan nâng cao 540",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자724 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_540 예문입니다."
   },
   {
-    "korean": "학습725",
-    "romaja": "hak-seup-725",
-    "vietnamese": "Học tập 725",
+    "korean": "영향_용어_541",
+    "romaja": "yeong-hyang-yong-eo-541",
+    "vietnamese": "Ảnh hưởng nâng cao 541",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습725 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_541 예문입니다."
   },
   {
-    "korean": "교육726",
-    "romaja": "gyo-yuk-726",
-    "vietnamese": "Giáo dục 726",
+    "korean": "분석_용어_542",
+    "romaja": "bun-seok-yong-eo-542",
+    "vietnamese": "Phân tích nâng cao 542",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육726 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_542 예문입니다."
   },
   {
-    "korean": "연구727",
-    "romaja": "yeon-gu-727",
-    "vietnamese": "Nghiên cứu 727",
+    "korean": "평가_용어_543",
+    "romaja": "pyeong-ga-yong-eo-543",
+    "vietnamese": "Đánh giá nâng cao 543",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구727 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_543 예문입니다."
   },
   {
-    "korean": "발표728",
-    "romaja": "bal-pyo-728",
-    "vietnamese": "Thuyết trình 728",
+    "korean": "추진_용어_544",
+    "romaja": "chu-jin-yong-eo-544",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 544",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표728 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_544 예문입니다."
   },
   {
-    "korean": "토론729",
-    "romaja": "to-ron-729",
-    "vietnamese": "Thảo luận 729",
+    "korean": "달성_용어_545",
+    "romaja": "dal-seong-yong-eo-545",
+    "vietnamese": "Đạt thành tích nâng cao 545",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론729 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_545 예문입니다."
   },
   {
-    "korean": "건강730",
-    "romaja": "geon-gang-730",
-    "vietnamese": "Sức khỏe 730",
+    "korean": "전망_용어_546",
+    "romaja": "jeon-mang-yong-eo-546",
+    "vietnamese": "Triển vọng nâng cao 546",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강730 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_546 예문입니다."
   },
   {
-    "korean": "진료731",
-    "romaja": "jin-ryo-731",
-    "vietnamese": "Khám chữa bệnh 731",
+    "korean": "지적_용어_547",
+    "romaja": "ji-jeok-yong-eo-547",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 547",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료731 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_547 예문입니다."
   },
   {
-    "korean": "예방732",
-    "romaja": "ye-bang-732",
-    "vietnamese": "Phòng ngừa 732",
+    "korean": "논란_용어_548",
+    "romaja": "non-ran-yong-eo-548",
+    "vietnamese": "Tranh cãi nâng cao 548",
     "pos": "Danh từ",
     "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방732 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "논란_용어_548 예문입니다."
   },
   {
-    "korean": "자연733",
-    "romaja": "ja-yeon-733",
-    "vietnamese": "Tự nhiên 733",
+    "korean": "시급_용어_549",
+    "romaja": "si-geup-yong-eo-549",
+    "vietnamese": "Cấp bách nâng cao 549",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연733 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "시급_용어_549 예문입니다."
   },
   {
-    "korean": "환경734",
-    "romaja": "hwan-gyeong-734",
-    "vietnamese": "Môi trường 734",
+    "korean": "전환_용어_550",
+    "romaja": "jeon-hwan-yong-eo-550",
+    "vietnamese": "Chuyển đổi nâng cao 550",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경734 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_550 예문입니다."
   },
   {
-    "korean": "보호735",
-    "romaja": "bo-ho-735",
-    "vietnamese": "Bảo vệ 735",
+    "korean": "도약_용어_551",
+    "romaja": "do-yak-yong-eo-551",
+    "vietnamese": "Bước nhảy vọt nâng cao 551",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호735 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_551 예문입니다."
   },
   {
-    "korean": "기분736",
-    "romaja": "gi-bun-736",
-    "vietnamese": "Tâm trạng 736",
+    "korean": "초월_용어_552",
+    "romaja": "cho-wol-yong-eo-552",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 552",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분736 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_552 예문입니다."
   },
   {
-    "korean": "희망737",
-    "romaja": "hui-mang-737",
-    "vietnamese": "Hy vọng 737",
+    "korean": "상응_용어_553",
+    "romaja": "sang-eung-yong-eo-553",
+    "vietnamese": "Tương ứng nâng cao 553",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망737 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_553 예문입니다."
   },
   {
-    "korean": "감동738",
-    "romaja": "gam-dong-738",
-    "vietnamese": "Cảm động 738",
+    "korean": "도출_용어_554",
+    "romaja": "do-chul-yong-eo-554",
+    "vietnamese": "Rút ra kết luận nâng cao 554",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동738 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_554 예문입니다."
   },
   {
-    "korean": "휴양739",
-    "romaja": "hyu-yang-739",
-    "vietnamese": "Nghỉ dưỡng 739",
+    "korean": "융합_용어_555",
+    "romaja": "yung-hap-yong-eo-555",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 555",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양739 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_555 예문입니다."
   },
   {
-    "korean": "체험740",
-    "romaja": "che-heom-740",
-    "vietnamese": "Trải nghiệm 740",
+    "korean": "잠재_용어_556",
+    "romaja": "jam-jae-yong-eo-556",
+    "vietnamese": "Tiềm ẩn nâng cao 556",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험740 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_556 예문입니다."
   },
   {
-    "korean": "문화741",
-    "romaja": "mun-hwa-741",
-    "vietnamese": "Văn hóa 741",
+    "korean": "지향_용어_557",
+    "romaja": "ji-hyang-yong-eo-557",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 557",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화741 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_557 예문입니다."
   },
   {
-    "korean": "예술742",
-    "romaja": "ye-sul-742",
-    "vietnamese": "Nghệ thuật 742",
+    "korean": "파급_용어_558",
+    "romaja": "pa-geup-yong-eo-558",
+    "vietnamese": "Tác động lan tỏa nâng cao 558",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술742 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_558 예문입니다."
   },
   {
-    "korean": "전통743",
-    "romaja": "jeon-tong-743",
-    "vietnamese": "Truyền thống 743",
+    "korean": "창출_용어_559",
+    "romaja": "chang-chul-yong-eo-559",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 559",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통743 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_559 예문입니다."
   },
   {
-    "korean": "법률744",
-    "romaja": "beop-ryul-744",
-    "vietnamese": "Pháp luật 744",
+    "korean": "관련_용어_560",
+    "romaja": "gwan-ryeon-yong-eo-560",
+    "vietnamese": "Liên quan nâng cao 560",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률744 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_560 예문입니다."
   },
   {
-    "korean": "사회745",
-    "romaja": "sa-hoe-745",
-    "vietnamese": "Xã hội 745",
+    "korean": "영향_용어_561",
+    "romaja": "yeong-hyang-yong-eo-561",
+    "vietnamese": "Ảnh hưởng nâng cao 561",
     "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회745 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "영향_용어_561 예문입니다."
   },
   {
-    "korean": "정치746",
-    "romaja": "jeong-chi-746",
-    "vietnamese": "Chính trị 746",
+    "korean": "분석_용어_562",
+    "romaja": "bun-seok-yong-eo-562",
+    "vietnamese": "Phân tích nâng cao 562",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치746 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_562 예문입니다."
   },
   {
-    "korean": "경제747",
-    "romaja": "gyeong-je-747",
-    "vietnamese": "Kinh tế 747",
+    "korean": "평가_용어_563",
+    "romaja": "pyeong-ga-yong-eo-563",
+    "vietnamese": "Đánh giá nâng cao 563",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제747 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_563 예문입니다."
   },
   {
-    "korean": "무역748",
-    "romaja": "mu-yeok-748",
-    "vietnamese": "Thương mại 748",
+    "korean": "추진_용어_564",
+    "romaja": "chu-jin-yong-eo-564",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 564",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역748 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_564 예문입니다."
   },
   {
-    "korean": "투자749",
-    "romaja": "tu-ja-749",
-    "vietnamese": "Đầu tư 749",
+    "korean": "달성_용어_565",
+    "romaja": "dal-seong-yong-eo-565",
+    "vietnamese": "Đạt thành tích nâng cao 565",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자749 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_565 예문입니다."
   },
   {
-    "korean": "학습750",
-    "romaja": "hak-seup-750",
-    "vietnamese": "Học tập 750",
+    "korean": "전망_용어_566",
+    "romaja": "jeon-mang-yong-eo-566",
+    "vietnamese": "Triển vọng nâng cao 566",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습750 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_566 예문입니다."
   },
   {
-    "korean": "교육751",
-    "romaja": "gyo-yuk-751",
-    "vietnamese": "Giáo dục 751",
+    "korean": "지적_용어_567",
+    "romaja": "ji-jeok-yong-eo-567",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 567",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육751 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_567 예문입니다."
   },
   {
-    "korean": "연구752",
-    "romaja": "yeon-gu-752",
-    "vietnamese": "Nghiên cứu 752",
+    "korean": "논란_용어_568",
+    "romaja": "non-ran-yong-eo-568",
+    "vietnamese": "Tranh cãi nâng cao 568",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구752 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_568 예문입니다."
   },
   {
-    "korean": "발표753",
-    "romaja": "bal-pyo-753",
-    "vietnamese": "Thuyết trình 753",
+    "korean": "시급_용어_569",
+    "romaja": "si-geup-yong-eo-569",
+    "vietnamese": "Cấp bách nâng cao 569",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표753 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_569 예문입니다."
   },
   {
-    "korean": "토론754",
-    "romaja": "to-ron-754",
-    "vietnamese": "Thảo luận 754",
+    "korean": "전환_용어_570",
+    "romaja": "jeon-hwan-yong-eo-570",
+    "vietnamese": "Chuyển đổi nâng cao 570",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론754 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_570 예문입니다."
   },
   {
-    "korean": "건강755",
-    "romaja": "geon-gang-755",
-    "vietnamese": "Sức khỏe 755",
+    "korean": "도약_용어_571",
+    "romaja": "do-yak-yong-eo-571",
+    "vietnamese": "Bước nhảy vọt nâng cao 571",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강755 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_571 예문입니다."
   },
   {
-    "korean": "진료756",
-    "romaja": "jin-ryo-756",
-    "vietnamese": "Khám chữa bệnh 756",
+    "korean": "초월_용어_572",
+    "romaja": "cho-wol-yong-eo-572",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 572",
     "pos": "Danh từ",
     "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료756 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "초월_용어_572 예문입니다."
   },
   {
-    "korean": "예방757",
-    "romaja": "ye-bang-757",
-    "vietnamese": "Phòng ngừa 757",
+    "korean": "상응_용어_573",
+    "romaja": "sang-eung-yong-eo-573",
+    "vietnamese": "Tương ứng nâng cao 573",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방757 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_573 예문입니다."
   },
   {
-    "korean": "자연758",
-    "romaja": "ja-yeon-758",
-    "vietnamese": "Tự nhiên 758",
+    "korean": "도출_용어_574",
+    "romaja": "do-chul-yong-eo-574",
+    "vietnamese": "Rút ra kết luận nâng cao 574",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연758 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_574 예문입니다."
   },
   {
-    "korean": "환경759",
-    "romaja": "hwan-gyeong-759",
-    "vietnamese": "Môi trường 759",
+    "korean": "융합_용어_575",
+    "romaja": "yung-hap-yong-eo-575",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 575",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경759 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_575 예문입니다."
   },
   {
-    "korean": "보호760",
-    "romaja": "bo-ho-760",
-    "vietnamese": "Bảo vệ 760",
+    "korean": "잠재_용어_576",
+    "romaja": "jam-jae-yong-eo-576",
+    "vietnamese": "Tiềm ẩn nâng cao 576",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호760 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_576 예문입니다."
   },
   {
-    "korean": "기분761",
-    "romaja": "gi-bun-761",
-    "vietnamese": "Tâm trạng 761",
+    "korean": "지향_용어_577",
+    "romaja": "ji-hyang-yong-eo-577",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 577",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분761 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_577 예문입니다."
   },
   {
-    "korean": "희망762",
-    "romaja": "hui-mang-762",
-    "vietnamese": "Hy vọng 762",
+    "korean": "파급_용어_578",
+    "romaja": "pa-geup-yong-eo-578",
+    "vietnamese": "Tác động lan tỏa nâng cao 578",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망762 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_578 예문입니다."
   },
   {
-    "korean": "감동763",
-    "romaja": "gam-dong-763",
-    "vietnamese": "Cảm động 763",
+    "korean": "창출_용어_579",
+    "romaja": "chang-chul-yong-eo-579",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 579",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동763 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_579 예문입니다."
   },
   {
-    "korean": "휴양764",
-    "romaja": "hyu-yang-764",
-    "vietnamese": "Nghỉ dưỡng 764",
+    "korean": "관련_용어_580",
+    "romaja": "gwan-ryeon-yong-eo-580",
+    "vietnamese": "Liên quan nâng cao 580",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양764 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_580 예문입니다."
   },
   {
-    "korean": "체험765",
-    "romaja": "che-heom-765",
-    "vietnamese": "Trải nghiệm 765",
+    "korean": "영향_용어_581",
+    "romaja": "yeong-hyang-yong-eo-581",
+    "vietnamese": "Ảnh hưởng nâng cao 581",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험765 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_581 예문입니다."
   },
   {
-    "korean": "문화766",
-    "romaja": "mun-hwa-766",
-    "vietnamese": "Văn hóa 766",
+    "korean": "분석_용어_582",
+    "romaja": "bun-seok-yong-eo-582",
+    "vietnamese": "Phân tích nâng cao 582",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화766 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_582 예문입니다."
   },
   {
-    "korean": "예술767",
-    "romaja": "ye-sul-767",
-    "vietnamese": "Nghệ thuật 767",
+    "korean": "평가_용어_583",
+    "romaja": "pyeong-ga-yong-eo-583",
+    "vietnamese": "Đánh giá nâng cao 583",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술767 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_583 예문입니다."
   },
   {
-    "korean": "전통768",
-    "romaja": "jeon-tong-768",
-    "vietnamese": "Truyền thống 768",
+    "korean": "추진_용어_584",
+    "romaja": "chu-jin-yong-eo-584",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 584",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통768 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_584 예문입니다."
   },
   {
-    "korean": "법률769",
-    "romaja": "beop-ryul-769",
-    "vietnamese": "Pháp luật 769",
+    "korean": "달성_용어_585",
+    "romaja": "dal-seong-yong-eo-585",
+    "vietnamese": "Đạt thành tích nâng cao 585",
     "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률769 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "달성_용어_585 예문입니다."
   },
   {
-    "korean": "사회770",
-    "romaja": "sa-hoe-770",
-    "vietnamese": "Xã hội 770",
+    "korean": "전망_용어_586",
+    "romaja": "jeon-mang-yong-eo-586",
+    "vietnamese": "Triển vọng nâng cao 586",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회770 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_586 예문입니다."
   },
   {
-    "korean": "정치771",
-    "romaja": "jeong-chi-771",
-    "vietnamese": "Chính trị 771",
+    "korean": "지적_용어_587",
+    "romaja": "ji-jeok-yong-eo-587",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 587",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치771 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_587 예문입니다."
   },
   {
-    "korean": "경제772",
-    "romaja": "gyeong-je-772",
-    "vietnamese": "Kinh tế 772",
+    "korean": "논란_용어_588",
+    "romaja": "non-ran-yong-eo-588",
+    "vietnamese": "Tranh cãi nâng cao 588",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제772 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_588 예문입니다."
   },
   {
-    "korean": "무역773",
-    "romaja": "mu-yeok-773",
-    "vietnamese": "Thương mại 773",
+    "korean": "시급_용어_589",
+    "romaja": "si-geup-yong-eo-589",
+    "vietnamese": "Cấp bách nâng cao 589",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역773 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_589 예문입니다."
   },
   {
-    "korean": "투자774",
-    "romaja": "tu-ja-774",
-    "vietnamese": "Đầu tư 774",
+    "korean": "전환_용어_590",
+    "romaja": "jeon-hwan-yong-eo-590",
+    "vietnamese": "Chuyển đổi nâng cao 590",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자774 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_590 예문입니다."
   },
   {
-    "korean": "학습775",
-    "romaja": "hak-seup-775",
-    "vietnamese": "Học tập 775",
+    "korean": "도약_용어_591",
+    "romaja": "do-yak-yong-eo-591",
+    "vietnamese": "Bước nhảy vọt nâng cao 591",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습775 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "도약_용어_591 예문입니다."
   },
   {
-    "korean": "교육776",
-    "romaja": "gyo-yuk-776",
-    "vietnamese": "Giáo dục 776",
+    "korean": "초월_용어_592",
+    "romaja": "cho-wol-yong-eo-592",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 592",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육776 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_592 예문입니다."
   },
   {
-    "korean": "연구777",
-    "romaja": "yeon-gu-777",
-    "vietnamese": "Nghiên cứu 777",
+    "korean": "상응_용어_593",
+    "romaja": "sang-eung-yong-eo-593",
+    "vietnamese": "Tương ứng nâng cao 593",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구777 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_593 예문입니다."
   },
   {
-    "korean": "발표778",
-    "romaja": "bal-pyo-778",
-    "vietnamese": "Thuyết trình 778",
+    "korean": "도출_용어_594",
+    "romaja": "do-chul-yong-eo-594",
+    "vietnamese": "Rút ra kết luận nâng cao 594",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표778 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_594 예문입니다."
   },
   {
-    "korean": "토론779",
-    "romaja": "to-ron-779",
-    "vietnamese": "Thảo luận 779",
+    "korean": "융합_용어_595",
+    "romaja": "yung-hap-yong-eo-595",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 595",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론779 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "융합_용어_595 예문입니다."
   },
   {
-    "korean": "건강780",
-    "romaja": "geon-gang-780",
-    "vietnamese": "Sức khỏe 780",
+    "korean": "잠재_용어_596",
+    "romaja": "jam-jae-yong-eo-596",
+    "vietnamese": "Tiềm ẩn nâng cao 596",
     "pos": "Danh từ",
     "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강780 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "잠재_용어_596 예문입니다."
   },
   {
-    "korean": "진료781",
-    "romaja": "jin-ryo-781",
-    "vietnamese": "Khám chữa bệnh 781",
+    "korean": "지향_용어_597",
+    "romaja": "ji-hyang-yong-eo-597",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 597",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료781 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_597 예문입니다."
   },
   {
-    "korean": "예방782",
-    "romaja": "ye-bang-782",
-    "vietnamese": "Phòng ngừa 782",
+    "korean": "파급_용어_598",
+    "romaja": "pa-geup-yong-eo-598",
+    "vietnamese": "Tác động lan tỏa nâng cao 598",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방782 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_598 예문입니다."
   },
   {
-    "korean": "자연783",
-    "romaja": "ja-yeon-783",
-    "vietnamese": "Tự nhiên 783",
+    "korean": "창출_용어_599",
+    "romaja": "chang-chul-yong-eo-599",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 599",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연783 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_599 예문입니다."
   },
   {
-    "korean": "환경784",
-    "romaja": "hwan-gyeong-784",
-    "vietnamese": "Môi trường 784",
+    "korean": "관련_용어_600",
+    "romaja": "gwan-ryeon-yong-eo-600",
+    "vietnamese": "Liên quan nâng cao 600",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경784 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 4",
+    "example": "관련_용어_600 예문입니다."
   },
   {
-    "korean": "보호785",
-    "romaja": "bo-ho-785",
-    "vietnamese": "Bảo vệ 785",
+    "korean": "영향_용어_601",
+    "romaja": "yeong-hyang-yong-eo-601",
+    "vietnamese": "Ảnh hưởng nâng cao 601",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호785 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_601 예문입니다."
   },
   {
-    "korean": "기분786",
-    "romaja": "gi-bun-786",
-    "vietnamese": "Tâm trạng 786",
+    "korean": "분석_용어_602",
+    "romaja": "bun-seok-yong-eo-602",
+    "vietnamese": "Phân tích nâng cao 602",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분786 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_602 예문입니다."
   },
   {
-    "korean": "희망787",
-    "romaja": "hui-mang-787",
-    "vietnamese": "Hy vọng 787",
+    "korean": "평가_용어_603",
+    "romaja": "pyeong-ga-yong-eo-603",
+    "vietnamese": "Đánh giá nâng cao 603",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망787 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_603 예문입니다."
   },
   {
-    "korean": "감동788",
-    "romaja": "gam-dong-788",
-    "vietnamese": "Cảm động 788",
+    "korean": "추진_용어_604",
+    "romaja": "chu-jin-yong-eo-604",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 604",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동788 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_604 예문입니다."
   },
   {
-    "korean": "휴양789",
-    "romaja": "hyu-yang-789",
-    "vietnamese": "Nghỉ dưỡng 789",
+    "korean": "달성_용어_605",
+    "romaja": "dal-seong-yong-eo-605",
+    "vietnamese": "Đạt thành tích nâng cao 605",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양789 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_605 예문입니다."
   },
   {
-    "korean": "체험790",
-    "romaja": "che-heom-790",
-    "vietnamese": "Trải nghiệm 790",
+    "korean": "전망_용어_606",
+    "romaja": "jeon-mang-yong-eo-606",
+    "vietnamese": "Triển vọng nâng cao 606",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험790 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_606 예문입니다."
   },
   {
-    "korean": "문화791",
-    "romaja": "mun-hwa-791",
-    "vietnamese": "Văn hóa 791",
+    "korean": "지적_용어_607",
+    "romaja": "ji-jeok-yong-eo-607",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 607",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화791 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_607 예문입니다."
   },
   {
-    "korean": "예술792",
-    "romaja": "ye-sul-792",
-    "vietnamese": "Nghệ thuật 792",
+    "korean": "논란_용어_608",
+    "romaja": "non-ran-yong-eo-608",
+    "vietnamese": "Tranh cãi nâng cao 608",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술792 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_608 예문입니다."
+  },
+  {
+    "korean": "시급_용어_609",
+    "romaja": "si-geup-yong-eo-609",
+    "vietnamese": "Cấp bách nâng cao 609",
+    "pos": "Động từ",
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_609 예문입니다."
+  },
+  {
+    "korean": "전환_용어_610",
+    "romaja": "jeon-hwan-yong-eo-610",
+    "vietnamese": "Chuyển đổi nâng cao 610",
+    "pos": "Danh từ",
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_610 예문입니다."
   },
   {
-    "korean": "전통793",
-    "romaja": "jeon-tong-793",
-    "vietnamese": "Truyền thống 793",
+    "korean": "도약_용어_611",
+    "romaja": "do-yak-yong-eo-611",
+    "vietnamese": "Bước nhảy vọt nâng cao 611",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통793 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "도약_용어_611 예문입니다."
   },
   {
-    "korean": "법률794",
-    "romaja": "beop-ryul-794",
-    "vietnamese": "Pháp luật 794",
+    "korean": "초월_용어_612",
+    "romaja": "cho-wol-yong-eo-612",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 612",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률794 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_612 예문입니다."
   },
   {
-    "korean": "사회795",
-    "romaja": "sa-hoe-795",
-    "vietnamese": "Xã hội 795",
+    "korean": "상응_용어_613",
+    "romaja": "sang-eung-yong-eo-613",
+    "vietnamese": "Tương ứng nâng cao 613",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회795 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "상응_용어_613 예문입니다."
   },
   {
-    "korean": "정치796",
-    "romaja": "jeong-chi-796",
-    "vietnamese": "Chính trị 796",
+    "korean": "도출_용어_614",
+    "romaja": "do-chul-yong-eo-614",
+    "vietnamese": "Rút ra kết luận nâng cao 614",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치796 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_614 예문입니다."
   },
   {
-    "korean": "경제797",
-    "romaja": "gyeong-je-797",
-    "vietnamese": "Kinh tế 797",
+    "korean": "융합_용어_615",
+    "romaja": "yung-hap-yong-eo-615",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 615",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제797 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 6",
+    "example": "융합_용어_615 예문입니다."
   },
   {
-    "korean": "무역798",
-    "romaja": "mu-yeok-798",
-    "vietnamese": "Thương mại 798",
+    "korean": "잠재_용어_616",
+    "romaja": "jam-jae-yong-eo-616",
+    "vietnamese": "Tiềm ẩn nâng cao 616",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역798 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "잠재_용어_616 예문입니다."
   },
   {
-    "korean": "투자799",
-    "romaja": "tu-ja-799",
-    "vietnamese": "Đầu tư 799",
+    "korean": "지향_용어_617",
+    "romaja": "ji-hyang-yong-eo-617",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 617",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자799 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_617 예문입니다."
   },
   {
-    "korean": "학습800",
-    "romaja": "hak-seup-800",
-    "vietnamese": "Học tập 800",
+    "korean": "파급_용어_618",
+    "romaja": "pa-geup-yong-eo-618",
+    "vietnamese": "Tác động lan tỏa nâng cao 618",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습800 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_618 예문입니다."
   },
   {
-    "korean": "교육801",
-    "romaja": "gyo-yuk-801",
-    "vietnamese": "Giáo dục 801",
+    "korean": "창출_용어_619",
+    "romaja": "chang-chul-yong-eo-619",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 619",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육801 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "창출_용어_619 예문입니다."
   },
   {
-    "korean": "연구802",
-    "romaja": "yeon-gu-802",
-    "vietnamese": "Nghiên cứu 802",
+    "korean": "관련_용어_620",
+    "romaja": "gwan-ryeon-yong-eo-620",
+    "vietnamese": "Liên quan nâng cao 620",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구802 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_620 예문입니다."
   },
   {
-    "korean": "발표803",
-    "romaja": "bal-pyo-803",
-    "vietnamese": "Thuyết trình 803",
+    "korean": "영향_용어_621",
+    "romaja": "yeong-hyang-yong-eo-621",
+    "vietnamese": "Ảnh hưởng nâng cao 621",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표803 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_621 예문입니다."
   },
   {
-    "korean": "토론804",
-    "romaja": "to-ron-804",
-    "vietnamese": "Thảo luận 804",
+    "korean": "분석_용어_622",
+    "romaja": "bun-seok-yong-eo-622",
+    "vietnamese": "Phân tích nâng cao 622",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론804 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_622 예문입니다."
   },
   {
-    "korean": "건강805",
-    "romaja": "geon-gang-805",
-    "vietnamese": "Sức khỏe 805",
+    "korean": "평가_용어_623",
+    "romaja": "pyeong-ga-yong-eo-623",
+    "vietnamese": "Đánh giá nâng cao 623",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강805 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_623 예문입니다."
   },
   {
-    "korean": "진료806",
-    "romaja": "jin-ryo-806",
-    "vietnamese": "Khám chữa bệnh 806",
+    "korean": "추진_용어_624",
+    "romaja": "chu-jin-yong-eo-624",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 624",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료806 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_624 예문입니다."
   },
   {
-    "korean": "예방807",
-    "romaja": "ye-bang-807",
-    "vietnamese": "Phòng ngừa 807",
+    "korean": "달성_용어_625",
+    "romaja": "dal-seong-yong-eo-625",
+    "vietnamese": "Đạt thành tích nâng cao 625",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방807 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "달성_용어_625 예문입니다."
   },
   {
-    "korean": "자연808",
-    "romaja": "ja-yeon-808",
-    "vietnamese": "Tự nhiên 808",
+    "korean": "전망_용어_626",
+    "romaja": "jeon-mang-yong-eo-626",
+    "vietnamese": "Triển vọng nâng cao 626",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연808 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전망_용어_626 예문입니다."
   },
   {
-    "korean": "환경809",
-    "romaja": "hwan-gyeong-809",
-    "vietnamese": "Môi trường 809",
+    "korean": "지적_용어_627",
+    "romaja": "ji-jeok-yong-eo-627",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 627",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경809 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 5",
+    "example": "지적_용어_627 예문입니다."
   },
   {
-    "korean": "보호810",
-    "romaja": "bo-ho-810",
-    "vietnamese": "Bảo vệ 810",
+    "korean": "논란_용어_628",
+    "romaja": "non-ran-yong-eo-628",
+    "vietnamese": "Tranh cãi nâng cao 628",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호810 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "논란_용어_628 예문입니다."
   },
   {
-    "korean": "기분811",
-    "romaja": "gi-bun-811",
-    "vietnamese": "Tâm trạng 811",
+    "korean": "시급_용어_629",
+    "romaja": "si-geup-yong-eo-629",
+    "vietnamese": "Cấp bách nâng cao 629",
     "pos": "Động từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분811 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "시급_용어_629 예문입니다."
   },
   {
-    "korean": "희망812",
-    "romaja": "hui-mang-812",
-    "vietnamese": "Hy vọng 812",
+    "korean": "전환_용어_630",
+    "romaja": "jeon-hwan-yong-eo-630",
+    "vietnamese": "Chuyển đổi nâng cao 630",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망812 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전환_용어_630 예문입니다."
   },
   {
-    "korean": "감동813",
-    "romaja": "gam-dong-813",
-    "vietnamese": "Cảm động 813",
+    "korean": "도약_용어_631",
+    "romaja": "do-yak-yong-eo-631",
+    "vietnamese": "Bước nhảy vọt nâng cao 631",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동813 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "도약_용어_631 예문입니다."
   },
   {
-    "korean": "휴양814",
-    "romaja": "hyu-yang-814",
-    "vietnamese": "Nghỉ dưỡng 814",
+    "korean": "초월_용어_632",
+    "romaja": "cho-wol-yong-eo-632",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 632",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양814 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "초월_용어_632 예문입니다."
   },
   {
-    "korean": "체험815",
-    "romaja": "che-heom-815",
-    "vietnamese": "Trải nghiệm 815",
+    "korean": "상응_용어_633",
+    "romaja": "sang-eung-yong-eo-633",
+    "vietnamese": "Tương ứng nâng cao 633",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험815 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "상응_용어_633 예문입니다."
   },
   {
-    "korean": "문화816",
-    "romaja": "mun-hwa-816",
-    "vietnamese": "Văn hóa 816",
+    "korean": "도출_용어_634",
+    "romaja": "do-chul-yong-eo-634",
+    "vietnamese": "Rút ra kết luận nâng cao 634",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화816 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "도출_용어_634 예문입니다."
   },
   {
-    "korean": "예술817",
-    "romaja": "ye-sul-817",
-    "vietnamese": "Nghệ thuật 817",
+    "korean": "융합_용어_635",
+    "romaja": "yung-hap-yong-eo-635",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 635",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술817 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "융합_용어_635 예문입니다."
   },
   {
-    "korean": "전통818",
-    "romaja": "jeon-tong-818",
-    "vietnamese": "Truyền thống 818",
+    "korean": "잠재_용어_636",
+    "romaja": "jam-jae-yong-eo-636",
+    "vietnamese": "Tiềm ẩn nâng cao 636",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통818 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_636 예문입니다."
   },
   {
-    "korean": "법률819",
-    "romaja": "beop-ryul-819",
-    "vietnamese": "Pháp luật 819",
+    "korean": "지향_용어_637",
+    "romaja": "ji-hyang-yong-eo-637",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 637",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률819 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 6",
+    "example": "지향_용어_637 예문입니다."
   },
   {
-    "korean": "사회820",
-    "romaja": "sa-hoe-820",
-    "vietnamese": "Xã hội 820",
+    "korean": "파급_용어_638",
+    "romaja": "pa-geup-yong-eo-638",
+    "vietnamese": "Tác động lan tỏa nâng cao 638",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회820 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "파급_용어_638 예문입니다."
   },
   {
-    "korean": "정치821",
-    "romaja": "jeong-chi-821",
-    "vietnamese": "Chính trị 821",
+    "korean": "창출_용어_639",
+    "romaja": "chang-chul-yong-eo-639",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 639",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치821 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "창출_용어_639 예문입니다."
   },
   {
-    "korean": "경제822",
-    "romaja": "gyeong-je-822",
-    "vietnamese": "Kinh tế 822",
+    "korean": "관련_용어_640",
+    "romaja": "gwan-ryeon-yong-eo-640",
+    "vietnamese": "Liên quan nâng cao 640",
     "pos": "Danh từ",
     "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "경제822 문장 예시입니다."
+    "level": "TOPIK 4",
+    "example": "관련_용어_640 예문입니다."
   },
   {
-    "korean": "무역823",
-    "romaja": "mu-yeok-823",
-    "vietnamese": "Thương mại 823",
+    "korean": "영향_용어_641",
+    "romaja": "yeong-hyang-yong-eo-641",
+    "vietnamese": "Ảnh hưởng nâng cao 641",
     "pos": "Động từ",
-    "topic": "work_business",
-    "level": "TOPIK 2",
-    "example": "무역823 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 4",
+    "example": "영향_용어_641 예문입니다."
   },
   {
-    "korean": "투자824",
-    "romaja": "tu-ja-824",
-    "vietnamese": "Đầu tư 824",
+    "korean": "분석_용어_642",
+    "romaja": "bun-seok-yong-eo-642",
+    "vietnamese": "Phân tích nâng cao 642",
     "pos": "Danh từ",
-    "topic": "work_business",
-    "level": "TOPIK 3-4",
-    "example": "투자824 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 4",
+    "example": "분석_용어_642 예문입니다."
   },
   {
-    "korean": "학습825",
-    "romaja": "hak-seup-825",
-    "vietnamese": "Học tập 825",
+    "korean": "평가_용어_643",
+    "romaja": "pyeong-ga-yong-eo-643",
+    "vietnamese": "Đánh giá nâng cao 643",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 1",
-    "example": "학습825 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 4",
+    "example": "평가_용어_643 예문입니다."
   },
   {
-    "korean": "교육826",
-    "romaja": "gyo-yuk-826",
-    "vietnamese": "Giáo dục 826",
+    "korean": "추진_용어_644",
+    "romaja": "chu-jin-yong-eo-644",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 644",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "교육826 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 5",
+    "example": "추진_용어_644 예문입니다."
   },
   {
-    "korean": "연구827",
-    "romaja": "yeon-gu-827",
-    "vietnamese": "Nghiên cứu 827",
+    "korean": "달성_용어_645",
+    "romaja": "dal-seong-yong-eo-645",
+    "vietnamese": "Đạt thành tích nâng cao 645",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "연구827 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 5",
+    "example": "달성_용어_645 예문입니다."
   },
   {
-    "korean": "발표828",
-    "romaja": "bal-pyo-828",
-    "vietnamese": "Thuyết trình 828",
+    "korean": "전망_용어_646",
+    "romaja": "jeon-mang-yong-eo-646",
+    "vietnamese": "Triển vọng nâng cao 646",
     "pos": "Danh từ",
-    "topic": "school",
-    "level": "TOPIK 2",
-    "example": "발표828 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 5",
+    "example": "전망_용어_646 예문입니다."
   },
   {
-    "korean": "토론829",
-    "romaja": "to-ron-829",
-    "vietnamese": "Thảo luận 829",
+    "korean": "지적_용어_647",
+    "romaja": "ji-jeok-yong-eo-647",
+    "vietnamese": "Chỉ ra / Phê bình nâng cao 647",
     "pos": "Động từ",
-    "topic": "school",
-    "level": "TOPIK 3-4",
-    "example": "토론829 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 5",
+    "example": "지적_용어_647 예문입니다."
   },
   {
-    "korean": "건강830",
-    "romaja": "geon-gang-830",
-    "vietnamese": "Sức khỏe 830",
+    "korean": "논란_용어_648",
+    "romaja": "non-ran-yong-eo-648",
+    "vietnamese": "Tranh cãi nâng cao 648",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 1",
-    "example": "건강830 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "논란_용어_648 예문입니다."
   },
   {
-    "korean": "진료831",
-    "romaja": "jin-ryo-831",
-    "vietnamese": "Khám chữa bệnh 831",
+    "korean": "시급_용어_649",
+    "romaja": "si-geup-yong-eo-649",
+    "vietnamese": "Cấp bách nâng cao 649",
     "pos": "Động từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "진료831 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 5",
+    "example": "시급_용어_649 예문입니다."
   },
   {
-    "korean": "예방832",
-    "romaja": "ye-bang-832",
-    "vietnamese": "Phòng ngừa 832",
+    "korean": "전환_용어_650",
+    "romaja": "jeon-hwan-yong-eo-650",
+    "vietnamese": "Chuyển đổi nâng cao 650",
     "pos": "Danh từ",
-    "topic": "health_medical",
-    "level": "TOPIK 2",
-    "example": "예방832 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 5",
+    "example": "전환_용어_650 예문입니다."
   },
   {
-    "korean": "자연833",
-    "romaja": "ja-yeon-833",
-    "vietnamese": "Tự nhiên 833",
+    "korean": "도약_용어_651",
+    "romaja": "do-yak-yong-eo-651",
+    "vietnamese": "Bước nhảy vọt nâng cao 651",
     "pos": "Động từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 1",
-    "example": "자연833 문장 예시입니다."
+    "topic": "art_culture",
+    "level": "TOPIK 6",
+    "example": "도약_용어_651 예문입니다."
   },
   {
-    "korean": "환경834",
-    "romaja": "hwan-gyeong-834",
-    "vietnamese": "Môi trường 834",
+    "korean": "초월_용어_652",
+    "romaja": "cho-wol-yong-eo-652",
+    "vietnamese": "Vượt xa / Siêu việt nâng cao 652",
     "pos": "Danh từ",
-    "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "환경834 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 6",
+    "example": "초월_용어_652 예문입니다."
   },
   {
-    "korean": "보호835",
-    "romaja": "bo-ho-835",
-    "vietnamese": "Bảo vệ 835",
+    "korean": "상응_용어_653",
+    "romaja": "sang-eung-yong-eo-653",
+    "vietnamese": "Tương ứng nâng cao 653",
     "pos": "Động từ",
     "topic": "weather_nature",
-    "level": "TOPIK 2",
-    "example": "보호835 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "상응_용어_653 예문입니다."
   },
   {
-    "korean": "기분836",
-    "romaja": "gi-bun-836",
-    "vietnamese": "Tâm trạng 836",
+    "korean": "도출_용어_654",
+    "romaja": "do-chul-yong-eo-654",
+    "vietnamese": "Rút ra kết luận nâng cao 654",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 1",
-    "example": "기분836 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 6",
+    "example": "도출_용어_654 예문입니다."
   },
   {
-    "korean": "희망837",
-    "romaja": "hui-mang-837",
-    "vietnamese": "Hy vọng 837",
+    "korean": "융합_용어_655",
+    "romaja": "yung-hap-yong-eo-655",
+    "vietnamese": "Dung hợp / Thâm nhập nâng cao 655",
     "pos": "Động từ",
     "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "희망837 문장 예시입니다."
+    "level": "TOPIK 6",
+    "example": "융합_용어_655 예문입니다."
   },
   {
-    "korean": "감동838",
-    "romaja": "gam-dong-838",
-    "vietnamese": "Cảm động 838",
+    "korean": "잠재_용어_656",
+    "romaja": "jam-jae-yong-eo-656",
+    "vietnamese": "Tiềm ẩn nâng cao 656",
     "pos": "Danh từ",
-    "topic": "emotion_personality",
-    "level": "TOPIK 2",
-    "example": "감동838 문장 예시입니다."
+    "topic": "work_business",
+    "level": "TOPIK 6",
+    "example": "잠재_용어_656 예문입니다."
   },
   {
-    "korean": "휴양839",
-    "romaja": "hyu-yang-839",
-    "vietnamese": "Nghỉ dưỡng 839",
+    "korean": "지향_용어_657",
+    "romaja": "ji-hyang-yong-eo-657",
+    "vietnamese": "Hướng đến mục tiêu nâng cao 657",
     "pos": "Động từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "휴양839 문장 예시입니다."
+    "topic": "law_society",
+    "level": "TOPIK 6",
+    "example": "지향_용어_657 예문입니다."
   },
   {
-    "korean": "체험840",
-    "romaja": "che-heom-840",
-    "vietnamese": "Trải nghiệm 840",
+    "korean": "파급_용어_658",
+    "romaja": "pa-geup-yong-eo-658",
+    "vietnamese": "Tác động lan tỏa nâng cao 658",
     "pos": "Danh từ",
-    "topic": "travel_leisure",
-    "level": "TOPIK 2",
-    "example": "체험840 문장 예시입니다."
+    "topic": "tech_media",
+    "level": "TOPIK 6",
+    "example": "파급_용어_658 예문입니다."
   },
   {
-    "korean": "문화841",
-    "romaja": "mun-hwa-841",
-    "vietnamese": "Văn hóa 841",
+    "korean": "창출_용어_659",
+    "romaja": "chang-chul-yong-eo-659",
+    "vietnamese": "Sáng tạo ra giá trị nâng cao 659",
     "pos": "Động từ",
     "topic": "art_culture",
-    "level": "TOPIK 1",
-    "example": "문화841 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "창출_용어_659 예문입니다."
   },
   {
-    "korean": "예술842",
-    "romaja": "ye-sul-842",
-    "vietnamese": "Nghệ thuật 842",
+    "korean": "관련_용어_660",
+    "romaja": "gwan-ryeon-yong-eo-660",
+    "vietnamese": "Liên quan nâng cao 660",
     "pos": "Danh từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "예술842 문장 예시입니다."
+    "topic": "health_medical",
+    "level": "TOPIK 4",
+    "example": "관련_용어_660 예문입니다."
   },
   {
-    "korean": "전통843",
-    "romaja": "jeon-tong-843",
-    "vietnamese": "Truyền thống 843",
+    "korean": "영향_용어_661",
+    "romaja": "yeong-hyang-yong-eo-661",
+    "vietnamese": "Ảnh hưởng nâng cao 661",
     "pos": "Động từ",
-    "topic": "art_culture",
-    "level": "TOPIK 2",
-    "example": "전통843 문장 예시입니다."
+    "topic": "weather_nature",
+    "level": "TOPIK 4",
+    "example": "영향_용어_661 예문입니다."
   },
   {
-    "korean": "법률844",
-    "romaja": "beop-ryul-844",
-    "vietnamese": "Pháp luật 844",
+    "korean": "분석_용어_662",
+    "romaja": "bun-seok-yong-eo-662",
+    "vietnamese": "Phân tích nâng cao 662",
     "pos": "Danh từ",
-    "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "법률844 문장 예시입니다."
+    "topic": "education",
+    "level": "TOPIK 4",
+    "example": "분석_용어_662 예문입니다."
   },
   {
-    "korean": "사회845",
-    "romaja": "sa-hoe-845",
-    "vietnamese": "Xã hội 845",
+    "korean": "평가_용어_663",
+    "romaja": "pyeong-ga-yong-eo-663",
+    "vietnamese": "Đánh giá nâng cao 663",
     "pos": "Động từ",
-    "topic": "law_society",
-    "level": "TOPIK 2",
-    "example": "사회845 문장 예시입니다."
+    "topic": "emotion_personality",
+    "level": "TOPIK 4",
+    "example": "평가_용어_663 예문입니다."
   },
   {
-    "korean": "정치846",
-    "romaja": "jeong-chi-846",
-    "vietnamese": "Chính trị 846",
+    "korean": "추진_용어_664",
+    "romaja": "chu-jin-yong-eo-664",
+    "vietnamese": "Xúc tiến / Đẩy mạnh nâng cao 664",
     "pos": "Danh từ",
+    "topic": "work_business",
+    "level": "TOPIK 5",
+    "example": "추진_용어_664 예문입니다."
+  },
+  {
+    "korean": "달성_용어_665",
+    "romaja": "dal-seong-yong-eo-665",
+    "vietnamese": "Đạt thành tích nâng cao 665",
+    "pos": "Động từ",
     "topic": "law_society",
-    "level": "TOPIK 3-4",
-    "example": "정치846 문장 예시입니다."
+    "level": "TOPIK 5",
+    "example": "달성_용어_665 예문입니다."
   }
 ];

@@ -38,7 +38,8 @@ class OCREngine {
                 const canvas = document.createElement("canvas");
                 const ctx = canvas.getContext("2d");
                 
-                const maxDim = 2560;
+                // 3072px Ultra Clarity for small Hangul text and handwriting
+                const maxDim = 3072;
                 let width = img.naturalWidth || img.width;
                 let height = img.naturalHeight || img.height;
 
@@ -57,9 +58,12 @@ class OCREngine {
 
                 ctx.imageSmoothingEnabled = true;
                 ctx.imageSmoothingQuality = "high";
+
+                // Contrast & Brightness Enhancement for ultra sharp Hangul OCR
+                ctx.filter = "contrast(1.08) brightness(1.02)";
                 ctx.drawImage(img, 0, 0, width, height);
 
-                resolve(canvas.toDataURL("image/jpeg", 0.95));
+                resolve(canvas.toDataURL("image/jpeg", 0.96));
             };
             img.onerror = () => resolve(imageSrc);
             img.src = imageSrc;
@@ -140,7 +144,7 @@ class OCREngine {
      * Send image to Gemini Vision API with Part of Speech (POS) & Dynamic Topic Classification
      */
     async recognizeKoreanText(imageSrc, progressCallback) {
-        if (progressCallback) progressCallback(15, "Đang tối ưu dung lượng ảnh (2560px Super Clarity)...");
+        if (progressCallback) progressCallback(15, "Đang tối ưu dung lượng & độ nét ảnh (3072px Super Clarity)...");
 
         const cleanKey = (this.geminiApiKey || "").trim();
         if (!cleanKey) {
@@ -148,21 +152,20 @@ class OCREngine {
         }
 
         const compressedSrc = await this.compressImage(imageSrc);
-
         const cleanBase64 = compressedSrc.replace(/^data:image\/(png|jpeg|jpg|webp);base64,/, "");
 
         const promptText = `Bạn là chuyên gia OCR Vision cao cấp nhất về Tiếng Hàn (Hangul) & Dịch thuật Việt - Hàn.
-Nhiệm vụ TỐI CAO: BÓC TÁCH VỚI ĐỘ PHỦ 100% TOÀN BỘ TẤT CẢ TỪ VỰNG, CỤM TỪ, CẤU TRÚC TIẾNG HÀN CÓ TRONG BỨC ẢNH NÀY!
+Nhiệm vụ TỐI CAO: BÓC TÁCH VỚI ĐỘ CHÍNH XÁC VÀ ĐỘ PHỦ 100% TOÀN BỘ TẤT CẢ TỪ VỰNG, CỤM TỪ, CẤU TRÚC TIẾNG HÀN CÓ TRONG BỨC ẢNH NÀY!
 
-YÊU CẦU BẮT BUỘC VỀ PHÂN TÁCH TIẾNG HÀN VÀ TIẾNG VIỆT (LỌC VĂN BẢN VIẾT TAY/SÁCH):
-1. Trường "korean": BẮT BUỘC CHỈ CHỨA 100% KÝ TỰ HÀN QUỐC (HANGUL). Nếu trong ảnh có ghi chú giải nghĩa tiếng Việt hoặc dịch tiếng Việt nằm cạnh chữ Hàn (ví dụ: "그래도 (dù vậy)" hoặc "그런데 quá lớn"), KHÔNG ĐƯỢC ĐẶT TIẾNG VIỆT VÀO TRƯỜNG "korean"! Hãy lọc bỏ toàn bộ chữ tiếng Việt ra khỏi "korean" và đưa phần dịch tiếng Việt đó vào trường "vietnamese"!
-2. Trường "example": Câu ví dụ tiếng Hàn CHỈ ĐƯỢC CHỨA CHỮ HÀN 100% ở phần tiếng Hàn, phần dịch tiếng Việt nằm gọn trong ngoặc đơn ở cuối câu.
+YÊU CẦU BẮT BUỘC VỀ NHẬN DIỆN VÀ PHÂN TÁCH:
+1. Độ chính xác tuyệt đối: Đọc chính xác từng nét phụ âm 받침 (ㅂ, ㅁ, ㅇ, ㄴ, ㄹ, ㄶ, ㅀ) và phụ âm đôi trong tiếng Hàn, áp dụng cho cả chữ in sách và chữ viết tay.
+2. Trường "korean": BẮT BUỘC CHỈ CHỨA 100% KÝ TỰ HÀN QUỐC (HANGUL). Nếu trong ảnh có ghi chú giải nghĩa tiếng Việt hoặc dịch tiếng Việt nằm cạnh chữ Hàn (ví dụ: "그래도 (dù vậy)" hoặc "그런데 quá lớn"), KHÔNG ĐƯỢC ĐẶT TIẾNG VIỆT VÀO TRƯỜNG "korean"! Hãy lọc bỏ toàn bộ chữ tiếng Việt ra khỏi "korean" và đưa phần dịch tiếng Việt đó vào trường "vietnamese"!
+3. Trường "example": Câu ví dụ tiếng Hàn CHỈ ĐƯỢC CHỨA CHỮ HÀN 100% ở phần tiếng Hàn, phần dịch tiếng Việt nằm gọn trong ngoặc đơn ở cuối câu.
    ĐỊNH DẠNG BẮT BUỘC: "Câu tiếng Hàn 100%. (Dịch tiếng Việt)"
    Ví dụ ĐÚNG: "어제 옷을 샀어요. 그런데 너무 커요. (Hôm qua tôi đã mua quần áo. Nhưng nó hơi rộng quá.)"
-   Ví dụ SAI (CẤM NGHÊM CẤM): "어제 옷을 샀어요. 그런데 quá lớn."
-3. Phân loại từ loại ("pos") chuẩn xác: Danh từ, Động từ, Tính từ, Phó từ, Trạng từ, Ngữ pháp, Thành ngữ, Từ nối...
-4. Phân loại chủ đề ("topic") thông minh kèm Emoji.
-5. Phiên âm Romaja đầy đủ và dịch nghĩa Tiếng Việt sát nghĩa.
+4. Phân loại từ loại ("pos") chuẩn xác: Danh từ, Động từ, Tính từ, Phó từ, Trạng từ, Ngữ pháp, Thành ngữ, Từ nối...
+5. Phân loại chủ đề ("topic") thông minh kèm Emoji.
+6. Phiên âm Romaja đầy đủ và dịch nghĩa Tiếng Việt sát nghĩa.
 
 Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không chứa markdown hay văn bản nào khác:
 [
@@ -176,12 +179,12 @@ Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không
   }
 ]`;
 
-        const models = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-2.5-flash", "gemini-1.5-pro", "gemini-flash-latest"];
+        const models = ["gemini-2.0-flash", "gemini-1.5-pro", "gemini-1.5-flash", "gemini-2.0-flash-lite"];
         let lastErrorText = "";
 
         for (let i = 0; i < models.length; i++) {
             const model = models[i];
-            if (progressCallback) progressCallback(40 + (i * 12), `Gemini AI (${model}) đang bóc tách 100% ảnh...`);
+            if (progressCallback) progressCallback(40 + (i * 15), `Gemini AI (${model}) đang bóc tách 100% ảnh nét cao...`);
 
             try {
                 const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${cleanKey}`;
@@ -194,7 +197,7 @@ Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không
                     }],
                     generationConfig: {
                         response_mime_type: "application/json",
-                        temperature: 0.1,
+                        temperature: 0.05,
                         maxOutputTokens: 8192
                     }
                 };
@@ -213,7 +216,7 @@ Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không
                     const extractedArray = this.extractArrayFromJSON(jsonText);
                     if (extractedArray && extractedArray.length > 0) {
                         const cleanedArray = extractedArray.map(item => this.cleanExtractedWord(item));
-                        if (progressCallback) progressCallback(100, "Bóc tách 100% từ vựng thành công!");
+                        if (progressCallback) progressCallback(100, "Bóc tách 100% từ vựng nét cao thành công!");
                         return cleanedArray;
                     } else {
                         console.warn(`[Gemini OCR ${model}]: Không trích xuất được từ vựng từ JSON trả về.`);
