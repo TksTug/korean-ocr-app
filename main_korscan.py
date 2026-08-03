@@ -6,10 +6,19 @@ import http.server
 import urllib.request
 import urllib.parse
 import json
-from PyQt6.QtCore import QUrl
-from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget
-from PyQt6.QtWebEngineWidgets import QWebEngineView
-from PyQt6.QtWebEngineCore import QWebEngineSettings, QWebEngineProfile, QWebEnginePage
+import webbrowser
+import io
+import asyncio
+
+try:
+    from PyQt6.QtCore import QUrl
+    from PyQt6.QtWidgets import QApplication, QMainWindow, QVBoxLayout, QWidget
+    from PyQt6.QtWebEngineWidgets import QWebEngineView
+    from PyQt6.QtWebEngineCore import QWebEngineSettings, QWebEngineProfile, QWebEnginePage
+    HAS_PYQT = True
+except Exception as e:
+    HAS_PYQT = False
+    print(f"[KorScan AI] PyQt6 not available: {e}")
 
 # Determine bundle directory (PyInstaller _MEIPASS or current script dir)
 if getattr(sys, 'frozen', False):
@@ -250,10 +259,20 @@ class KorScanMainWindow(QMainWindow):
 
 def main():
     start_embedded_server()
-    app = QApplication(sys.argv)
-    window = KorScanMainWindow(app)
-    window.show()
-    sys.exit(app.exec())
+    if HAS_PYQT:
+        try:
+            app = QApplication(sys.argv)
+            window = KorScanMainWindow(app)
+            window.show()
+            sys.exit(app.exec())
+        except Exception as e:
+            print(f"[KorScan AI] PyQt Window failed: {e}. Opening in system browser...")
+            webbrowser.open(f"http://127.0.0.1:{APP_PORT}/")
+            threading.Event().wait()
+    else:
+        print(f"[KorScan AI] Opening on http://127.0.0.1:{APP_PORT}/ in system browser...")
+        webbrowser.open(f"http://127.0.0.1:{APP_PORT}/")
+        threading.Event().wait()
 
 if __name__ == "__main__":
     main()
