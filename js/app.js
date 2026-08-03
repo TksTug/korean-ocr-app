@@ -2213,10 +2213,26 @@ Lưu ý chấm điểm:
         container.innerHTML = html;
     }
 
+    setLibraryDisplayMode(mode) {
+        this.libraryDisplayMode = mode || 'table';
+        const btnTable = document.getElementById('btnLibViewTable');
+        const btnGrid = document.getElementById('btnLibViewGrid');
+
+        if (mode === 'grid') {
+            if (btnTable) { btnTable.style.background = 'transparent'; btnTable.style.color = 'var(--text-dim)'; }
+            if (btnGrid) { btnGrid.style.background = 'var(--primary-blue)'; btnGrid.style.color = '#ffffff'; }
+        } else {
+            if (btnTable) { btnTable.style.background = 'var(--primary-blue)'; btnTable.style.color = '#ffffff'; }
+            if (btnGrid) { btnGrid.style.background = 'transparent'; btnGrid.style.color = 'var(--text-dim)'; }
+        }
+
+        this.renderLibraryVocabList();
+    }
+
     renderLibraryVocabList() {
-        const grid = document.getElementById('libraryCardsGrid');
+        const container = document.getElementById('libraryVocabContainer') || document.getElementById('libraryCardsGrid');
         const badge = document.getElementById('libraryWordCountBadge');
-        if (!grid) return;
+        if (!container) return;
 
         const db = window.KORSCAN_BOOK_VOCAB_DB || [];
         const searchInput = document.getElementById('librarySearchInput');
@@ -2226,11 +2242,11 @@ Lưu ý chấm điểm:
 
         const filtered = db.filter(item => {
             // Filter by level
-            if (this.libraryLevelFilter !== 'all' && item.level !== this.libraryLevelFilter) {
+            if (this.libraryLevelFilter && this.libraryLevelFilter !== 'all' && item.level !== this.libraryLevelFilter) {
                 return false;
             }
             // Filter by topic
-            if (this.libraryTopicFilter !== 'all' && item.topic !== this.libraryTopicFilter) {
+            if (this.libraryTopicFilter && this.libraryTopicFilter !== 'all' && item.topic !== this.libraryTopicFilter) {
                 return false;
             }
             // Filter by search query
@@ -2248,54 +2264,122 @@ Lưu ý chấm điểm:
         if (badge) badge.innerText = `${filtered.length} từ mẫu`;
 
         if (filtered.length === 0) {
-            grid.innerHTML = `<div style="grid-column: 1 / -1; text-align: center; padding: 40px; color: var(--text-dim); font-size: 14px;">
+            container.innerHTML = `<div style="text-align: center; padding: 40px; color: var(--text-dim); font-size: 14px;">
                 🔍 Không tìm thấy từ vựng nào phù hợp với bộ lọc.
             </div>`;
             return;
         }
 
-        let cardsHtml = '';
-        filtered.forEach(item => {
-            const isAdded = existingSet.has(item.korean.trim());
-            const posClass = item.pos === 'Động từ' ? 'pos-verb' : item.pos === 'Tính từ' ? 'pos-adj' : item.pos === 'Phó từ' ? 'pos-adv' : 'pos-noun';
-            const topicLabel = window.sheetExporter ? window.sheetExporter.getTopicLabel(item.topic) : item.topic;
-            const levelColor = item.level === 'TOPIK 1' ? 'rgba(2, 132, 199, 0.15)' : 'rgba(217, 119, 6, 0.15)';
-            const levelTextColor = item.level === 'TOPIK 1' ? 'var(--primary-blue)' : 'var(--accent-gold)';
+        const mode = this.libraryDisplayMode || 'table';
 
-            cardsHtml += `
-            <div class="lib-vocab-card">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
-                    <div>
-                        <span class="pos-badge ${posClass}" style="font-size: 11px;">${item.pos || 'Từ vựng'}</span>
-                        <span style="font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; background: ${levelColor}; color: ${levelTextColor}; margin-left: 6px;">${item.level || 'TOPIK'}</span>
+        if (mode === 'table') {
+            // ─── Render Compact Data Table View ───
+            let tableRows = '';
+            filtered.forEach((item, index) => {
+                const isAdded = existingSet.has(item.korean.trim());
+                const posClass = item.pos === 'Động từ' ? 'pos-verb' : item.pos === 'Tính từ' ? 'pos-adj' : item.pos === 'Phó từ' ? 'pos-adv' : 'pos-noun';
+                const topicLabel = window.sheetExporter ? window.sheetExporter.getTopicLabel(item.topic) : item.topic;
+                const levelColor = item.level === 'TOPIK 1' ? 'rgba(2, 132, 199, 0.15)' : 'rgba(217, 119, 6, 0.15)';
+                const levelTextColor = item.level === 'TOPIK 1' ? 'var(--primary-blue)' : 'var(--accent-gold)';
+
+                tableRows += `
+                <tr>
+                    <td style="text-align: center; font-weight: 600; color: var(--text-dim); font-size: 12px;">${index + 1}</td>
+                    <td>
+                        <div style="font-size: 17px; font-weight: 700; color: var(--text-main); font-family: 'Outfit', sans-serif;">${item.korean}</div>
+                    </td>
+                    <td>
+                        <span style="font-size: 12.5px; color: var(--accent-teal); font-weight: 500;">[${item.romaja}]</span>
+                    </td>
+                    <td>
+                        <b style="font-size: 13.5px; color: var(--primary-light);">🇻🇳 ${item.vietnamese}</b>
+                    </td>
+                    <td>
+                        <span class="pos-badge ${posClass}" style="font-size: 10.5px;">${item.pos || 'Từ vựng'}</span>
+                        <span style="font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 8px; background: ${levelColor}; color: ${levelTextColor}; margin-left: 4px;">${item.level || 'TOPIK'}</span>
+                    </td>
+                    <td>
+                        <span style="font-size: 12px; color: var(--text-dim); font-weight: 500;">🏷️ ${topicLabel}</span>
+                    </td>
+                    <td style="max-width: 250px;">
+                        <span style="font-size: 12px; color: var(--text-dim);">${item.example || '-'}</span>
+                    </td>
+                    <td style="text-align: right; white-space: nowrap;">
+                        <div style="display: flex; gap: 4px; justify-content: flex-end; align-items: center;">
+                            <button class="btn btn-soft" style="padding: 4px 8px; font-size: 11.5px;" onclick="if(window.app) window.app.speakKorean('${item.korean.replace(/'/g, "\\'")}');" title="Nghe phát âm AI">🔊 Nghe</button>
+                            <button class="btn btn-soft" style="padding: 4px 8px; font-size: 11.5px;" onclick="if(window.app) window.app.testPronunciation('${item.korean.replace(/'/g, "\\'")}', this);" title="Chấm điểm phát âm">🎤 Nói</button>
+                            <button class="lib-add-btn ${isAdded ? 'added' : ''}" style="padding: 4px 10px; font-size: 11.5px;" onclick="if(window.app) window.app.addLibraryWordToPersonalNotebook('${item.korean.replace(/'/g, "\\'")}');" ${isAdded ? 'disabled' : ''}>
+                                ${isAdded ? '✅ Đã thêm' : '➕ Thêm vào Sổ'}
+                            </button>
+                        </div>
+                    </td>
+                </tr>`;
+            });
+
+            container.innerHTML = `
+            <table class="lib-vocab-table">
+                <thead>
+                    <tr>
+                        <th style="width: 40px; text-align: center;">#</th>
+                        <th style="width: 140px;">Từ Tiếng Hàn</th>
+                        <th style="width: 130px;">Phiên Âm</th>
+                        <th>Nghĩa Tiếng Việt</th>
+                        <th style="width: 130px;">Loại & Trình Độ</th>
+                        <th style="width: 110px;">Chủ Đề</th>
+                        <th>Ví Dụ Mẫu</th>
+                        <th style="width: 210px; text-align: right;">Thao Tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    ${tableRows}
+                </tbody>
+            </table>`;
+
+        } else {
+            // ─── Render Compact Cards Grid View ───
+            let cardsHtml = '';
+            filtered.forEach(item => {
+                const isAdded = existingSet.has(item.korean.trim());
+                const posClass = item.pos === 'Động từ' ? 'pos-verb' : item.pos === 'Tính từ' ? 'pos-adj' : item.pos === 'Phó từ' ? 'pos-adv' : 'pos-noun';
+                const topicLabel = window.sheetExporter ? window.sheetExporter.getTopicLabel(item.topic) : item.topic;
+                const levelColor = item.level === 'TOPIK 1' ? 'rgba(2, 132, 199, 0.15)' : 'rgba(217, 119, 6, 0.15)';
+                const levelTextColor = item.level === 'TOPIK 1' ? 'var(--primary-blue)' : 'var(--accent-gold)';
+
+                cardsHtml += `
+                <div class="lib-vocab-card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+                        <div>
+                            <span class="pos-badge ${posClass}" style="font-size: 11px;">${item.pos || 'Từ vựng'}</span>
+                            <span style="font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 10px; background: ${levelColor}; color: ${levelTextColor}; margin-left: 6px;">${item.level || 'TOPIK'}</span>
+                        </div>
+                        <button class="lib-add-btn ${isAdded ? 'added' : ''}" onclick="if(window.app) window.app.addLibraryWordToPersonalNotebook('${item.korean.replace(/'/g, "\\'")}');" ${isAdded ? 'disabled' : ''}>
+                            ${isAdded ? '✅ Đã trong Sổ Từ' : '➕ Thêm vào Sổ Từ'}
+                        </button>
                     </div>
-                    <button class="lib-add-btn ${isAdded ? 'added' : ''}" onclick="if(window.app) window.app.addLibraryWordToPersonalNotebook('${item.korean.replace(/'/g, "\\'")}');" ${isAdded ? 'disabled' : ''}>
-                        ${isAdded ? '✅ Đã trong Sổ Từ' : '➕ Thêm vào Sổ Từ'}
-                    </button>
-                </div>
 
-                <div style="margin-top: 4px;">
-                    <div style="font-size: 24px; font-weight: 700; color: var(--text-main); font-family: 'Outfit', sans-serif;">${item.korean}</div>
-                    <div style="font-size: 13px; color: var(--accent-teal); font-weight: 500; margin-top: 2px;">[${item.romaja}]</div>
-                    <div style="font-size: 14.5px; font-weight: 700; color: var(--primary-light); margin-top: 6px;">🇻🇳 ${item.vietnamese}</div>
-                </div>
-
-                ${item.example ? `
-                <div style="font-size: 12px; color: var(--text-dim); background: rgba(15, 23, 42, 0.3); border-radius: 8px; padding: 8px 10px; margin-top: 4px; border-left: 3px solid var(--primary-soft);">
-                    💡 <b>Ví dụ:</b> ${item.example}
-                </div>` : ''}
-
-                <div style="display: flex; gap: 8px; justify-content: space-between; align-items: center; margin-top: 8px; border-top: 1px dashed var(--border-color); padding-top: 10px;">
-                    <span style="font-size: 11.5px; color: var(--text-dim); font-weight: 600;">🏷️ ${topicLabel}</span>
-                    <div style="display: flex; gap: 6px;">
-                        <button class="btn btn-soft" style="padding: 4px 10px; font-size: 12px;" onclick="if(window.app) window.app.speakKorean('${item.korean.replace(/'/g, "\\'")}');" title="Nghe phát âm AI">🔊 Nghe</button>
-                        <button class="btn btn-soft" style="padding: 4px 10px; font-size: 12px;" onclick="if(window.app) window.app.testPronunciation('${item.korean.replace(/'/g, "\\'")}', this);" title="Chấm điểm phát âm">🎤 Luyện Nói</button>
+                    <div style="margin-top: 4px;">
+                        <div style="font-size: 22px; font-weight: 700; color: var(--text-main); font-family: 'Outfit', sans-serif;">${item.korean}</div>
+                        <div style="font-size: 12.5px; color: var(--accent-teal); font-weight: 500; margin-top: 2px;">[${item.romaja}]</div>
+                        <div style="font-size: 14px; font-weight: 700; color: var(--primary-light); margin-top: 4px;">🇻🇳 ${item.vietnamese}</div>
                     </div>
-                </div>
-            </div>`;
-        });
 
-        grid.innerHTML = cardsHtml;
+                    ${item.example ? `
+                    <div style="font-size: 11.5px; color: var(--text-dim); background: rgba(15, 23, 42, 0.3); border-radius: 8px; padding: 6px 8px; margin-top: 2px; border-left: 3px solid var(--primary-soft);">
+                        💡 ${item.example}
+                    </div>` : ''}
+
+                    <div style="display: flex; gap: 8px; justify-content: space-between; align-items: center; margin-top: 6px; border-top: 1px dashed var(--border-color); padding-top: 8px;">
+                        <span style="font-size: 11px; color: var(--text-dim); font-weight: 600;">🏷️ ${topicLabel}</span>
+                        <div style="display: flex; gap: 4px;">
+                            <button class="btn btn-soft" style="padding: 3px 8px; font-size: 11.5px;" onclick="if(window.app) window.app.speakKorean('${item.korean.replace(/'/g, "\\'")}');" title="Nghe phát âm AI">🔊 Nghe</button>
+                            <button class="btn btn-soft" style="padding: 3px 8px; font-size: 11.5px;" onclick="if(window.app) window.app.testPronunciation('${item.korean.replace(/'/g, "\\'")}', this);" title="Chấm điểm phát âm">🎤 Nói</button>
+                        </div>
+                    </div>
+                </div>`;
+            });
+
+            container.innerHTML = `<div class="vocab-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">${cardsHtml}</div>`;
+        }
     }
 
     addLibraryWordToPersonalNotebook(koreanWord) {

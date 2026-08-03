@@ -216,8 +216,12 @@
                     </h2>
                     <p style="font-size: 13.5px; color: var(--text-dim); margin-top: 4px;">Tài liệu tra cứu từ vựng chuẩn SGK & TOPIK Hàn Quốc. Bấm <b>"+ Thêm vào Sổ Từ"</b> để lưu từ bạn muốn học vào Sổ Từ Scan cá nhân!</p>
                 </div>
-                <div style="display: flex; gap: 10px; align-items: center;">
-                    <div class="search-box" style="width: 280px;">
+                <div style="display: flex; gap: 10px; align-items: center; flex-wrap: wrap;">
+                    <div style="display: flex; gap: 4px; background: rgba(15, 23, 42, 0.4); padding: 3px; border-radius: 10px; border: 1px solid var(--border-color);">
+                        <button class="btn" id="btnLibViewTable" style="padding: 6px 14px; font-size: 12px; border-radius: 8px; font-weight: 700; background: var(--primary-blue); color: #ffffff; border: none;" onclick="if(window.app) window.app.setLibraryDisplayMode('table');">📊 Bảng Thu Gọn</button>
+                        <button class="btn" id="btnLibViewGrid" style="padding: 6px 14px; font-size: 12px; border-radius: 8px; font-weight: 700; background: transparent; color: var(--text-dim); border: none;" onclick="if(window.app) window.app.setLibraryDisplayMode('grid');">🎴 Dạng Thẻ</button>
+                    </div>
+                    <div class="search-box" style="width: 260px;">
                         <input type="text" id="librarySearchInput" class="search-input" placeholder="🔍 Tìm theo từ Hàn, Romaja, Tiếng Việt..." oninput="if(window.app) window.app.renderLibraryVocabList();">
                     </div>
                 </div>
@@ -244,9 +248,9 @@
                 </div>
             </div>
 
-            <!-- Library Vocab Cards Grid -->
-            <div id="libraryCardsGrid" class="vocab-grid" style="grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));">
-                <!-- Library Cards rendered by JS -->
+            <!-- Library Vocab Container (Supports Compact Table & Grid) -->
+            <div id="libraryVocabContainer" style="width: 100%; overflow-x: auto;">
+                <!-- Rendered dynamically by JS -->
             </div>
         </section>
     </main>
