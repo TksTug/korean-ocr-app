@@ -192,6 +192,15 @@ body {
     flex-direction: column;
     overflow-x: hidden;
     transition: background 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+.modal-overlay, .modal-card, header, .drop-zone, .vocab-card {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
 }
 
 [data-theme="dark"] body {

@@ -258,6 +258,9 @@ class KorScanMainWindow(QMainWindow):
 
 
 def main():
+    # Set Chromium GPU flags for ultra-smooth 60fps rendering without micro-stutters
+    os.environ["QTWEBENGINE_CHROMIUM_FLAGS"] = "--enable-gpu-rasterization --enable-zero-copy --ignore-gpu-blocklist"
+
     start_embedded_server()
     if HAS_PYQT:
         try:
