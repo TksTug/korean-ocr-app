@@ -1026,10 +1026,51 @@ header {
     margin-bottom: 12px;
 }
 
-/* Responsive Breakpoints */
-@media (max-width: 992px) {
+/* Responsive Breakpoints & Fluid Viewport Scaling */
+@media (max-width: 1400px) {
+    .app-container {
+        grid-template-columns: 310px minmax(0, 1fr);
+        gap: 14px;
+        padding: 14px 16px;
+    }
+    header {
+        padding: 10px 16px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .app-container {
+        grid-template-columns: 280px minmax(0, 1fr);
+        gap: 12px;
+        padding: 12px 14px;
+    }
+    .header-actions {
+        gap: 6px;
+    }
+    .header-actions .btn {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+    .streak-bar {
+        padding: 6px 14px;
+        gap: 14px;
+        font-size: 11.5px;
+    }
+    .logo-text h1 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 900px) {
     .app-container {
         grid-template-columns: 1fr;
+        gap: 14px;
+        padding: 12px;
+    }
+    header {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
     }
 }
 
