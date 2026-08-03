@@ -69,36 +69,42 @@ Quy tắc trả lời:
             ...this.chatHistory.slice(-12) // Keep last 12 messages for smooth multi-turn memory
         ];
 
-        const models = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-2.0-flash-lite", "gemini-1.5-pro"];
+        const models = ["gemini-flash-latest", "gemini-2.0-flash", "gemini-1.5-flash"];
         let lastErrText = "";
 
         for (const model of models) {
-            try {
-                const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${cleanKey}`;
-                const resp = await fetch(url, {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify({ contents })
-                });
+            for (let retry = 0; retry < 4; retry++) {
+                try {
+                    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${cleanKey}`;
+                    const resp = await fetch(url, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify({ contents })
+                    });
 
-                if (resp.ok) {
-                    const data = await resp.json();
-                    const aiReply = data.candidates?.[0]?.content?.parts?.[0]?.text;
-                    if (aiReply) {
-                        this.chatHistory.push({ role: "model", parts: [{ text: aiReply }] });
-                        return aiReply;
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        const aiReply = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                        if (aiReply) {
+                            this.chatHistory.push({ role: "model", parts: [{ text: aiReply }] });
+                            return aiReply;
+                        }
+                    } else if (resp.status === 429) {
+                        console.warn(`[Gemini AI Chat ${model} 429 - Retry ${retry+1}/4]: Waiting 3s...`);
+                        await new Promise(r => setTimeout(r, 3500));
+                        continue;
+                    } else if (resp.status === 404) {
+                        console.warn(`[Gemini AI Chat ${model} 404 Not Found]: Skipping to next model.`);
+                        break;
+                    } else {
+                        lastErrText = await resp.text();
+                        console.warn(`[Gemini AI Chat ${model} Error]:`, lastErrText);
+                        break;
                     }
-                } else if (resp.status === 429 || resp.status === 404) {
-                    lastErrText = await resp.text();
-                    console.warn(`[Gemini AI Chat ${model} ${resp.status}]:`, lastErrText);
-                    continue; // Skip to next model in fallback loop
-                } else {
-                    lastErrText = await resp.text();
-                    console.warn(`[Gemini AI Chat ${model} Error]:`, lastErrText);
+                } catch (err) {
+                    console.error(`Lỗi kết nối Gemini Chat (${model}):`, err);
+                    await new Promise(r => setTimeout(r, 2500));
                 }
-            } catch (err) {
-                console.error(`Lỗi kết nối Gemini Chat (${model}):`, err);
-                lastErrText = err.message;
             }
         }
 

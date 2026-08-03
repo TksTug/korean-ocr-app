@@ -175,17 +175,17 @@ Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không
   }
 ]`;
 
-        const models = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-2.0-flash-lite", "gemini-1.5-pro"];
+        const models = ["gemini-flash-latest", "gemini-2.0-flash", "gemini-1.5-flash"];
         let lastErrorText = "";
 
         for (let i = 0; i < models.length; i++) {
             const model = models[i];
 
-            for (let retry = 0; retry < 3; retry++) {
+            for (let retry = 0; retry < 5; retry++) {
                 if (progressCallback) {
                     const stepText = retry === 0 ? 
-                        `Gemini AI (${model}) đang bóc tách 100% ảnh nét cao...` : 
-                        `Tốc độ quét nhanh vượt 15 ảnh/phút. AI đang tự động chờ ${retry * 3}s & tiếp tục...`;
+                        `KorScan AI (${model}) đang bóc tách 100% ảnh nét cao...` : 
+                        `AI đang tự động xử lý mượt mà (${retry}/5)...`;
                     progressCallback(40 + (i * 15) + (retry * 5), stepText);
                 }
 
@@ -225,21 +225,13 @@ Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không
                             console.warn(`[Gemini OCR ${model}]: Không trích xuất được từ vựng từ JSON trả về.`);
                             lastErrorText = `AI đã nhận diện xong nhưng không tìm thấy danh sách từ vựng trong ảnh.`;
                         }
-                    } else if (resp.status === 404) {
-                        console.warn(`[Gemini OCR ${model} 404 Not Found]: Model not supported on this endpoint. Skipping to next model.`);
-                        break; // Silently skip to next model in fallback loop
                     } else if (resp.status === 429) {
-                        const errData = await resp.text();
-                        console.warn(`[Gemini OCR ${model} 429 Rate/Quota Limit]:`, errData);
-                        
-                        if (errData.includes("Quota exceeded") || errData.includes("quota") || errData.includes("DAILY")) {
-                            lastErrorText = "API Key miễn phí dùng chung hiện tại đã hết lượt quét trong ngày của Google Gemini.\n\n👉 Vui lòng mở '⚙️ Cấu Hình API AI' và dán API Key Gemini miễn phí của bạn (tạo nhanh 10s tại aistudio.google.com) để quét không giới hạn!";
-                            break; // Stop retrying if daily quota is exhausted
-                        }
-
-                        lastErrorText = "Tốc độ quét nhanh vượt 15 ảnh/phút. AI đang tự động xếp hàng chờ 15s để tiếp tục!";
+                        console.warn(`[Gemini OCR ${model} 429 Rate Limit - Retry ${retry+1}/5]: Waiting 4s...`);
                         await new Promise(r => setTimeout(r, 4000));
-                        continue;
+                        continue; // Silent retry on 429
+                    } else if (resp.status === 404) {
+                        console.warn(`[Gemini OCR ${model} 404 Not Found]: Skipping to next model.`);
+                        break;
                     } else if (resp.status === 400 || resp.status === 401 || resp.status === 403) {
                         const errData = await resp.text();
                         console.warn(`[Gemini API Key Error ${resp.status}]:`, errData);
