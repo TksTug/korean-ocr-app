@@ -230,10 +230,22 @@ Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không
                             lastErrorText = `AI đã nhận diện xong nhưng không tìm thấy danh sách từ vựng trong ảnh.`;
                         }
                     } else if (resp.status === 429) {
-                        console.warn(`[Gemini OCR ${model} 429 Rate Limit]: Retrying in 3.5s (attempt ${retry + 1}/3)...`);
-                        lastErrorText = "Bạn đang quét vượt tốc độ 15 ảnh/phút. AI đang tự động xếp hàng chờ 15s để tiếp tục!";
-                        await new Promise(r => setTimeout(r, 3800));
+                        const errData = await resp.text();
+                        console.warn(`[Gemini OCR ${model} 429 Rate/Quota Limit]:`, errData);
+                        
+                        if (errData.includes("Quota exceeded") || errData.includes("quota") || errData.includes("DAILY")) {
+                            lastErrorText = "API Key miễn phí dùng chung hiện tại đã hết lượt quét trong ngày của Google Gemini.\n\n👉 Vui lòng mở '⚙️ Cấu Hình API AI' và dán API Key Gemini miễn phí của bạn (tạo nhanh 10s tại aistudio.google.com) để quét không giới hạn!";
+                            break; // Stop retrying if daily quota is exhausted
+                        }
+
+                        lastErrorText = "Tốc độ quét nhanh vượt 15 ảnh/phút. AI đang tự động xếp hàng chờ 15s để tiếp tục!";
+                        await new Promise(r => setTimeout(r, 4000));
                         continue;
+                    } else if (resp.status === 400 || resp.status === 401 || resp.status === 403) {
+                        const errData = await resp.text();
+                        console.warn(`[Gemini API Key Error ${resp.status}]:`, errData);
+                        lastErrorText = "Gemini API Key không hợp lệ hoặc đã bị khóa. Vui lòng mở '⚙️ Cấu Hình API AI' và nhập API Key mới!";
+                        break;
                     } else {
                         const errData = await resp.text();
                         console.warn(`Lỗi Gemini API (${model} - ${resp.status}):`, errData);
