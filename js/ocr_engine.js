@@ -5,29 +5,28 @@
 
 class OCREngine {
     constructor() {
-        const _p1 = "AQ.Ab8RN6Jj_";
-        const _p2 = "48gSIPR2yAlMwONYAlNNt8EPza5JSxI_-zXDeoTFQ";
-        const defaultKey = _p1 + _p2;
         let savedKey = localStorage.getItem("KORSCAN_GEMINI_API_KEY");
-        if (!savedKey || savedKey.length < 15) {
-            savedKey = defaultKey;
-            localStorage.setItem("KORSCAN_GEMINI_API_KEY", defaultKey);
+        if (savedKey && (savedKey.startsWith("AQ.Ab") || savedKey.length < 15)) {
+            localStorage.removeItem("KORSCAN_GEMINI_API_KEY");
+            savedKey = "";
         }
-
-        this.geminiApiKey = savedKey || defaultKey;
+        this.geminiApiKey = savedKey || "";
     }
 
     setApiKey(key) {
-        const _p1 = "AQ.Ab8RN6Jj_";
-        const _p2 = "48gSIPR2yAlMwONYAlNNt8EPza5JSxI_-zXDeoTFQ";
-        this.geminiApiKey = (key || "").trim() || (_p1 + _p2);
-        localStorage.setItem("KORSCAN_GEMINI_API_KEY", this.geminiApiKey);
+        const clean = (key || "").trim();
+        this.geminiApiKey = clean;
+        if (clean) {
+            localStorage.setItem("KORSCAN_GEMINI_API_KEY", clean);
+        } else {
+            localStorage.removeItem("KORSCAN_GEMINI_API_KEY");
+        }
     }
 
     getApiKey() {
-        const _p1 = "AQ.Ab8RN6Jj_";
-        const _p2 = "48gSIPR2yAlMwONYAlNNt8EPza5JSxI_-zXDeoTFQ";
-        return this.geminiApiKey || (_p1 + _p2);
+        const saved = (this.geminiApiKey || localStorage.getItem("KORSCAN_GEMINI_API_KEY") || "").trim();
+        if (saved.startsWith("AQ.Ab")) return "";
+        return saved;
     }
 
     async compressImage(imageSrc) {
