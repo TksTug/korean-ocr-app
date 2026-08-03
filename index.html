@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KorScan AI - Quét Tiếng Hàn Viết Tay, Chấm Điểm Phát Âm & Game Nối Từ</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS System -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Ambient Dynamic Glow Background Blobs -->
+    <div style="position: fixed; top: -10%; left: 20%; width: 500px; height: 500px; background: radial-gradient(circle, rgba(56, 189, 248, 0.16) 0%, rgba(2, 132, 199, 0) 70%); filter: blur(60px); pointer-events: none; z-index: 0; animation: ambientFloat 12s ease-in-out infinite alternate;"></div>
+    <div style="position: fixed; bottom: 10%; right: 10%; width: 550px; height: 550px; background: radial-gradient(circle, rgba(129, 140, 248, 0.14) 0%, rgba(67, 56, 202, 0) 70%); filter: blur(70px); pointer-events: none; z-index: 0; animation: ambientFloat 16s ease-in-out infinite alternate-reverse;"></div>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="logo-container">
+            <div class="logo-icon" id="logoIconBox" style="position: relative; overflow: hidden;">
+                <span id="logoIconFallback" style="display: none;">🇰🇷</span>
+                <img id="logoIconImg" src="cat_avatar.gif" style="display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 10px;" alt="GIF Logo Avatar">
+            </div>
+            <div class="logo-text">
+                <h1>KorScan AI</h1>
+                <p id="aiEngineStatus" style="font-size: 11.5px; color: var(--text-dim);">⚡ KorScan AI</p>
+            </div>
+        </div>
+        <div class="header-actions">
+            <button class="btn btn-soft" id="btnToggleVoiceGender" onclick="if(window.app) window.app.toggleVoiceGender();" title="Bấm để chuyển đổi giữa Giọng Nữ 🎀 & Giọng Nam ♂️ Hàn Quốc">
+                <span id="voiceGenderIcon">🎀</span> <span id="voiceGenderLabel">Giọng Nữ</span>
+            </button>
+            <button class="btn btn-soft" id="btnToggleTheme" title="Chuyển đổi Giao diện Tối / Sáng">🌙 Tối / ☀️ Sáng</button>
+            <button class="btn btn-soft" id="btnForceReload" onclick="if(window.app) window.app.syncVocabWithDisk(true);" title="Tải lại từ vựng">🔄 Tải Lại</button>
+            <button class="btn btn-soft" id="btnConnectGSheet">🔗 Google Sheet Cố Định</button>
+
+            <!-- Games & Practice Hub Dropdown Menu -->
+            <div class="dropdown-wrapper" style="position: relative; display: inline-block;">
+                <button class="btn btn-primary" id="btnGamesHubToggle" style="gap: 6px;">
+                    🎮 Luyện Tập & Games <span style="font-size: 10px;">▼</span>
+                </button>
+                <div class="dropdown-menu" id="gamesHubDropdown">
+                    <button class="dropdown-item" id="btnOpenQuiz">🎯 Trắc Nghiệm Từ Vựng</button>
+                    <button class="dropdown-item" id="btnOpenSentenceGame">🧩 Ghép Câu Ngữ Pháp</button>
+                    <button class="dropdown-item" id="btnOpenGame">🎮 Mini-Game Nối Từ</button>
+                    <button class="dropdown-item" id="btnStudyFlashcards">🎴 Thẻ Ghi Nhớ Flashcards</button>
+                </div>
+            </div>
+
+            <button class="btn btn-soft" id="btnToggleAIChat" style="gap: 6px; align-items: center;">
+                <span id="btnToggleAIChatIcon">🤖</span>
+                <img id="btnToggleAIChatImg" class="drawer-bot-icon" style="display: none; width: 18px; height: 18px; border-radius: 50%; object-fit: cover;" alt="AI Avatar">
+                Trợ Lý AI
+            </button>
+        </div>
+    </header>
+
+    <!-- Learning Streak & Analytics Bar -->
+    <div class="streak-bar">
+        <div class="streak-item" id="streakLabel">🔥 Chuỗi học: <b>1 Ngày</b></div>
+        <div class="streak-item" id="totalWordsLabel">📊 Tổng tích lũy: <b>0 từ</b></div>
+        <div class="streak-item" id="starredWordsLabel">⭐ Từ yêu thích: <b>0 từ</b></div>
+    </div>
+
+    <!-- Main Content Grid -->
+    <main class="app-container">
+        
+        <!-- Left Panel: OCR Scanner & Image Controls -->
+        <section class="panel">
+            <div class="panel-header">
+                <h2 class="panel-title">📷 Quét Ảnh Chữ Hàn Viết Tay</h2>
+            </div>
+
+            <!-- Drag and Drop Upload Zone -->
+            <div class="dropzone" id="dropzone">
+                <div class="dropzone-icon">🖼️</div>
+                <h3>Thả 1 hoặc NHIỀU ảnh vở viết tay vào đây</h3>
+                <p>AI Vision sẽ tự đọc TẤT CẢ từ vựng, dịch nghĩa, phân loại Từ Loại & Chủ Đề!</p>
+                <input type="file" id="fileInput" accept="image/*" multiple style="display: none;">
+                <input type="file" id="cameraInput" accept="image/*" capture="environment" style="display: none;">
+            </div>
+
+            <!-- Action Buttons (Clean 2-button layout, sample image button removed) -->
+            <div style="display: flex; gap: 10px; width: 100%;">
+                <button class="btn btn-primary" id="btnSelectFile" style="flex: 1; justify-content: center; padding: 11px;">
+                    📂 Chọn 1 / Nhiều Ảnh
+                </button>
+                <button class="btn btn-secondary" id="btnCamera" style="flex: 1; justify-content: center; padding: 11px;">
+                    📷 Chụp Camera
+                </button>
+            </div>
+
+            <!-- Batch Image Thumbnail Preview Grid -->
+            <div id="batchPreviewGrid" class="batch-preview-grid" style="display: none;"></div>
+
+            <!-- Preview Image & Scan Line -->
+            <div class="preview-container" id="previewContainer">
+                <div class="scan-line" id="scanLine"></div>
+                <img id="previewImg" class="preview-img" src="" alt="Ảnh xem trước">
+            </div>
+
+            <!-- AI Action Button -->
+            <button class="btn btn-primary" id="btnScanAI" style="width: 100%; padding: 12px; font-size: 14.5px; display: none;">
+                ⚡ Bắt đầu Quét Hàng Loạt bằng KorScan AI
+            </button>
+
+            <!-- Scanning GIF Progress Container -->
+            <div id="scanGifContainer" style="display: none; margin-top: 10px; background: var(--bg-card); border: 1px solid var(--border-highlight); border-radius: var(--radius-md); padding: 10px 14px; align-items: center; gap: 12px; box-shadow: 0 4px 14px var(--primary-glow);">
+                <img id="scanGifImg" class="drawer-bot-icon" style="width: 36px; height: 36px; border-radius: 8px; object-fit: cover; border: 1px solid var(--primary-light); flex-shrink: 0;" alt="Scanning GIF">
+                <div style="flex: 1;">
+                    <div id="scanGifText" style="font-size: 13px; font-weight: 700; color: var(--primary-light);">⏳ Đang bóc tách chữ tiếng Hàn...</div>
+                    <div style="height: 6px; background: rgba(15, 23, 42, 0.3); border-radius: 4px; overflow: hidden; margin-top: 5px;">
+                        <div id="scanGifBar" style="height: 100%; width: 0%; background: linear-gradient(90deg, var(--primary-blue), var(--accent-teal)); transition: width 0.3s ease;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Smart Quick Word Creator Card -->
+            <div class="smart-creator-card">
+                <h3 style="font-size: 15px; color: var(--primary-light); display: flex; align-items: center; gap: 8px; margin-bottom: 12px;">
+                    <span>✨ Thêm Từ Vựng Nhanh Bằng AI</span>
+                </h3>
+
+                <!-- Creator Tabs -->
+                <div class="creator-tabs">
+                    <button class="creator-tab active" data-mode="vietnamese" id="tabModeViet" style="flex: 1; padding: 8px 6px; border: none; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; color: #ffffff; background: var(--primary-blue);">🇻🇳 Tiếng Việt</button>
+                    <button class="creator-tab" data-mode="voice" id="tabModeVoice" style="flex: 1; padding: 8px 6px; border: none; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; color: var(--text-dim); background: transparent;">🎙️ Thu Âm AI</button>
+                    <button class="creator-tab" data-mode="korean" id="tabModeKor" style="flex: 1; padding: 8px 6px; border: none; border-radius: 8px; font-size: 12px; font-weight: 600; cursor: pointer; color: var(--text-dim); background: transparent;">🇰🇷 Tiếng Hàn</button>
+                </div>
+
+                <!-- Input Field & Action -->
+                <div id="creatorInputZone" style="display: flex; gap: 8px;">
+                    <input type="text" id="creatorInput" class="search-input" placeholder="Nhập từ/cụm từ Tiếng Việt (Ví dụ: con mèo, bệnh viện)..." style="flex: 1; font-size: 13.5px; padding: 10px 14px;">
+                    <button class="btn btn-primary" id="btnCreateWordAI" style="padding: 10px 16px; font-size: 13.5px; white-space: nowrap;">
+                        ⚡ AI Tạo Từ
+                    </button>
+                </div>
+
+                <!-- Voice Input Helper text -->
+                <div id="voiceStatusText" style="display: none; margin-top: 8px; font-size: 12.5px; color: var(--accent-gold); text-align: center;">
+                    🔴 Bấm nút bên trên và nói từ Tiếng Hàn vào Micro...
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Panel: Vocabulary Table & Topic Categorization -->
+        <section class="panel">
+            <div class="panel-header">
+                <h2 class="panel-title">
+                    📊 Bảng Từ Vựng
+                    <span id="wordCountLabel" style="font-size: 14px; color: var(--text-dim); font-weight: normal;">(0 từ vựng)</span>
+                </h2>
+                <div class="panel-header-actions">
+                    <button class="btn btn-primary" id="btnSyncGSheet">📊 Đồng Bộ Google Sheet</button>
+                    <button class="btn btn-soft" id="btnExportSheet">📥 Xuất CSV</button>
+                    <button class="btn btn-secondary" id="btnCopySheet">📋 Copy Dán</button>
+                    <button class="btn btn-danger" id="btnClearAll">🗑️ Xóa Tất Cả</button>
+                </div>
+            </div>
+
+            <!-- Search & Filters -->
+            <div class="search-box">
+                <span class="search-icon">🔍</span>
+                <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm từ tiếng Hàn, từ loại, tiếng Việt hoặc romaja...">
+            </div>
+
+            <!-- Filter View Tabs & Single Chips Container -->
+            <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px;">
+                <div style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+                    <div style="display: flex; gap: 4px; background: rgba(15, 23, 42, 0.6); padding: 3px; border-radius: 10px; border: 1px solid var(--border-color);">
+                        <button class="btn" id="btnTabTopicFilter" style="padding: 4px 12px; font-size: 11.5px; border-radius: 8px; background: linear-gradient(135deg, #3b82f6, #60a5fa); color: #fff; border: none; font-weight: 600;">📂 Theo Chủ Đề</button>
+                        <button class="btn" id="btnTabPosFilter" style="padding: 4px 12px; font-size: 11.5px; border-radius: 8px; background: transparent; color: var(--text-dim); border: none; font-weight: 600;">🏷️ Theo Từ Loại</button>
+                    </div>
+                    <button class="btn btn-soft" style="padding: 3px 10px; font-size: 11px;" onclick="app.resetAllFilters()">🔄 Xóa Lọc</button>
+                </div>
+
+                <!-- Dynamic Category Filter Chips -->
+                <div class="filters-bar" id="filtersBar">
+                    <!-- Dynamically Rendered by App Controller -->
+                </div>
+                <!-- Dynamic POS Filter Chips -->
+                <div class="filters-bar" id="posFiltersBar" style="display: none;">
+                    <!-- Dynamically Rendered POS Chips -->
+                </div>
+            </div>
+
+            <!-- Word Cards Grid -->
+            <div class="word-grid" id="wordGrid">
+                <!-- Dynamically Populated by App Controller -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Mini-Game Word Matching Modal -->
+    <div class="modal-overlay" id="gameModal">
+        <div class="modal-card" style="max-width: 600px; position: relative;">
+            <button id="btnCloseGame" style="position: absolute; right: 20px; top: 20px; background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer;">✕</button>
+            <h3 style="color: var(--primary-light); font-size: 18px; display: flex; align-items: center; gap: 8px;">
+                <span>🎮 Mini-Game Nối Từ Hàn - Việt</span>
+            </h3>
+            <p style="font-size: 13px; color: var(--text-sub);">
+                Chọn 1 từ tiếng Hàn bên trái ➔ Nhấp chọn nghĩa tiếng Việt tương ứng bên phải để tính điểm!
+            </p>
+
+            <div style="display: flex; justify-content: space-between; font-size: 14px; font-weight: 700; color: var(--accent-gold); margin-top: 4px;">
+                <span id="gameScoreLabel">🏆 Điểm số: 0</span>
+                <span id="gameTimerLabel">⏱️ Thời gian: 0s</span>
+            </div>
+
+            <div class="game-grid">
+                <div class="game-column" id="gameKoreanCol"></div>
+                <div class="game-column" id="gameVietnameseCol"></div>
+            </div>
+
+            <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 10px;">
+                <button class="btn btn-primary" id="btnRestartGame">🔄 Chơi Ván Mới</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Sheet Webhook Sync Modal -->
+    <div class="modal-overlay" id="gsheetModal">
+        <div class="modal-card" style="max-width: 650px;">
+            <h3 style="color: var(--primary-light); font-size: 18px; display: flex; justify-content: space-between; align-items: center;">
+                <span>🔗 Kết Nối Google Sheet Cố Định</span>
+                <button id="btnCloseGSheet" style="background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer;">✕</button>
+            </h3>
+
+            <div style="font-size: 13px; color: var(--text-sub); line-height: 1.6;">
+                <p>Bằng cách tạo 1 Webhook miễn phí trên Google Sheet của bạn, Tool sẽ <b>tự động gửi toàn bộ từ vựng đã bóc tách thẳng vào trang Google Sheet cố định của bạn 24/7!</b></p>
+                
+                <h4 style="margin-top: 14px; color: var(--accent-teal);">📋 Hướng dẫn 3 bước thiết lập (Chỉ làm 1 lần):</h4>
+                <ol style="margin-left: 20px; margin-top: 6px;">
+                    <li>Mở file Google Sheet của bạn ➔ Chọn menu <b>Extensions (Tiện ích mở rộng)</b> ➔ <b>Apps Script</b>.</li>
+                    <li>Dán đoạn mã dưới đây vào rồi bấm <b>Deploy (Triển khai) ➔ New deployment ➔ Select type: Web app ➔ Who has access: Anyone</b>.</li>
+                    <li>Copy link Web app URL dán vào ô bên dưới rồi bấm <b>Lưu Kết Nối</b>!</li>
+                </ol>
+
+                <div style="margin-top: 10px; background: #090f1f; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); position: relative;">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                        <span style="font-size: 11px; font-weight: bold; color: var(--accent-gold);">✨ Mã Script Decor Tự Động Định Dạng Trang Google Sheet Đẹp:</span>
+                        <button class="btn btn-soft" style="padding: 3px 10px; font-size: 11px;" onclick="navigator.clipboard.writeText(document.getElementById('gsheetScriptText').value); alert('✅ Đã copy mã Script Decor Google Sheet!');">📋 Copy Script</button>
+                    </div>
+                    <textarea id="gsheetScriptText" readonly style="width: 100%; height: 135px; background: none; border: none; color: #7dd3fc; font-family: monospace; font-size: 11px; resize: none;">function doPost(e) {
+  var sheet = SpreadsheetApp.getActiveSpreadsheet().getActiveSheet();
+  var data = JSON.parse(e.postData.contents);
+
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(["STT", "Từ Tiếng Hàn", "Phiên Âm Romaja", "Từ Loại", "Nghĩa Tiếng Việt", "Nhóm Chủ Đề", "Ví Dụ Mẫu", "Ngày Thêm"]);
+    var header = sheet.getRange(1, 1, 1, 8);
+    header.setBackground("#1e293b").setFontColor("#ffffff").setFontWeight("bold").setHorizontalAlignment("center");
+    sheet.setRowHeight(1, 35);
+    sheet.setFrozenRows(1);
+  }
+
+  var startRow = sheet.getLastRow() + 1;
+  for (var i = 0; i < data.length; i++) {
+    var item = data[i];
+    sheet.appendRow([sheet.getLastRow(), item.korean || "", item.romaja ? "[" + item.romaja + "]" : "", item.pos || "Danh từ", item.vietnamese || "", item.topic || "", item.example || "", item.date || ""]);
+  }
+
+  var numRows = data.length;
+  var range = sheet.getRange(startRow, 1, numRows, 8);
+  range.setFontFamily("Roboto").setFontSize(10).setVerticalAlignment("middle");
+  sheet.getRange(startRow, 1, numRows, 1).setHorizontalAlignment("center").setFontColor("#64748b");
+  sheet.getRange(startRow, 2, numRows, 1).setFontWeight("bold").setFontSize(12).setFontColor("#0f172a");
+  sheet.getRange(startRow, 3, numRows, 1).setFontStyle("italic").setFontColor("#0284c7");
+  sheet.getRange(startRow, 4, numRows, 1).setHorizontalAlignment("center").setFontWeight("bold").setFontColor("#2563eb");
+  sheet.getRange(startRow, 5, numRows, 1).setFontWeight("bold").setFontColor("#16a34a");
+  sheet.getRange(startRow, 6, numRows, 1).setHorizontalAlignment("center");
+
+  for (var r = startRow; r < startRow + numRows; r++) {
+    sheet.setRowHeight(r, 28);
+    var rowRange = sheet.getRange(r, 1, 1, 8);
+    if (r % 2 === 0) rowRange.setBackground("#f8fafc");
+    rowRange.setBorder(true, true, true, true, true, true, "#e2e8f0", SpreadsheetApp.BorderStyle.SOLID);
+  }
+  for (var c = 1; c <= 8; c++) sheet.autoResizeColumn(c);
+
+  return ContentService.createTextOutput(JSON.stringify({status: "success"})).setMimeType(ContentService.MimeType.JSON);
+}</textarea>
+                </div>
+            </div>
+
+            <div>
+                <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px;">Link Webhook Google Sheet Apps Script URL:</label>
+                <input type="text" id="gsheetWebhookInput" class="search-input" placeholder="https://script.google.com/macros/s/.../exec">
+            </div>
+
+            <div style="display: flex; gap: 10px; justify-content: flex-end;">
+                <button class="btn btn-secondary" id="btnCancelGSheet">Hủy</button>
+                <button class="btn btn-primary" id="btnSaveGSheet">💾 Lưu Kết Nối</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- API Key Settings Modal -->
+    <div class="modal-overlay" id="settingsModal">
+        <div class="modal-card">
+            <h3 style="color: var(--primary-light); font-size: 18px;">⚙️ Cấu Hình KorScan AI API Key</h3>
+            <p style="font-size: 13px; color: var(--text-sub); line-height: 1.5;">
+                Dán API Key của bạn để sử dụng công nghệ đọc ảnh <b>AI Vision chuẩn xác 100%</b> và <b>Trợ Lý AI Trò Chuyện</b>.
+                <br>👉 Lấy Key miễn phí 100% tại: <a href="https://aistudio.google.com" target="_blank" style="color: var(--primary-blue);">https://aistudio.google.com</a>
+            </p>
+            <div>
+                <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 6px;">API Key KorScan của bạn:</label>
+                <input type="password" id="geminiApiKeyInput" class="search-input" placeholder="AQ.Ab8RN6J9o3... hoặc AIzaSy...">
+            </div>
+            <div style="display: flex; gap: 10px; justify-content: flex-end;">
+                <button class="btn btn-secondary" id="btnCloseSettings">Hủy</button>
+                <button class="btn btn-primary" id="btnSaveSettings">💾 Lưu API Key</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Flashcards Modal -->
+    <div class="modal-overlay" id="flashcardModal">
+        <div class="modal-card" style="max-width: 500px; text-align: center; position: relative;">
+            <button id="btnCloseModal" style="position: absolute; right: 20px; top: 20px; background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer;">✕</button>
+            
+            <h3 style="font-size: 16px; color: var(--text-dim); margin-bottom: 10px;">🎴 Thẻ Ôn Tập Từ Vựng</h3>
+            
+            <div id="flashcardBox" style="background: rgba(15, 23, 42, 0.8); border: 1px solid var(--border-color); border-radius: var(--radius-lg); padding: 40px 20px; min-height: 240px; cursor: pointer; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; transition: var(--transition);">
+                <span id="flashcardTopicBadge" class="topic-badge badge-daily">Chủ đề</span>
+                <div id="flashcardKorean" style="font-size: 32px; font-weight: 700; color: #ffffff;">단어</div>
+                <div id="flashcardRomaja" style="font-size: 14px; color: var(--accent-teal);">[romaja]</div>
+                <div id="flashcardVietnamese" style="font-size: 18px; font-weight: 600; color: var(--primary-light); margin-top: 10px;">👉 Nhấp để xem nghĩa tiếng Việt</div>
+                <div id="flashcardExample" style="font-size: 12px; color: var(--text-dim); font-style: italic; margin-top: 6px;">Ví dụ mẫu...</div>
+            </div>
+
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 16px;">
+                <button class="btn btn-secondary" id="btnPrevCard">⬅️ Từ trước</button>
+                <span id="flashcardCounter" style="font-size: 13px; color: var(--text-dim);">1 / 10</span>
+                <button class="btn btn-secondary" id="btnNextCard">Từ tiếp ➡️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirm Word Preview Modal -->
+    <div class="modal-overlay" id="confirmWordModal">
+        <div class="modal-card" style="max-width: 550px;">
+            <h3 style="color: var(--primary-light); font-size: 18px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span>✨ Xác Nhận Từ Vựng AI Vừa Tạo</span>
+                <button id="btnCloseConfirmWord" style="background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer;">✕</button>
+            </h3>
+            
+            <p style="font-size: 12.5px; color: var(--text-sub); margin-bottom: 14px;">
+                Vui lòng kiểm tra lại thông tin. Bạn có thể chỉnh sửa trực tiếp thông tin trước khi bấm <b>Xác Nhận Thêm vào Bảng</b>!
+            </p>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <div>
+                    <label style="font-size: 12px; color: var(--accent-teal); font-weight: 600;">🇰🇷 Từ Tiếng Hàn</label>
+                    <input type="text" id="modalKorean" class="search-input" style="margin-top: 4px; font-weight: 700; font-size: 15px; color: #60A5FA;">
+                </div>
+                <div>
+                    <label style="font-size: 12px; color: var(--accent-teal); font-weight: 600;">🇻🇳 Nghĩa Tiếng Việt</label>
+                    <input type="text" id="modalVietnamese" class="search-input" style="margin-top: 4px; font-size: 14px;">
+                </div>
+                <div>
+                    <label style="font-size: 12px; color: var(--text-dim); font-weight: 600;">🔤 Phiên Âm Romaja</label>
+                    <input type="text" id="modalRomaja" class="search-input" style="margin-top: 4px; font-size: 13px;">
+                </div>
+                <div>
+                    <label style="font-size: 12px; color: var(--text-dim); font-weight: 600;">🏷️ Từ Loại</label>
+                    <input type="text" id="modalPos" list="posOptionsDatalist" class="search-input" style="margin-top: 4px; font-size: 13px;" placeholder="Chọn hoặc nhập từ loại...">
+                    <datalist id="posOptionsDatalist">
+                        <option value="Danh từ">
+                        <option value="Động từ">
+                        <option value="Tính từ">
+                        <option value="Phó từ">
+                        <option value="Trạng từ">
+                        <option value="Ngữ pháp">
+                        <option value="Quán dụng ngữ">
+                        <option value="Từ liên kết">
+                    </datalist>
+                </div>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <label style="font-size: 12px; color: var(--accent-gold); font-weight: 600;">📂 Nhóm Chủ Đề (Tự Động Phân Loại)</label>
+                <input type="text" id="modalTopic" class="search-input" style="margin-top: 4px; font-size: 13px;">
+            </div>
+
+            <div style="margin-top: 10px;">
+                <label style="font-size: 12px; color: var(--text-dim); font-weight: 600;">📝 Ví Dụ Mẫu & Dịch Nghĩa</label>
+                <textarea id="modalExample" class="search-input" rows="2" style="margin-top: 4px; font-size: 13px; resize: vertical;"></textarea>
+            </div>
+
+            <!-- Related Words Suggestion Section (Ý tưởng nâng cấp) -->
+            <div id="relatedWordsContainer" style="margin-top: 12px; background: rgba(15, 23, 42, 0.5); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 10px; padding: 10px; display: none;">
+                <div style="font-size: 12px; color: var(--accent-teal); font-weight: 600; margin-bottom: 6px;">💡 AI Gợi Ý Thêm Từ Vựng Liên Quan (Nhấp để chọn):</div>
+                <div id="relatedWordsChips" style="display: flex; gap: 6px; flex-wrap: wrap;"></div>
+            </div>
+
+            <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px;">
+                <button class="btn btn-soft" id="btnCancelConfirmWord">❌ Hủy</button>
+                <button class="btn btn-primary" id="btnSaveConfirmWord">✅ Xác Nhận Thêm Vào Bảng</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Word Modal -->
+    <div class="modal-overlay" id="editWordModal">
+        <div class="modal-card" style="max-width: 550px;">
+            <h3 style="color: var(--primary-light); font-size: 18px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                <span>✏️ Chỉnh Sửa Từ Vựng</span>
+                <button id="btnCloseEditWord" style="background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer;">✕</button>
+            </h3>
+            
+            <input type="hidden" id="editWordId">
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px;">
+                <div>
+                    <label style="font-size: 12px; color: var(--accent-teal); font-weight: 600;">🇰🇷 Từ Tiếng Hàn</label>
+                    <input type="text" id="editKorean" class="search-input" style="margin-top: 4px; font-weight: 700; font-size: 15px; color: var(--primary-blue);">
+                </div>
+                <div>
+                    <label style="font-size: 12px; color: var(--accent-teal); font-weight: 600;">🇻🇳 Nghĩa Tiếng Việt</label>
+                    <input type="text" id="editVietnamese" class="search-input" style="margin-top: 4px; font-size: 14px;">
+                </div>
+                <div>
+                    <label style="font-size: 12px; color: var(--text-dim); font-weight: 600;">🔤 Phiên Âm Romaja</label>
+                    <input type="text" id="editRomaja" class="search-input" style="margin-top: 4px; font-size: 13px;">
+                </div>
+                <div>
+                    <label style="font-size: 12px; color: var(--text-dim); font-weight: 600;">🏷️ Từ Loại</label>
+                    <input type="text" id="editPos" list="posOptionsDatalist" class="search-input" style="margin-top: 4px; font-size: 13px;">
+                </div>
+            </div>
+
+            <div style="margin-top: 10px;">
+                <label style="font-size: 12px; color: var(--accent-gold); font-weight: 600;">📂 Nhóm Chủ Đề</label>
+                <input type="text" id="editTopic" class="search-input" style="margin-top: 4px; font-size: 13px;">
+            </div>
+
+            <div style="margin-top: 10px;">
+                <label style="font-size: 12px; color: var(--text-dim); font-weight: 600;">📝 Ví Dụ Mẫu & Dịch Nghĩa</label>
+                <textarea id="editExample" class="search-input" rows="2" style="margin-top: 4px; font-size: 13px; resize: vertical;"></textarea>
+            </div>
+
+            <div style="display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px;">
+                <button class="btn btn-soft" id="btnCancelEditWord">❌ Hủy</button>
+                <button class="btn btn-primary" id="btnSaveEditWord">💾 Lưu Thay Đổi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Vocabulary Multiple-Choice Quiz Modal -->
+    <div class="modal-overlay" id="quizModal">
+        <div class="modal-card" style="max-width: 580px; position: relative;">
+            <button id="btnCloseQuiz" style="background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer;">✕</button>
+            <h3 style="color: var(--primary-light); font-size: 18px; display: flex; align-items: center; gap: 8px;">
+                <span>🎯 Trắc Nghiệm Ôn Tập Từ Vựng</span>
+            </h3>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; font-weight: 700; color: var(--accent-gold); margin-top: 8px; padding-bottom: 8px; border-bottom: 1px solid var(--border-color);">
+                <span id="quizScoreLabel">🏆 Đúng: 0 / 0</span>
+                <span id="quizProgressLabel">📊 Câu 1 / 10</span>
+            </div>
+
+            <div id="quizQuestionBox" style="margin-top: 16px; background: rgba(15, 23, 42, 0.8); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 24px; text-align: center;">
+                <span id="quizPosTag" class="pos-badge pos-noun" style="font-size: 11px;">Từ Loại</span>
+                <h2 id="quizKoreanWord" style="font-size: 32px; font-weight: 700; color: #ffffff; margin: 10px 0 4px 0;">단어</h2>
+                <p id="quizRomajaText" style="font-size: 14px; color: var(--accent-teal);">[romaja]</p>
+                <button class="btn btn-soft" style="margin-top: 10px; padding: 4px 12px; font-size: 12px;" onclick="app.speakKorean(document.getElementById('quizKoreanWord').innerText)">🔊 Nghe Đọc Từ</button>
+            </div>
+
+            <div id="quizOptionsGrid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 16px;">
+                <!-- Dynamically populated 4 options -->
+            </div>
+
+            <div id="quizFeedbackBox" style="display: none; margin-top: 14px; padding: 12px; border-radius: 10px; text-align: center; font-weight: 600; font-size: 14px;"></div>
+
+            <div style="display: flex; justify-content: flex-end; margin-top: 16px;">
+                <button class="btn btn-primary" id="btnNextQuizQuestion" style="display: none;">Tiếp theo ➡️</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Korean Sentence Unscramble Game Modal -->
+    <div class="modal-overlay" id="sentenceGameModal">
+        <div class="modal-card" style="max-width: 620px; position: relative;">
+            <button id="btnCloseSentenceGame" style="position: absolute; right: 20px; top: 20px; background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer;">✕</button>
+            <h3 style="color: var(--primary-light); font-size: 18px; display: flex; align-items: center; gap: 8px;">
+                <span>🧩 Game Ghép Câu Tiếng Hàn</span>
+            </h3>
+            
+            <div style="display: flex; justify-content: space-between; align-items: center; font-size: 13px; font-weight: 700; color: var(--accent-gold); margin-top: 6px; padding-bottom: 8px; border-bottom: 1px solid var(--border-color);">
+                <span id="sentenceGameScoreLabel">🏆 Điểm số: 0</span>
+                <span id="sentenceGameProgressLabel">📊 Câu 1 / 10</span>
+            </div>
+
+            <!-- Sentence Meaning Hint Box -->
+            <div style="margin-top: 14px; background: var(--bg-card); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 16px; text-align: center;">
+                <span class="pos-badge pos-grammar" style="font-size: 11px;">Dịch nghĩa Tiếng Việt</span>
+                <h3 id="sentenceVietnameseHint" style="font-size: 16.5px; font-weight: 700; color: var(--primary-light); margin-top: 8px; line-height: 1.4;">
+                    "Tôi muốn ăn cơm ở nhà hàng."
+                </h3>
+            </div>
+
+            <!-- Built Answer Area (Slots where selected tiles appear) -->
+            <div style="margin-top: 14px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <label style="font-size: 12px; color: var(--accent-teal); font-weight: 600;">👉 Câu trả lời của bạn (Nhấp vào từ để bỏ chọn):</label>
+                    <button class="action-icon" style="width: 24px; height: 24px; font-size: 11px;" title="Nghe mẫu câu chuẩn" onclick="if(window.app) window.app.speakCurrentSentenceTarget();">🔊</button>
+                </div>
+                <div id="sentenceAnswerSlots" style="min-height: 56px; margin-top: 6px; background: var(--bg-input); border: 2px dashed var(--border-highlight); border-radius: var(--radius-md); padding: 10px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center;">
+                    <!-- Selected word tiles appear here -->
+                </div>
+            </div>
+
+            <!-- Word Pool (Shuffled tiles to choose from) -->
+            <div style="margin-top: 14px;">
+                <label style="font-size: 12px; color: var(--text-dim); font-weight: 600;">🔤 Kho từ vựng (Nhấp chọn từng từ theo thứ tự đúng):</label>
+                <div id="sentenceWordPool" style="margin-top: 6px; display: flex; flex-wrap: wrap; gap: 8px; min-height: 48px;">
+                    <!-- Shuffled word tiles -->
+                </div>
+            </div>
+
+            <div id="sentenceFeedbackBox" style="display: none; margin-top: 14px; padding: 12px; border-radius: 10px; text-align: center; font-weight: 600; font-size: 14px;"></div>
+
+            <div style="display: flex; gap: 10px; justify-content: space-between; align-items: center; margin-top: 16px;">
+                <button class="btn btn-soft" id="btnResetSentenceAnswer">🔄 Xếp Lại</button>
+                <div style="display: flex; gap: 8px;">
+                    <button class="btn btn-primary" id="btnCheckSentenceAnswer">✅ Kiểm Tra</button>
+                    <button class="btn btn-secondary" id="btnNextSentenceQuestion" style="display: none;">Câu Tiếp ➡️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Drawer Chatbot -->
+    <div class="ai-drawer" id="aiDrawer">
+        <div class="drawer-header">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <div style="width: 32px; height: 32px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; background: rgba(56, 189, 248, 0.2); flex-shrink: 0;">
+                    <span id="aiDrawerAvatarFallback" style="font-size: 20px;">🤖</span>
+                    <img id="aiDrawerAvatarImg" class="drawer-bot-icon" style="display: none; width: 100%; height: 100%; object-fit: cover;" alt="AI Avatar">
+                </div>
+                <div>
+                    <h3 style="font-size: 16px; font-weight: 700; color: #ffffff;">Trợ Lý AI KorScan</h3>
+                    <p style="font-size: 11px; color: var(--text-dim);">Chồng yêu giải thích từ vựng & dạy tiếng Hàn cho con vợ</p>
+                </div>
+            </div>
+            <button id="btnCloseAIDrawer" style="background: none; border: none; color: var(--text-dim); font-size: 20px; cursor: pointer;">✕</button>
+        </div>
+        <div class="chat-messages" id="aiChatMessages">
+            <div style="background: rgba(30, 41, 59, 0.8); border: 1px solid var(--border-color); border-radius: 12px; padding: 12px 16px; font-size: 13px; line-height: 1.5; margin-right: 30px;">
+                👋 <b>Hé lô con vợ!</b> Chồng là Trợ lý AI KorScan đây.<br/>Con vợ có thể hỏi chồng bất cứ từ vựng, ngữ pháp tiếng Hàn hay nhờ chồng đặt câu nè! ❤️
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="aiChatInput" class="chat-input" placeholder="Hỏi chồng về từ vựng hay ngữ pháp tiếng Hàn...">
+            <button class="btn btn-primary" id="btnSendAIChat">Gửi</button>
+        </div>
+    </div>
+
+    <!-- Welcome Modal -->
+    <div id="welcomeModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh; z-index: 999998; background: rgba(5, 5, 5, 0.85); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); justify-content: center; align-items: center; margin: 0; padding: 0;">
+        <div class="modal-content" style="max-width: 460px; width: 90%; border-radius: 24px; border: 1.5px solid rgba(56, 189, 248, 0.6); background: linear-gradient(145deg, #0F172A, #1E293B); box-shadow: 0 25px 60px rgba(0,0,0,0.9), 0 0 35px rgba(56, 189, 248, 0.3); text-align: center; padding: 28px; animation: modalFadeIn 0.3s ease-out;">
+            <div style="display: flex; justify-content: center; margin-bottom: 16px;">
+                <div style="width: 76px; height: 76px; border-radius: 50%; border: 2.5px solid var(--primary-light); overflow: hidden; background: #0F172A; box-shadow: 0 0 20px rgba(56, 189, 248, 0.5);">
+                    <img id="welcomeCatAvatar" style="width: 100%; height: 100%; object-fit: cover;" alt="Cat GIF Avatar">
+                </div>
+            </div>
+            <h3 style="font-size: 19px; font-weight: 700; color: #FFFFFF; margin-bottom: 10px; background: linear-gradient(135deg, #38BDF8, #818CF8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">👋 CHÀO MỪNG BẠN ĐẾN VỚI KORSCAN AI!</h3>
+            <div style="font-size: 13.5px; color: #CBD5E1; line-height: 1.6; margin-bottom: 24px; text-align: left; background: rgba(15, 23, 42, 0.6); border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 14px; padding: 14px 16px;">
+                <p style="margin-bottom: 8px;">✨ <b>Công cụ bóc tách tiếng Hàn & Học từ vựng AI Vision:</b></p>
+                <p style="margin-bottom: 6px;">📸 <b>Quét ảnh/Sách:</b> Bóc tách 100% từ vựng, ngữ pháp & chữ viết tay.</p>
+                <p style="margin-bottom: 6px;">🤖 <b>Trợ lý AI KorScan:</b> Hỏi đáp, giải thích ngữ pháp & luyện câu.</p>
+                <p style="margin-bottom: 6px;">🎮 <b>Luyện tập:</b> Game nối từ, trắc nghiệm & chấm điểm phát âm.</p>
+                <p>💾 <b>Lưu trữ:</b> Tự động lưu vĩnh viễn & xuất Google Sheets.</p>
+            </div>
+            <button class="btn btn-primary" onclick="closeWelcomeModal()" style="width: 100%; justify-content: center; padding: 13px; font-size: 15px; font-weight: 700; border-radius: 14px; box-shadow: 0 4px 18px var(--primary-glow);">🚀 BẮT ĐẦU KHÁM PHÁ NGAY</button>
+        </div>
+    </div>
+
+    <!-- Custom Glassmorphism Toast / Alert Modal -->
+    <div id="customAlertModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh; z-index: 999999; background: rgba(5, 5, 5, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); justify-content: center; align-items: center; margin: 0; padding: 0;">
+        <div class="modal-content" style="max-width: 440px; width: 90%; border-radius: 20px; border: 1.5px solid rgba(56, 189, 248, 0.5); background: linear-gradient(145deg, #0F172A, #1E293B); box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 30px rgba(56, 189, 248, 0.25); text-align: center; padding: 24px; animation: modalFadeIn 0.25s ease-out;">
+            <div style="display: flex; justify-content: center; margin-bottom: 14px;">
+                <div style="width: 64px; height: 64px; border-radius: 50%; border: 2px solid var(--primary-light); overflow: hidden; background: #0F172A; box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);">
+                    <img id="customAlertAvatar" style="width: 100%; height: 100%; object-fit: cover;" alt="Avatar">
+                </div>
+            </div>
+            <h3 id="customAlertTitle" style="font-size: 17px; font-weight: 700; color: #FFFFFF; margin-bottom: 10px;">THÔNG BÁO KORSCAN AI</h3>
+            <p id="customAlertMessage" style="font-size: 13.5px; color: #E2E8F0; line-height: 1.6; margin-bottom: 22px; white-space: pre-line; word-break: break-word;"></p>
+            <button class="btn btn-primary" onclick="closeCustomAlertModal()" style="width: 100%; justify-content: center; padding: 12px; font-size: 14px; font-weight: 700; border-radius: 12px; box-shadow: 0 4px 14px var(--primary-glow);">👍 Đã Hiểu</button>
+        </div>
+    </div>
+
+    <!-- Custom Glassmorphism Confirm Modal (Replacing Browser Native Confirm) -->
+    <div id="customConfirmModal" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; width: 100vw; height: 100vh; z-index: 999999; background: rgba(5, 5, 5, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); justify-content: center; align-items: center; margin: 0; padding: 0;">
+        <div class="modal-content" style="max-width: 440px; width: 90%; border-radius: 20px; border: 1.5px solid rgba(239, 68, 68, 0.5); background: linear-gradient(145deg, #0F172A, #1E293B); box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 30px rgba(239, 68, 68, 0.25); text-align: center; padding: 24px; animation: modalFadeIn 0.25s ease-out;">
+            <div style="display: flex; justify-content: center; margin-bottom: 14px;">
+                <div style="width: 64px; height: 64px; border-radius: 50%; border: 2px solid #EF4444; overflow: hidden; background: #0F172A; box-shadow: 0 0 15px rgba(239, 68, 68, 0.4);">
+                    <img id="customConfirmAvatar" style="width: 100%; height: 100%; object-fit: cover;" alt="Avatar">
+                </div>
+            </div>
+            <h3 id="customConfirmTitle" style="font-size: 17px; font-weight: 700; color: #FFFFFF; margin-bottom: 10px;">XÁC NHẬN THAO TÁC</h3>
+            <p id="customConfirmMessage" style="font-size: 13.5px; color: #E2E8F0; line-height: 1.6; margin-bottom: 22px; white-space: pre-line; word-break: break-word;"></p>
+            <div style="display: flex; gap: 12px; justify-content: center;">
+                <button id="btnCancelCustomConfirm" class="btn" style="flex: 1; justify-content: center; padding: 12px; font-size: 14px; font-weight: 700; border-radius: 12px; background: rgba(255,255,255,0.08); color: #E2E8F0; border: 1px solid rgba(255,255,255,0.15);">Hủy Bỏ</button>
+                <button id="btnOkCustomConfirm" class="btn" style="flex: 1; justify-content: center; padding: 12px; font-size: 14px; font-weight: 700; border-radius: 12px; background: linear-gradient(135deg, #EF4444, #DC2626); color: #FFF; box-shadow: 0 4px 14px rgba(239,68,68,0.4);">Đồng Ý</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🎙️ AI Pronunciation Scoring Modal -->
+    <div id="pronunciationModal" style="display:none; position:fixed; inset:0; z-index:999999; background:rgba(5,5,5,0.88); backdrop-filter:blur(16px); -webkit-backdrop-filter:blur(16px); justify-content:center; align-items:center;">
+        <div style="max-width:480px; width:92%; border-radius:24px; border:1.5px solid rgba(56,189,248,0.5); background:linear-gradient(145deg,#0a1628,#131e35); box-shadow:0 30px 70px rgba(0,0,0,0.95),0 0 40px rgba(56,189,248,0.2); padding:28px; animation:modalFadeIn 0.3s ease-out; position:relative;">
+            <button onclick="document.getElementById('pronunciationModal').style.display='none'" style="position:absolute;right:18px;top:16px;background:none;border:none;color:#64748b;font-size:20px;cursor:pointer;">✕</button>
+            <div style="text-align:center; margin-bottom:18px;">
+                <div style="font-size:12px; font-weight:700; color:#38bdf8; letter-spacing:1px; text-transform:uppercase; margin-bottom:6px;">🎙️ KorScan AI · Chấm Điểm Phát Âm</div>
+                <div id="pronTargetWord" style="font-size:38px; font-weight:800; color:#fff; line-height:1.2;"></div>
+                <div id="pronTargetRomaja" style="font-size:14px; color:#22d3ee; margin-top:4px;"></div>
+                <div style="font-size:13px; color:#94a3b8; margin-top:6px;">🗣️ Giọng bạn: <span id="pronSpokenText" style="color:#e2e8f0; font-weight:700;"></span></div>
+            </div>
+            <div style="display:flex; justify-content:center; align-items:center; margin:10px 0 18px;">
+                <div style="position:relative; width:130px; height:130px;">
+                    <svg width="130" height="130" style="transform:rotate(-90deg);">
+                        <circle cx="65" cy="65" r="56" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="11"/>
+                        <circle id="pronScoreRing" cx="65" cy="65" r="56" fill="none" stroke="#38bdf8" stroke-width="11" stroke-linecap="round" stroke-dasharray="351.86" stroke-dashoffset="351.86" style="transition:stroke-dashoffset 1.3s cubic-bezier(0.22,1,0.36,1); filter:drop-shadow(0 0 10px rgba(56,189,248,0.7));"/>
+                    </svg>
+                    <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+                        <div id="pronScoreNumber" style="font-size:40px;font-weight:900;color:#fff;line-height:1;">0</div>
+                        <div style="font-size:11px;color:#64748b;font-weight:600;">/ 100</div>
+                    </div>
+                </div>
+            </div>
+            <div id="pronScoreLabel" style="text-align:center; font-size:15px; font-weight:700; margin-bottom:14px; padding:8px 20px; border-radius:30px; width:100%; box-sizing:border-box;"></div>
+            <div style="background:rgba(15,23,42,0.9); border:1px solid rgba(56,189,248,0.15); border-radius:14px; padding:14px 16px; margin-bottom:14px; min-height:60px;">
+                <div style="font-size:10px; font-weight:700; color:#38bdf8; margin-bottom:8px; text-transform:uppercase; letter-spacing:0.8px;">🤖 Nhận Xét AI Chi Tiết</div>
+                <div id="pronAIFeedback" style="font-size:13.5px; color:#e2e8f0; line-height:1.75; white-space:pre-line;"></div>
+            </div>
+            <div id="pronSyllableBox" style="display:none; background:rgba(15,23,42,0.6); border:1px solid rgba(167,139,250,0.2); border-radius:14px; padding:12px 16px; margin-bottom:14px;">
+                <div style="font-size:10px; font-weight:700; color:#a78bfa; margin-bottom:10px; text-transform:uppercase; letter-spacing:0.8px;">📊 Phân Tích Âm Tiết</div>
+                <div id="pronSyllableList" style="display:flex; gap:8px; flex-wrap:wrap;"></div>
+            </div>
+            <div style="display:flex; gap:10px; margin-top:4px;">
+                <button class="btn btn-soft" id="pronRetryBtn" style="flex:1; justify-content:center; padding:11px; font-size:13px;">🎙️ Thử Lại</button>
+                <button class="btn btn-primary" onclick="document.getElementById('pronunciationModal').style.display='none'" style="flex:1; justify-content:center; padding:11px; font-size:13px;">✅ Đã Hiểu</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript Engines -->
+    <script src="js/initial_vocab.js?v=1.3.1"></script>
+    <script src="js/cat_avatar_base64.js?v=1.3.1"></script>
+    <script src="js/ocr_engine.js?v=1.3.1"></script>
+    <script src="js/ai_service.js?v=1.3.1"></script>
+    <script src="js/sheet_exporter.js?v=1.3.1"></script>
+    <script src="js/app.js?v=1.3.1"></script>
+    <script>
+    window.showWelcomeModal = function() {
+        const modal = document.getElementById('welcomeModal');
+        const img = document.getElementById('welcomeCatAvatar');
+        if (img && window.DEFAULT_CAT_AVATAR_BASE64) {
+            img.src = window.DEFAULT_CAT_AVATAR_BASE64;
+        }
+        if (modal) modal.style.display = 'flex';
+    };
+
+    window.closeWelcomeModal = function() {
+        const modal = document.getElementById('welcomeModal');
+        if (modal) modal.style.display = 'none';
+        localStorage.setItem('KORSCAN_HAS_SEEN_WELCOME', 'true');
+    };
+
+    window.showCustomAlert = function(message, title = "THÔNG BÁO KORSCAN AI") {
+        if (!message) return;
+        const strMsg = String(message).trim();
+        if (strMsg === '' || strMsg === 'undefined' || strMsg === 'null' || strMsg === '[object Object]') return;
+
+        const modal = document.getElementById('customAlertModal');
+        const msgElem = document.getElementById('customAlertMessage');
+        const titleElem = document.getElementById('customAlertTitle');
+        const avatarElem = document.getElementById('customAlertAvatar');
+
+        if (avatarElem && window.DEFAULT_CAT_AVATAR_BASE64) {
+            avatarElem.src = window.DEFAULT_CAT_AVATAR_BASE64;
+        }
+        if (modal && msgElem) {
+            msgElem.innerHTML = strMsg;
+            if (titleElem) titleElem.innerText = title;
+            modal.style.display = 'flex';
+        }
+    };
+
+    window.closeCustomAlertModal = function() {
+        const modal = document.getElementById('customAlertModal');
+        if (modal) modal.style.display = 'none';
+    };
+
+    // Override default ugly browser alert window
+    window.alert = function(msg) {
+        if (!msg) return;
+        const strMsg = String(msg).trim();
+        if (strMsg === '' || strMsg === 'undefined' || strMsg === 'null' || strMsg === '[object Object]') return;
+        window.showCustomAlert(strMsg);
+    };
+
+    window.addEventListener('DOMContentLoaded', () => {
+        // Initialize avatars from Base64
+        const alertAvt = document.getElementById('customAlertAvatar');
+        const welcomeAvt = document.getElementById('welcomeCatAvatar');
+        const logoImg = document.getElementById('logoIconImg');
+        
+        if (window.DEFAULT_CAT_AVATAR_BASE64) {
+            if (alertAvt) alertAvt.src = window.DEFAULT_CAT_AVATAR_BASE64;
+            if (welcomeAvt) welcomeAvt.src = window.DEFAULT_CAT_AVATAR_BASE64;
+            if (logoImg) logoImg.src = window.DEFAULT_CAT_AVATAR_BASE64;
+        }
+
+        // Show Welcome Modal on first launch
+        if (!localStorage.getItem('KORSCAN_HAS_SEEN_WELCOME')) {
+            setTimeout(() => {
+                window.showWelcomeModal();
+            }, 200);
+        }
+
+        setTimeout(async () => {
+            if (!window.app || !window.app.vocabularyList || window.app.vocabularyList.length === 0) {
+                try {
+                    const res = await fetch('/api/vocab?t=' + Date.now());
+                    const data = await res.json();
+                    if (data && data.success && Array.isArray(data.words) && data.words.length > 0) {
+                        if (window.app) {
+                            window.app.vocabularyList = data.words;
+                            localStorage.setItem('KORSCAN_VOCAB_LIST', JSON.stringify(data.words));
+                            window.app.renderCategoryChips();
+                            window.app.renderVocabularyGrid();
+                            window.app.updateStreakData();
+                        }
+                    }
+                } catch(e) {}
+            }
+        }, 400);
+    });
+    </script>
+</body>
+</html>
