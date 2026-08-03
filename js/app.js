@@ -2281,9 +2281,19 @@ Lưu ý chấm điểm:
         const existingSet = new Set((this.vocabularyList || []).map(w => w.korean ? w.korean.trim() : ''));
 
         const filtered = db.filter(item => {
-            // Filter by level
-            if (this.libraryLevelFilter && this.libraryLevelFilter !== 'all' && item.level !== this.libraryLevelFilter) {
-                return false;
+            // Filter by level (supports TOPIK 1-2, TOPIK 3-4, TOPIK 5-6 and individual levels)
+            if (this.libraryLevelFilter && this.libraryLevelFilter !== 'all') {
+                const filter = this.libraryLevelFilter;
+                const lvl = (item.level || '').toUpperCase();
+                if (filter === 'TOPIK 1-2') {
+                    if (!lvl.includes('1') && !lvl.includes('2')) return false;
+                } else if (filter === 'TOPIK 3-4') {
+                    if (!lvl.includes('3') && !lvl.includes('4')) return false;
+                } else if (filter === 'TOPIK 5-6') {
+                    if (!lvl.includes('5') && !lvl.includes('6')) return false;
+                } else if (lvl !== filter) {
+                    return false;
+                }
             }
             // Filter by topic
             if (this.libraryTopicFilter && this.libraryTopicFilter !== 'all' && item.topic !== this.libraryTopicFilter) {
