@@ -184,61 +184,67 @@ Trả về DUY NHẤT 1 mảng JSON thuần túy (JSON Array of Objects), không
 
         for (let i = 0; i < models.length; i++) {
             const model = models[i];
-            if (progressCallback) progressCallback(40 + (i * 15), `Gemini AI (${model}) đang bóc tách 100% ảnh nét cao...`);
 
-            try {
-                const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${cleanKey}`;
-                const payload = {
-                    contents: [{
-                        parts: [
-                            { text: promptText },
-                            { inline_data: { mime_type: "image/jpeg", data: cleanBase64 } }
-                        ]
-                    }],
-                    generationConfig: {
-                        response_mime_type: "application/json",
-                        temperature: 0.05,
-                        maxOutputTokens: 8192
-                    }
-                };
+            for (let retry = 0; retry < 3; retry++) {
+                if (progressCallback) {
+                    const stepText = retry === 0 ? 
+                        `Gemini AI (${model}) đang bóc tách 100% ảnh nét cao...` : 
+                        `Tốc độ quét nhanh vượt 15 ảnh/phút. AI đang tự động chờ ${retry * 3}s & tiếp tục...`;
+                    progressCallback(40 + (i * 15) + (retry * 5), stepText);
+                }
 
-                const resp = await fetch(url, {
-                    method: "POST",
-                    headers: { "Content-Type": "application/json" },
-                    body: JSON.stringify(payload)
-                });
+                try {
+                    const url = `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${cleanKey}`;
+                    const payload = {
+                        contents: [{
+                            parts: [
+                                { text: promptText },
+                                { inline_data: { mime_type: "image/jpeg", data: cleanBase64 } }
+                            ]
+                        }],
+                        generationConfig: {
+                            response_mime_type: "application/json",
+                            temperature: 0.05,
+                            maxOutputTokens: 8192
+                        }
+                    };
 
-                if (resp.ok) {
-                    const data = await resp.json();
-                    const jsonText = data.candidates?.[0]?.content?.parts?.[0]?.text;
-                    console.log(`[Gemini OCR ${model} Output]:`, jsonText);
+                    const resp = await fetch(url, {
+                        method: "POST",
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(payload)
+                    });
 
-                    const extractedArray = this.extractArrayFromJSON(jsonText);
-                    if (extractedArray && extractedArray.length > 0) {
-                        const cleanedArray = extractedArray.map(item => this.cleanExtractedWord(item));
-                        if (progressCallback) progressCallback(100, "Bóc tách 100% từ vựng nét cao thành công!");
-                        return cleanedArray;
+                    if (resp.ok) {
+                        const data = await resp.json();
+                        const jsonText = data.candidates?.[0]?.content?.parts?.[0]?.text;
+                        console.log(`[Gemini OCR ${model} Output]:`, jsonText);
+
+                        const extractedArray = this.extractArrayFromJSON(jsonText);
+                        if (extractedArray && extractedArray.length > 0) {
+                            const cleanedArray = extractedArray.map(item => this.cleanExtractedWord(item));
+                            if (progressCallback) progressCallback(100, "Bóc tách 100% từ vựng nét cao thành công!");
+                            return cleanedArray;
+                        } else {
+                            console.warn(`[Gemini OCR ${model}]: Không trích xuất được từ vựng từ JSON trả về.`);
+                            lastErrorText = `AI đã nhận diện xong nhưng không tìm thấy danh sách từ vựng trong ảnh.`;
+                        }
+                    } else if (resp.status === 429) {
+                        console.warn(`[Gemini OCR ${model} 429 Rate Limit]: Retrying in 3.5s (attempt ${retry + 1}/3)...`);
+                        lastErrorText = "Bạn đang quét vượt tốc độ 15 ảnh/phút. AI đang tự động xếp hàng chờ 15s để tiếp tục!";
+                        await new Promise(r => setTimeout(r, 3800));
+                        continue;
                     } else {
-                        console.warn(`[Gemini OCR ${model}]: Không trích xuất được từ vựng từ JSON trả về.`);
-                        lastErrorText = `AI đã nhận diện xong nhưng không tìm thấy danh sách từ vựng trong ảnh.`;
-                    }
-                } else {
-                    const errData = await resp.text();
-                    console.warn(`Lỗi Gemini API (${model} - ${resp.status}):`, errData);
-                    
-                    if (resp.status === 429) {
-                        lastErrorText = "Tải lượt miễn phí Gemini API đang bị giới hạn số lượt quét trong 1 phút (Free Tier Limit). Vui lòng chờ 15-30 giây rồi bấm Quét lại!";
-                        if (progressCallback) progressCallback(75, "Đang chờ 3s trước khi thử lại...");
-                        await new Promise(r => setTimeout(r, 3200));
-                    } else if (resp.status === 404) {
-                        lastErrorText = "Lỗi kết nối mô hình AI. Vui lòng thử lại.";
-                    } else {
+                        const errData = await resp.text();
+                        console.warn(`Lỗi Gemini API (${model} - ${resp.status}):`, errData);
                         lastErrorText = `Google API trả về mã lỗi HTTP ${resp.status}`;
                     }
+                } catch (err) {
+                    console.warn(`Lỗi kết nối ${model} (Retry ${retry}):`, err);
+                    lastErrorText = "Hệ thống AI Vision đang bận. Vui lòng bấm Quét lại sau 15 giây.";
                 }
-            } catch (err) {
-                console.warn(`Lỗi kết nối ${model}:`, err);
-                lastErrorText = "Hệ thống AI Vision đang bận. Vui lòng bấm Quét lại sau 15 giây.";
+
+                break; // Exit retry loop on non-429 response
             }
         }
 
