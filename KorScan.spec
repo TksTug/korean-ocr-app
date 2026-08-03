@@ -5,7 +5,7 @@ a = Analysis(
     ['C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\main_korscan.py'],
     pathex=[],
     binaries=[],
-    datas=[('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\css', 'css'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\js', 'js'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\index.html', '.'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\app_avatar.gif', '.'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\cat_avatar.png', '.'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\korscan_vocab.json', '.')],
+    datas=[('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\css', 'css'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\js', 'js'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\index.html', '.'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\app_logo.png', '.'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\app_logo.ico', '.'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\app_avatar.gif', '.'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\cat_avatar.png', '.'), ('C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\korscan_vocab.json', '.')],
     hiddenimports=['edge_tts', 'asyncio', 'PyQt6', 'PyQt6.QtCore', 'PyQt6.QtWidgets', 'PyQt6.QtWebEngineWidgets', 'PyQt6.QtWebEngineCore'],
     hookspath=[],
     hooksconfig={},
@@ -22,7 +22,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='KorScan_AI_App',
+    name='KorScan',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -35,4 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
+    icon=['C:\\Users\\vthan\\Desktop\\korean_ocr_app_SourceCode\\app_logo.ico'],
 )
