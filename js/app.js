@@ -364,16 +364,33 @@ class KorScanApp {
         }
 
         if (this.dropzone) {
+            this._dragDepth = 0;
             this.dropzone.addEventListener('click', () => this.fileInput && this.fileInput.click());
-            this.dropzone.addEventListener('dragover', (e) => {
+            this.dropzone.addEventListener('dragenter', (e) => {
                 e.preventDefault();
+                e.stopPropagation();
+                this._dragDepth++;
                 this.dropzone.classList.add('dragover');
             });
-            this.dropzone.addEventListener('dragleave', () => this.dropzone.classList.remove('dragover'));
+            this.dropzone.addEventListener('dragover', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+            });
+            this.dropzone.addEventListener('dragleave', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                this._dragDepth--;
+                if (this._dragDepth <= 0) {
+                    this._dragDepth = 0;
+                    this.dropzone.classList.remove('dragover');
+                }
+            });
             this.dropzone.addEventListener('drop', (e) => {
                 e.preventDefault();
+                e.stopPropagation();
+                this._dragDepth = 0;
                 this.dropzone.classList.remove('dragover');
-                if (e.dataTransfer.files.length > 0) {
+                if (e.dataTransfer && e.dataTransfer.files && e.dataTransfer.files.length > 0) {
                     this.handleMultipleFilesSelect(Array.from(e.dataTransfer.files));
                 }
             });
@@ -382,14 +399,20 @@ class KorScanApp {
         if (this.btnSelectFile) this.btnSelectFile.addEventListener('click', () => this.fileInput && this.fileInput.click());
         if (this.fileInput) {
             this.fileInput.addEventListener('change', (e) => {
-                if (e.target.files.length > 0) this.handleMultipleFilesSelect(Array.from(e.target.files));
+                if (e.target.files && e.target.files.length > 0) {
+                    this.handleMultipleFilesSelect(Array.from(e.target.files));
+                }
+                e.target.value = '';
             });
         }
 
         if (this.btnCamera) this.btnCamera.addEventListener('click', () => this.cameraInput && this.cameraInput.click());
         if (this.cameraInput) {
             this.cameraInput.addEventListener('change', (e) => {
-                if (e.target.files.length > 0) this.handleMultipleFilesSelect(Array.from(e.target.files));
+                if (e.target.files && e.target.files.length > 0) {
+                    this.handleMultipleFilesSelect(Array.from(e.target.files));
+                }
+                e.target.value = '';
             });
         }
 
