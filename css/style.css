@@ -70,11 +70,11 @@
     --badge-work-bg: #e0e7ff;
     --badge-work-text: #4338ca;
 
-    /* Radius & Transitions */
+    /* Radius & Transitions (GPU Accelerated - No Layout Thrashing) */
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 18px;
-    --transition: all 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition: transform 0.18s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.18s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.18s cubic-bezier(0.4, 0, 0.2, 1), border-color 0.18s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.18s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Light Theme (Explicit Pastel Sky Blue) */
