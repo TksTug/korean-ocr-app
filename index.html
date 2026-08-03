@@ -151,6 +151,11 @@
 
                 <!-- Voice Input Helper text -->
                 <div id="voiceStatusText" style="display: none; margin-top: 8px; font-size: 12.5px; color: var(--accent-gold); text-align: center;">
+                    🗣️ Bấm "⚡ AI Tạo Từ" ➔ Nói từ Tiếng Hàn vào Micro ➔ AI tự động dịch & tạo thẻ!
+                </div>
+            </div>
+        </section>
+
         <!-- Right Panel: Vocabulary Table & Topic Categorization -->
         <section class="panel">
             <div class="panel-header">
@@ -198,6 +203,52 @@
             </div>
         </section>
 
+    </main>
+
+    <!-- Dedicated Reference Vocabulary Library View -->
+    <main class="app-container" id="libraryView" style="display: none; grid-template-columns: 1fr;">
+        <section class="panel" style="padding: 24px;">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 20px; border-bottom: 1px solid var(--border-color); padding-bottom: 16px;">
+                <div>
+                    <h2 style="font-size: 22px; font-weight: 700; color: var(--text-color); display: flex; align-items: center; gap: 10px; margin: 0;">
+                        <span>📚 Thư Viện Từ Vựng Sách Hàn Quốc</span>
+                        <span style="font-size: 13px; font-weight: 600; padding: 4px 10px; background: rgba(56, 189, 248, 0.15); color: var(--primary-light); border-radius: 12px; border: 1px solid rgba(56, 189, 248, 0.3);" id="libraryWordCountBadge">0 từ mẫu</span>
+                    </h2>
+                    <p style="font-size: 13.5px; color: var(--text-dim); margin-top: 4px;">Tài liệu tra cứu từ vựng chuẩn SGK & TOPIK Hàn Quốc. Bấm <b>"+ Thêm vào Sổ Từ"</b> để lưu từ bạn muốn học vào Sổ Từ Scan cá nhân!</p>
+                </div>
+                <div style="display: flex; gap: 10px; align-items: center;">
+                    <div class="search-box" style="width: 280px;">
+                        <input type="text" id="librarySearchInput" class="search-input" placeholder="🔍 Tìm theo từ Hàn, Romaja, Tiếng Việt..." oninput="if(window.app) window.app.renderLibraryVocabList();">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Controls: Level Pills & Topic Chips -->
+            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px; background: rgba(15, 23, 42, 0.3); border: 1px solid var(--border-color); border-radius: var(--radius-md); padding: 14px 18px;">
+                <!-- Level Pills -->
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                    <span style="font-size: 12.5px; font-weight: 700; color: var(--text-dim); min-width: 90px;">🎯 Trình độ:</span>
+                    <div id="libraryLevelPills" style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <button class="chip active" data-level="all" onclick="if(window.app) window.app.setLibraryLevelFilter('all');">Tất Cả</button>
+                        <button class="chip" data-level="TOPIK 1" onclick="if(window.app) window.app.setLibraryLevelFilter('TOPIK 1');">📘 TOPIK 1 (Sơ Cấp)</button>
+                        <button class="chip" data-level="TOPIK 2" onclick="if(window.app) window.app.setLibraryLevelFilter('TOPIK 2');">📙 TOPIK 2 (Trung Cấp)</button>
+                    </div>
+                </div>
+
+                <!-- Topic Chips -->
+                <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+                    <span style="font-size: 12.5px; font-weight: 700; color: var(--text-dim); min-width: 90px;">🏷️ Chủ đề:</span>
+                    <div id="libraryTopicChips" style="display: flex; gap: 6px; flex-wrap: wrap;">
+                        <!-- Generated dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Library Vocab Cards Grid -->
+            <div id="libraryCardsGrid" class="vocab-grid" style="grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));">
+                <!-- Library Cards rendered by JS -->
+            </div>
+        </section>
     </main>
 
     <!-- Mini-Game Word Matching Modal -->
