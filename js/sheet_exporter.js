@@ -128,28 +128,38 @@ class SheetExporter {
         
         if (lower.includes("greeting") || lower.includes("chào") || lower.includes("인사")) 
             return "👋 Chào hỏi & Giới thiệu";
-        if (lower.includes("daily") || lower.includes("sinh hoạt") || lower.includes("thời gian") || lower.includes("일상")) 
+        if (lower.includes("time_numbers") || lower.includes("số") || lower.includes("ngày")) 
+            return "⏰ Thời gian & Con số";
+        if (lower.includes("daily_family") || lower.includes("gia đình")) 
+            return "🏠 Gia đình & Đời sống";
+        if (lower.includes("daily") || lower.includes("sinh hoạt") || lower.includes("일상")) 
             return "⏰ Đời sống & Thời gian";
-        if (lower.includes("food") || lower.includes("ẩm thực") || lower.includes("ăn") || lower.includes("음식") || lower.includes("restaurant")) 
+        if (lower.includes("food_dining") || lower.includes("food") || lower.includes("ẩm thực") || lower.includes("음식")) 
             return "🍽️ Ẩm thực & Ăn uống";
-        if (lower.includes("weather") || lower.includes("thời tiết") || lower.includes("mùa") || lower.includes("날씨")) 
-            return "🌤️ Thời tiết & Mùa màng";
-        if (lower.includes("transport") || lower.includes("giao thông") || lower.includes("đường") || lower.includes("교통")) 
+        if (lower.includes("weather_nature") || lower.includes("weather") || lower.includes("thời tiết") || lower.includes("날씨")) 
+            return "🌤️ Thời tiết & Tự nhiên";
+        if (lower.includes("transport") || lower.includes("giao thông") || lower.includes("교통")) 
             return "🚗 Giao thông & Phương tiện";
-        if (lower.includes("work") || lower.includes("công việc") || lower.includes("học") || lower.includes("직장")) 
-            return "💼 Công việc & Học tập";
         if (lower.includes("shopping") || lower.includes("mua sắm") || lower.includes("쇼핑")) 
-            return "🛍️ Mua sắm";
-        if (lower.includes("health") || lower.includes("sức khỏe") || lower.includes("cảm xúc") || lower.includes("건강")) 
-            return "💊 Sức khỏe & Cảm xúc";
-        if (lower.includes("hobby") || lower.includes("sở thích") || lower.includes("giải trí") || lower.includes("취미")) 
-            return "🎨 Sở thích & Giải trí";
-        if (lower.includes("fruit") || lower.includes("trái cây") || lower.includes("hoa quả") || lower.includes("과일")) 
-            return "🍎 Trái cây & Hoa quả";
-        if (lower.includes("animal") || lower.includes("động vật") || lower.includes("thú cưng") || lower.includes("동물")) 
-            return "🐾 Động vật & Thú cưng";
-        if (lower.includes("other") || lower.includes("khác") || lower.includes("기타")) 
-            return "💬 Chủ đề khác (기타)";
+            return "🛍️ Mua sắm & Giá cả";
+        if (lower.includes("school") || lower.includes("giáo dục") || lower.includes("trường")) 
+            return "🏫 Trường học & Giáo dục";
+        if (lower.includes("work_business") || lower.includes("work") || lower.includes("công việc") || lower.includes("직장")) 
+            return "💼 Công sở & Kinh tế";
+        if (lower.includes("travel_leisure") || lower.includes("travel") || lower.includes("du lịch")) 
+            return "🏖️ Du lịch & Giải trí";
+        if (lower.includes("health_medical") || lower.includes("health") || lower.includes("y tế") || lower.includes("건강")) 
+            return "🩺 Y tế & Sức khỏe";
+        if (lower.includes("emotion_personality") || lower.includes("emotion") || lower.includes("cảm xúc")) 
+            return "❤️ Cảm xúc & Tính cách";
+        if (lower.includes("tech_media") || lower.includes("công nghệ")) 
+            return "💻 Công nghệ & Truyền thông";
+        if (lower.includes("law_society") || lower.includes("pháp luật")) 
+            return "⚖️ Pháp luật & Xã hội";
+        if (lower.includes("art_culture") || lower.includes("văn hóa")) 
+            return "🎨 Nghệ thuật & Văn hóa";
+        if (lower.includes("grammar_connectors") || lower.includes("ngữ pháp")) 
+            return "🔗 Ngữ pháp & Từ nối";
 
         return topic;
     }
