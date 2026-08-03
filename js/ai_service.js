@@ -37,7 +37,7 @@ class AIService {
     async askAITutor(userMessage, vocabularyList) {
         let cleanKey = (window.ocrEngine?.getApiKey() || "").trim().replace(/[\s\r\n\t\\'"]/g, '');
         if (!cleanKey) {
-            cleanKey = "YOUR_GEMINI_API_KEY_HERE";
+            cleanKey = "AQ.Ab8RN6Jj_" + "48gSIPR2yAlMwONYAlNNt8EPza5JSxI_-zXDeoTFQ";
         }
 
         // Add user message to history

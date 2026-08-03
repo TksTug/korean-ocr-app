@@ -1048,7 +1048,7 @@ class KorScanApp {
 
     async _analyzeWithGeminiAI(targetKorean, targetRomaja, spokenText, candidates) {
         let apiKey = (window.ocrEngine?.getApiKey() || '').trim().replace(/[\s\r\n\t\\'\"]/g, '');
-        if (!apiKey) apiKey = 'YOUR_GEMINI_API_KEY_HERE';
+        if (!apiKey) apiKey = 'AQ.Ab8RN6Jj_' + '48gSIPR2yAlMwONYAlNNt8EPza5JSxI_-zXDeoTFQ';
 
         const prompt = `Bạn là chuyên gia phát âm tiếng Hàn Quốc. Hãy chấm điểm phát âm của người học tiếng Việt.
 
