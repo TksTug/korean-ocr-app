@@ -13,7 +13,8 @@ def build_exe():
         "--noconfirm",
         "--onefile",
         "--windowed",
-        "--name", "KorScan_AI_App",
+        "--name", "KorScan",
+        "--icon", os.path.join(script_dir, "app_logo.ico"),
         "--hidden-import", "edge_tts",
         "--hidden-import", "asyncio",
         "--hidden-import", "PyQt6",
@@ -24,6 +25,8 @@ def build_exe():
         "--add-data", f"{os.path.join(script_dir, 'css')};css",
         "--add-data", f"{os.path.join(script_dir, 'js')};js",
         "--add-data", f"{os.path.join(script_dir, 'index.html')};.",
+        "--add-data", f"{os.path.join(script_dir, 'app_logo.png')};.",
+        "--add-data", f"{os.path.join(script_dir, 'app_logo.ico')};.",
         "--add-data", f"{os.path.join(script_dir, 'app_avatar.gif')};.",
         "--add-data", f"{os.path.join(script_dir, 'cat_avatar.png')};.",
         "--add-data", f"{os.path.join(script_dir, 'korscan_vocab.json')};.",
@@ -35,9 +38,9 @@ def build_exe():
     result = subprocess.run(cmd, cwd=script_dir)
 
     if result.returncode == 0:
-        dist_exe = os.path.join(script_dir, "dist", "KorScan_AI_App.exe")
+        dist_exe = os.path.join(script_dir, "dist", "KorScan.exe")
         desktop = os.path.join(os.path.expanduser("~"), "Desktop")
-        desktop_exe = os.path.join(desktop, "KorScan_AI_App.exe")
+        desktop_exe = os.path.join(desktop, "KorScan.exe")
         
         subprocess.run(["cmd", "/c", "copy", "/y", dist_exe, desktop_exe])
         print(f"\nSUCCESS! Single file executable created at '{desktop_exe}'")

@@ -225,9 +225,13 @@ def start_embedded_server():
 class KorScanMainWindow(QMainWindow):
     def __init__(self, app_instance):
         super().__init__()
-        self.setWindowTitle("KorScan AI - Bóc Tách Tiếng Hàn Viết Tay & Học Từ Vựng AI Vision")
+        self.setWindowTitle("KorScan")
         self.resize(1280, 800)
         self.setMinimumSize(900, 650)
+
+        icon_path = os.path.join(BUNDLE_DIR, "app_logo.ico")
+        if os.path.exists(icon_path):
+            self.setWindowIcon(QIcon(icon_path))
 
         central_widget = QWidget()
         self.setCentralWidget(central_widget)
