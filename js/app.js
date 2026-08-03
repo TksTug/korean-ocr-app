@@ -625,10 +625,10 @@ class KorScanApp {
         if (this.batchImages.length === 0) return;
 
         const key = window.ocrEngine.getApiKey();
-        if (!key || key.length < 20) {
+        if (!key || key.length < 15) {
             if (this.geminiApiKeyInput) this.geminiApiKeyInput.value = '';
             if (this.settingsModal) this.settingsModal.style.display = 'flex';
-            alert('🔑 Bạn chưa cài đặt Gemini API Key cá nhân hợp lệ!\n\n👉 Vui lòng tạo 1 API Key miễn phí (chỉ 10 giây) tại aistudio.google.com/app/apikey và dán vào phần Cấu Hình API để quét không giới hạn.');
+            alert('🔑 Chưa tìm thấy API Key hợp lệ. Vui lòng mở "⚙️ Cấu Hình API AI" để lưu Key.');
             return;
         }
 

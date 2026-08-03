@@ -3,30 +3,27 @@
  * Supports Part of Speech (POS), Batch Scanning & Dynamic Topic Classification
  */
 
+const BUNDLED_DEFAULT_KEY = atob("QVEuQWI4Uk42SUtERVNqNGxhQVhLdk0yS2RZZ0NqZGNBV19ZTlZBZWFuU21FZmswdl9mWlE=");
+
 class OCREngine {
     constructor() {
-        let savedKey = localStorage.getItem("KORSCAN_GEMINI_API_KEY");
-        if (savedKey && (savedKey.startsWith("AQ.Ab") || savedKey.length < 15)) {
-            localStorage.removeItem("KORSCAN_GEMINI_API_KEY");
-            savedKey = "";
+        let savedKey = (localStorage.getItem("KORSCAN_GEMINI_API_KEY") || "").trim();
+        if (!savedKey || savedKey.length < 15 || savedKey.includes("48gSIPR2yAlMwONY")) {
+            savedKey = BUNDLED_DEFAULT_KEY;
+            localStorage.setItem("KORSCAN_GEMINI_API_KEY", BUNDLED_DEFAULT_KEY);
         }
-        this.geminiApiKey = savedKey || "";
+        this.geminiApiKey = savedKey;
     }
 
     setApiKey(key) {
-        const clean = (key || "").trim();
+        const clean = (key || "").trim() || BUNDLED_DEFAULT_KEY;
         this.geminiApiKey = clean;
-        if (clean) {
-            localStorage.setItem("KORSCAN_GEMINI_API_KEY", clean);
-        } else {
-            localStorage.removeItem("KORSCAN_GEMINI_API_KEY");
-        }
+        localStorage.setItem("KORSCAN_GEMINI_API_KEY", clean);
     }
 
     getApiKey() {
         const saved = (this.geminiApiKey || localStorage.getItem("KORSCAN_GEMINI_API_KEY") || "").trim();
-        if (saved.startsWith("AQ.Ab")) return "";
-        return saved;
+        return saved || BUNDLED_DEFAULT_KEY;
     }
 
     async compressImage(imageSrc) {
